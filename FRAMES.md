@@ -1,13 +1,60 @@
 # Framework Templates
 
-### Operative Abilities
+### Operatives
 
 ```py
 
-abilities = [
-    {   # Ability Name
-        "abname":"",
-        "abtext":"",
+operatives = [
+    {   # Operative Name
+        "opname":"",
+        "stats":{
+            "apl":,
+            "move":,
+            "save":,
+            "wounds":,
+        },
+        "rweaps":[
+            {   # Weapon Name
+                "wpname":"",
+                "atk":,
+                "hit":,
+                "dmg1":,
+                "dmg2":,
+                "wprule":[
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Weapon Name
+                "wpname":"",
+                "atk":,
+                "hit":,
+                "dmg1":,
+                "dmg2":,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+        ],
+        "faction":"",
+        "keywords":[
+        ],
+    },
+]
+
+```
+
+### Operative Actions
+
+```py
+
+actions = [
+    {   # Action Name
+        "actname":"",
+        "acttext":"",
     },
 ]
 
@@ -17,10 +64,12 @@ abilities = [
 
 ```py
 
-{   # Rule Name
+oprules = [
+    {   # Rule Name
         "oprname":"",
         "oprtext":"",
     },
+]
 
 ```
 
