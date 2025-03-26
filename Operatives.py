@@ -762,4 +762,292 @@ operatives = [
             "Leader"
         ],
     },
+    {   # Oversight Drone
+        "opname":"Oversight Drone",
+        "stats":{
+            "apl":2,
+            "move":8,
+            "save":2,
+            "wounds":5,
+        },
+        "rweaps":[
+        ],
+        "mweaps":[
+            {   # Ram
+                "wpname":"Ram",
+                "atk":3,
+                "hit":5,
+                "dmg1":1,
+                "dmg2":2,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Evasive Drone"
+        ],
+        "opact":[
+            "Aerial Guidance"
+        ],
+        "faction":"Vespid Stingwing",
+        "keywords":[
+            "T'au Empire",
+            "Oversight",
+            "Drone"
+        ],
+    },
+    {   # Vespid Longsting
+        "opname":"Vespid Longsting",
+        "stats":{
+            "apl":2,
+            "move":6,
+            "save":5,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Neutron Rail Rifle [Standard]
+                "wpname":"Neutron Rail Rifle [Standard]",
+                "atk":4,
+                "hit":4,
+                "dmg1":4,
+                "dmg2":4,
+                "wprule":[
+                    "Devastating 2",
+                    "Neutron Fragment"
+                ],
+            },
+            {   # Neutron Rail Rifle [Aimed]
+                "wpname":"Neutron Rail Rifle [Aimed]",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":4,
+                "wprule":[
+                    "Devastating 2",
+                    "Heavy [Dash Only]",
+                    "Lethal 5",
+                    "Neutron Fragment"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Claws
+                "wpname":"Claws",
+                "atk":3,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+        ],
+        "faction":"Vespid Stingwing",
+        "keywords":[
+            "T'au Empire",
+            "Longsting"
+        ],
+    },
+    {   # Vespid Shadestrain
+        "opname":"Vespid Shadestrain",
+        "stats":{
+            "apl":2,
+            "move":6,
+            "save":3,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Neutron Sting
+                "wpname":"Neutron Sting",
+                "atk":4,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Range 8",
+                    "Devastating 2",
+                ],
+            },
+            {   # Neutron Grenade
+                "wpname":"Neutron Grenade",
+                "atk":4,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Range 6",
+                    "Blast 2",
+                    "Devastating 2",
+                    "Limited 1",
+                    "Saturate"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Claws
+                "wpname":"Claws",
+                "atk":3,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Ghost Rig",
+            "Camouflaged"
+        ],
+        "opact":[
+        ],
+        "faction":"Vespid Stingwing",
+        "keywords":[
+            "T'au Empire",
+            "Shadestrain"
+        ],
+    },
+    {   # Vespid Skyblast
+        "opname":"Vespid Skyblast",
+        "stats":{
+            "apl":2,
+            "move":6,
+            "save":5,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Neutron Grenade Launcher
+                "wpname":"Neutron Grenade Launcher",
+                "atk":4,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Blast 2",
+                    "Devastating 2",
+                    "Neutron Bombardment"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Claws
+                "wpname":"Claws",
+                "atk":3,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Neutron Fallout"
+        ],
+        "opact":[
+        ],
+        "faction":"Vespid Stingwing",
+        "keywords":[
+            "T'au Empire",
+            "Skyblast"
+        ],
+    },
+    {   # Vespid Swarmguard
+        "opname":"Vespid Swarmguard",
+        "stats":{
+            "apl":2,
+            "move":6,
+            "save":5,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Flamer [Standard]
+                "wpname":"Flamer [Standard]",
+                "atk":4,
+                "hit":2,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Range 8",
+                    "Saturate",
+                    "Torrent 2"
+                ],
+            },
+            {   # Flamer [Skytorch]
+                "wpname":"Flamer [Skytorch]",
+                "atk":4,
+                "hit":2,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Saturate",
+                    "Torrent 0",
+                    "Skytorch"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Claws
+                "wpname":"Claws",
+                "atk":3,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+        ],
+        "faction":"Vespid Stingwing",
+        "keywords":[
+            "T'au Empire",
+            "Shadestrain"
+        ],
+    },
+    {   # Vespid Warrior
+        "opname":"Vespid Warrior",
+        "stats":{
+            "apl":2,
+            "move":6,
+            "save":5,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Neutron Blaster
+                "wpname":"Neutron Blaster",
+                "atk":4,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Devastating 2"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Claws
+                "wpname":"Claws",
+                "atk":3,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Warrior Instincts"
+        ],
+        "opact":[
+        ],
+        "faction":"Vespid Stingwing",
+        "keywords":[
+            "T'au Empire",
+            "Warrior"
+        ],
+    },
 ]
