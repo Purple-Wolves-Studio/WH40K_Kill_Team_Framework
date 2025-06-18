@@ -15,11 +15,36 @@ oprules = [
         "oprname":"Bad-tempered",
         "oprtext":"Whenever an enemy operative performs the Fight action, if this operative is a valid operative to fight against, you can force them to select this operative to fight against instead. Whenever an enemy operative ends the Charge action within control range of another friendly FARSTALKER KINBAND operative within 3\" of this operative, if this operative isn't within control range of enemy operatives, this operative can immediately perform a free Charge action, but must end that move within control range of that enemy operative.",
     },
+    {   # Banshee Mask
+        "oprname":"Banshee Mask",
+        "oprtext":"Whenever this operative is fighting, worsen the Hit stat of the enemy "
+        "operative's melee weapons by 1. This isn't cumulative with being injured.",
+    },
     {   # Beast
         "oprname":"Beast",
         "oprtext":"This operative cannot perform any actions other than Charge, Dash, "
         "Fall Back, Fight, Gather, Guard, Reposition, Pick Up Marker and Place Marker. "
         "It cannot use any weapons that aren't on its datacard.",
+    },
+    {   # Blademaster
+        "oprname":"Blademaster",
+        "oprtext":"This operative can perform the Dash action during an activation in which it performed "
+        "the Charge action, but can only use any remaining move distance it had from that Charge action "
+        "(to a maximum of 3\").",
+    },
+    {   # Bladed Stance
+        "oprname":"Bladed Stance",
+        "oprtext":"Whenever this operative is fighting or retaliating, you can resolve one of your "
+        "successes before the normal order. If you do, that success must be used to block.",
+    },
+    {   # Blink Pack
+        "oprname":"Blink Pack",
+        "oprtext":"Whenever this operative performs the Charge, Fall Back or Reposition action, it can "
+        "warp jump. If it does, don't move it. Instead, remove it from the killzone and set it back up "
+        "wholly within 7\" horizontally of its original location (in Killzone: Gallowdark, this distance "
+        "can be measured through Wall terrain). It must be set up in a location it can be placed, and unless "
+        "it's the Charge action, it cannot be set up within control range of an enemy operative. This operative "
+        "cannot warp jump during the same activation in which it performed the Dash action (or vice versa).",
     },
     {   # Boom!
         "oprname":"Boom!",
@@ -56,6 +81,13 @@ oprules = [
         "and all cover saves are retained as critical successes. This rule has no effect if this operative "
         "isn't selected as the valid target, e.g. if it's a secondary target from the Blast weapon rule.",
     },
+    {   # Camo Cloak
+        "oprname":"Camo Cloak",
+        "oprtext":"Whenever an operative is shooting this operative, ignore the Saturate weapon rule, "
+        "and if you can retain any cover saves, you can retain one additional cover save, or you can "
+        "retain one cover save as a critical success instead. This isn't cumulative with improved cover "
+        "saves from Vantage terrain.",
+    },
     {   # Cold-blooded
         "oprname":"Cold-blooded",
         "oprtext":"Whenever this operative is shooting against, fighting against "
@@ -78,12 +110,28 @@ oprules = [
         "oprtext":"After this operative fights or retaliates, if it wasn't incapacitated, "
         "you can inflict D3 damage on the enemy operative in that sequence.",
     },
+    {   # Defence Tactics
+        "oprname":"Defence Tactics",
+        "oprtext":"Whenever this operative contests an objective marker or one of your "
+        "mission markers, or whenever it's shooting an enemy operative that does, this "
+        "operative's weapons have the Balanced weapon rule.",
+    },
     {   # Drone
         "oprname":"Drone",
         "oprtext":"""This operative can only perform Charge, Dash, Fall Back, Fight, Reposition, and Shoot actions.
         It cannot use any other weapons.
         When determining control of an objective marker, treat this operative's APL stat as 1 lower.
         When determining what is visible to this operative, the round disc at the top is its head.""",
+    },
+    {   # Erudite Hunter
+        "oprname":"Erudite Hunter",
+        "oprtext":"STRATEGIC GAMBIT. Select one enemy operative within 9\" of this operative. "
+        "Once during this turning point, after that enemy operative performs an action in which "
+        "it moves during its activation, you can interrupt that activation to use this rule. "
+        "If you do, this operative can immediately perform either a free Reposition action "
+        "[it cannot end that move further from that enemy operative], or a free Charge action "
+        "[you can change its order to do so, and it must end that move within control range of "
+        "that enemy operative].",
     },
     {   # Evasive Drone
         "oprname":"Evasive Drone",
@@ -93,6 +141,10 @@ oprules = [
         "the round disc at the top is its head. When this operative has a Conceal order and "
         "is in cover, it cannot be selected as a valid target, taking precedence over all "
         "other rules. When an operative is shooting this operative, ignore the Piercing weapon rule.",
+    },
+    {   # Exarch
+        "oprname":"Exarch",
+        "oprtext":"This operative can perform two Fight or two Shoot actions during its activation.",
     },
     {   # Expendable
         "oprname":"Expendable",
@@ -107,6 +159,12 @@ oprules = [
         "oprtext":"STRATEGIC GAMBIT. Select one enemy operative, or up to two "
         "enemy operatives if three or more friendly HEARTHKYN SALVAGER operatives "
         "are incapacitated. Each of those enemy operatives gains one of your Grudge tokens.",
+    },
+    {   # Faolchu's Bond
+        "oprname":"Faolchu's Bond",
+        "oprtext":"The first time during each turning point that this operative is retaliating, "
+        "if it's ready, in the Resolve Attack Dice step of that sequence, you resolve the first "
+        "attack dice [i.e. defender instead of attacker].",
     },
     {   # Fearless on the Frontline
         "oprname":"Fearless on the Frontline",
@@ -194,6 +252,25 @@ oprules = [
         "1 Wrecka point. Determine this when you select a valid target, but you can include "
         "any secondary targets when doing so (e.g. from the Blast weapon rule).",
     },
+    {   # Lead the Performance
+        "oprname":"Lead the Performance",
+        "oprtext":"Once per battle STRATEGIC GAMBIT. If this operative is in the killzone, "
+        "change the ALLEGORY you selected for your kill team. Note that the ACCOLADE rule "
+        "friendly operatives have will also change.",
+    },
+    {   # Luck of the Laughing God
+        "oprname":"Luck of the Laughing God",
+        "oprtext":"Once per turning point, you can use this rule. If you do, you can use a firefight "
+        "ploy for 0CP if this is the specified VOID-DANCER TROUPE operative (including Command Re-roll "
+        "if the attack or defence dice was rolled for this operative). You cannot select the same "
+        "firefight ploy for this rule more than once per battle.",
+    },
+    {   # Mandiblasters
+        "oprname":"Mandiblasters",
+        "oprtext":"Whenever this operative performs the Fight action, at the start of the "
+        "Roll Attack Dice step, you can use this rule. If you do, inflict 2 damage on the "
+        "enemy operative in that sequence.",
+    },
     {   # Medic!
         "oprname":"Medic!",
         "oprtext":"The first time during each turning point that another friendly "
@@ -223,6 +300,16 @@ oprules = [
         "within 2\" of one of your Neutron Fallout markers, inflict D3 damage on "
         "that operative (multiple markers aren't cumulative).",
     },
+    {   # One Step Ahead
+        "oprname":"One Step Ahead",
+        "oprtext":"Once per battle, after an enemy operative performs an action during its activation, "
+        "if this operative is ready, you can use this rule. If you do, roll one D6: if the result is "
+        "higher than that enemy operative's APL stat, you can interrupt that activation and immediately "
+        "perform either a free Shoot or a free Fight action with this operative, but you cannot select "
+        "any other enemy operative as a valid target or to fight against during that action [note that "
+        "secondary targets from the Blast weapon rule can still be targeted]. After you perform that "
+        "action, subtract 1 from this operative's APL stat until the end of its next activation.",
+    },
     {   # Outright Conviction
         "oprname":"Outright Conviction",
         "oprtext":"The first time this operative would be incapacitated during the battle, "
@@ -244,6 +331,13 @@ oprules = [
         "to use this rule. If you do, this operative can immediately perform a free Shoot action "
         "with its dual Kroot pistols (focused) against that enemy operative (you can change its order "
         "to Engage to do so), but that enemy operative must be a valid target.",
+    },
+    {   # Quick on the Trigger
+        "oprname":"Quick on the Trigger",
+        "oprtext":"This operative can perform the Shoot action while within control range of "
+        "an enemy operative. If it does, when selecting a valid target, you can only select an "
+        "enemy operative within this operative's control range, and can do so even if other friendly "
+        "operatives are within that enemy operative's control range.",
     },
     {   # Ready for Anything
         "oprname":"Ready for Anything",
@@ -277,6 +371,22 @@ oprules = [
         "oprtext":("This operative ignores the Piercing weapon rule. Once per turn, when an attack die "
         "inflicts Normal Damage on this operative, you can ignore that inflicted damage. "
         "You can use Saviour Protocols for 0 CP if this is the specified Drone operative."),
+    },
+    {   # Shimmershield
+        "oprname":"Shimmershield",
+        "oprtext":"Whenever an operative is shooting a friendly BLADES OF KHAINE operative that's "
+        "visible to and within 2\" of this operative, ignore the Piercing weapon rule. This operative "
+        "only has this rule if you select the shimmershield weapon option.",
+    },
+    {   # Slicing Attack
+        "oprname":"Slicing Attack",
+        "oprtext":"Whenever this operative performs the Reposition action with a warp jump "
+        "(see other side of card), you can use this rule. If you do, after it moves, draw an imaginary "
+        "line 1mm in diameter and up to 7\" long between it and its previous location. Note this doesn't "
+        "have to be a straight line. Inflict D3+2 damage on one enemy operative that line crosses. You "
+        "cannot inflict damage on an enemy operative that was not visible to this operative at the start "
+        "of that action. A 28mm round marker can be temporarily placed underneath this operative before it "
+        "moves to help determine this.",
     },
     {   # Shokkwave
         "oprname":"Shokkwave",
@@ -330,6 +440,11 @@ oprules = [
         "oprname":"Veteran Adventurer",
         "oprtext":"In the Ready step of each Strategy phase after the first, if this "
         "operative isn't within control range of enemy operatives, you gain 1 Resourceful point.",
+    },
+    {   # Veteran Raider
+        "oprname":"Veteran Raider",
+        "oprtext":"This operative can perform a 1AP action for free during their activation "
+        "as a result of the Aeldari Raiders rule [instead of the Dash action].",
     },
     {   # Vicious Duellist
         "oprname":"Vicious Duellist",

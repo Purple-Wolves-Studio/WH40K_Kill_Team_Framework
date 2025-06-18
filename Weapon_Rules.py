@@ -75,6 +75,13 @@ weaponrules = [
         "inflict 2 damage on that operative and each other operative visible to and within that distance of it. "
         "Note that success isn't discarded after doing so - it can still be resolved later in the sequence.",
     },
+    {   # 2" Devastating 2
+        "wprname":"2\" Devastating 2",
+        "wprtext":"Each retained critical success immediately inflicts 2 damage on the operative "
+        "this weapon is being used against. If the rule starts with a distance (e.g. 1\" Devastating 2), "
+        "inflict 2 damage on that operative and each other operative visible to and within that distance of it. "
+        "Note that success isn't discarded after doing so - it can still be resolved later in the sequence.",
+    },
     {   # Devastating 3
         "wprname":"Devastating 3",
         "wprtext":"Each retained critical success immediately inflicts 3 damage on the operative "
@@ -99,7 +106,7 @@ weaponrules = [
         "and it cannot move in an activation in which it used this weapon. This weapon rule "
         "has no effect on preventing the Guard action.",
     },
-    {   # Heavy [Reposition Only]
+    {   # Heavy [Dash Only]
         "wprname":"Heavy [Dash Only]",
         "wprtext":"An operative cannot use this weapon in an activation in which it moved, "
         "and it cannot move in an activation in which it used this weapon. If the rule is "
@@ -118,6 +125,15 @@ weaponrules = [
         "wprtext":"After an operative uses this weapon, roll one D6: if the result is less than "
         "the weapon's Hit stat, inflict damage on that operative equal to the result multiplied "
         "by two. If it's used multiple times in one action (e.g. Blast), still only roll one D6.",
+    },
+    {   # Humbling Cruelty
+        "wprname":"Humbling Cruelty",
+        "wprtext":"If the target of this weapon isn't incapacitated but any of your attack dice "
+        "inflict damage, the target gains one of your Humbling Cruelty tokens (if it doesn't "
+        "already have one). Whenever an enemy operative has one of your Humbling Cruelty tokens, "
+        "worsen the Hit stat of its weapons by 1 and subtract 2\" from its Move stat. This isn't "
+        "cumulative with being injured. At the end of that enemy operative's next activation, "
+        "remove its Humbling Cruelty token.",
     },
     {   # Lethal 5
         "wprname":"Lethal 5",
@@ -153,6 +169,10 @@ weaponrules = [
         "wprtext":"The defender collects 1 less defence dice. This only comes into effect "
         "if you retain any critical successes.",
     },
+    {   # Psychic
+        "wprname":"Psychic",
+        "wprtext":"",
+    },
     {   # Pulsa
         "wprname":"Pulsa",
         "wprtext":"Don't select a valid target. Instead, place your Pulsa marker visible "
@@ -166,6 +186,10 @@ weaponrules = [
         "wprname":"Punishing",
         "wprtext":"If you retain any critical successes, you can retain one of your fails "
         "as a normal success instead of discarding it.",
+    },
+    {   # Range 3
+        "wprname":"Range 3",
+        "wprtext":"Only operatives within 3\" of the active operative can be valid targets.",
     },
     {   # Range 4
         "wprname":"Range 4",

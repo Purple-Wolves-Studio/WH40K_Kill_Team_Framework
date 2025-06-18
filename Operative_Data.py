@@ -1,4 +1,1095 @@
 operatives = [
+    # Blades of Khaine
+    {   # Dire Avenger Exarch
+        "opname":"Dire Avenger Exarch",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":3,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Shuriken Catapult
+                "wpname":"Shuriken Catapult",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Twin Shuriken Catapult
+                "wpname":"Twin Shuriken Catapult",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Ceaseless",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Diresword
+                "wpname":"Diresword",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Lethal 5",
+                    "Rending"
+                ],
+            },
+            {   # Fists
+                "wpname":"Fists",
+                "atk":4,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+            {   # Gun Butts
+                "wpname":"Gun Butts",
+                "atk":3,
+                "hit":4,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                ],
+            },
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Defence Tactics",
+            "Exarch",
+            "Shimmershield"
+        ],
+        "opact":[
+        ],
+        "faction":"Blades of Khaine",
+        "keywords":[
+            "Aeldari",
+            "Asuryani",
+            "Leader",
+            "Dire Avenger",
+            "Exarch"
+        ],
+    },
+    {   # Dire Avenger Warrior
+        "opname":"Dire Avenger Warrior",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Catapult
+                "wpname":"Shuriken Catapult",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Fists
+                "wpname":"Fists",
+                "atk":4,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Defence Tactics"
+        ],
+        "opact":[
+        ],
+        "faction":"Blades of Khaine",
+        "keywords":[
+            "Aeldari",
+            "Asuryani",
+            "Dire Avenger",
+            "Warrior"
+        ],
+    },
+    {   # Howling Banshee Exarch
+        "opname":"Howling Banshee Exarch",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":3,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Triskele [Throw]
+                "wpname":"Triskele [Throw]",
+                "atk":4,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                    "Range 8",
+                    "Rending",
+                    "Torrent 2"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Executioner
+                "wpname":"Executioner",
+                "atk":5,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":7,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+            {   # Mirrorswords
+                "wpname":"Mirrorswords",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Ceasless",
+                    "Lethal 5"
+                ],
+            },
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+            {   # Triskele [Slice]
+                "wpname":"Triskele [Slice]",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+        ],
+        "oprule":[
+            "Banshee Mask",
+            "Exarch"
+        ],
+        "opact":[
+        ],
+        "faction":"Blades of Khaine",
+        "keywords":[
+            "Aeldari",
+            "Asuryani",
+            "Leader",
+            "Howling Banshee",
+            "Exarch"
+        ],
+    },
+    {   # Howling Banshee Warrior
+        "opname":"Howling Banshee Warrior",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Banshee Mask"
+        ],
+        "opact":[
+        ],
+        "faction":"Blades of Khaine",
+        "keywords":[
+            "Aeldari",
+            "Asuryani",
+            "Howling Banshee",
+            "Warrior"
+        ],
+    },
+    {   # Striking Scorpion Exarch
+        "opname":"Striking Scorpion Exarch",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":3,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Twin Shuriken Pistols
+                "wpname":"Twin Shuriken Pistols",
+                "atk":4,
+                "hit":4,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Ceaseless",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Biting Blade
+                "wpname":"Biting Blade",
+                "atk":5,
+                "hit":3,
+                "dmg1":5,
+                "dmg2":6,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+            {   # Scorpion's Claw and Chainsword
+                "wpname":"Scorpion's Claw and Chainsword",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Brutal",
+                    "Lethal 5"
+                ],
+            },
+            {   # Twin Chainswords
+                "wpname":"Twin Chainswords",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Ceaseless",
+                    "Rending"
+                ],
+            },
+        ],
+        "oprule":[
+            "Mandiblasters",
+            "Exarch"
+        ],
+        "opact":[
+        ],
+        "faction":"Blades of Khaine",
+        "keywords":[
+            "Aeldari",
+            "Asuryani",
+            "Leader",
+            "Striking Scorpion",
+            "Exarch"
+        ],
+    },
+    {   # Striking Scorpion Warrior
+        "opname":"Striking Scorpion Warrior",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Chainsword
+                "wpname":"Chainsword",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+        ],
+        "oprule":[
+            "Mandiblasters"
+        ],
+        "opact":[
+        ],
+        "faction":"Blades of Khaine",
+        "keywords":[
+            "Aeldari",
+            "Asuryani",
+            "Striking Scorpion",
+            "Warrior"
+        ],
+    },
+    # Corsair Voidscarred
+    {   # Voidscarred Felarch
+        "opname":"Voidscarred Felarch",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Neuro Disruptor
+                "wpname":"Neuro Disruptor",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Range 8",
+                    "Piercing 1",
+                    "Stun"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Shuriken Rifle
+                "wpname":"Shuriken Rifle",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Veteran Raider",
+            "One Step Ahead"
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Leader",
+            "Felarch"
+        ],
+    },
+    {   # Voidscarred Fate Dealer
+        "opname":"Voidscarred Fate Dealer",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Ranger Long Rifle [Mobile]
+                "wpname":"Ranger Long Rifle [Mobile]",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                ],
+            },
+            {   # Ranger Long Rifle [Stationary]
+                "wpname":"Ranger Long Rifle [Stationary]",
+                "atk":4,
+                "hit":2,
+                "dmg1":3,
+                "dmg2":3,
+                "wprule":[
+                    "Devastating 3",
+                    "Heavy",
+                    "Silent"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Fists
+                "wpname":"Fists",
+                "atk":3,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Camo Cloak"
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Fate Dealer"
+        ],
+    },
+    {   # Voidscarred Gunner
+        "opname":"Voidscarred Gunner",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Blaster
+                "wpname":"Blaster",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Piercing 2"
+                ],
+            },
+            {   # Shredder
+                "wpname":"Shredder",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending",
+                    "Torrent 2"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Fists
+                "wpname":"Fists",
+                "atk":3,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Gunner"
+        ],
+    },
+    {   # Voidscarred Heavy Gunner
+        "opname":"Voidscarred Heavy Gunner",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Cannon [Focused]
+                "wpname":"Shuriken Cannon [Focused]",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Heavy [Dash Only]",
+                    "Rending"
+                ],
+            },
+            {   # Shuriken Cannon [Sweeping]
+                "wpname":"Shuriken Cannon [Sweeping]",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Heavy [Dash Only]",
+                    "Rending",
+                    "Torrent 1"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Wraithcannon
+                "wpname":"Wraithcannon",
+                "atk":4,
+                "hit":3,
+                "dmg1":6,
+                "dmg2":3,
+                "wprule":[
+                    "Devastating 4",
+                    "Heavy [Dash Only]",
+                    "Piercing 2"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Fists
+                "wpname":"Fists",
+                "atk":3,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Heavy Gunner"
+        ],
+    },
+    {   # Voidscarred Kurnathi
+        "opname":"Voidscarred Kurnathi",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Dual Power Weapons
+                "wpname":"Dual Power Weapons",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Ceaseless",
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Blademaster",
+            "Bladed Stance"
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Kurnathi"
+        ],
+    },
+    {   # Voidscarred Kurnite Hunter
+        "opname":"Voidscarred Kurnite Hunter",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Faolchu
+                "wpname":"Faolchu",
+                "atk":4,
+                "hit":3,
+                "dmg1":1,
+                "dmg2":2,
+                "wprule":[
+                    "Rending",
+                    "Saturate",
+                    "Seek Light",
+                    "Silent"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Faolchu's Bond",
+            "Erudite Hunter"
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Kurnite Hunter"
+        ],
+    },
+    {   # Voidscarred Shade Runner
+        "opname":"Voidscarred Shade Runner",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Throwing Blades
+                "wpname":"Throwing Blades",
+                "atk":4,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":4,
+                "wprule":[
+                    "Range 6",
+                    "Silent"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Hekatarii Blades
+                "wpname":"Hekatarii Blades",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":5,
+                "wprule":[
+                    "Ceaseless",
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Blink Pack",
+            "Slicing Attack"
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Shade Runner"
+        ],
+    },
+    {   # Voidscarred Soul Weaver
+        "opname":"Voidscarred Soul Weaver",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+            "Soul Channel",
+            "Soul Heal"
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Psyker",
+            "Medic",
+            "Soul Weaver"
+        ],
+    },
+    {   # Voidscarred Starstorm Duellist
+        "opname":"Voidscarred Starstorm Duellist",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Fusion Pistol
+                "wpname":"Fusion Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":5,
+                "dmg2":3,
+                "wprule":[
+                    "Range 3",
+                    "Devastating 3",
+                    "Piercing 2"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Fists
+                "wpname":"Fists",
+                "atk":3,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Quick on the Trigger"
+        ],
+        "opact":[
+            "Pistol Barrage"
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Starstorm Duellist"
+        ],
+    },
+    {   # Voidscarred Warrior
+        "opname":"Voidscarred Warrior",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+            {   # Shuriken Rifle
+                "wpname":"Shuriken Rifle",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+            {   # Fists
+                "wpname":"Fists",
+                "atk":3,
+                "hit":3,
+                "dmg1":2,
+                "dmg2":3,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Prowling Raiders"
+        ],
+        "opact":[
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Warrior"
+        ],
+    },
+    {   # Voidscarred Way Seeker
+        "opname":"Voidscarred Way Seeker",
+        "stats":{
+            "apl":2,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Freezing Grasp
+                "wpname":"Freezing Grasp",
+                "atk":4,
+                "hit":3,
+                "dmg1":1,
+                "dmg2":2,
+                "wprule":[
+                    "Psychic",
+                    "Severe",
+                    "Silent",
+                    "Stun"
+                ],
+            },
+            {   # Lightning Strike
+                "wpname":"Lightning Strike",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":3,
+                "wprule":[
+                    "Psychic",
+                    "2\" Devastating 2"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8"
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Witch Staff
+                "wpname":"Witch Staff",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":5,
+                "wprule":[
+                    "Psychic",
+                    "Shock"
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+            "Warp Fold",
+            "Warding Shield"
+        ],
+        "faction":"Corsair Voidscarred",
+        "keywords":[
+            "Aeldari",
+            "Anhrathe",
+            "Psyker",
+            "Way Seeker"
+        ],
+    },
     # Farstalker Kinband
     {   # Kroot Kill-broker
         "opname":"Kroot Kill-broker",
@@ -3283,6 +4374,346 @@ operatives = [
         "keywords":[
             "T'au Empire",
             "Warrior"
+        ],
+    },
+    # Void-dancer Troupe
+    {   # Lead Player
+        "opname":"Lead Player",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Fusion Pistol
+                "wpname":"Fusion Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":5,
+                "dmg2":3,
+                "wprule":[
+                    "Range 3",
+                    "Devastating 3",
+                    "Piercing 2"
+                ],
+            },
+            {   # Neuro Disruptor
+                "wpname":"Neuro Disruptor",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Range 8",
+                    "Piercing 1",
+                    "Stun"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Blade
+                "wpname":"Blade",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Severe"
+                ],
+            },
+            {   # Caress
+                "wpname":"Caress",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+            {   # Embrace
+                "wpname":"Embrace",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Brutal",
+                ],
+            },
+            {   # Kiss
+                "wpname":"Kiss",
+                "atk":5,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":7,
+                "wprule":[
+                ],
+            },
+            {   # Power Weapon
+                "wpname":"Power Weapon",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":6,
+                "wprule":[
+                    "Lethal 5"
+                ],
+            },
+        ],
+        "oprule":[
+            "Lead the Performance"
+        ],
+        "opact":[
+        ],
+        "faction":"Void-dancer Troupe",
+        "keywords":[
+            "Aeldari",
+            "Harlequin",
+            "Leader",
+            "Lead Player"
+        ],
+    },
+    {   # Death Jester
+        "opname":"Death Jester",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Shrieker Cannon [Focused]
+                "wpname":"Shrieker Cannon [Focused]",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending",
+                    "Heavy [Reposition Only]",
+                    "Humbling Cruelty"
+                ],
+            },
+            {   # Shrieker Cannon [Sweeping]
+                "wpname":"Shrieker Cannon [Sweeping]",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending",
+                    "Heavy [Dash Only]",
+                    "Torrent 2",
+                    "Humbling Cruelty"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Shrieker Blade
+                "wpname":"Shrieker Blade",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+        ],
+        "faction":"Void-dancer Troupe",
+        "keywords":[
+            "Aeldari",
+            "Harlequin",
+            "Death Jester"
+        ],
+    },
+    {   # Player
+        "opname":"Player",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":8,
+        },
+        "rweaps":[
+            {   # Fusion Pistol
+                "wpname":"Fusion Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":5,
+                "dmg2":3,
+                "wprule":[
+                    "Range 3",
+                    "Devastating 3",
+                    "Piercing 2"
+                ],
+            },
+            {   # Neuro Disruptor
+                "wpname":"Neuro Disruptor",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Range 8",
+                    "Piercing 1",
+                    "Stun"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Blade
+                "wpname":"Blade",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Severe"
+                ],
+            },
+            {   # Caress
+                "wpname":"Caress",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Rending"
+                ],
+            },
+            {   # Embrace
+                "wpname":"Embrace",
+                "atk":5,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Brutal",
+                ],
+            },
+            {   # Kiss
+                "wpname":"Kiss",
+                "atk":5,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":7,
+                "wprule":[
+                ],
+            },
+        ],
+        "oprule":[
+            "Luck of the Laughing God"
+        ],
+        "opact":[
+        ],
+        "faction":"Void-dancer Troupe",
+        "keywords":[
+            "Aeldari",
+            "Harlequin",
+            "Player"
+        ],
+    },
+    {   # Shadowseer
+        "opname":"Shadowseer",
+        "stats":{
+            "apl":3,
+            "move":7,
+            "save":4,
+            "wounds":9,
+        },
+        "rweaps":[
+            {   # Hallucinogen Grenade
+                "wpname":"Hallucinogen Grenade",
+                "atk":4,
+                "hit":3,
+                "dmg1":1,
+                "dmg2":1,
+                "wprule":[
+                    "Range 6",
+                    "Blast 2",
+                    "Lethal 5",
+                    "Seek",
+                    "Silent",
+                    "Stun"
+                ],
+            },
+            {   # Neuro Disruptor
+                "wpname":"Neuro Disruptor",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":5,
+                "wprule":[
+                    "Range 8",
+                    "Piercing 1",
+                    "Stun"
+                ],
+            },
+            {   # Shuriken Pistol
+                "wpname":"Shuriken Pistol",
+                "atk":4,
+                "hit":3,
+                "dmg1":3,
+                "dmg2":4,
+                "wprule":[
+                    "Range 8",
+                    "Rending"
+                ],
+            },
+        ],
+        "mweaps":[
+            {   # Miststave
+                "wpname":"Miststave",
+                "atk":4,
+                "hit":3,
+                "dmg1":4,
+                "dmg2":4,
+                "wprule":[
+                    "Shock"
+                ],
+            },
+        ],
+        "oprule":[
+        ],
+        "opact":[
+            "Fog of Dreams",
+            "Mirror of Minds"
+        ],
+        "faction":"Void-dancer Troupe",
+        "keywords":[
+            "Aeldari",
+            "Harlequin",
+            "Psyker",
+            "Shadowseer"
         ],
     },
     # Wrecka Krew

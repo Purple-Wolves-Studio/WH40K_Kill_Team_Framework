@@ -31,6 +31,83 @@ Required UI Elements:
 
 ### Change Log
 
+v0.18.06.25
+
+    - Frameworks
+
+        - Operative_Actions framework has been added.
+        
+        - Operative Data [Blades of Khaine]
+            - Dire Avenger Exarch
+            - Dire Avenger Warrior
+            - Howling Banshee Exarch
+            - Howling Banshee Warrior
+            - Striking Scorpion Exarch
+            - Striking Scorpion Warrior
+        
+        - Operative Data [Corsair Voidscarred]
+            - Voidscarred Felarch
+            - Voidscarred Fate Dealer
+            - Voidscarred Gunner
+            - Voidscarred Heavy Gunner
+            - Voidscarred Kurnathi
+            - Voidscarred Kurnite Hunter
+            - Voidscarred Shade Runner
+            - Voidscarred Soul Weaver
+            - Voidscarred Starstorm Duellist
+            - Voidscarred Warrior
+            - Voidscarred Way Seeker
+        
+        - Operative Data [Void-dancer Troupe]
+            - Lead Player
+            - Death Jester
+            - Player
+            - Shadowseer
+
+        - Operative Actions
+            - Breach
+            - Break Stuff
+            - Dakka Dash
+            - Fog of Dreams
+            - Get it Dun!
+            - Grappling Hook
+            - Listen In
+            - Mirror of Minds
+            - Pistol Barrage
+            - Soul Channel
+            - Soul Heal
+            - Warp Fold
+            - Warding Shield
+        
+        - Operative Rules
+            - Banshee Mask
+            - Blink Pack
+            - Camo Cloak
+            - Defence Tactics
+            - Erudite Hunter
+            - Exarch
+            - Faolchu's Bond
+            - Lead the Performance
+            - Luck of the Laughing God
+            - Mandiblasters
+            - One Step Ahead
+            - Prowling Raider
+            - Quick on the Trigger
+            - Shimmershield
+            - Slicing Attack
+            - Veteran Raider
+        
+        - Weapon Rules
+            - 2" Devastating 2
+            - Humbling Cruelty
+            - Psychic
+            - Range 3
+    
+    - Fixes
+
+        - Weapon Rules
+            - Corrected a typo in "Heavy [Dash Only]" name.
+
 v0.28.03.25
 
     - Frameworks

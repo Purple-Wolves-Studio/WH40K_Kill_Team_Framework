@@ -54,7 +54,10 @@ operatives = [
 actions = [
     {   # Action Name
         "actname":"",
-        "acttext":"",
+        "actcost":,
+        "acttext1":"",
+        "acttext2":"",
+        "actrule":"",
     },
 ]
 
