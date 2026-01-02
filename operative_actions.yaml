@@ -1,0 +1,198 @@
+actions: # List of operative actions
+  # --- Breach ---
+  - id: act_breach_3
+    name: "Breach"
+    cost: 1
+    type:
+    text: >
+      Place one of your Breach markers within this operative's control range as 
+      close as possible to a terrain feature within control range of it. Whenever 
+      an operative is within 1" of that marker, it treats parts of that terrain 
+      feature that are no more than 1" thick as Accessible terrain.
+    rule: >
+      This operative can perform this action during the Charge or Reposition action, 
+      and it can do so for 1 less AP during those actions. Any remaining move 
+      distance can be used after it does so.
+
+      This operative cannot perform this action while within control range of an enemy 
+      operative, or if a terrain feature isn't within its control range.
+  
+  # --- Break Stuff ---
+  - id: act_break_stuff_3
+    name: "Break Stuff"
+    cost: 1
+    type:
+    text: >
+      Select a terrain feature within this operative's control range. If it's an 
+      equipment terrain feature, remove it. Otherwise, place one of your Breach 
+      markers within this operative's control range as close as possible to that 
+      terrain feature. Whenever an operative is within 1" of that marker, it 
+      treats parts of that terrain feature that are no more than 1" thick as 
+      Accessible terrain.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy 
+      operative, or if a terrain feature isn't within its control range.
+
+  # --- Dakka Dash ---
+  - id: act_dakka_dash_3
+    name: "Dakka Dash"
+    cost: 1
+    type:
+    text: >
+      Perform a free Dash action and a free Shoot action with this operative in any order. 
+      You can only select a dakka shoota for that Shoot action.
+    rule: >
+      This operative cannot perform this action while it has a Conceal order, or while 
+      within control range of an enemy operative.
+
+  # --- Fog of Dreams ---
+  - id: act_fog_of_dreams_3
+    name: "Fog of Dreams"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select one ready enemy operative visible to this operative and roll one D6. 
+      Until the end of the turning point, that enemy operative cannot be activated or perform actions 
+      until it's the last enemy operative to be activated, or until your opponent has activated a number 
+      of enemy operatives after this action equal to the result of the D6 (whichever comes first).
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- Get it Dun! ---
+  - id: act_get_it_dun_3
+    name: "Get it Dun!"
+    cost: 1
+    type: "Support"
+    text: >
+      Select one other friendly Kommando operative [excluding Bomb Squig] 
+      visible to and within 6" of this operative. Until the end of that operative's next 
+      activation, add 1 to its APL stat.
+    rule: >
+      This operative cannot perform this action while within control range of 
+      an enemy operative, or while counteracting.
+
+  # --- Grappling Hook ---
+  - id: act_grappling_hook_3
+    name: "Grappling Hook"
+    cost: 1
+    type:
+    text: >
+      Select a visible point on a terrain feature for this operative. Remove this operative 
+      from the killzone and set it back up within 1" horizontally of that point in a location it can be 
+      placed, not within control range of enemy operatives, and with that point visible to it. This 
+      operative cannot perform the Operate Hatch action during this action.
+    rule: >
+      This action is treated as a Reposition action. This operative cannot perform this 
+      action while within control range of an enemy operative, or during an activation in which it 
+      performed the Charge or Fall Back action [or vice versa].
+
+  # --- Listen In ---
+  - id: act_listen_in_3
+    name: "Listen In"
+    cost: 1
+    type: "Support"
+    text: >
+      Select one other friendly Kommando operative [excluding Bomb Squig] 
+      visible to and within 6" of this operative. Until the end of that operative's next 
+      activation, add 1 to its APL stat.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- Mirror of Minds ---
+  - id: act_mirror_of_minds_3
+    name: "Mirror of Minds"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select one enemy operative that's a valid target for and within 8" of 
+      this operative. Both players roll five D6. Pair your dice with your opponent's dice based on 
+      matching results. For each matching pair, inflict D3 damage on that enemy operative [to a 
+      maximum of 8]. For example, if you rolled 6, 5, 5, 2, 1 and your opponent rolled 6, 5, 4, 3, 1, 
+      you would inflict 3D3 damage on that enemy operative.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- Photon Grenade Launcher ---
+  - id: act_proton_grenade_launcher_3
+    name: Photon Grenade Launcher
+    cost: 1
+    type: 
+    text: >
+      Select one enemy operative visible to this operative and roll one D6: on a 3+, 
+      until the end of that operative's next activation, subtract 2" from its Move stat
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- Pistol Barrage ---
+  - id: act_pistol_barrage_3
+    name: "Pistol Barrage"
+    cost: 1
+    type:
+    text: >
+      Perform two free Shoot actions with this operative (this takes precedence 
+      over action restrictions). You must select its fusion pistol for one action and its 
+      shuriken pistol for the other (in any order).
+    rule: >
+      This operative cannot perform this action while it has a Conceal order, or 
+      during an activation in which it performed the Shoot action (or vice versa).
+
+  # --- Soul Channel ---
+  - id: act_soul_channel_3
+    name: "Soul Channel"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select one other friendly Corsair Voidscarred operative visible to and 
+      within 6" of this operative. Until the end of that operative's next activation, add 1 to its APL stat.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- Soul Heal ---
+  - id: act_soul_heal_3
+    name: "Soul Heal"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select one friendly Corsair Voidscarred operative visible to and 
+      within 6" of this operative. That operative regains up to 2D3 lost wounds.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- System Jam ---
+  - id: act_system_jam_3
+    name: "System Jam"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select one enemy operative visible to this operative. Until the end of that operative's 
+      next activation, subtract 1 from its APL stat. Whenever this operative has a Conceal order, 
+      you must spend 1 additional AP to perform this action.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative
+
+  # --- Warp Fold ---
+  - id: act_warp_fold_3
+    name: "Warp Fold"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select two friendly Corsair Voidscarred operatives visible to and within 5" of 
+      this operative. Remove them both from the killzone and set them back up in each other's previous 
+      locations (in other words, swap their positions). If one of them performed the Charge, Fall Back 
+      or Reposition action during this turning point and the other is ready, the other cannot perform 
+      any of those actions in its activation during this turning point.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.
+
+  # --- Warding Shield ---
+  - id: act_warding_shield_3
+    name: "Warding Shield"
+    cost: 1
+    type: "Psychic"
+    text: >
+      Select one friendly Corsair Voidscarred operative visible to and within 6" of 
+      this operative. Until the start of this operative's next activation, until it's incapacitated or 
+      until it performs this action again (whichever comes first), the first time an attack dice inflicts 
+      Normal Dmg on that friendly operative, ignore that inflicted damage.
+    rule: >
+      This operative cannot perform this action while within control range of an enemy operative.

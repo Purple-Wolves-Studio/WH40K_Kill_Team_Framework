@@ -1,0 +1,244 @@
+faction: Hernkyn Yaegir
+faction_keywords: [Leagues of Votann]
+units: # List of units in the faction
+  # --- Yaegir Theyn ---
+  - id: hernkyn_yaegirs_yaegir_theyn_3
+    name: Yaegir Theyn
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Revolver
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8]
+      - name: Bolt Shotgun (Short Range)
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Range 6]
+      - name: Bolt Shotgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [2, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Plasma Knife
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Lethal 5]
+    rule: [Veteran Adventurer, Outright Conviction]
+    action: []
+    keyword: [Leader, Theyn]
+
+  # --- Yaegir Bladekyn ---
+  - id: hernkyn_yaegirs_yaegir_bladekyn_3
+    name: Yaegir Bladekyn
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Throwing Plasma Knife
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 6, Lethal 5, Limited 1, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Dual Plasma Knives
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Ceaseless, Lethal 5]
+    rule: [Stalker, Irrepressible Hardiness]
+    action: []
+    keyword: [Bladekyn]
+
+  # --- Yaegir Bombast ---
+  - id: hernkyn_yaegirs_yaegir_bombast_3
+    name: Yaegir Bombast
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Wroughtlock Revolvers
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 9, Ceaseless, Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Wroughtlock Negotiation, Brazen Killer]
+    action: []
+    keyword: [Bombast]
+  
+  # --- Yaegir Gunner ---
+  - id: hernkyn_yaegirs_yaegir_gunner_3
+    name: Yaegir Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: APM Launcher (Armour Piercing)
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Heavy (Reposition Only), Piercing 1, Bipod]
+      - name: APM Launcher (Breaching)
+        attack: 5
+        hit: 4
+        damage: [3, 5]
+        rule: [Blast 2, Heavy (Reposition Only), Bipod]
+      - name: APM Launcher (High Explosive)
+        attack: 5
+        hit: 4
+        damage: [2, 4]
+        rule: [Blast 3, Heavy (Reposition Only), Bipod]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gunner]
+  
+  # --- Yaegir Ironbraek ---
+  - id: hernkyn_yaegirs_yaegir_ironbraek_3
+    name: Yaegir Ironbraek
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Revolver
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Entrencher
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Minefield, HY-Pex Mines]
+    action: []
+    keyword: [Ironbraek]
+  
+  # --- Yaegir Riflekyn ---
+  - id: hernkyn_yaegirs_yaegir_riflekyn_3
+    name: Yaegir Riflekyn
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Magna-coil Rifle (Concealed)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Heavy, Piercing 1, Silent, Concealed Position]
+      - name: Magna-coil Rifle (Mobile)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Heavy (Reposition Only), Piercing 1]
+      - name: Magna-coil Rifle (Stationary)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Heavy, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Weavewerke Cloak]
+    action: []
+    keyword: [Riflekyn]
+  
+  # --- Yaegir Tracker ---
+  - id: hernkyn_yaegirs_yaegir_tracker_3
+    name: Yaegir Tracker
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: SiNR Handbow
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Silent]
+      - name: Throwing Hatchet
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 6, Limited 1, Rending, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Hatchet
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Pan Spectral Visor, Tracker]
+    action: []
+    keyword: [Tracker]
+  
+  # --- Yaegir Warrior ---
+  - id: hernkyn_yaegirs_yaegir_warrior_3
+    name: Yaegir Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Revolver
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Range 8]
+      - name: Bolt Shotgun (Short Range)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 6]
+      - name: Bolt Shotgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [2, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+      - name: Plasma Knife
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Lethal 5]
+    rule: [Intrepid]
+    action: []
+    keyword: [Warrior]

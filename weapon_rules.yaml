@@ -1,0 +1,427 @@
+rules: # List of weapon rules
+  # --- Accurate 1 ---
+  - id: wep_rule_accurate_1_3
+    name: "Accurate 1"
+    text: >
+      You can retain up to 1 attack dice as normal successes without rolling them.
+
+  # --- Balanced ---
+  - id: wep_rule_balanced_3
+    name: "Balanced"
+    text: >
+      You can re-roll one of your attack dice.
+
+  # --- Beam ---
+  - id: wep_rule_beam_3
+    name: "Beam"
+    text: >
+      Whenever this operative is shooting with this weapon, each retained 
+      critical success immediately inflicts D3 damage on each other operative along 
+      one (and only one) beam line (roll separately for each operative), but the target 
+      isn't affected. An operative is along a beam line if a targeting line can be drawn 
+      from this operative to its base, and that line crosses the base of the original 
+      target but doesn't cross Heavy terrain.
+
+  # --- Bipod ---
+  - id: wep_rule_bipod_3
+    name: "Bipod"
+    text: >
+      Whenever this operative is shooting with this weapon, if it hasn't moved 
+      during the activation, or if it's a counteraction, this weapon has the Ceaseless 
+      weapon rule. Note this operative isn't restricted from moving after shooting.
+
+  # --- Blast 1 ---
+  - id: wep_rule_blast_1_3
+    name: "Blast 1"
+    text: >
+      The target you select is the primary target. After shooting the primary target, 
+      shoot with this weapon against each secondary target in an order of your choice 
+      (roll each sequence separately). Secondary targets are other operatives visible to 
+      and within 1" of the primary target (they are all valid targets, regardless of a Conceal order). 
+      Secondary targets are in cover and obscured if the primary target was.
+
+  # --- Blast 2 ---
+  - id: wep_rule_blast_2_3
+    name: "Blast 2"
+    text: >
+      The target you select is the primary target. After shooting the primary target, 
+      shoot with this weapon against each secondary target in an order of your choice 
+      (roll each sequence separately). Secondary targets are other operatives visible to 
+      and within 2" of the primary target (they are all valid targets, regardless of a Conceal order). 
+      Secondary targets are in cover and obscured if the primary target was.
+
+  # --- Blast 3 ---
+  - id: wep_rule_blast_3_3
+    name: "Blast 3"
+    text: >
+      The target you select is the primary target. After shooting the primary target, 
+      shoot with this weapon against each secondary target in an order of your choice 
+      (roll each sequence separately). Secondary targets are other operatives visible to 
+      and within 3" of the primary target (they are all valid targets, regardless of a Conceal order). 
+      Secondary targets are in cover and obscured if the primary target was.
+
+  # --- Brutal ---
+  - id: wep_rule_brutal_3
+    name: "Brutal"
+    text: >
+      Your opponent can only block with critical successes.
+
+  # --- Ceaseless ---
+  - id: wep_rule_ceaseless_3
+    name: "Ceaseless"
+    text: >
+      You can re-roll any of your attack dice results of one result (e.g. results of 2).
+
+  # --- Concealed Position ---
+  - id: wep_rule_concealed_position_3
+    name: "Concealed Position"
+    text: >
+      This operative can only use this weapon the first time it's performing the 
+      Shoot action during the battle.
+
+  # --- Detonate ---
+  - id: wep_rule_detonate_3
+    name: "Detonate"
+    text: >
+      The first time you would inflict damage on an enemy operative with this 
+      weapon profile during the battle, inflict D6+6 damage on that enemy operative and 
+      each other operative within its control range if it's a normal success, or 2D6+6 damage 
+      if it's a critical success (roll separately for each). Then the action ends and you gain 
+      1 Wrecka point, plus 1 for each operative that was incapacitated during that action. 
+      Damage from this weapon rule cannot be ignored or reduced.
+
+  # --- Devastating 2 ---
+  - id: wep_rule_devastating_2_3
+    name: "Devastating 2"
+    text: >
+      Each retained critical success immediately inflicts 2 damage on the operative 
+      this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 2), 
+      inflict 2 damage on that operative and each other operative visible to and within that distance of it. 
+      Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
+
+  # --- 2" Devastating 2 ---
+  - id: wep_rule_2in_devastating_2_3
+    name: '2" Devastating 2'
+    text: >
+      Each retained critical success immediately inflicts 2 damage on the operative 
+      this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 2), 
+      inflict 2 damage on that operative and each other operative visible to and within that distance of it. 
+      Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
+
+  # --- Devastating 3 ---
+  - id: wep_rule_devastating_3_3
+    name: "Devastating 3"
+    text: >
+      Each retained critical success immediately inflicts 3 damage on the operative 
+      this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 3), 
+      inflict 3 damage on that operative and each other operative visible to and within that distance of it. 
+      Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
+
+  # --- Devastating 4 ---
+  - id: wep_rule_devastating_4_3
+    name: "Devastating 4"
+    text: >
+      Each retained critical success immediately inflicts 4 damage on the operative 
+      this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 4), 
+      inflict 4 damage on that operative and each other operative visible to and within that distance of it. 
+      Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
+  
+  # --- Explosive ---
+  - id: wep_rule_explosive_3
+    name: "Explosive"
+    text: >
+      This operative can perform the Shoot action with this weapon while 
+      within control range of an enemy operative. Don't select a valid target. 
+      Instead, this operative is always the primary target and cannot be in cover or obscured.
+
+  # --- Force Impact ---
+  - id: wep_rule_force_impact_3
+    name: "Force Impact"
+    text: >
+      Whenever this operative is fighting with this weapon, if it's 
+      performed the Charge action during the activation, this weapon has the Brutal weapon rule.
+
+  # --- Heavy ---
+  - id: wep_rule_heavy_3
+    name: "Heavy"
+    text: >
+      An operative cannot use this weapon in an activation in which it moved, 
+      and it cannot move in an activation in which it used this weapon. This weapon rule 
+      has no effect on preventing the Guard action.
+
+  # --- Heavy (Dash Only) ---
+  - id: wep_rule_heavy_dash_only_3
+    name: "Heavy (Dash Only)"
+    text: >
+      An operative cannot use this weapon in an activation in which it moved, 
+      and it cannot move in an activation in which it used this weapon. If the rule is 
+      Heavy (x only), where x is a move action, only that move is allowed, e.g. Heavy (Dash only). 
+      This weapon rule has no effect on preventing the Guard action.
+
+  # --- Heavy (Reposition Only) ---
+  - id: wep_rule_heavy_reposition_only_3
+    name: "Heavy (Reposition Only)"
+    text: >
+      An operative cannot use this weapon in an activation in which it moved, 
+      and it cannot move in an activation in which it used this weapon. If the rule is 
+      Heavy (x only), where x is a move action, only that move is allowed, e.g. Heavy (Dash only). 
+      This weapon rule has no effect on preventing the Guard action.
+
+  # --- Hot ---
+  - id: wep_rule_hot_3
+    name: "Hot"
+    text: >
+      After an operative uses this weapon, roll one D6: if the result is less than 
+      the weapon's Hit stat, inflict damage on that operative equal to the result multiplied 
+      by two. If it's used multiple times in one action (e.g. Blast), still only roll one D6.
+
+  # --- Humbling Cruelty ---
+  - id: wep_rule_humbling_cruelty_3
+    name: "Humbling Cruelty"
+    text: >
+      If the target of this weapon isn't incapacitated but any of your attack dice 
+      inflict damage, the target gains one of your Humbling Cruelty tokens (if it doesn't 
+      already have one). Whenever an enemy operative has one of your Humbling Cruelty tokens, 
+      worsen the Hit stat of its weapons by 1 and subtract 2" from its Move stat. This isn't 
+      cumulative with being injured. At the end of that enemy operative's next activation, 
+      remove its Humbling Cruelty token.
+
+  # --- Lethal 4 ---
+  - id: wep_rule_lethal_4_3
+    name: "Lethal 4"
+    text: >
+      Your successes equal to or greater than 4 are critical successes, e.g. Lethal 4+.
+
+  # --- Lethal 5 ---
+  - id: wep_rule_lethal_5_3
+    name: "Lethal 5"
+    text: >
+      Your successes equal to or greater than 5 are critical successes, e.g. Lethal 5+.
+
+  # --- Limited 1 ---
+  - id: wep_rule_limited_1_3
+    name: "Limited 1"
+    text: >
+      After an operative uses this weapon a number of times in the battle 
+      equal to 1, they no longer have it. If it's used multiple times in one action 
+      (e.g. Blast), treat this as one use.
+
+  # --- Neutron Bombardment ---
+  - id: wep_rule_neutron_bombardment_3
+    name: "Neutron Bombardment"
+    text: >
+      Place one of your Neutron Fallout markers within the primary target's control range.
+
+  # --- Neutron Fragment ---
+  - id: wep_rule_neutron_fragment_3
+    name: "Neutron Fragment"
+    text: >
+      If the target of this weapon isn't incapacitated but you resolve any 
+      attack dice, the target gains one of your Neutron Fragment tokens. In the Ready step 
+      of each Strategy phase, separately inflict D3 damage on each operative for each of 
+      your Neutron Fragment tokens it has.
+
+  # --- Piercing 1 ---
+  - id: wep_rule_piercing_1_3
+    name: "Piercing 1"
+    text: >
+      The defender collects 1 less defence dice.
+
+  # --- Piercing 2 ---
+  - id: wep_rule_piercing_2_3
+    name: "Piercing 2"
+    text: >
+      The defender collects 2 less defence dice.
+
+  # --- Piercing Crits 1 ---
+  - id: wep_rule_piercing_crits_1_3
+    name: "Piercing Crits 1"
+    text: >
+      The defender collects 1 less defence dice. This only comes into effect 
+      if you retain any critical successes.
+
+  # --- Psychic ---
+  - id: wep_rule_psychic_3
+    name: "Psychic"
+    text: >
+      This weapon rule denotes a psychic attack.
+
+  # --- Pulsa ---
+  - id: wep_rule_pulsa_3
+    name: "Pulsa"
+    text: >
+      Don't select a valid target. Instead, place your Pulsa marker visible 
+      to this operative, or on Vantage terrain of a terrain feature that's visible to 
+      this operative. That marker gains 1 Pulsa point, then roll attack dice: it gains 
+      1 additional Pulsa point for each success (to a maximum of 3 additional points). 
+      Separately inflict D3 damage on each operative wholly within x" of that marker, 
+      where x is that marker's Pulsa points. Then the action ends.
+
+  # --- Punishing ---
+  - id: wep_rule_punishing_3
+    name: "Punishing"
+    text: >
+      If you retain any critical successes, you can retain one of your fails 
+      as a normal success instead of discarding it.
+
+  # --- Range 3 ---
+  - id: wep_rule_range_3_3
+    name: 'Range 3"'
+    text: >
+      Only operatives within 3" of the active operative can be valid targets.
+
+  # --- Range 4 ---
+  - id: wep_rule_range_4_3
+    name: 'Range 4"'
+    text: >
+      Only operatives within 4" of the active operative can be valid targets.
+
+  # --- Range 6 ---
+  - id: wep_rule_range_6_3
+    name: 'Range 6"'
+    text: >
+      Only operatives within 6" of the active operative can be valid targets.
+
+  # --- Range 8 ---
+  - id: wep_rule_range_8_3
+    name: 'Range 8"'
+    text: >
+      Only operatives within 8" of the active operative can be valid targets.
+
+  # --- Range 9 ---
+  - id: wep_rule_range_9_3
+    name: 'Range 9"'
+    text: >
+      Only operatives within 9" of the active operative can be valid targets.
+  
+  # --- Range 12 ---
+  - id: wep_rule_range_12_3
+    name: 'Range 12"'
+    text: >
+      Only operatives within 12" of the active operative can be valid targets.
+
+  # --- Relentless ---
+  - id: wep_rule_relentless_3
+    name: "Relentless"
+    text: >
+      You can re-roll any of your attack dice.
+
+  # --- Rending ---
+  - id: wep_rule_rending_3
+    name: "Rending"
+    text: >
+      If you retain any critical successes, you can retain one of your 
+      normal successes as a critical success instead.
+
+  # --- Salvo ---
+  - id: wep_rule_salvo_3
+    name: "Salvo"
+    text: >
+      Select up to two valid targets. Shoot with this weapon against both 
+      of them in an order of your choice (roll each sequence separately).
+
+  # --- Saturate ---
+  - id: wep_rule_saturate_3
+    name: "Saturate"
+    text: >
+      The defender cannot retain cover saves.
+
+  # --- Seek ---
+  - id: wep_rule_seek_3
+    name: "Seek"
+    text: >
+      When selecting a valid target, operatives with a Conceal order cannot use 
+      terrain for cover. While this can allow operatives to be targeted (assuming they're visible), 
+      it doesn't remove their cover save (if any).
+
+  # --- Seek Light ---
+  - id: wep_rule_seek_light_3
+    name: "Seek Light"
+    text: >
+      When selecting a valid target, operatives with a Conceal order cannot use 
+      Light terrain for cover. While this can allow operatives to be targeted 
+      (assuming they're visible), it doesn't remove their cover save (if any).
+
+  # --- Severe ---
+  - id: wep_rule_severe_3
+    name: "Severe"
+    text: >
+      If you don't retain any critical successes, you can change one of your 
+      normal successes to a critical success. Any rules that take effect as a result of 
+      retaining a critical success (e.g. Devastating, Piercing Crits, etc.) still do.
+
+  # --- Shock ---
+  - id: wep_rule_shock_3
+    name: "Shock"
+    text: >
+      The first time you strike with a critical success in each sequence, 
+      also discard one of your opponent's unresolved normal successes (or one of their 
+      critical successes if there are none).
+
+  # --- Silent ---
+  - id: wep_rule_silent_3
+    name: "Silent"
+    text: >
+      An operative can perform the Shoot action with this weapon while it has a Conceal order.
+
+  # --- Skytorch ---
+  - id: wep_rule_skytorch_3
+    name: "Skytorch"
+    text: >
+      An operative can only use this weapon during an activation in 
+      which it performed the Reposition action with FLY. If it does, don't select 
+      a valid target. Instead, shoot against each operative within its torch zone 
+      (excluding operatives wholly underneath Vantage terrain); they aren't in cover 
+      or obscured. Roll each sequence separately in order of furthest operative to closest. 
+      The torch zone is the area between the operative's current and previous location. 
+      A 28mm round Skytorch marker can be temporarily placed underneath this operative before 
+      it moves to help determine this. Torrent 0" means you cannot select secondary targets 
+      outside of its torch zone, but this weapon still has the Torrent weapon rule for all other 
+      rules purposes, e.g. the Condensed Stronghold rule (see Killzone: Volkus, Kill Team Core Book).
+
+  # --- Smash ---
+  - id: wep_rule_smash_3
+    name: "Smash"
+    text: >
+      Whenever you strike, you can move the enemy operative in a straight line increment of up 
+      to 1". If you do, it must end the move further away from this operative and in a location it can be 
+      placed. Then move this operative in a straight line increment of up to 1", but it must end that move 
+      within that enemy operative's control range (if either isn't possible, you cannot move them).
+
+  # --- Stun ---
+  - id: wep_rule_stun_3
+    name: "Stun"
+    text: >
+      If you retain any critical successes, subtract 1 from the APL stat of the 
+      operative this weapon is being used against until the end of its next activation.
+
+  # --- Torrent 0 ---
+  - id: wep_rule_torrent_0_3
+    name: "Torrent 0"
+    text: >
+      Cannot select secondary targets, but this weapon still has the Torrent weapon rule 
+      for all other rules purposes.
+
+  # --- Torrent 1 ---
+  - id: wep_rule_torrent_1_3
+    name: "Torrent 1"
+    text: >
+      Select a valid target as normal as the primary target, then select any 
+      number of other valid targets within 1" of the first valid target as secondary targets. 
+      Shoot with this weapon against all of them in an order of your choice (roll each sequence separately).
+
+  # --- Torrent 2 ---
+  - id: wep_rule_torrent_2_3
+    name: "Torrent 2"
+    text: >
+      Select a valid target as normal as the primary target, then select any 
+      number of other valid targets within 2" of the first valid target as secondary targets. 
+      Shoot with this weapon against all of them in an order of your choice (roll each sequence separately).
+
+  # --- Warrior Instincts ---
+  - id: wep_rule_warrior_instincts_3
+    name: "Warrior Instincts"
+    text: >
+      Whenever this operative is shooting, if you don't spend 
+      Communion points during that sequence, its neutron blaster has the 
+      Accurate 1 weapon rule until the end of that sequence.

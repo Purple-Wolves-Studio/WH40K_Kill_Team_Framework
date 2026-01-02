@@ -1,0 +1,296 @@
+faction: Farstalker Kinband
+faction_keywords: [T'au Empire, Kroot]
+units: # List of units in the faction
+  # --- Kroot Kill-broker ---
+  - id: farstalker_kinband_kroot_kill-broker_3
+    name: Kroot Kill-broker
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Kroot Rifle
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Pulse Weapon
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Ritual Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Call The Kill, Victory Shriek]
+    action: []
+    keyword: [Leader, Kill-broker]
+
+  # --- Kroot Bow-hunter ---
+  - id: farstalker_kinband_kroot_bow-hunter_3
+    name: Kroot Bow-hunter
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Accelerator Bow (Fused Arrow)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing 1]
+      - name: Accelerator Bow (Glide Arrow)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Silent]
+      - name: Accelerator Bow (Voltaic Arrow)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Blast 1]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: [Energise]
+    keyword: [Bow-hunter]
+
+  # --- Kroot Cold-blood ---
+  - id: farstalker_kinband_kroot_cold-blood_3
+    opname: Kroot Cold-blood
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Kroot Rifle
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Hardy, Cold-blooded]
+    action: []
+    keyword: [Cold-blood]
+
+  # --- Kroot Cut-skin ---
+  - id: farstalker_kinband_kroot_cut-skin_3
+    name: Kroot Cut-skin
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Cut-skin's Blades
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Ceaseless, Lethal 5]
+    rule: [Vicious Duellist, Savage Assault]
+    action: []
+    keyword: [Cut-skin]
+
+  # --- Kroot Heavy Gunner ---
+  - id: farstalker_kinband_kroot_heavy_gunner_3
+    name: Kroot Heavy Gunner
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Dvorgite Skinner
+        attack: 5
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 6, Heavy (Reposition Only), Piercing 2, Torrent 2]
+      - name: Londaxi Tribalest
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Heavy (Reposition Only), Piercing 1, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Heavy Gunner]
+
+  # --- Kroot Hound ---
+  - id: farstalker_kinband_kroot_hound_3
+    opname: Kroot Hound
+    stats:
+      apl: 2
+      move: 8
+      save: 5
+      wounds: 7
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ripping Fangs
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending]
+    rule: [Beast, Bad-tempered]
+    action: [Gather]
+    keyword: [Hound]
+
+  # --- Kroot Long-sight ---
+  - id: farstalker_kinband_kroot_long-sight_3
+    opname: Kroot Long-sight
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Kroot Hunting Rifle (Concealed)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Heavy, Devastating 3, Silent, Concealed Position]
+      - name: Kroot Hunting Rifle (Mobile)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Kroot Hunting Rifle (Stationary)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Heavy, Devastating 3]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    oprule: []
+    opact: [Long-sight]
+    keywords: [Long-sight]
+
+  # --- Kroot Pistolier ---
+  - id: farstalker_kinband_kroot_pistolier_3
+    opname: Kroot Pistolier
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Dual Kroot Pistols (Focused)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Ceaseless, Lethal 5]
+      - name: Dual Kroot Pistols (Salvo)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Salvo]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Quick Draw]
+    action: []
+    keyword: [Pistolier]
+
+  # --- Kroot Stalker ---
+  - id: farstalker_kinband_kroot_stalker_3
+    opname: Kroot Stalker
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Kroot Scattergun
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+    melee: # List: Melee weapon profiles
+      - name: Stalker's Blade
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Balanced, Rending]
+    rule: [Stalker]
+    action: [Stealth Attack]
+    keyword: [Stalker]
+
+  # --- Kroot Tracker ---
+  - id: farstalker_kinband_kroot_tracker_3
+    opname: Kroot Tracker
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Kroot Rifle
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: [Marked For The Hunt, From The Eye Above]
+    keyword: [Tracker]
+
+  # --- Kroot Warrior ---
+  - id: farstalker_kinband_kroot_warrior_3
+    opname: Kroot Warrior
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Kroot Rifle
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: []
+      - name: Kroot Scattergun
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Ready for Anything]
+    action: []
+    keyword: [Warrior]

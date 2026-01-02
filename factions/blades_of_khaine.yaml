@@ -1,0 +1,206 @@
+faction: Blades of Khaine
+faction_keywords: [Aeldari, Asuryani]
+units: # List of units in the faction
+  # --- Dire Avenger Exarch ---
+  - id: blades_khaine_dire_avenger_exarch_3
+    name: Dire Avenger Exarch
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Catapult
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Twin Shuriken Catapult
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Ceaseless, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Diresword
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5, Rending]
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [2, 4]
+        rule: []
+      - name: Gun Butts
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Defence Tactics, Exarch, Shimmershield]
+    action: []
+    keyword: [Leader, Dire Avenger, Exarch]
+
+  # --- Dire Avenger Warrior ---
+  - id: blades_khaine_dire_avenger_warrior_3
+    opname: Dire Avenger Warrior
+    stats:
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 8
+    rweaps:
+      - wpname: Shuriken Catapult
+        atk: 4
+        hit: 3
+        dmg: [3, 4]
+        wprule: [Rending]
+    mweaps:
+      - wpname: Fists
+        atk: 4
+        hit: 3
+        dmg: [2, 4]
+        wprule: []
+    oprule: [Defence Tactics]
+    opact: []
+    keywords: [Dire Avenger, Warrior]
+
+  # --- Howling Banshee Exarch ---
+  - id: blades_khaine_howling_banshee_exarch_3
+    name: Howling Banshee Exarch
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Triskele [Throw]
+        attack: 4
+        hit: 3
+        damage: [2, 3]
+        rule: [Range 8, Rending, Torrent 2]
+    melee: # List: Melee weapon profiles
+      - name: Executioner
+        attack: 5
+        hit: 3
+        damage: [3, 7]
+        rule: [Lethal 5]
+      - name: Mirrorswords
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Ceaseless, Lethal 5]
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+      - name: Triskele [Slice]
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Banshee Mask, Exarch]
+    action: []
+    keyword: [Leader, Howling Banshee, Exarch]
+
+  # --- Howling Banshee Warrior ---
+  - id: blades_khaine_howling_banshee_warrior_3
+    name: Howling Banshee Warrior
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Banshee Mask]
+    action: []
+    keyword: [Howling Banshee, Warrior]
+
+  # --- Striking Scorpion Exarch ---
+  - id: blades_khaine_striking_scorpion_exarch_3
+    name: Striking Scorpion Exarch
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Twin Shuriken Pistols
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8, Ceaseless, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Biting Blade
+        attack: 5
+        hit: 3
+        damage: [5, 6]
+        rule: [Rending]
+      - name: Scorpion's Claw and Chainsword
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Brutal, Lethal 5]
+      - name: Twin Chainswords
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Ceaseless, Rending]
+    rule: [Mandiblasters, Exarch]
+    action: []
+    keyword: [Leader, Striking Scorpion, Exarch]
+
+# --- Striking Scorpion Warrior ---
+  - id: blades_khaine_striking_scorpion_warrior_3
+    name: Striking Scorpion Warrior
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Chainsword
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Mandiblasters]
+    action: []
+    keyword: [Striking Scorpion, Warrior]

@@ -1,0 +1,391 @@
+faction: Pathfinders
+faction_keywords: [T'au Empire]
+units: # List of units in the faction
+  # --- Shas'ui Pathfinder ---
+  - id: pathfinders_shasui_pathfinder_3
+    name: Shas'ui Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Carbine
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Art of War]
+    action: [Markerlight]
+    keyword: [Leader, Shas'ui]
+
+  # --- Assault Grenadier Pathfinder ---
+  - id: pathfinders_assault_grenadier_pathfinder_3
+    name: Assault Grenadier Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Fusion Grenade
+        attack: 4
+        hit: 3
+        damage: [4, 3]
+        rule: [Range 6, Devastating 2, Limited 1, Piercing 2, Saturate]
+      - name: Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Grenadier Specialist]
+    action: [Markerlight]
+    keyword: [Assault Grenadier]
+
+  # --- Blooded Pathfinder ---
+  - id: pathfinders_blooded_pathfinder_3
+    name: Blooded Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Suppressed Pulse Carbine
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Silent]
+    melee: # List: Melee weapon profiles
+      - name: Bionic Arm
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Veteran]
+    action: [Markerlight]
+    keyword: [Blooded]
+
+  # --- Comms Specialist Pathfinder ---
+  - id: pathfinders_comms_specialist_pathfinder_3
+    name: Comms Specialist Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: [Markerlight, Signal]
+    keyword: [Comms Specialist]
+
+  # --- Drone Controller Pathfinder ---
+  - id: pathfinders_drone_controller_pathfinder_3
+    name: Drone Controller Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone Controller]
+    action: [Markerlight, Remote Pilot]
+    keyword: [Drone Controller]
+
+  # --- Marksman Pathfinder ---
+  - id: pathfinders_marksman_pathfinder_3
+    name: Marksman Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Marksman Rail Rifle (Standard)
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Devastating 2, Lethal 5, Piercing 1]
+      - name: Marksman Rail Rifle (Dart Round)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Piercing 1, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Inertial Dampener]
+    action: []
+    keyword: [Marksman]
+
+  # --- Medical Technician Pathfinder ---
+  - id: pathfinders_medical_technician_pathfinder_3
+    name: Medical Technician Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Medic!]
+    action: [Markerlight, Medikit]
+    keyword: [Medic, Medical Technician]
+
+  # --- Shas'la Pathfinder ---
+  - id: pathfinders_shasla_pathfinder_3
+    name: Shas'la Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Group Activation, Fearless on the Frontline]
+    action: [Markerlight]
+    keyword: [Shas'la]
+
+  # --- Transpectral Interference Pathfinder ---
+  - id: pathfinders_transpectral_interference_pathfinder_3
+    name: Transpectral Interference Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: [Markerlight, Multi-Dimensional Vision, System Jam]
+    keyword: [Transpectral Interference]
+
+  # --- Weapons Expert Pathfinder ---
+  - id: pathfinders_weapons_expert_pathfinder_3
+    name: Weapons Expert Pathfinder
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Ion Rifle (Standard)
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Piercing Crits 1]
+      - name: Ion Rifle (Overcharge)
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Hot, Lethal 5, Piercing 1]
+      - name: Rail Rifle
+        attack: 4
+        hit: 4
+        damage: [4, 4]
+        rule: [Devastating 2, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Weapons Expert]
+
+  # --- MB3 Recon Drone ---
+  - id: pathfinders_mb3_recon_drone_3
+    name: MB3 Recon Drone
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 4
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Heavy (Reposition Only), Punishing]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Heavy (Reposition Only), Punishing, Torrent 1]
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Analyse, Drone]
+    action: [Markerlight]
+    keyword: [MB3 Recon, Drone]
+
+  # --- MV1 Gun Drone ---
+  - id: pathfinders_mv1_gun_drone_3
+    name: MV1 Gun Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Twin Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Ceaseless]
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone]
+    action: []
+    keyword: [MV1 Gun, Drone]
+
+  # --- MV4 Shield Drone ---
+  - id: pathfinders_mv4_shield_drone_3
+    name: MV4 Shield Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone, Shield Generator]
+    action: []
+    keyword: [MV4 Shield, Drone]
+
+  # --- MV7 Marker Drone ---
+  - id: pathfinders_mv7_marker_drone_3
+    name: MV7 Marker Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [High-intensity Markerlight, Drone]
+    action: [Markerlight]
+    keyword: [MV7 Marker, Drone]
+
+  # --- MV31 Pulse Accelerator Drone ---
+  - id: pathfinders_mv31_pulse_accelerator_drone_3
+    name: MV31 Pulse Accelerator Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone]
+    action: [Pulse Accelerator]
+    keyword: [MV31 Pulse Accelerator, Drone]
+
+  # --- MV33 Grav-Inhibitor Drone ---
+  - id: pathfinders_mv33_grav_inhibitor_drone_3
+    name: MV33 Grav-Inhibitor Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone, Grav-inhibitor]
+    action: []
+    keyword: [MV33 Grav-Inhibitor, Drone]

@@ -1,0 +1,180 @@
+faction: Vespid Stingwings
+faction_keywords: [T'au Empire]
+units: # List of units in the faction
+  # --- Vespid Strain Leader ---
+  - id: vespid_stingwings_vespid_strain_leader_3
+    name: Vespid Strain Leader
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Neutron Blaster
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Devastating 2]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Communion Helm, Commune]
+    action: []
+    keyword: [Strain, Leader]
+
+  # --- Oversight Drone ---
+  - id: vespid_stingwings_oversight_drone_3
+    name: Oversight Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 8
+      save: 2
+      wounds: 5
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    rule: [Evasive Drone]
+    action: [Aerial Guidance]
+    keyword: [Oversight, Drone]
+  
+  # --- Vespid Longsting ---
+  - id: vespid_stingwings_vespid_longsting_3
+    name: Vespid Longsting
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Neutron Rail Rifle (Standard)
+        attack: 4
+        hit: 4
+        damage: [4, 4]
+        rule: [Devastating 2, Neutron Fragment]
+      - name: Neutron Rail Rifle (Aimed)
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Devastating 2, Heavy (Dash Only), Lethal 5, Neutron Fragment]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Longsting]
+
+  # --- Vespid Shadestrain ---
+  - id: vespid_stingwings_vespid_shadestrain_3
+    name: Vespid Shadestrain
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Neutron Sting
+        attack: 4
+        hit: 4
+        damage: [3, 3]
+        rule: [Range 8, Devastating 2]
+      - name: Neutron Grenade
+        attack: 4
+        hit: 4
+        damage: [3, 3]
+        rule: [Range 6, Blast 2, Devastating 2, Limited 1, Saturate]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: # List: Special weapon traits (e.g., [Brutal, Lethal 5+])
+    rule: [Ghost Rig, Camouflaged]
+    action: []
+    keyword: [Shadestrain]
+
+  # --- Vespid Skyblast ---
+  - id: vespid_stingwings_vespid_skyblast_3
+    name: Vespid Skyblast
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Neutron Grenade Launcher
+        attack: 4
+        hit: 4
+        damage: [3, 3]
+        rule: [Range 8, Devastating 2]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Neutron Fallout]
+    action: []
+    keyword: [Skyblast]
+  
+  # --- Vespid Swarmguard ---
+  - id: vespid_stingwings_vespid_swarmguard_3
+    name: Vespid Swarmguard
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Flamer [Standard]
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 8, Saturate, Torrent 2]
+      - name: Flamer [Skytorch]
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Saturate, Torrent 0, Skytorch]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Swarmguard]
+
+  # --- Vespid Warrior ---
+  - id: vespid_stingwings_vespid_warrior_3
+    name: Vespid Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Neutron Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 3]
+        rule: [Devastating 2]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Warrior Instincts]
+    action: []
+    keyword: [Warrior]

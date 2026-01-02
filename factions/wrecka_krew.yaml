@@ -1,0 +1,190 @@
+faction: Wrecka Krew
+faction_keywords: [Ork]
+units: # List of units in the faction  
+  # --- Wrecka Boss Nob ---
+  - id: wrecka_krew_wrecka_boss_nob_3
+    name: Wrecka Boss Nob
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Rokkit Pistol
+        attack: 6
+        hit: 5
+        damage: [4, 5]
+        rule: [Range 8, Blast 1]
+      - name: Two Rokkit Pistols (Focused)
+        attack: 6
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 8, Blast 1, Ceaseless]
+      - name: Two Rokkit Pistols (Salvo)
+        attack: 6
+        hit: 5
+        damage: [4, 5]
+        rule: [Range 8, Blast 1, Salvo]
+    melee: # List: Melee weapon profiles
+      - name: Choppa
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+      - name: Smash Hammer
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Brutal]
+    rule: [Wrecka Boss]
+    action: []
+    keyword: [Leader, Boss Nob]
+  
+  # --- Wrecka Bomb Squig ---
+  - id: wrecka_krew_wrecka_bomb_squig_3
+    name: Wrecka Bomb Squig
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 5
+    ranged: # List: Ranged weapon profiles
+      - name: Explosives
+        attack: 6
+        hit: 4
+        damage: [4, 5]
+        rule: [Blast 1, Limited 1, Explosive]
+    melee: # List: Melee weapon profiles
+      - name: Bite
+        attack: 3
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    rule: [Stoopid, Boom!, Expendable]
+    action: []
+    keyword: [Bomb Squig]
+
+  # --- Breaka Boy Demolisha ---
+  - id: wrecka_krew_breaka_boy_demolisha_3
+    name: Breaka Boy Demolisha
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 12
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Tankhammer [Bash]
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+      - name: Tankhammer [Detonate]
+        attack: 4
+        hit: 3
+        damage: [8, 8]
+        rule: [Lethal 5, Limited 1, Detonate]
+    rule: [Reckless Temperament]
+    action: []
+    keyword: [Breaka Boy, Demolisha]
+  
+  # --- Breaka Boy Fighter ---
+  - id: wrecka_krew_breaka_boy_fighter_3
+    name: Breaka Boy Fighter
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 12
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Smash Hammer
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Brutal]
+    rule: []
+    action: [Break Stuff]
+    keyword: [Breaka Boy, Fighter]
+  
+  # --- Breaka Boy Krusha ---
+  - id: wrecka_krew_breaka_boy_krusha_3
+    name: Breaka Boy Krusha
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 12
+    ranged: [] # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Knucklebustas
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Brutal, Shock, Smash]
+    rule: [Armoured Up]
+    action: []
+    keyword: [Breaka Boy, Krusha]
+
+  # --- Tankbusta Gunner ---
+  - id: wrecka_krew_tankbusta_gunner_3
+    name: Tankbusta Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: "'Eavy Rokkit Launcha"
+        attack: 6
+        hit: 4
+        damage: [4, 5]
+        rule: [Blast 1, Heavy (Dash Only)]
+      - name: Rokkit Launcha
+        attack: 6
+        hit: 5
+        damage: [4, 5]
+        rule: [Blast 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Kompetitive Streak]
+    action: []
+    keyword: [Tankbusta, Gunner]
+
+  # --- Tankbusta Rokkiteer ---
+  - id: wrecka_krew_tankbusta_rokkiteer_3
+    name: Tankbusta Rokkiteer
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Pulse Rokkit
+        attack: 6
+        hit: 5
+        damage: [8, 8]
+        rule: [Heavy (Reposition Only), Limited 1, Pulsa]
+      - name: Rokkit Launcha
+        attack: 6
+        hit: 5
+        damage: [4, 5]
+        rule: [Blast 1]
+      - name: Rokkit Rack
+        attack: 6
+        hit: 5
+        damage: [4, 5]
+        rule: [Blast 2, Heavy (Reposition Only), Limited 1, Relentless]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Shokkwave]
+    action: []
+    keyword: [Breaka Boy, Fighter]

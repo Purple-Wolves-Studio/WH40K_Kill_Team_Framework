@@ -1,0 +1,296 @@
+faction: Kommandos
+faction_keywords: [Ork]
+units: # List of units in the faction
+  # --- Kommando Boss Nob ---
+  - id: kommandos_kommando_boss_nob_3
+    name: Kommando Boss Nob
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 5
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Slugga
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Big Choppa
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Punishing]
+      - name: Power Klaw
+        attack: 4
+        hit: 3
+        damage: [5, 7]
+        rule: [Brutal]
+    rule: []
+    action: [Get It Dun!]
+    keyword: [Leader, Boss Nob]
+
+  # --- Kommando Bomb Squig ---
+  - id: kommandos_kommando_bomb_squig_3
+    name: Kommando Bomb Squig
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 5
+    ranged:
+      - name: Explosives
+        attack: 6
+        hit: 4
+        damage: [4, 5]
+        rule: [Blast 1, Limited 1, Explosive]
+    melee:
+      - name: Bite
+        attack: 3
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    rule: [Boom!, Stoopid, Expendable]
+    action: []
+    keyword: [Bomb Squig]
+
+  # --- Kommando Boy ---
+  - id: kommandos_kommando_boy_3
+    name: Kommando Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Slugga
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Choppa
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Taktical Wot-notz]
+    action: []
+    keyword: [Boy]
+
+  # --- Kommando Breacha Boy ---
+  - id: kommandos_kommando_breacha_boy_3
+    name: Kommando Breacha Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Slugga
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Breacha Ram
+        attack: 4
+        hit: 4
+        damage: [5, 5]
+        rule: [Brutal, Severe, Shock]
+    rule: []
+    action: [Breach]
+    keyword: [Breacha Boy]
+
+  # --- Kommando Burna Boy ---
+  - id: kommandos_kommando_burna_boy_3
+    name: Kommando Burna Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Burna (Standard)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8, Saturate, Torrent 2]
+      - name: Burna (Deluge)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 4, Saturate, Seek Light, Torrent 0]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Burna Boy]
+
+  # --- Kommando Comms Boy ---
+  - id: kommandos_kommando_comms_boy_3
+    name: Kommando Comms Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Shokka Pistol
+        attack: 6
+        hit: 4
+        damage: [1, 0]
+        rule: [Range 8, Devastating 2, Severe, Stun]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [I Got a Plan, Ladz]
+    action: [Listen In]
+    keyword: [Comms Boy]
+
+  # --- Kommando Dakka Boy ---
+  - id: kommandos_kommando_dakka_boy_3
+    name: Kommando Dakka Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Dakka Shoota (Short Range)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 6, Ceaseless]
+      - name: Dakka Shoota (Long Range)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: [Dakka Dash]
+    keyword: [Dakka Boy]
+
+  # --- Kommando Grot ---
+  - id: kommandos_kommando_grot_3
+    name: Kommando Grot
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 5
+    ranged: # List: Ranged weapon profiles
+      - name: Grot Choppa
+        attack: 3
+        hit: 5
+        damage: [1, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Grot Choppa
+        attack: 3
+        hit: 5
+        damage: [1, 4]
+        rule: []
+    rule: [Sneaky Zogger]
+    action: [Grappling Hook]
+    keyword: [Grot]
+
+  # --- Kommando Rokkit Boy ---
+  - id: kommandos_kommando_rokkit_boy_3
+    name: Kommando Rokkit Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Rokkit Launcha (Aimed)
+        attack: 6
+        hit: 4
+        damage: [4, 5]
+        rule: [Blast 1, Ceaseless, Heavy (Dash Only)]
+      - name: Rokkit Launcha (Mobile)
+        attack: 6
+        hit: 4
+        damage: [4, 5]
+        rule: [Blast 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Rokkit Boy]
+
+  # --- Kommando Slasha Boy ---
+  - id: kommandos_kommando_slasha_boy_3
+    name: Kommando Slasha Boy
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Throwing Knives
+        attack: 4
+        hit: 3
+        damage: [2, 5]
+        rule: [Range 6, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Twin Choppas
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Ceaseless, Lethal 5]
+    rule: [Dat All You Got?]
+    action: []
+    keyword: [Slasha Boy]
+
+  # --- Kommando Snipa Boy ---
+  - id: kommandos_kommando_snipa_boy_3
+    name: Kommando Snipa Boy
+    stats:
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Scoped Big Shoota (Concealed)
+        attack: 5
+        hit: 3
+        damage: [3, 3]
+        rule: [Devastating 2, Heavy, Silent, Concealed Position]
+      - name: Scoped Big Shoota (Stationary)
+        attack: 5
+        hit: 3
+        damage: [3, 3]
+        rule: [Devastating 2, Heavy]
+      - name: Scoped Big Shoota (Sweeping)
+        attack: 5
+        hit: 3
+        damage: [3, 4]
+        rule: [Heavy (Dash Only), Torrent 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Snipa Boy]

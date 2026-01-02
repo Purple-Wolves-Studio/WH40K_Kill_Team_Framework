@@ -1,0 +1,168 @@
+faction: Void-dancer Troupe
+faction_keywords: [Aeldari, Harlequin]
+units: # List of units in the faction
+    # --- Lead Player ---
+  - id: void-dancer_troupe_lead_player_3
+    name: Lead Player
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Fusion Pistol
+        attack: 4
+        hit: 3
+        damage: [5, 3]
+        rule: [Range 3, Devastating 3, Piercing 2]
+      - name: Neuro Disruptor
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Piercing 1, Stun]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Severe]
+      - name: Caress
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+      - name: Embrace
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Brutal]
+      - name: Kiss
+        attack: 5
+        hit: 3
+        damage: [3, 7]
+        rule: []
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Lead the Performance]
+    action: []
+    keyword: [Leader, Lead Player]
+
+  # --- Death Jester ---
+  - id: void-dancer_troupe_death_jester_3
+    name: Death Jester
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Shrieker Cannon (Focused)
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending, Heavy (Reposition Only), Humbling Cruelty]
+      - name: Shrieker Cannon (Sweeping)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending, Heavy (Dash Only), Torrent 2, Humbling Cruelty]
+    melee: # List: Melee weapon profiles
+      - name: Shrieker Blade
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending]
+    rule: []
+    action: []
+    keyword: [Death Jester]
+  
+  # --- Player ---
+  - id: void-dancer_troupe_player_3
+    name: Player
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Fusion Pistol
+        attack: 4
+        hit: 3
+        damage: [5, 3]
+        rule: [Range 3, Devastating 3, Piercing 2]
+      - name: Neuro Disruptor
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Piercing 1, Stun]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Blade
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Severe]
+      - name: Caress
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+      - name: Embrace
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Brutal]
+      - name: Kiss
+        attack: 5
+        hit: 3
+        damage: [3, 7]
+        rule: []
+    rule: [Luck of the Laughing God]
+    action: []
+    keyword: [Player]
+  
+  # --- Shadowseer ---
+  - id: void-dancer_troupe_shadowseer_3
+    name: Shadowseer
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Hallucinogen Grenade
+        attack: 4
+        hit: 3
+        damage: [1, 1]
+        rule: [Range 6, Blast 2, Lethal 5, Seek, Silent, Stun]
+      - name: Neuro Disruptor
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Piercing 1, Stun]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Miststave
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Shock]
+    rule: []
+    action: [Fog of Dreams, Mirror of Minds]
+    keyword: [Psyker, Shadowseer]

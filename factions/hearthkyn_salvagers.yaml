@@ -1,0 +1,356 @@
+faction: Hearthkyn Salvager
+faction_keywords: [Leagues of Votann]
+units: # List of units in the faction
+  # --- Hearthkyn Theyn ---
+  - id: hearthkyn_salvager_theyn_3
+    name: Hearthkyn Theyn
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Accurate 1]
+      - name: Autoch-pattern Bolter
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Accurate 1]
+      - name: Bolt Revolver
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8]
+      - name: EtaCarn Plasma Pistol
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Ion Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+      - name: Ion Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Piercing Crits 1]
+    melee:
+      - name: Concussion Gauntlet
+        attack: 4
+        hit: 4
+        damage: [5, 7]
+        rule: [Brutal, Shock]
+      - name: Plasma Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Eye of the Ancestors, Weavefield Crest]
+    action: []
+    keyword: [Leader, Theyn]
+
+  # --- Hearthkyn Dozr ---
+  - id: hearthkyn_salvager_dozr_3
+    name: Hearthkyn Dozr
+    stats:
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged:
+      - name: Autoch-pattern Bolt Pistol
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8, Accurate 1]
+    melee:
+      - name: Concussion Knux
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Ceaseless, Lethal 5, Shock]
+    rule: [Brawler]
+    action: [Knux Smash]
+    keyword: [Dozr]
+
+  # --- Hearthkyn Field Medic ---
+  - id: hearthkyn_salvager_field_medic_3
+    name: Hearthkyn Field Medic
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Revolver
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Plasma Knife
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Lethal 5]
+    rule: [Medic!]
+    action: [Medikit]
+    keyword: [Medic, Field Medic]
+
+  # --- Hearthkyn Grenadier ---
+  - id: hearthkyn_salvager_grenadier_3
+    name: Hearthkyn Grenadier
+    stats:
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolt Pistol
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8, Accurate 1]
+      - name: C8 HX Charge
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Range 4, Blast 1, Heavy (Reposition Only), Limited 1, Piercing 1, Saturate]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Grenadier]
+    action: [Vayr-3 Utility Grenade]
+    keyword: [Grenadier]
+
+  # --- Hearthkyn Gunner ---
+  - id: hearthkyn_salvager_gunner_3
+    name: Hearthkyn Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: EtaCarn Plasma Beamer
+        attack: 4
+        hit: 4
+        damage: [5, 6]
+        rule: [Piercing 1, Beam]
+      - name: HYLas Auto Rifle
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Ceaseless, Rending]
+      - name: HYLas Rotary Cannon [Focused]
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Ceaseless, Heavy (Reposition Only), Saturate]
+      - name: HYLas Rotary Cannon [Sweeping]
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Ceaseless, Heavy (Reposition Only), Saturate, Torrent 1]
+      - name: L7 Missile Launcher [Blast]
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Blast 2]
+      - name: L7 Missile Launcher [Focused]
+        attack: 4
+        hit: 4
+        damage: [5, 6]
+        rule: [Piercing 1]
+      - name: Magna Rail Rifle
+        attack: 4
+        hit: 4
+        damage: [4, 2]
+        rule: [Devastating 3, Heavy (Dash Only), Piercing 2]
+    melee:
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gunner]
+
+  # --- Hearthkyn Jump Pack Warrior ---
+  - id: hearthkyn_salvager_jump_pack_warrior_3
+    name: Hearthkyn Jump Pack Warrior
+    stats:
+      apl: 2
+      move: 8
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolt Pistol
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8, Accurate 1]
+    melee: # List: Melee weapon profiles
+      - name: Plasma Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5, Force Impact]
+    rule: [Jump Pack]
+    action: []
+    keyword: [Jump Pack Warrior]
+
+  # --- Hearthkyn Kinlynk ---
+  - id: hearthkyn_salvager_kinlynk_3
+    name: Hearthkyn Kinlynk
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolter
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Accurate 1]
+      - name: Ion Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: [Signal, System Jam]
+    keyword: [Kinlynk]
+
+  # --- Hearthkyn Kognitaar ---
+  - id: hearthkyn_salvager_kognitaar_3
+    name: Hearthkyn Kognitaar
+    stats:
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolter
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Accurate 1]
+      - name: Ion Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Tactician]
+    action: [Accelerated Appraisal]
+    keyword: [Kognitaar]
+
+  # --- Hearthkyn Lokatr ---
+  - id: hearthkyn_salvager_lokatr_3
+    name: Hearthkyn Lokatr
+    stats:
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolter
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Accurate 1]
+      - name: Ion Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: [Spot, Pan Spectral Scan]
+    keyword: [Lokatr]
+
+  # --- Hearthkyn Lugger ---
+  - id: hearthkyn_salvager_lugger_3
+    name: Hearthkyn Lugger
+    stats:
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged:
+      - name: Autoch-pattern Bolter
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Accurate 1]
+      - name: Ion Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+    melee:
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Well Supplied, I've Got It]
+    action:
+    keyword: [Lugger]
+
+  # --- Hearthkyn Warrior ---
+  - id: hearthkyn_salvager_warrior_3
+    name: Hearthkyn Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autoch-pattern Bolter
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Accurate 1]
+      - name: Ion Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Secure Salvage]
+    action: []
+    keyword: [Warrior]

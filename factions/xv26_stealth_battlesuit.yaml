@@ -1,0 +1,284 @@
+faction: XV26 Stealth Battlesuit
+faction_keyword: [T'au Empire]
+units: # List of units in the faction
+  # --- XV26 Shas'vre ---
+  - id: xv26_stealth_battlesuit_shasvre_3
+    name: XV26 Shas'vre
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Torrent 1]
+      - name: Fusion Blaster (Short Range)
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Fusion Blaster (Long Range)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 12, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Pulse Pistol (Point-blank)
+        attack: 3
+        hit: 4
+        damage: [4, 5]
+        rule: [Accurate 1]
+    rule: [XV26 Drone Controller, For the Greater Good]
+    action: []
+    keyword: [Leader, Shas'vre]
+  
+  # --- XV26 Designator ---
+  - id: xv26_stealth_battlesuit_designator_3
+    name: XV26 Designator
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Torrent 1]
+      - name: Fusion Blaster (Short Range)
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Fusion Blaster (Long Range)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 12, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Markerlight]
+    action: []
+    keyword: [Designator]
+
+  # --- XV26 Infiltrator ---
+  - id: xv26_stealth_battlesuit_infiltrator_3
+    name: XV26 Infiltrator
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Torrent 1]
+      - name: Fusion Blaster (Short Range)
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Fusion Blaster (Long Range)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 12, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Covert Protocols]
+    action: []
+    keyword: [Infiltrator]
+
+  # --- XV26 Liberator ---
+  - id: xv26_stealth_battlesuit_liberator_3
+    name: XV26 Liberator
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Torrent 1]
+      - name: EMP Bomb
+        attack: 5
+        hit: 3
+        damage: [2, 2]
+        rule: [Range 4, Blast 2, Devastating 1, Heavy (Reposition Only), Lethal 4, Limited 1, Saturate]
+      - name: Fusion Blaster (Short Range)
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Fusion Blaster (Long Range)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 12, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Grenadier]
+    action: []
+    keyword: [Liberator]
+  
+  # --- XV26 Lodestar ---
+  - id: xv26_stealth_battlesuit_lodestar_3
+    name: XV26 Lodestar
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Torrent 1]
+      - name: Fusion Blaster (Short Range)
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Fusion Blaster (Long Range)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 12, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Electrochaff Launcher, Homing Beacon]
+    action: []
+    keyword: [Lodestar]
+  
+  # --- XV26 Neutraliser ---
+  - id: xv26_stealth_battlesuit_neutraliser_3
+    name: XV26 Neutraliser
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 12
+    ranged: # List: Ranged weapon profiles
+      - name: Burst Cannon (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+      - name: Burst Cannon (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Torrent 1]
+      - name: Fusion Blaster (Short Range)
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Fusion Blaster (Long Range)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 12, Piercing 1]
+    melee:
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Multispectrum Sensor Package]
+    action: [System Jam]
+    keyword: [Neutraliser]
+
+  # --- MV15 Gun Drone ---
+  - id: xv26_stealth_battlesuit_mv15_gun_drone_3
+    name: MV15 Gun Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Twin Pulse Carbine
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Ceaseless]
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone]
+    action: [Photon Grenade Launcher]
+    keyword: [MV15 Gun, Drone]
+  
+  # --- MV75 Marker Drone ---
+  - id: xv26_stealth_battlesuit_mv75_marker_drone_3
+    name: MV75 Marker Drone
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+    melee: # List: Melee weapon profiles
+      - name: Ram
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: [Drone, Markerlight]
+    action: []
+    keyword: [MV75 Marker, Drone]

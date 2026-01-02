@@ -1,0 +1,346 @@
+faction: Corsair Voidscarred
+faction_keywords: [Aeldari, Anhrathe]
+units: # List of units in the faction
+  # --- Voidscarred Felarch ---
+  - id: corsair_voidscarred_felarch_3
+    name: Voidscarred Felarch
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Neuro Disruptor
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Piercing 1, Stun]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Shuriken Rifle
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Veteran Raider, One Step Ahead]
+    action: []
+    keyword: [Leader, Felarch]
+
+  # --- Voidscarred Fate Dealer ---
+  - id: corsair_voidscarred_fate_dealer_3
+    name: Voidscarred Fate Dealer
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Ranger Long Rifle (Mobile)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Ranger Long Rifle (Stationary)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Heavy, Silent]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+    rule: [Camo Cloak]
+    action: []
+    keyword: [Fate Dealer]
+
+  # --- Voidscarred Gunner ---
+  - id: corsair_voidscarred_gunner_3
+    name: Voidscarred Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Blaster
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing 2]
+      - name: Shredder
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending, Torrent 2]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gunner]
+
+  # --- Voidscarred Heavy Gunner ---
+  - id: corsair_voidscarred_heavy_gunner_3
+    name: Voidscarred Heavy Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Cannon (Focused)
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Heavy (Dash Only, Rending]
+      - name: Shuriken Cannon (Sweeping)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Rending, Torrent 1]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Wraithcannon
+        attack: 4
+        hit: 3
+        damage: [6, 3]
+        rule: [Devastating 4, Heavy (Dash Only), Piercing 2]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Heavy Gunner]
+
+  # --- Voidscarred Kurnathi ---
+  - id: corsair_voidscarred_kurnathi_3
+    name: Voidscarred Kurnathi
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Dual Power Weapons
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Blademaster, Bladed Stance]
+    action: []
+    keyword: [Kurnathi]
+
+  # --- Voidscarred Kurnite Hunter ---
+  - id: corsair_voidscarred_kurnite_hunter_3
+    name: Voidscarred Kurnite Hunter
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Faolchu
+        attack: 4
+        hit: 3
+        damage: [1, 2]
+        rule: [Rending, Saturate, Seek Light, Silent]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Faolchu's Bond, Erudite Hunter]
+    action: []
+    keyword: [Kurnite Hunter]
+
+  # --- Voidscarred Shade Runner ---
+  - id: corsair_voidscarred_shade_runner_3
+    name: Voidscarred Shade Runner
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Throwing Blades
+        attack: 4
+        hit: 3
+        damage: [2, 4]
+        rule: [Range 6, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Hekatarii Blades
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Ceaseless, Lethal 5]
+    rule: [Blink Pack, Slicing Attack]
+    action: []
+    keyword: [Shade Runner]
+
+  # --- Voidscarred Soul Weaver ---
+  - id: corsair_voidscarred_soul_weaver_3
+    name: Voidscarred Soul Weaver
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: []
+    action: [Soul Channel, Soul Heal]
+    keyword: [Psyker, Medic, Soul Weaver]
+
+  # --- Voidscarred Starstorm Duellist ---
+  - id: corsair_voidscarred_starstorm_duellist_3
+    name: Voidscarred Starstorm Duellist
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Fusion Pistol
+        attack: 4
+        hit: 3
+        damage: [5, 3]
+        rule: [Range 3, Devastating 3, Piercing 2]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+    rule: [Quick on the Trigger]
+    action: [Pistol Barrage]
+    keyword: [Starstorm Duellist]
+
+  # --- Voidscarred Warrior ---
+  - id: corsair_voidscarred_warrior_3
+    name: Voidscarred Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+      - name: Shuriken Rifle
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+    rule: [Prowling Raiders]
+    action: []
+    keyword: [Warrior]
+
+  # --- Voidscarred Way Seeker ---
+  - id: corsair_voidscarred_way_seeker_3
+    name: Voidscarred Way Seeker
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Freezing Grasp
+        attack: 4
+        hit: 3
+        damage: [1, 2]
+        rule: [Psychic, Severe, Silent, Stun]
+      - name: Lightning Strike
+        attack: 4
+        hit: 3
+        damage: [4, 3]
+        rule: [Psychic, 2" Devastating 2]
+      - name: Shuriken Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Witch Staff
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Psychic, Shock]
+    rule: []
+    action: [Warp Fold, Warding Shield]
+    keyword: [Psyker, Way Seeker]

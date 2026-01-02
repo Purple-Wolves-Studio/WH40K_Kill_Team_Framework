@@ -1,0 +1,725 @@
+rules: # List of operative rules
+  # --- Analyse ---
+  - id: op_rule_analyse_3
+    name: "Analyse"
+    text: >
+      Whenever this operative performs the Markerlight action, each other enemy operative 
+      that's both visible to this operative and within 3" of the enemy operative you selected for that 
+      action also gains one of your Markerlight tokens.
+
+  # --- Armoured Up ---
+  - id: op_rule_armoured_up_3
+    name: "Armoured Up"
+    text: >
+      Whenever an enemy operative is shooting this operative, or this operative is 
+      fighting or retaliating, your opponent cannot retain attack dice results of less than 
+      6 as critical successes (e.g. as a result of the Lethal, Rending or Severe weapon rules).
+
+  # --- Bad-tempered ---
+  - id: op_rule_bad_tempered_3
+    name: "Bad-tempered"
+    text: >
+      Whenever an enemy operative performs the Fight action, if this operative is a valid 
+      operative to fight against, you can force them to select this operative to fight 
+      against instead. Whenever an enemy operative ends the Charge action within control 
+      range of another friendly FARSTALKER KINBAND operative within 3" of this operative, 
+      if this operative isn't within control range of enemy operatives, this operative 
+      can immediately perform a free Charge action, but must end that move within 
+      control range of that enemy operative.
+
+  # --- Banshee Mask ---
+  - id: op_rule_banshee_mask_3
+    name: "Banshee Mask"
+    text: >
+      Whenever this operative is fighting, worsen the Hit stat of the enemy 
+      operative's melee weapons by 1. This isn't cumulative with being injured.
+
+  # --- Beast ---
+  - id: op_rule_beast_3
+    name: "Beast"
+    text: >
+      This operative cannot perform any actions other than Charge, Dash, 
+      Fall Back, Fight, Gather, Guard, Reposition, Pick Up Marker and Place Marker. 
+      It cannot use any weapons that aren't on its datacard.
+
+  # --- Blademaster ---
+  - id: op_rule_blademaster_3
+    name: "Blademaster"
+    text: >
+      This operative can perform the Dash action during an activation in which it performed 
+      the Charge action, but can only use any remaining move distance it had from that Charge action 
+      (to a maximum of 3").
+
+  # --- Bladed Stance ---
+  - id: op_rule_bladed_stance_3
+    name: "Bladed Stance"
+    text: >
+      Whenever this operative is fighting or retaliating, you can resolve one of your 
+      successes before the normal order. If you do, that success must be used to block.
+
+  # --- Blink Pack ---
+  - id: op_rule_blink_pack_3
+    name: "Blink Pack"
+    text: >
+      Whenever this operative performs the Charge, Fall Back or Reposition action, it can 
+      warp jump. If it does, don't move it. Instead, remove it from the killzone and set it back up 
+      wholly within 7" horizontally of its original location (in Killzone: Gallowdark, this distance 
+      can be measured through Wall terrain). It must be set up in a location it can be placed, and unless 
+      it's the Charge action, it cannot be set up within control range of an enemy operative. This operative 
+      cannot warp jump during the same activation in which it performed the Dash action (or vice versa).
+
+  # --- Boom! ---
+  - id: op_rule_boom_3
+    name: "Boom!"
+    text: >
+      If this operative is incapacitated during a battle in which it 
+      hasn't used its explosives, roll one D6, or two D6 if you wish. If any result 
+      is a 4+, this operative performs a free Shoot action with its explosives 
+      before it's removed from the killzone.
+
+  # --- Brawler ---
+  - id: op_rule_brawler_3
+    name: "Brawler"
+    text: >
+      Whenever this operative is fighting or retaliating; enemy operatives cannot assist. 
+      If it's incapacitated, you can strike the enemy operative in that sequence with one of your 
+      unresolved successes before it's removed from the killzone.
+
+  # --- Brazen Killer ---
+  - id: op_rule_brazen_killer_3
+    name: "Brazen Killer"
+    text: >
+      Whenever this operative incapacitates an enemy operative with its 
+      wroughtlock revolvers, roll one D6 separately for each other enemy operative 
+      visible to and within 2" of that enemy operative: if the result is higher 
+      than that other enemy operative's APL stat, subtract 1 from its APL stat 
+      until the end of its next activation.
+
+  # --- Call The Kill ---
+  - id: op_rule_call_the_kill_3
+    name: "Call The Kill"
+    text: >
+      STRATEGIC GAMBIT. Select one enemy operative to be your mark for the turning point. 
+      Whenever a friendly FARSTALKER KINBAND operative is shooting against, fighting against or 
+      retaliating against your mark, that friendly operative's weapons have the Balanced weapon rule. 
+      Whenever your mark is incapacitated, you can select a new enemy operative to be your mark for 
+      the turning point (and can continue to do so during this turning point).
+
+  # --- Camouflaged ---
+  - id: op_rule_camouflaged_3
+    name: "Camouflaged"
+    text: >
+      Whenever an operative is shooting this operative, ignore the Piercing weapon rule 
+      and all cover saves are retained as critical successes. This rule has no effect if this operative 
+      isn't selected as the valid target, e.g. if it's a secondary target from the Blast weapon rule.
+
+  # --- Camo Cloak ---
+  - id: op_rule_camo_cloak_3
+    name: "Camo Cloak"
+    text: >
+      Whenever an operative is shooting this operative, ignore the Saturate weapon rule, 
+      and if you can retain any cover saves, you can retain one additional cover save, or you can 
+      retain one cover save as a critical success instead. This isn't cumulative with improved cover 
+      saves from Vantage terrain.
+
+  # --- Cold-blooded ---
+  - id: op_rule_cold_blooded_3
+    name: "Cold-blooded"
+    text: >
+      Whenever this operative is shooting against, fighting against 
+      or retaliating against a wounded enemy operative, this operative's weapons 
+      have the Lethal 5+ weapon rule; if that enemy operative is also injured, 
+      this operative's weapons also have the Rending weapon rule.
+  
+  # --- Commune ---
+  - id: op_rule_commune_3
+    name: "Commune"
+    text: >
+      When selecting your operatives for the battle, also select one Vespid Stingwing strategy ploy.
+      Whenever this operative is in the killzone and not within control range of enemy operatives, 
+      that ploy costs 0 CP.
+
+  # --- Communion Helm ---
+  - id: op_rule_communion_helm_3
+    name: "Communion Helm"
+    text: >
+      Once during each of this operative's activations, you can spend 1 Communion point for free.
+  
+  # --- Covert Protocols ---
+  - id: op_rule_covert_protocols_3
+    name: "Covert Protocols"
+    text: >
+       This operative can counteract regardless of its order, but if it has a Conceal order 
+       during that counteraction, it cannot perform any actions other than Pick Up Marker, 
+       Place Marker or mission actions.
+
+  # --- Dat All You Got? ---
+  - id: op_rule_dat_all_you_got_3
+    name: "Dat All You Got?"
+    text: >
+      After this operative fights or retaliates, if it wasn't incapacitated, 
+      you can inflict D3 damage on the enemy operative in that sequence.
+
+  # --- Defence Tactics ---
+  - id: op_rule_defence_tactics_3
+    name: "Defence Tactics"
+    text: >
+      Whenever this operative contests an objective marker or one of your 
+      mission markers, or whenever it's shooting an enemy operative that does, this 
+      operative's weapons have the Balanced weapon rule.
+
+  # --- Drone ---
+  - id: op_rule_drone_3
+    name: "Drone"
+    text: >
+      This operative can only perform Charge, Dash, Fall Back, Fight, Reposition, and Shoot actions.
+      It cannot use any other weapons.
+      When determining control of an objective marker, treat this operative's APL stat as 1 lower.
+      When determining what is visible to this operative, the round disc at the top is its head.
+
+  # --- Electrochaff Launcher ---
+  - id: op_rule_electrochaff_launcher_3
+    name: "Electrochaff Launcher"
+    text: >
+      Once per turning point, when an enemy operative is performing the Shoot action and your opponent 
+      selects a valid target (excluding DRONE), you can use this rule, providing this operative isn't 
+      within control range of enemy operatives. If you do, until the end of that action, whenever an 
+      enemy operative is shooting a friendly XV26 STEALTH BATTLESUIT operative that's both visible to 
+      and within 3" of this operative and more than 2" from that enemy operative:
+
+      Ignore the Piercing weapon rule.
+      That friendly operative is obscured
+  
+  # --- Erudite Hunter ---
+  - id: op_rule_erudite_hunter_3
+    name: "Erudite Hunter"
+    text: >
+      STRATEGIC GAMBIT. Select one enemy operative within 9" of this operative. 
+      Once during this turning point, after that enemy operative performs an action in which 
+      it moves during its activation, you can interrupt that activation to use this rule. 
+      If you do, this operative can immediately perform either a free Reposition action 
+      (it cannot end that move further from that enemy operative), or a free Charge action 
+      (you can change its order to do so, and it must end that move within control range of 
+      that enemy operative).
+
+  # --- Evasive Drone ---
+  - id: op_rule_evasive_drone_3
+    name: "Evasive Drone"
+    text: >
+      This operative can only perform Aerial Guidance, Charge, Dash, Fall Back, 
+      Fight, and Reposition. When determining control of objective markers, treat this 
+      operative's APL stat as 1 lower. When determining what's visible to this operative, 
+      the round disc at the top is its head. When this operative has a Conceal order and 
+      is in cover, it cannot be selected as a valid target, taking precedence over all 
+      other rules. When an operative is shooting this operative, ignore the Piercing weapon rule.
+
+  # --- Exarch ---
+  - id: op_rule_exarch_3
+    name: "Exarch"
+    text: >
+      This operative can perform two Fight or two Shoot actions during its activation.
+
+  # --- Expendable ---
+  - id: op_rule_expendable_3
+    name: "Expendable"
+    text: >
+      This operative is ignored for your opponent's kill/elimination op 
+      (when it's incapacitated, and when determining your starting number of operatives). 
+      It's also ignored for victory conditions that require operatives to 'escape', 'survive' 
+      or be incapacitated (if it escapes/survives/is incapacitated, determining how many operatives 
+      must escape/survive/be incapacitated, etc.).
+
+  # --- Eye of the Ancestors ---
+  - id: op_rule_eye_of_the_ancestors_3
+    name: "Eye of the Ancestors"
+    text: >
+      STRATEGIC GAMBIT. Select one enemy operative, or up to two 
+      enemy operatives if three or more friendly HEARTHKYN SALVAGER operatives 
+      are incapacitated. Each of those enemy operatives gains one of your Grudge tokens.
+
+  # --- Faolchu's Bond ---
+  - id: op_rule_faolchu_bond_3
+    name: "Faolchu's Bond"
+    text: >
+      The first time during each turning point that this operative is retaliating, 
+      if it's ready, in the Resolve Attack Dice step of that sequence, you resolve the first 
+      attack dice [i.e. defender instead of attacker].
+
+  # --- Fearless on the Frontline ---
+  - id: op_rule_fearless_on_the_frontline_3
+    name: "Fearless on the Frontline"
+    text: >
+      This operative can perform the Markerlight action while within control range of an enemy 
+      operative, taking precedence over the Markerlight action's normal conditions. In addition, 
+      this operative can perform the Fall Back action for 1 less AP.
+  
+  # --- For the Greater Good ---
+  - id: op_rule_for_the_greater_good_3
+    name: "For the Greater Good"
+    text: >
+      Whenever determining the value of Accurate X for the Kauyon faction rule, if this operative 
+      is in the killzone, add 1 to the result if 2 or more friendly XV26 STEALTH BATTLESUIT 
+      operatives (excluding DRONE) are incapacitated (to a maximum of Accurate 3). Note that you 
+      must have a minimum of Accurate 1 to use this rule.
+
+  # --- Ghost Rig ---
+  - id: op_rule_ghost_rig_3
+    name: "Ghost Rig"
+    text: >
+      While this operative has a Conceal order, your opponent cannot select it as a 
+      valid target unless it's within 6" of the operative trying to target it. Note that this rule 
+      has no effect if this operative isn't selected as the valid target, e.g. if it's a secondary 
+      target from the Blast weapon rule.
+
+  # --- Grenadier ---
+  - id: op_rule_grenadier_3
+    name: "Grenadier"
+    text: >
+      This operative can use frag, krak, smoke and stun grenades 
+      (see universal equipment). Doing so doesn't count towards any limited 
+      uses you have (i.e. if you also select those grenades from equipment 
+      for other operatives). Whenever this operative is using a frag or krak 
+      grenade, improve the Hit stat of that weapon by 1.
+
+  # --- Hardy ---
+  - id: op_rule_hardy_3
+    name: "Hardy"
+    text: >
+      Whenever an attack dice would inflict Critical Dmg on this operative, 
+      you can choose for that attack dice to inflict Normal Dmg instead.
+
+  # --- High-intensity Markerlight ---
+  - id: op_rule_high_intensity_markerlight_3
+    name: "High-intensity Markerlight"
+    text: >
+      When this operative uses Markerlight, the selected enemy operative gains two Markerlight tokens.
+  
+  # --- Homing Beacon ---
+  - id: op_rule_homing_beacon_3
+    name: "Homing Beacon"
+    text: >
+       This operative is carrying your Homing Beacon marker. Operatives (excluding DRONE) can perform 
+       the Pick Up Marker action on that marker. The first time an enemy operative performs the 
+       Pick Up Marker action on your Homing Beacon marker, discard that marker (remove it from the battle).
+
+       In the Ready step of each Strategy phase, when you gain CP, if your Homing Beacon marker is in the 
+       killzone, roll one D6 if it's more than 6" from your drop zone; roll two D6 instead if it's within 
+       your opponent’s territory; roll three D6 instead if it's within 6" of your opponent’s drop zone. 
+       If any result is a 4+, you gain one additional CP.
+
+  # --- HY-Pex Mines ---
+  - id: op_rule_hy_pex_mines_3
+    name: "HY-Pex Mines"
+    text: >
+      Whenever one of your reverse-side down Minefield markers is both within an 
+      enemy operative's control range and not within a friendly HERNKYN YAEGIR operative's 
+      control range, flip the marker over. If it's a blank, there's no effect. If it's a 
+      HY-Pex mine, inflict 3 damage on that enemy operative and roll one D6: if the result is 
+      less than that enemy operative's Save stat, inflict additional damage on it equal to the 
+      dice result; regardless of the result, if it isn't incapacitated, end its action (if any), 
+      even if that action's effects aren't fulfilled. If it cannot be placed, move it the minimum 
+      amount to do so. Regardless, that marker isn't removed.
+
+  # --- I Got a Plan, Ladz ---
+  - id: op_rule_i_got_a_plan_ladz_3
+    name: "I Got a Plan, Ladz"
+    text: >
+      Once during each of this operative's activations, it can 
+      perform the Pick Up Marker, Place Marker or a mission action for 1 less AP.
+
+  # --- Inertial Dampener ---
+  - id: op_rule_inertial_dampener_3
+    name: "Inertial Dampener"
+    text: >
+      You can ignore any changes to the Hit stat of this operative's Marksman Rail Rifle.
+
+  # --- Intrepid ---
+  - id: op_rule_intrepid_3
+    name: "Intrepid"
+    text: >
+      Whenever you spend a Resourceful point for this operative, the following 
+      take precedence; if you add 1 to its APL stat, it lasts until the start of its next 
+      activation instead, and if it regains lost wounds, it regains up to 4 instead.
+
+  # --- Irrepressible Hardiness ---
+  - id: op_rule_irrepressible_hardiness_3
+    name: "Irrepressible Hardiness"
+    text: >
+      If this operative is incapacitated during the Fight action, you can 
+      strike the enemy operative in that sequence with one of your unresolved successes 
+      before this operative is removed from the killzone.
+
+  # --- I've Got It ---
+  - id: op_rule_ive_got_it_3
+    name: "I've Got It"
+    text: >
+      Once during each of this operative's activations, 
+      it can perform a mission action for 1 less AP.
+
+  # --- Jump Pack ---
+  - id: op_rule_jump_pack_3
+    name: "Jump Pack"
+    text: >
+      Whenever this operative performs an action in which it moves, it can FLY. 
+      If it does, don't move it. Instead, remove it from the killzone and set it back up 
+      wholly within a distance equal to its Move stat (or 3" if it was a Dash) of its original 
+      location, measuring the horizontal distance only (in a killzone that uses the close 
+      quarters rules, e.g. Killzone: Gallowdark, this distance cannot be measured over or through 
+      Wall terrain, and that operative cannot be set up on the other side of an access point, in other 
+      words it cannot FLY through an open hatchway). Note that it gains no additional distance when 
+      performing the Charge action. It must be set up in a location it can be placed, and unless it's 
+      the Charge action, it cannot be set up within control range of an enemy operative.
+  
+  # --- Kompetitive Streak ---
+  - id: op_rule_kompetitive_streak_3
+    name: "Kompetitive Streak"
+    text: >
+      Once per Shoot action, if this operative shoots an enemy operative that another 
+      friendly operative has already shot during this turning point, you gain 1 Wrecka 
+      point. Determine this when you select a valid target, but you can include any 
+      secondary targets when doing so (e.g. from the Blast weapon rule).
+
+  # --- Lead the Performance ---
+  - id: op_rule_lead_the_performance_3
+    name: "Lead the Performance"
+    text: >
+      Once per battle STRATEGIC GAMBIT. If this operative is in the killzone, change 
+      the ALLEGORY you selected for your kill team. Note that the ACCOLADE rule 
+      friendly operatives have will also change.
+
+  # --- Luck of the Laughing God ---
+  - id: op_rule_luck_of_the_laughing_god_3
+    name: "Luck of the Laughing God"
+    text: >
+      Once per turning point, you can use this rule. If you do, you can use a firefight 
+      ploy for 0CP if this is the specified VOID-DANCER TROUPE operative (including 
+      Command Re-roll if the attack or defence dice was rolled for this operative). 
+      You cannot select the same firefight ploy for this rule more than once per battle.
+
+  # --- Mandiblasters ---
+  - id: op_rule_mandiblasters_3
+    name: "Mandiblasters"
+    text: >
+      Whenever this operative performs the Fight action, at the start of the Roll 
+      Attack Dice step, you can use this rule. If you do, inflict 2 damage on the 
+      enemy operative in that sequence.
+  
+  # --- Markerlight ---
+  - id: op_rule_markerlight_3
+    name: "Markerlight"
+    text: >
+      Whenever an enemy operative is a valid target for this operative, or is visible to this 
+      operative and within 2" of your Ambush marker (see Prepare Ambush strategy ploy), it's marked. 
+      Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an operative that's marked, 
+      that friendly operative's ranged weapons have the Severe weapon rule. Note that an operative 
+      can be a valid target for this operative even if this operative isn't the active operative.
+
+  # --- Medic! ---
+  - id: op_rule_medic_3
+    name: "Medic!"
+    text: >
+      The first time during each turning point that another friendly HEARTHKYN 
+      SALVAGER operative would be removed from the killzone as incapacitated while 
+      visible to and within 3" of this operative, you can use this rule, providing 
+      neither this nor that operative is within control range of an enemy operative. 
+      If you do, that friendly operative isn't incapacitated and has 1 wound 
+      remaining. That friendly operative can then immediately perform a free Dash 
+      action, but must end that move within this operative's control range. Subtract 
+      1 from this and that operative's APL stats until the end of their next 
+      activations respectively, and if this rule was used during that friendly 
+      operative's activation, that activation ends. You cannot use this rule if 
+      this operative is incapacitated.
+
+  # --- Minefield ---
+  - id: op_rule_minefield_3
+    name: "Minefield"
+    text: >
+      You have five Minefield markers for the battle. On the reverse side, three of 
+      them are HY-Pex mines (see right) and two are blank. Set up all your Minefield 
+      markers as if they were one item of equipment. Each must be set up reverse-side 
+      down (their specifics aren't revealed), more than 2" from other markers, 
+      access points and Accessible terrain, and more than 6" from your opponent's 
+      drop zone and your other Minefield markers. Whenever this operative is readied, 
+      if it's not within control range of enemy operatives, you can reset one of 
+      your flipped Minefield markers that's within its control range (flip the 
+      marker back over again).
+  
+  # --- Multispectrum Sensor Package ---
+  - id: op_rule_multispectrum_sensor_package_3
+    name: "Multispectrum Sensor Package"
+    text: >
+       SUPPORT. Once per turning point, when an enemy operative visible to and within 8" of this 
+       operative is activated, you can use this rule. If you do, each friendly XV26 STEALTH BATTLESUIT 
+       operative within 3" of this operative can immediately do one of the following:
+
+       Perform a free Dash action (in an order of your choice).
+       Change its order.
+
+       Each friendly operative that performs the Dash action cannot end that move within 3" of an 
+       enemy operative. Note that a Comms Device from universal equipment only affects the second 
+       distance of this rule.
+
+  # --- Neutron Fallout ---
+  - id: op_rule_neutron_fallout_3
+    name: "Neutron Fallout"
+    text: >
+      Once during each enemy operative's activation, as soon as it's within 2" of 
+      one of your Neutron Fallout markers, inflict D3 damage on that operative 
+      (multiple markers aren't cumulative).
+
+  # --- One Step Ahead ---
+  - id: op_rule_one_step_ahead_3
+    name: "One Step Ahead"
+    text: >
+      Once per battle, after an enemy operative performs an action during its 
+      activation, if this operative is ready, you can use this rule. If you do, 
+      roll one D6: if the result is higher than that enemy operative's APL stat, 
+      you can interrupt that activation and immediately perform either a free Shoot 
+      or a free Fight action with this operative, but you cannot select any other 
+      enemy operative as a valid target or to fight against during that action 
+      [note that secondary targets from the Blast weapon rule can still be targeted]. 
+      After you perform that action, subtract 1 from this operative's APL stat 
+      until the end of its next activation.
+
+  # --- Outright Conviction ---
+  - id: op_rule_outright_conviction_3
+    name: "Outright Conviction"
+    text: >
+      The first time this operative would be incapacitated during the battle, it's 
+      not incapacitated, has 1 wound remaining and cannot be incapacitated for the 
+      remainder of the action. All remaining attack dice are discarded (including 
+      yours if this operative is fighting or retaliating).
+
+  # --- Pan Spectral Visor ---
+  - id: op_rule_pan_spectral_visor_3
+    name: "Pan Spectral Visor"
+    text: >
+      Whenever this operative is shooting an operative within 6" of it; this 
+      operative's weapons have the Seek Light weapon rule and that operative 
+      cannot be obscured.
+
+  # --- Quick Draw ---
+  - id: op_rule_quick_draw_3
+    name: "Quick Draw"
+    text: >
+      Once per turning point, when an enemy operative is performing the Shoot action 
+      and this operative is selected as the valid target (or if it will be a 
+      secondary target from the Blast weapon rule), if this operative is ready, 
+      you can interrupt that action to use this rule. If you do, this operative 
+      can immediately perform a free Shoot action with its dual Kroot pistols 
+      (focused) against that enemy operative (you can change its order to Engage 
+      to do so), but that enemy operative must be a valid target.
+
+  # --- Quick on the Trigger ---
+  - id: op_rule_quick_on_the_trigger_3
+    name: "Quick on the Trigger"
+    text: >
+      This operative can perform the Shoot action while within control range of an 
+      enemy operative. If it does, when selecting a valid target, you can only 
+      select an enemy operative within this operative's control range, and can do 
+      so even if other friendly operatives are within that enemy operative's 
+      control range.
+
+  # --- Ready for Anything ---
+  - id: op_rule_ready_for_anything_3
+    name: "Ready for Anything"
+    text: >
+      Once per turning point, during a friendly WARRIOR operative's activation, 
+      you can use the Meat, Piercing Shot or Toxin Shot rule (see faction equipment) 
+      for that operative. Doing so doesn't count for its once per turning point limit.
+
+  # --- Reckless Temperament ---
+  - id: op_rule_reckless_temperament_3
+    name: "Reckless Temperament"
+    text: >
+      Normal Dmg of 4 or more inflicts 1 less damage on this operative; if this 
+      operative has an Engage order, Critical Dmg of 4 or more also inflicts 
+      1 less damage on this operative.
+
+  # --- Savage Assault ---
+  - id: op_rule_savage_assault_3
+    name: "Savage Assault"
+    text: >
+      The first time this operative performs the Fight action during each of its 
+      activations, if neither it nor the enemy operative in that sequence is 
+      incapacitated, this operative can immediately perform a free Fight action 
+      afterwards, but you cannot select any other enemy operative to fight against 
+      during that action (and only if it's still valid to fight against). This 
+      takes precedence over action restrictions.
+
+  # --- Secure Salvage ---
+  - id: op_rule_secure_salvage_3
+    name: "Secure Salvage"
+    text: >
+      Whenever an enemy operative is shooting against, fighting against or 
+      retaliating against this operative, if this operative contests an objective 
+      marker or one of your mission markers, in the Resolve Attack Dice step, you 
+      can subtract 1 from the damage inflicted on it from one success.
+
+  # --- Shield Generator ---
+  - id: op_rule_shield_generator_3
+    name: "Shield Generator"
+    text: >
+      This operative ignores the Piercing weapon rule. Once per turn, when an attack 
+      die inflicts Normal Damage on this operative, you can ignore that inflicted 
+      damage. You can use Saviour Protocols for 0 CP if this is the specified 
+      Drone operative.
+
+  # --- Shimmershield ---
+  - id: op_rule_shimmershield_3
+    name: "Shimmershield"
+    text: >
+      Whenever an operative is shooting a friendly BLADES OF KHAINE operative that's 
+      visible to and within 2" of this operative, ignore the Piercing weapon rule. 
+      This operative only has this rule if you select the shimmershield weapon option.
+
+  # --- Slicing Attack ---
+  - id: op_rule_slicing_attack_3
+    name: "Slicing Attack"
+    text: >
+      Whenever this operative performs the Reposition action with a warp jump (see 
+      other side of card), you can use this rule. If you do, after it moves, draw 
+      an imaginary line 1mm in diameter and up to 7" long between it and its 
+      previous location. Note this doesn't have to be a straight line. Inflict 
+      D3+2 damage on one enemy operative that line crosses. You cannot inflict 
+      damage on an enemy operative that was not visible to this operative at the 
+      start of that action. A 28mm round marker can be temporarily placed 
+      underneath this operative before it moves to help determine this.
+
+  # --- Shokkwave ---
+  - id: op_rule_shokkwave_3
+    name: "Shokkwave"
+    text: >
+      Whenever an operative is within x" of your Pulsa marker (see left), worsen 
+      the Hit stat of its weapons by 1 and subtract 2" from its Move stat. This 
+      is cumulative with being injured. X is that marker's Pulsa points. In the 
+      Ready step of each Strategy phase, subtract 1 from your Pulsa marker's 
+      points. If a Pulsa marker ever has 0 points, remove it.
+
+  # --- Sneaky Zogger ---
+  - id: op_rule_sneaky_zogger_3
+    name: "Sneaky Zogger"
+    text: >
+      This operative cannot have an Engage order. Whenever this operative is in cover, 
+      it cannot be selected as a valid target, taking precedence over all other 
+      rules (e.g. Seek, Vantage terrain) except being within 2".
+
+  # --- Stalker ---
+  - id: op_rule_stalker_3
+    name: "Stalker"
+    text: >
+      This operative can perform the Charge action while it has a Conceal order.
+
+  # --- Stoopid ---
+  - id: op_rule_stoopid_3
+    name: "Stoopid"
+    text: >
+      In the Firefight phase, whenever you determine this operative's order, you 
+      cannot select Conceal. This operative cannot perform any actions other than 
+      Charge, Dash, Fight, Reposition and Shoot. It cannot use any weapons that 
+      aren't on its datacard.
+
+  # --- Tactician ---
+  - id: op_rule_tactician_3
+    name: "Tactician"
+    text: >
+      STRATEGIC GAMBIT. Place either your Attack or Defence marker in the killzone. 
+      Whenever a friendly HEARTHKYN SALVAGER operative is shooting against, 
+      fighting against or retaliating against an enemy operative that's within 3" 
+      of your Attack marker, you can re-roll one of your attack dice. Whenever an 
+      enemy operative is shooting a friendly HEARTHKYN SALVAGER operative that's 
+      within 3" of your Defence marker, you can re-roll one of your defence dice. 
+      In the Ready step of the next Strategy phase, remove that marker.
+
+  # --- Taktical Wot-notz ---
+  - id: op_rule_taktical_wot_notz_3
+    name: "Taktical Wot-notz"
+    text: >
+      You can do each of the following once per turning point: One friendly 
+      KOMMANDO BOY operative can perform the Smoke Grenade action. One friendly 
+      KOMMANDO BOY operative can perform the Stun Grenade action. The rules for 
+      these actions are found in universal equipment. Performing these actions 
+      using this rule doesn't count towards their action limits (i.e. if you also 
+      select those grenades from equipment).
+
+  # --- Tracker ---
+  - id: op_rule_tracker_3
+    name: "Tracker"
+    text: >
+      Whenever this operative is shooting against or fighting against an expended 
+      operative within 6" of it, this operative's weapons have the Punishing weapon rule.
+
+  # --- Veteran Adventurer ---
+  - id: op_rule_veteran_adventurer_3
+    name: "Veteran Adventurer"
+    text: >
+      In the Ready step of each Strategy phase after the first, if this operative 
+      isn't within control range of enemy operatives, you gain 1 Resourceful point.
+
+  # --- Veteran Raider ---
+  - id: op_rule_veteran_raider_3
+    name: "Veteran Raider"
+    text: >
+      This operative can perform a 1AP action for free during their activation as a 
+      result of the Aeldari Raiders rule [instead of the Dash action].
+
+  # --- Vicious Duellist ---
+  - id: op_rule_vicious_duellist_3
+    name: "Vicious Duellist"
+    text: >
+      Whenever this operative is fighting or retaliating, for each attack dice your 
+      opponent discards as a fail, inflict 1 damage on the enemy operative in that sequence.
+
+  # --- Victory Shriek ---
+  - id: op_rule_victory_shriek_3
+    name: "Victory Shriek"
+    text: >
+      Whenever your mark is incapacitated, you can select one friendly 
+      FARSTALKER KINBAND operative within 6" of this operative. Until the end of 
+      the battle, that operative's weapons have the Balanced weapon rule. Each 
+      friendly operative can only be selected for this rule once per battle.
+
+  # --- Weavefield Crest ---
+  - id: op_rule_weavefield_crest_3
+    name: "Weavefield Crest"
+    text: >
+      The first time an attack dice inflicts 4 or more damage on this operative 
+      during the battle, ignore that inflicted damage.
+
+  # --- Weavewerke Cloak ---
+  - id: op_rule_weavewerke_cloak_3
+    name: "Weavewerke Cloak"
+    text: >
+      Whenever an operative is shooting this operative; Ignore the Saturate weapon 
+      rule. If you can retain any cover saves, you can retain one additional cover 
+      save, or you can retain one cover save as a critical success instead. This 
+      isn't cumulative with improved cover saves from Vantage terrain.
+
+  # --- Well Supplied ---
+  - id: op_rule_well_supplied_3
+    name: "Well Supplied"
+    text: >
+      You can select one additional equipment option.
+
+  # --- Wrecka Boss ---
+  - id: op_rule_wrecka_boss_3
+    name: "Wrecka Boss"
+    text: >
+      Whenever this operative performs the Shoot or Fight action (excluding Guard), 
+      you gain 1 Wrecka point.
+
+  # --- Wroughtlock Negotiation ---
+  - id: op_rule_wroughtlock_negotiation_3
+    name: "Wroughtlock Negotiation"
+    text: >
+      STRATEGIC GAMBIT. This operative can immediately perform a free Shoot action 
+      (you can change its order to Engage to do so).
+  
+  # --- XV26 Drone Controller ---
+  - id: op_rule_xv26_drone_controller_3
+    name: "XV26 Drone Controller"
+    text: >
+      STRATEGIC GAMBIT whenever this operative is in the killzone. Select one friendly XV26 
+      STEALTH BATTLESUIT DRONE operative in the killzone. Until the end of that operative's 
+      next activation, ignore the first two bullet points of its Drone rule 
+      (this takes precedence over that rule).
