@@ -258,8 +258,8 @@ rules: # List of operative rules
     name: "For the Greater Good"
     text: >
       Whenever determining the value of Accurate X for the Kauyon faction rule, if this operative 
-      is in the killzone, add 1 to the result if 2 or more friendly XV26 STEALTH BATTLESUIT 
-      operatives (excluding DRONE) are incapacitated (to a maximum of Accurate 3). Note that you 
+      is in the killzone, add 1 to the result if 2 or more friendly XV26 Stealth Battlesuit 
+      operatives (excluding Drones) are incapacitated (to a maximum of Accurate 3). Note that you 
       must have a minimum of Accurate 1 to use this rule.
 
   # --- Ghost Rig ---
@@ -410,7 +410,7 @@ rules: # List of operative rules
     text: >
       Whenever an enemy operative is a valid target for this operative, or is visible to this 
       operative and within 2" of your Ambush marker (see Prepare Ambush strategy ploy), it's marked. 
-      Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an operative that's marked, 
+      Whenever a friendly XV26 Stealth Battlesuit operative is shooting an operative that's marked, 
       that friendly operative's ranged weapons have the Severe weapon rule. Note that an operative 
       can be a valid target for this operative even if this operative isn't the active operative.
 
@@ -719,7 +719,7 @@ rules: # List of operative rules
   - id: op_rule_xv26_drone_controller_3
     name: "XV26 Drone Controller"
     text: >
-      STRATEGIC GAMBIT whenever this operative is in the killzone. Select one friendly XV26 
-      STEALTH BATTLESUIT DRONE operative in the killzone. Until the end of that operative's 
+      Strategic Gambit whenever this operative is in the killzone. Select one friendly XV26 
+      Stealth Battlesuit Drone operative in the killzone. Until the end of that operative's 
       next activation, ignore the first two bullet points of its Drone rule 
       (this takes precedence over that rule).

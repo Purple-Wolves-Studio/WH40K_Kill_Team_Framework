@@ -2,11 +2,8 @@
 
     * Intended for use with a team building and information app.
     * Designed for multiple edition compatability.
-    
-    + Roadmap
-        - Convert all data sets to YAML.
-        - Provide up to date 3rd Edition operative data in 1Q26.
-        - Provide a full 3rd Edition framework in 2Q26.
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## Design Notes and Requirements
 
@@ -16,7 +13,10 @@
     + Unique IDs
       - All operatives, actions, rules, etc include a unique ID for accurate calls.
       - These IDs are designed to provide multi-edition compatability.
+
 </details>
+
+------------------------------------------------------------------------------------------------------------------------
 
 <details>
     <summary><b>UI Requirements</b></summary>
@@ -30,9 +30,32 @@
     
     + Certain Operative Actions have multiple rules:
         - Breach
+
 </details>
 
+------------------------------------------------------------------------------------------------------------------------
+
 ## Change Log
+
+<details>
+    <summary><b>v00.07</b></summary>
+
+    + ID Index file added.
+        + Operative ID table added.
+            - Added all existing operative IDs.
+        
+        + Operative Actions ID table add.
+            - Added all existing operative action IDs.
+        
+        + Operative Rules ID table added.
+            - Added all existing operative rule IDs.
+        
+        + Weapon Rule ID table added.
+            - Added all existing weapon rule IDs.
+
+</details>
+
+------------------------------------------------------------------------------------------------------------------------
 
 <details>
     <summary><b>v00.06</b></summary>
@@ -63,7 +86,10 @@
         - Devastating 4
         - Lethal 4
         - Range 12
+
 </details>
+
+------------------------------------------------------------------------------------------------------------------------
 
 <details>
     <summary><b>v00.05</b></summary>
@@ -134,7 +160,10 @@
         - Psychic
         - Range 3
         - Corrected a typo in "Heavy (Dash Only)" name.
+
 </details>
+
+------------------------------------------------------------------------------------------------------------------------
 
 <details>
     <summary><b>v00.03</b></summary>
@@ -265,7 +294,10 @@
         - Smash
         - Torrent 0
         - Torrent 2
+
 </details>
+
+------------------------------------------------------------------------------------------------------------------------
 
 <details>
     <summary><b>v00.02</b></summary>
@@ -293,7 +325,10 @@
         - Skytorch
         - Torrent 0
         - Warrior Instincts
+
 </details>
+
+------------------------------------------------------------------------------------------------------------------------
 
 <details>
     <summary><b>v00.01</b></summary>
@@ -353,4 +388,7 @@
         - Silent
         - Stun
         - Torrent 1
+
 </details>
+
+------------------------------------------------------------------------------------------------------------------------

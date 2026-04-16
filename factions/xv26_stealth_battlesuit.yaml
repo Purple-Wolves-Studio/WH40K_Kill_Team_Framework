@@ -30,6 +30,11 @@ units: # List of units in the faction
         hit: 4
         damage: [4, 5]
         rule: [Range 12, Piercing 1]
+      - name: Pulse Pistol (Ranged)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 8]
     melee: # List: Melee weapon profiles
       - name: Pulse Pistol (Point-blank)
         attack: 3
