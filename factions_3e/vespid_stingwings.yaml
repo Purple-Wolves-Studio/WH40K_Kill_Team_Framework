@@ -1,5 +1,6 @@
 faction: Vespid Stingwings
-faction_keywords: [T'au Empire]
+faction_id: vespid_stingwings_3
+faction_keyword: [T'au Empire]
 units: # List of units in the faction
   # --- Vespid Strain Leader ---
   - id: vespid_stingwings_vespid_strain_leader_3

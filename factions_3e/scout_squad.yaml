@@ -1,0 +1,207 @@
+faction: Scout Squad
+faction_id: scout_squad_3
+faction_keyword: [Scout Squad]
+units: # List of units in the faction
+  # --- Scout Sergeant ---
+  - id: scout_squad_scout_sergeant_3
+    name: Scout Sergeant
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 4
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Astartes Shotgun
+        attack: 4
+        hit: 2
+        damage: [4, 4]
+        rule: [Range 6]
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Boltgun
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Chainsword
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Astartes, Guidance and Experiance]
+    action: []
+    keyword: [Imperium, Adeptus Astartes, Leader, Sergeant]
+
+  # --- Scout Heavy Gunner ---
+  - id: scout_squad_scout_heavy_gunner_3
+    name: Scout Heavy Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Heavy Bolter [Focused]
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Piercing Crits 1]
+      - name: Heavy Bolter [Sweeping]
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Piercing Crits 1, Torrent 1]
+      - name: Missile Launcher [Frag]
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Blast 2, Heavy (Dash Only)]
+      - name: Missile Launcher [Krak]
+        attack: 4
+        hit: 3
+        damage: [5, 7]
+        rule: [Heavy (Dash Only), Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Imperium, Adeptus Astartes, Heavy Gunner]
+    
+  # --- Scout Hunter ---
+  - id: scout_squad_scout_hunter_3
+    name: Scout Hunter
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Grapnel Launcher, Grapnel Assault]
+    action: []
+    keyword: [Imperium, Adeptus Astartes, Hunter]
+    
+  # --- Scout Sniper ---
+  - id: scout_squad_scout_sniper_3
+    name: Scout Sniper
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Sniper Rifle [Mobile]
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Sniper Rifle [Stationary]
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Heavy (Dash Only), Silent]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Camo Cloak]
+    action: [Optics]
+    keyword: [Imperium, Adeptus Astartes, Sniper]
+    
+  # --- Scout Tracker ---
+  - id: scout_squad_scout_tracker_3
+    name: Scout Tracker
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Boltgun
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: [Track Enemy, Auspex Scan]
+    keyword: [Imperium, Adeptus Astartes, Tracker]
+    
+  # --- Scout Warrior ---
+  - id: scout_squad_scout_warrior_3
+    name: Scout Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Astartes Shotgun
+        attack: 4
+        hit: 2
+        damage: [4, 4]
+        rule: [Range 6]
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Boltgun
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Adaptive Equipment]
+    action: []
+    keyword: [Imperium, Adeptus Astartes, Warrior]

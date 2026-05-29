@@ -1,0 +1,166 @@
+faction: Chaos Cult
+faction_id: chaos_cult_3
+faction_keyword: [Chaos]
+units: # List of units in the faction
+  # --- Cult Demagogue ---
+  - id: chaos_cult_cult_demagogue_3
+    name: Cult Demagogue
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Diabolical Stave [Ranged]
+        attack: 4
+        hit: 4
+        damage: [3, 6]
+        rule: [Range 2, Stun]
+      - name: Pistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Diabolical Stave [Melee]
+        attack: 4
+        hit: 4
+        damage: [3, 6]
+        rule: [Shock, Stun]
+    rule: []
+    action: [Incite Slaughter, Incite Urgency]
+    keyword: [Leader, Dark Commune, Cult Demagogue]
+  
+  # --- Blessed Blade ---
+  - id: chaos_cult_blessed_blade_3
+    name: Blessed Blade
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: [] 
+    melee: # List: Melee weapon profiles
+      - name: Commune Blade
+        attack: 4
+        hit: 4
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Cut Them Down, Attuned In Purpose]
+    action: []
+    keyword: [Dark Commune, Blessed Blade]
+  
+  # --- Iconarch ---
+  - id: chaos_cult_iconarch_3
+    name: Iconarch
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Burning Censer
+        attack: 4
+        hit: 2
+        damage: [4, 4]
+        rule: [Range 5, Saturate, Torrent 2]
+      - name: Pistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Crude Melee Weapon
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Icon Bearer]
+    action: [Ruinous Icon]
+    keyword: [Dark Commune, Psyker, Iconarch]
+  
+  # --- Mindwitch ---
+  - id: chaos_cult_mindwitch_3
+    name: Mindwitch
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Infernal Gaze
+        attack: 5
+        hit: 3
+        damage: [0, 0] 
+        rule: [Psychic, Range 6, Devastating 2, Lethal 3]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    rule: []
+    action: [Heinous Deluge, Malefic Vortex]
+    keyword: [Dark Commune, Psyker, Mindwitch]
+  
+  # --- Chaos Devotee ---
+  - id: chaos_cult_chaos_devotee_3
+    name: Chaos Devotee
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Pistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Crude Melee Weapon
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Group Activation]
+    action: []
+    keyword: [Devotee]
+  
+  # --- Chaos Mutant ---
+  - id: chaos_cult_chaos_mutant_3
+    name: Chaos Mutant
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 7
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Blasphemous Appendages
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless, Rending]
+    rule: [Accursed Mutant, Unnatural Regeneration]
+    action: []
+    keyword: [Mutant]
+  
+  # --- Chaos Torment ---
+  - id: chaos_cult_chaos_torment_3
+    name: Chaos Torment
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 13
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Hideous Mutations
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Ceaseless, Rending]
+    rule: [Accursed Torment, Brute, Unnatural Regeneration]
+    action: []
+    keyword: [Torment]

@@ -1,5 +1,6 @@
 faction: Blades of Khaine
-faction_keywords: [Aeldari, Asuryani]
+faction_id: blades_khaine_3
+faction_keyword: [Aeldari, Asuryani]
 units: # List of units in the faction
   # --- Dire Avenger Exarch ---
   - id: blades_khaine_dire_avenger_exarch_3

@@ -1,5 +1,6 @@
 faction: Wrecka Krew
-faction_keywords: [Ork]
+faction_id: wrecka_krew_3
+faction_keyword: [Ork]
 units: # List of units in the faction  
   # --- Wrecka Boss Nob ---
   - id: wrecka_krew_wrecka_boss_nob_3

@@ -8,7 +8,8 @@ Use the following templates for any additions or updates to the framework.
 ```yaml
 
 faction: # String: Name of the Faction
-faction_keyword: # List: Core tags shared by all units (e.g., [Ork] or [Aeldari])
+faction_id: # Unique Alphanumeric ID for referencing in unit files
+faction_keyword: [] # List: Core tags shared by all units (e.g., [Ork] or [Aeldari])
 units: # List of units in the faction
   # --- Operative Name ---
   - id: # String: Unique alphanumeric ID for indexing/searching
@@ -22,17 +23,17 @@ units: # List of units in the faction
       - name: # String: Weapon name (Add entire data set per profile)
         attack: # Integer: Number of attack dice rolled
         hit: # Integer: Weapon Skill (the result needed to hit)
-        damage: # List [Int, Int]: [Normal Damage, Critical Damage]
-        rule: # List: Special weapon traits (e.g., [Brutal, Lethal 5+])
+        damage: [] # List [Int, Int]: [Normal Damage, Critical Damage]
+        rule: [] # List: Special weapon traits (e.g., [Brutal, Lethal 5+])
     melee: # List: Melee weapon profiles
       - name: # String: Weapon name (Add entire data set per profile)
         attack: # Integer: Number of attack dice rolled
         hit: # Integer: Weapon Skill (the result needed to hit)
-        damage: # List [Int, Int]: [Normal Damage, Critical Damage]
-        rule: # List: Special weapon traits (e.g., [Brutal, Lethal 5+])
-    rule: # List: Passive abilities or special rules unique to this unit
-    action: # List: Unique actions the unit can perform (Strategic/Tactical ploys)
-    keyword: # List: Specific unit tags (e.g., [Leader, Warrior, Scout])
+        damage: [] # List [Int, Int]: [Normal Damage, Critical Damage]
+        rule: [] # List: Special weapon traits (e.g., [Brutal, Lethal 5+])
+    rule: [] # List: Passive abilities or special rules unique to this unit
+    action: [] # List: Unique actions the unit can perform (Strategic/Tactical ploys)
+    keyword: [] # List: Specific unit tags (e.g., [Leader, Warrior, Scout])
 
 ```
 </details>
@@ -51,6 +52,15 @@ actions: # List of operative actions
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.
+    choices: # List: [Optional] Use this ONLY when an ability has multiple options
+      - name: # String: Name of the option
+        type: # String: Context specific to this option (e.g., [Psychic, Support])
+        text: > # String: Description of what this option does
+          Description for option 1.
+      - name: # String: Name of the option
+        type: # String: Context specific to this option (e.g., [Psychic, Support])
+        text: > # String: Description of what this option does
+          Description for option 2.
     rule: > # String: Using '>' allows for multi-line descriptions
       Full description of the action rule(s) here. It will be 
       stored as a single long string.
@@ -70,6 +80,11 @@ rules: # List of operative rules
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.
+    points:
+      - text: > # String: Description of what this option does
+          Description for option 1.
+      - text: > # String: Description of what this option does
+          Description for option 2.
 
 ```
 </details>

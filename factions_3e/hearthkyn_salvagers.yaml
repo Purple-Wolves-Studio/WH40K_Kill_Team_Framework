@@ -1,5 +1,6 @@
 faction: Hearthkyn Salvager
-faction_keywords: [Leagues of Votann]
+faction_id: hearthkyn_salvagers_3
+faction_keyword: [Leagues of Votann]
 units: # List of units in the faction
   # --- Hearthkyn Theyn ---
   - id: hearthkyn_salvager_theyn_3

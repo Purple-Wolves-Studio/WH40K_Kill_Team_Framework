@@ -1,5 +1,6 @@
 faction: Hernkyn Yaegir
-faction_keywords: [Leagues of Votann]
+faction_id: hernkyn_yaegirs_3
+faction_keyword: [Leagues of Votann]
 units: # List of units in the faction
   # --- Yaegir Theyn ---
   - id: hernkyn_yaegirs_yaegir_theyn_3

@@ -1,5 +1,6 @@
 faction: Void-dancer Troupe
-faction_keywords: [Aeldari, Harlequin]
+faction_id: void-dancer_troupe_3
+faction_keyword: [Aeldari, Harlequin]
 units: # List of units in the faction
     # --- Lead Player ---
   - id: void-dancer_troupe_lead_player_3

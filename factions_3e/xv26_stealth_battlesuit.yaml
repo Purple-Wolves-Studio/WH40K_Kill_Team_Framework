@@ -1,4 +1,5 @@
 faction: XV26 Stealth Battlesuit
+faction_id: xv26_stealth_battlesuit_3
 faction_keyword: [T'au Empire]
 units: # List of units in the faction
   # --- XV26 Shas'vre ---

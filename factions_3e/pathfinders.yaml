@@ -1,5 +1,6 @@
 faction: Pathfinders
-faction_keywords: [T'au Empire]
+faction_id: pathfinders_3
+faction_keyword: [T'au Empire]
 units: # List of units in the faction
   # --- Shas'ui Pathfinder ---
   - id: pathfinders_shasui_pathfinder_3

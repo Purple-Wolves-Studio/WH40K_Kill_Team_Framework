@@ -1,5 +1,6 @@
 faction: Kommandos
-faction_keywords: [Ork]
+faction_id: kommandos_3
+faction_keyword: [Ork]
 units: # List of units in the faction
   # --- Kommando Boss Nob ---
   - id: kommandos_kommando_boss_nob_3

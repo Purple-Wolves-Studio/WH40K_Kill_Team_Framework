@@ -1,5 +1,6 @@
 faction: Farstalker Kinband
-faction_keywords: [T'au Empire, Kroot]
+faction_id: farstalker_kinband_3
+faction_keyword: [T'au Empire, Kroot]
 units: # List of units in the faction
   # --- Kroot Kill-broker ---
   - id: farstalker_kinband_kroot_kill-broker_3

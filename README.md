@@ -38,6 +38,82 @@
 ## Change Log
 
 <details>
+    <summary><b>v00.08</b></summary>
+
+    + Frame Updates
+        - choices [] has been added to operative_actions to handle more complex actions.
+        - points [] has been added to operative_rules to handle lists within text.
+    
+    + ID Index
+        - Updated all ID tables for newly added data.
+        - Faction ID added for all previous and newly added factions.
+
+    + Chaos Cult
+        - Cult Demagogue
+        - Blessed Blade
+        - Iconarch
+        - Mindwitch
+        - Chaos Devotee
+        - Chaos Mutant
+    
+    + Ravener
+        - Ravener Prime
+        - Ravener Felltalon
+        - Ravener Tremorscythe
+        - Ravener Venomspitter
+        - Ravener Warrior
+        - Ravener Wrecker
+    
+    + Scout Squad
+        - Scout Sergeant
+        - Scout Heavy Gunner
+        - Scout Hunter
+        - Scout Sniper
+        - Scout Tracker
+        - Scout Warrior
+    
+    + Operative Actions
+        - Auspex Scan
+        - Distend Dorsal Sac
+        - Heinous Deluge
+        - Incite Slaughter
+        - Incite Urgency
+        - Malefic Vortex
+        - Optics
+        - Ruinous Icon
+        - Track Enemy
+        - Toxic Lunge
+
+    + Operative Rules
+        - Accursed Mutant
+        - Accursed Torment
+        - Adaptive Equipment
+        - Astartes
+        - Attuned In Purpose
+        - Brute
+        - Cut Them Down
+        - Grapnel Assault
+        - Grapnel Launcher
+        - Group Activation
+        - Guidance and Experience
+        - Hypersensory Hunter
+        - Icon Bearer
+        - Instinctive Behaviour
+        - Neuropredatory Crest
+        - Reinforced Carapace
+        - Subterranean Ambush
+        - Synaptic Link
+        - Unnatural Regeneration
+    
+    + Weapon Rules
+        - Crush
+        - Range 2
+        - Range 5
+
+</details>
+
+------------------------------------------------------------------------------------------------------------------------
+<details>
     <summary><b>v00.07</b></summary>
 
     + ID Index file added.

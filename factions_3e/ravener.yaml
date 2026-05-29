@@ -1,0 +1,162 @@
+faction: Ravener
+faction_id: ravener_3
+faction_keyword: [Great Devourer, Tyranid]
+units: # List of units in the faction
+  # --- Ravener Prime ---
+  - id: ravener_ravener_prime_3
+    name: Ravener Prime
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 5
+      wounds: 21 
+    ranged: # List: Ranged weapon profiles
+      - name: Tail Blade
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 3, Rending, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Scything Talons and Rending Claws
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Neuropredatory Crest, Synaptic Link]
+    action: []
+    keyword: [Leader, Prime]
+  
+  # --- Ravener Felltalon ---
+  - id: ravener_ravener_felltalon_3
+    name: Ravener Felltalon
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 5
+      wounds: 20 
+    ranged: # List: Ranged weapon profiles
+      - name: Pincer Tail
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 3, Silent]
+      - name: Toxic Glands
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 6, Silent, Poison]
+    melee: # List: Melee weapon profiles
+      - name: Toxic Scythes
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5, Shock, Poison]
+    rule: []
+    action: [Toxic Lunge]
+    keyword: [Felltalon]
+  
+  # --- Ravener Tremorscythe ---
+  - id: ravener_ravener_tremorscythe_3
+    name: Ravener Tremorscythe
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 5
+      wounds: 20
+    ranged: # List: Ranged weapon profiles
+      - name: Pincer Tail
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 3, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Scythe Talons and Rending Claws
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Subterranean Ambush, Hypersensory Hunter]
+    action: []
+    keyword: [Tremorscythe]
+  
+  # --- Ravener Venomspitter ---
+  - id: ravener_ravener_venomspitter_3
+    name: Ravener Venomspitter
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 5
+      wounds: 20
+    ranged: # List: Ranged weapon profiles
+      - name: Pincer Tail
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 3, Silent]
+      - name: Venom Bolt [Blast]
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Blast 2, Poison]
+      - name: Venom Bolt [Focused]
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Piercing 1, Poison]
+    melee: # List: Melee weapon profiles
+      - name: Scything Talons
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: []
+    action: [Distend Dorsal Sac]
+    keyword: [Venomspitter]
+  
+  # --- Ravener Warrior ---
+  - id: ravener_ravener_warrior_3
+    name: Ravener Warrior
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 5
+      wounds: 20
+    ranged: # List: Ranged weapon profiles
+      - name: Pincer Tail
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 3, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Scything Talons
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Instinctive Behaviour]
+    action: []
+    keyword: [Warrior]
+  
+  # --- Ravener Wrecker ---
+  - id: ravener_ravener_wrecker_3
+    name: Ravener Wrecker
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 4
+      wounds: 20
+    ranged: # List: Ranged weapon profiles
+      - name: Bone Mace
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 3, Piercing 1, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Scything Talons and Crushing Claws
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Crush]
+    rule: [Reinforced Carapace]
+    action: []
+    keyword: [Wrecker]

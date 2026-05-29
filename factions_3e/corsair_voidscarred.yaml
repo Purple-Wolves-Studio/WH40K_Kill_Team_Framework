@@ -1,5 +1,6 @@
 faction: Corsair Voidscarred
-faction_keywords: [Aeldari, Anhrathe]
+faction_id: corsair_voidscarred_3
+faction_keyword: [Aeldari, Anhrathe]
 units: # List of units in the faction
   # --- Voidscarred Felarch ---
   - id: corsair_voidscarred_felarch_3

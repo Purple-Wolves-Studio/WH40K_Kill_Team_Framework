@@ -79,6 +79,15 @@ rules: # List of weapon rules
       This operative can only use this weapon the first time it's performing the 
       Shoot action during the battle.
 
+  # --- Crush ---
+  - id: wep_rule_crush_3
+    name: Crush
+    text: >
+      Whenever you strike, you and your opponent roll-off, adding 1 to your result 
+      if the operative this weapon is being used against has a Wounds stat of 9 or 
+      less. If you win, inflict additional damage on that operative equal to the difference 
+      between the dice results (to a maximum of 3 additional damage).
+  
   # --- Detonate ---
   - id: wep_rule_detonate_3
     name: "Detonate"
@@ -139,7 +148,7 @@ rules: # List of weapon rules
     name: "Force Impact"
     text: >
       Whenever this operative is fighting with this weapon, if it's 
-      performed the Charge action during the activation, this weapon has the Brutal weapon rule.
+      performed the Charge action during the activation, this weapon has the Brutal weapon rule.    
 
   # --- Heavy ---
   - id: wep_rule_heavy_3
@@ -240,6 +249,15 @@ rules: # List of weapon rules
       The defender collects 1 less defence dice. This only comes into effect 
       if you retain any critical successes.
 
+  # --- Poison ---
+  - id: wep_rule_poison_3
+    name: Poison
+    text: > # String: Using '>' allows for multi-line descriptions
+      In the Resolve Attack Dice step, if you inflict damage with any critical successes, 
+      the operative this weapon is being used against gains one of your Poison tokens 
+      (if it doesn't already have one). Whenever an operative that has one of your Poison 
+      tokens is activated, inflict D3 damage on it.
+  
   # --- Psychic ---
   - id: wep_rule_psychic_3
     name: "Psychic"
@@ -264,6 +282,12 @@ rules: # List of weapon rules
       If you retain any critical successes, you can retain one of your fails 
       as a normal success instead of discarding it.
 
+  # --- Range 2 ---
+  - id: wep_rule_range_2_3
+    name: 'Range 2"'
+    text: >
+      Only operatives within 2" of the active operative can be valid targets.
+  
   # --- Range 3 ---
   - id: wep_rule_range_3_3
     name: 'Range 3"'
@@ -276,6 +300,12 @@ rules: # List of weapon rules
     text: >
       Only operatives within 4" of the active operative can be valid targets.
 
+  # --- Range 5 ---
+  - id: wep_rule_range_5_3
+    name: 'Range 5"'
+    text: >
+      Only operatives within 5" of the active operative can be valid targets.
+  
   # --- Range 6 ---
   - id: wep_rule_range_6_3
     name: 'Range 6"'
