@@ -1,0 +1,176 @@
+faction: Goremonger
+faction_id: goremonger_3
+faction_keyword: [Chaos]
+units: # List of units in the faction
+  # --- Goremonger Blood Herald ---
+  - id: goremonger_goremonger_blood_herald_3
+    name: Goremonger Blood Herald
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Icon of Khorne
+        attack: 4
+        hit: 2
+        damage: [4, 4]
+        rule: [Range 8, Saturate]
+    melee: # List: Melee weapon profiles
+      - name: Chainblade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Khorne's Favour, Impending Apotheosis]
+    action: []
+    keyword: [Leader, Blood Herald]
+
+  # --- Goremonger Aspirant ---
+  - id: goremonger_goremonger_aspirant_3
+    name: Goremonger Aspirant
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Chainglaive
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Obsessive Bloodlust]
+    action: []
+    keyword: [Aspirant]
+
+  # --- Goremonger Bloodtaker ---
+  - id: goremonger_goremonger_bloodtaker_3
+    name: Goremonger Bloodtaker
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Ritual Blade
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Ritual]
+    rule: []
+    action: [Transfusion Ritual]
+    keyword: [Bloodtaker]
+
+  # --- Goremonger Impaler ---
+  - id: goremonger_goremonger_impaler_3
+    name: Goremonger Impaler
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+      - name: Fleshskewer (Ranged)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Stun, Drag, Prey]
+    melee: # List: Melee weapon profiles
+      - name: Fleshskewer (Stab)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Impaler]
+
+  # --- Goremonger Inciter ---
+  - id: goremonger_goremonger_inciter_3
+    name: Goremonger Inciter
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Dual Autopistols (Focused)
+        attack: 4
+        hit: 3
+        damage: [2, 2]
+        rule: [Range 8, Ceaseless, Devastating 1, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Dual Autopistols (Point-Blank)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Ceaseless, Rending]
+    rule: [Incite the Hunt]
+    action: [Dash and Spray]
+    keyword: [Inciter]
+
+  # --- Goremonger Skullclaimer ---
+  - id: goremonger_goremonger_skullclaimer_3
+    name: Goremonger Skullclaimer
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Great Chainaxe
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Brutal]
+    rule: [Brutish, Claim Skull]
+    action: []
+    keyword: [Skullclaimer]
+
+  # --- Goremonger Stalker ---
+  - id: goremonger_goremonger_stalker_3
+    name: Goremonger Stalker
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Pickrippers
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Climbing Picks, Rooftop Stalker]
+    action: []
+    keyword: [Stalker]

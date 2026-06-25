@@ -2,10 +2,18 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 <details>
-    <summary><b>Operative ID Index</b></summary>
+    <summary><b>3rd Edition Operative ID Index</b></summary>
 
 | Faction | Operative | ID |
 | :--- | :--- | :--- |
+| Battleclade |  | battleclade_3 |
+|  | Battleclade Technoarcheologist | battleclade_battleclade_technoarcheologist_3 |
+|  | Battleclade Auto-proxy Servitor | battleclade_battleclade_auto_proxy_servitor_3 |
+|  | Battleclade Breacher Servitor | battleclade_battleclade_breacher_servitor_3 |
+|  | Battleclade Combat Servitor | battleclade_battleclade_combat_servitor_3 |
+|  | Battleclade Gun Servitor | battleclade_battleclade_gun_servitor_3 |
+|  | Battleclade Servitor Underseer | battleclade_battleclade_servitor_underseer_3 |
+|  | Battleclade Technomedic Servitor | battleclade_battleclade_technomedic_servitor_3 |
 | Blades of Khaine |  | blades_khaine_3 |
 |  | Dire Avenger Exarch | blades_khaine_dire_avenger_exarch_3 |
 |  | Dire Avenger Warrior | blades_khaine_dire_avenger_warrior_3 |
@@ -45,6 +53,14 @@
 |  | Kroot Stalker | farstalker_kinband_kroot_stalker_3 |
 |  | Kroot Tracker | farstalker_kinband_kroot_tracker_3 |
 |  | Kroot Warrior | farstalker_kinband_kroot_warrior_3 |
+| Goremonger |  | goremonger_3 |
+|  | Goremonger Blood Herald | goremonger_goremonger_blood_herald_3 |
+|  | Goremonger Aspirant | goremonger_goremonger_aspirant_3 |
+|  | Goremonger Bloodtaker | goremonger_goremonger_bloodtaker_3 |
+|  | Goremonger Impaler | goremonger_goremonger_impaler_3 |
+|  | Goremonger Inciter | goremonger_goremonger_inciter_3 |
+|  | Goremonger Skullclaimer | goremonger_goremonger_skullclaimer_3 |
+|  | Goremonger Stalker | goremonger_goremonger_stalker_3 |
 | Hearthkyn Salvager |  | hearthkyn_salvagers_3 |
 |  | Hearthkyn Dozr | hearthkyn_salvager_dozr_3 |
 |  | Hearthkyn Field Medic | hearthkyn_salvager_field_medic_3 |
@@ -95,6 +111,14 @@
 |  | Shas'ui Pathfinder | pathfinders_shasui_pathfinder_3 |
 |  | Transpectral Interference Pathfinder | pathfinders_transpectral_interference_pathfinder_3 |
 |  | Weapons Expert Pathfinder | pathfinders_weapons_expert_pathfinder_3 |
+| Plague Marine |  | plague_marine_3 |
+|  | Plague Marine Champion | plague_marine_plague_marine_champion_3 |
+|  | Plague Marine Bombardier | plague_marine_plague_marine_bombardier_3 |
+|  | Plague Marine Fighter | plague_marine_plague_marine_fighter_3 |
+|  | Plague Marine Heavy Gunner | plague_marine_plague_marine_heavy_gunner_3 |
+|  | Plague Marine Icon Bearer | plague_marine_plague_marine_icon_bearer_3 |
+|  | Malignant Plaguecaster | plague_marine_malignant_plaguecaster_3 |
+|  | Plague Marine Warrior | plague_marine_plague_marine_warrior_3 |
 | Ravener |  | ravener_3 |
 |  | Ravener Prime | ravener_ravener_prime_3 |
 |  | Ravener Felltalon | ravener_ravener_felltalon_3 |
@@ -109,6 +133,15 @@
 |  | Scout Sniper | scout_squad_scout_sniper_3 |
 |  | Scout Tracker | scout_squad_scout_tracker_3 |
 |  | Scout Warrior | scout_squad_scout_warrior_3 |
+| Tempestus Aquilom |  | tempestus_aquilom_3 |
+|  | Aquilon Tempestor | tempestus_aquilom_aquilon_tempestor_3 |
+|  | Aquilon Grenadier | tempestus_aquilom_aquilon_grenadier_3 |
+|  | Aquilon Gunfighter | tempestus_aquilom_aquilon_gunfighter_3 |
+|  | Aquilon Gunner | tempestus_aquilom_aquilon_gunner_3 |
+|  | Aquilon Marksman | tempestus_aquilom_aquilon_marksman_3 |
+|  | Aquilon Precursor | tempestus_aquilom_aquilon_precursor_3 |
+|  | Aquilon Servo-sentry | tempestus_aquilom_aquilon_servo_sentry_3 |
+|  | Aquilon Trooper | tempestus_aquilom_aquilon_trooper_3 |
 | Vespid Stingwings |  | vespid_stingwings_3 |
 |  | Oversight Drone | vespid_stingwings_oversight_drone_3 |
 |  | Vespid Longsting | vespid_stingwings_vespid_longsting_3 |
@@ -145,16 +178,22 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 <details>
-    <summary><b>Operative Action ID Index</b></summary>
+    <summary><b>3rd Edition Operative Action ID Index</b></summary>
 
 | Name | ID |
 | :--- | :--- |
 | Auspex Scan | act_auspex_scan_3 |
 | Breach | act_breach_3 |
 | Break Stuff | act_break_stuff_3 |
+| Command | act_command_3 |
 | Dakka Dash | act_dakka_dash_3 |
+| Dash and Spray | act_dash_and_spray_3 |
+| Datacoronal Accumulator | act_datacoronal_accumulator_3 |
 | Distend Dorsal Sac | act_distend_dorsal_sac_3 |
+| Expedient Repair | act_expedient_repair_3 |
+| Flail | act_flail_3 |
 | Fog of Dreams | act_fog_of_dreams_3 |
+| Gaze of the Omnissiah | act_gaze_of_the_omnissiah_3 |
 | Get it Dun! | act_get_it_dun_3 |
 | Grappling Hook | act_grappling_hook_3 |
 | Heinous Deluge | act_heinous_deluge_3 |
@@ -163,15 +202,20 @@
 | Listen In | act_listen_in_3 |
 | Malefic Vortex | act_malefic_vortex_3 |
 | Mirror of Minds | act_mirror_of_minds_3 |
+| Network Override | act_network_override_3 |
+| Omniscanner | act_omniscanner_3 |
 | Optics | act_optics_3 |
 | Photon Grenade Launcher | act_proton_grenade_launcher_3 |
 | Pistol Barrage | act_pistol_barrage_3 |
+| Poisonous Miasma | act_poisonous_miasma_3 |
+| Putrescent Vitality | act_putrescent_vitality_3 |
 | Ruinous Icon | act_ruinous_icon_3 |
 | Soul Channel | act_soul_channel_3 |
 | Soul Heal | act_soul_heal_3 |
 | System Jam | act_system_jam_3 |
 | Toxic Lunge | act_toxic_lunge_3 |
 | Track Enemy | act_track_enemy_3 |
+| Transfusion Ritual | act_transfusion_ritual_3 |
 | Warp Fold | act_warp_fold_3 |
 | Warding Shield | act_warding_shield_3 |
 
@@ -180,12 +224,13 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 <details>
-    <summary><b>Operative Rule ID Index</b></summary>
+    <summary><b>3rd Edition Operative Rule ID Index</b></summary>
 
 | Name | ID |
 | :--- | :--- |
 | Accursed Mutant | op_rule_accursed_mutant_3 |
 | Accursed Torment | op_rule_accursed_torment_3 |
+| Achillian Eye | op_rule_achillian_eye_3 |
 | Adaptive Equipment | op_rule_adaptive_equipment_3 |
 | Analyse | op_rule_analyse_3 |
 | Armoured Up | op_rule_armoured_up_3 |
@@ -201,9 +246,12 @@
 | Brawler | op_rule_brawler_3 |
 | Brazen Killer | op_rule_brazen_killer_3 |
 | Brute | op_rule_brute_3 |
+| Brutish | op_rule_brutish_3 |
 | Call The Kill | op_rule_call_the_kill_3 |
 | Camouflaged | op_rule_camouflaged_3 |
 | Camo Cloak | op_rule_camo_cloak_3 |
+| Claim Skull | op_rule_claim_skull_3 |
+| Climbing Picks | op_rule_climbing_picks_3 |
 | Cold-blooded | op_rule_cold_blooded_3 |
 | Commune | op_rule_commune_3 |
 | Communion Helm | op_rule_communion_helm_3 |
@@ -212,6 +260,7 @@
 | Dat All You Got? | op_rule_dat_all_you_got_3 |
 | Defence Tactics | op_rule_defence_tactics_3 |
 | Drone | op_rule_drone_3 |
+| Dynamic | op_rule_dynamic_3 |
 | Electrochaff Launcher | op_rule_electrochaff_launcher_3 |
 | Erudite Hunter | op_rule_erudite_hunter_3 |
 | Evasive Drone | op_rule_evasive_drone_3 |
@@ -222,17 +271,23 @@
 | Fearless on the Frontline | op_rule_fearless_on_the_frontline_3 |
 | For the Greater Good | op_rule_for_the_greater_good_3 |
 | Ghost Rig | op_rule_ghost_rig_3 |
+| Grandfather's Blessing | op_rule_grandfathers_blessing_3 |
 | Grapnel Assault | op_rule_grapnel_assault_3 |
 | Grapnel Launcher | op_rule_grapnel_launcher_3 |
 | Grenadier | op_rule_grenadier_3 |
+| Grenadier (Plague Marine) | op_rule_grenadier_plague_marine_3 |
 | Group Activation | op_rule_group_activation_3 |
 | Guidance and Experience | op_rule_guidance_and_experience_3 |
+| Gunfight | op_rule_gunfight_3 |
 | Hardy | op_rule_hardy_3 |
 | High-intensity Markerlight | op_rule_high_intensity_markerlight_3 |
 | Homing Beacon | op_rule_homing_beacon_3 |
 | Hypersensory Hunter | op_rule_hypersensory_hunter_3 |
 | HY-Pex Mines | op_rule_hy_pex_mines_3 |
+| Impending Apotheosis | op_rule_impending_apotheosis_3 |
+| Incite the Hunt | op_rule_incite_the_hunt_3 |
 | Icon Bearer | op_rule_icon_bearer_3 |
+| Icon of Contagion | op_rule_icon_of_contagion_3 |
 | I Got a Plan, Ladz | op_rule_i_got_a_plan_ladz_3 |
 | Inertial Dampener | op_rule_inertial_dampener_3 |
 | Intrepid | op_rule_intrepid_3 |
@@ -240,42 +295,55 @@
 | Irrepressible Hardiness | op_rule_irrepressible_hardiness_3 |
 | I've Got It | op_rule_ive_got_it_3 |
 | Jump Pack | op_rule_jump_pack_3 |
+| Khorne's Favour | op_rule_khorne_s_favour_3 |
 | Kompetitive Streak | op_rule_kompetitive_streak_3 |
 | Lead the Performance | op_rule_lead_the_performance_3 |
 | Luck of the Laughing God | op_rule_luck_of_the_laughing_god_3 |
+| Machine | op_rule_machine_3 |
 | Mandiblasters | op_rule_mandiblasters_3 |
 | Markerlight | op_rule_markerlight_3 |
+| Mechanosuture Array | op_rule_mechanosuture_array_3 |
 | Medic! | op_rule_medic_3 |
 | Minefield | op_rule_minefield_3 |
 | Multispectrum Sensor Package | op_rule_multispectrum_sensor_package_3 |
 | Neuropredatory Crest | op_rule_neuropredatory_crest_3 |
 | Neutron Fallout | op_rule_neutron_fallout_3 |
+| Obsessive Bloodlust | op_rule_obsessive_bloodlust_3 |
 | One Step Ahead | op_rule_one_step_ahead_3 |
 | Outright Conviction | op_rule_outright_conviction_3 |
 | Pan Spectral Visor | op_rule_pan_spectral_visor_3 |
 | Quick Draw | op_rule_quick_draw_3 |
 | Quick on the Trigger | op_rule_quick_on_the_trigger_3 |
+| Rapid Insertions | op_rule_rapid_insertions_3 |
 | Ready for Anything | op_rule_ready_for_anything_3 |
 | Reckless Temperament | op_rule_reckless_temperament_3 |
 | Reinforced Carapace | op_rule_reinforced_carapace_3 |
+| Repulsive Fortitude | op_rule_repulsive_fortitude_3 |
+| Rooftop Stalker | op_rule_rooftop_stalker_3 |
 | Savage Assault | op_rule_savage_assault_3 |
 | Secure Salvage | op_rule_secure_salvage_3 |
+| Seeker of Divine Arcana | op_rule_seeker_of_divine_arcana_3 |
 | Shield Generator | op_rule_shield_generator_3 |
 | Shimmershield | op_rule_shimmershield_3 |
 | Slicing Attack | op_rule_slicing_attack_3 |
 | Shokkwave | Daop_rule_shokkwave_3ta |
 | Sneaky Zogger | op_rule_sneaky_zogger_3 |
+| Sniper's Vantage | op_rule_sniper_vantage_3 |
 | Stalker | op_rule_stalker_3 |
 | Stoopid | op_rule_stoopid_3 |
 | Subterranean Ambush | op_rule_subterranean_ambush_3 |
+| Swift Landing | op_rule_swift_landing_3 |
 | Synaptic Link | op_rule_synaptic_link_3 |
 | Tactician | op_rule_tactician_3 |
 | Taktical Wot-notz | op_rule_taktical_wot_notz_3 |
+| Tempestus Veteran | op_rule_tempestus_veteran_3 |
 | Tracker | op_rule_tracker_3 |
+| Turret | op_rule_turret_3 |
 | Unnatural Regeneration | op_rule_unnatural_regeneration_3 |
 | Veteran Adventurer | op_rule_veteran_adventurer_3 |
 | Veteran Raider | op_rule_veteran_raider_3 |
 | Vicious Duellist | op_rule_vicious_duellist_3 |
+| Vicious Knife Fighter | op_rule_vicious_knife_fighter_3 |
 | Victory Shriek | op_rule_victory_shriek_3 |
 | Weavefield Crest | op_rule_weavefield_crest_3 |
 | Weavewerke Cloak | op_rule_weavewerke_cloak_3 |
@@ -289,7 +357,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 <details>
-    <summary><b>Weapon Rule ID Index</b></summary>
+    <summary><b>3rd Edition Weapon Rule ID Index</b></summary>
 
 | Name | Value | Limit | ID |
 | :--- | :--- | :--- | :--- |
@@ -305,10 +373,13 @@
 | Concealed Position | - | - | wep_rule_concealed_position_3 |
 | Crush | - | - | wep_rule_crush_3 |
 | Detonate | - | - | wep_rule_detonate_3 |
-| Devastating | 2 | - | wep_rule_devastating_2_3 |
+| Devastating | 1 | - | wep_rule_devastating_1_3 |
+|  | 2 | - | wep_rule_devastating_2_3 |
 |  | 2 | 2" | wep_rule_2in_devastating_2_3 |
 |  | 3 | - | wep_rule_devastating_3_3 |
+|  | 3 | 1" | wep_rule_1in_devastating_3_3 |
 |  | 4 | - | wep_rule_devastating_4_3 |
+| Drag | - | - | wep_rule_drag_3 |
 | Explosive | - | - | wep_rule_explosive_3 |
 | Force Impact | - | - | wep_rule_force_impact_3 |
 | Heavy | - | - | wep_rule_heavy_3 |
@@ -325,6 +396,7 @@
 |  | 2 | - | wep_rule_piercing_2_3 |
 | Piercing Crits | 1 | - | wep_rule_piercing_crits_1_3 |
 | Poison| - | - | wep_rule_poison_3 |
+| Prey | - | - | wep_rule_prey_3 |
 | Psychic | - | - | wep_rule_psychic_3 |
 | Pulsa | - | - | wep_rule_pulsa_3 |
 | Punishing | - | - | wep_rule_punishing_3 |
@@ -333,11 +405,13 @@
 |  | 4 | - | wep_rule_range_4_3 |
 |  | 5 | - | wep_rule_range_5_3 |
 |  | 6 | - | wep_rule_range_6_3 |
+|  | 7 | - | wep_rule_range_7_3 |
 |  | 8 | - | wep_rule_range_8_3 |
 |  | 9 | - | wep_rule_range_9_3 |
 |  | 12 | - | wep_rule_range_12_3 |
 | Relentless | - | - | wep_rule_relentless_3 |
 | Rending | - | - | wep_rule_rending_3 |
+| Ritual | - | - | wep_rule_ritual_3 |
 | Salvo | - | - | wep_rule_salvo_3 |
 | Saturate | - | - | wep_rule_saturate_3 |
 | Seek | - | - | wep_rule_seek_3 |
@@ -351,6 +425,7 @@
 | Torrent | 0 | - | wep_rule_torrent_0_3 |
 |  | 1 | - | wep_rule_torrent_1_3 |
 |  | 2 | - | wep_rule_torrent_2_3 |
+| Toxic | wep_rule_toxic_3 |
 | Warrior Instincts | - | - | wep_rule_warrior_instincts_3 |
 
 </details>

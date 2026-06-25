@@ -1,0 +1,186 @@
+faction: Battleclade
+faction_id: battleclade_3
+faction_keyword: [Imperium, Adeptus Mechanicus]
+units: # List of units in the faction
+  # --- Battleclade Technoarcheologist ---
+  - id: battleclade_battleclade_technoarcheologist_3
+    name: Battleclade Technoarcheologist
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Eradication Pistol
+        attack: 4
+        hit: 3
+        damage: [4, 2]
+        rule: [Range 8, 1" Devastating 3, Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Servo-arc Claw
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Severe, Shock]
+    rule: [Seeker of Divine Arcana]
+    action: [Omniscanner]
+    keyword: [Tech-priest, Leader, Technoarcheologist]
+  
+  # --- Battleclade Auto-proxy Servitor ---
+  - id: battleclade_battleclade_auto_proxy_servitor_3
+    name: Battleclade Auto-proxy Servitor
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Taser Goad
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Lethal 5, Shock]
+    rule: [Achillian Eye]
+    action: [Gaze of the Omnissiah]
+    keyword: [Auto-proxy, Servitor]
+  
+  # --- Battleclade Breacher Servitor ---
+  - id: battleclade_battleclade_breacher_servitor_3
+    name: Battleclade Breacher Servitor
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Lascutter (Close Range)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 2, Lethal 5, Piercing 2]
+      - name: Lascutter (Short Range)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 6, Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Hydraulic Pincer & Lascutter
+        attack: 4
+        hit: 4
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: []
+    action: [Breach]
+    keyword: [Breacher, Servitor]
+  
+  # --- Battleclade Combat Servitor ---
+  - id: battleclade_battleclade_combat_servitor_3
+    name: Battleclade Combat Servitor
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Incendine Igniter
+        attack: 4
+        hit: 2
+        damage: [4, 4]
+        rule: [Range 6, Saturate, Torrent 1]
+      - name: Meltagun
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Phosphor Blaster
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Blast 1, Severe]
+    melee: # List: Melee weapon profiles
+      - name: Servo-claw
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Combat, Servitor]
+  
+  # --- Battleclade Gun Servitor ---
+  - id: battleclade_battleclade_gun_servitor_3
+    name: Battleclade Gun Servitor
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Heavy Arc Rifle
+        attack: 5
+        hit: 4
+        damage: [4, 6]
+        rule: [Heavy (Dash Only), Piercing 1, Stun]
+      - name: Heavy Bolter (Focused)
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Piercing Crits 1]
+      - name: Heavy Bolter (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Piercing Crits 1, Torrent 1]
+    melee: # List: Melee weapon profiles
+      - name: Augmetic Claw
+        attack: 3
+        hit: 4
+        damage: [4, 5]
+        rule: [Brutal]
+    rule: []
+    action: []
+    keyword: [Gun, Servitor]
+  
+  # --- Battleclade Servitor Underseer ---
+  - id: battleclade_battleclade_servitor_underseer_3
+    name: Battleclade Servitor Underseer
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Master-crafted Radium Pistol
+        attack: 4
+        hit: 3
+        damage: [2, 4]
+        rule: [Range 8, Balanced, Rending]
+    melee: # List: Melee weapon profiles
+      - name: Dataspikes
+        attack: 3
+        hit: 5
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: [Datacoronal Accumulator, Network Override]
+    keyword: [Tech-priest, Servitor Underseer]
+  
+  # --- Battleclade Technomedic Servitor ---
+  - id: battleclade_battleclade_technomedic_servitor_3
+    name: Battleclade Technomedic Servitor
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 4
+      wounds: 8
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Servo-chirurgic Claw
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Rending]
+    rule: [Mechanosuture Array]
+    action: [Expedient Repair]
+    keyword: [Medic, Technomedic, Servitor]

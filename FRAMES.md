@@ -52,18 +52,25 @@ actions: # List of operative actions
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.
-    choices: # List: [Optional] Use this ONLY when an ability has multiple options
+    choices: # List: Use this when an ability has multiple options
       - name: # String: Name of the option
         type: # String: Context specific to this option (e.g., [Psychic, Support])
-        text: > # String: Description of what this option does
+        text: > # String: Using '>' allows for multi-line descriptions
           Description for option 1.
       - name: # String: Name of the option
         type: # String: Context specific to this option (e.g., [Psychic, Support])
-        text: > # String: Description of what this option does
+        text: > # String: Using '>' allows for multi-line descriptions
           Description for option 2.
-    rule: > # String: Using '>' allows for multi-line descriptions
-      Full description of the action rule(s) here. It will be 
-      stored as a single long string.
+    points:
+      - text: > # String: Using '>' allows for multi-line descriptions
+          Description for the first bullet point.
+      - text: > # String: Using '>' allows for multi-line descriptions
+          Description for the second bullet point.
+    rules:
+      - text: > # String: Using '>' allows for multi-line descriptions
+          Description for rule 1.
+      - text: > # String: Using '>' allows for multi-line descriptions
+          Description for rule 2.
 
 ```
 </details>
@@ -77,6 +84,7 @@ rules: # List of operative rules
   # --- Rule Name ---
   - id: # Unique Alphanumeric ID for referencing in unit files
     name: # String: Name of the rule
+    type: # String: Type of rule
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.

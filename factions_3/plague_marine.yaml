@@ -1,0 +1,186 @@
+faction: Plague Marine
+faction_id: plague_marine_3
+faction_keyword: [Chaos, Heretic Astartes]
+units: # List of units in the faction
+  # --- Plague Marine Champion ---
+  - id: plague_marine_plague_marine_champion_3
+    name: Plague Marine Champion
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 15 
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Plague Sword
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Severe, Poison, Toxic]
+    rule: [Grandfather's Blessing]
+    action: []
+    keyword: [Leader, Champion]
+  
+  # --- Plague Marine Bombardier ---
+  - id: plague_marine_plague_marine_bombardier_3
+    name: Plague Marine Bombardier
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Boltgun
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Grenadier (Plague Marine)]
+    action: []
+    keyword: [Bombardier]
+  
+  # --- Plague Marine Fighter ---
+  - id: plague_marine_plague_marine_fighter_3
+    name: Plague Marine Fighter
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Flail of Corruption
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Brutal, Severe, Shock, Poison]
+    rule: []
+    action: [Flail]
+    keyword: [Fighter]
+  
+  # --- Plague Marine Heavy Gunner ---
+  - id: plague_marine_plague_marine_heavy_gunner_3
+    name: Plague Marine Heavy Gunner
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Plague Spewer
+        attack: 5
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 7, Saturate, Severe, Torrent 2, Poison]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Heavy Gunner]
+  
+  # --- Plague Marine Icon Bearer ---
+  - id: plague_marine_plague_marine_icon_bearer_3
+    name: Plague Marine Icon Bearer
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Plague Knife
+        attack: 5
+        hit: 3
+        damage: [3, 4]
+        rule: [Severe, Poison]
+    rule: [Icon Bearer, Icon of Contagion]
+    action: []
+    keyword: [Icon Bearer]
+  
+  # --- Malignant Plaguecaster ---
+  - id: plague_marine_malignant_plaguecaster_3
+    name: Malignant Plaguecaster
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Entropy
+        attack: 4
+        hit: 3
+        damage: [3, 7]
+        rule: [Psychic, Range 7, Saturate, Severe, Poison]
+      - name: Plague Wind
+        attack: 6
+        hit: 3
+        damage: [2, 3]
+        rule: [Psychic, Saturate, Severe, Torrent 1, Poison]
+    melee: # List: Melee weapon profiles
+      - name: Corrupted Staff
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Psychic, Severe, Shock, Stun, Poison]
+    rule: []
+    action: [Poisonous Miasma, Putrescent Vitality]
+    keyword: [Psyker, Malignant Plaguecaster]
+  
+    # --- Plague Marine Warrior ---
+  - id: plague_marine_plague_marine_warrior_3
+    name: Plague Marine Warrior
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Boltgun
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Toxic]
+    melee: # List: Melee weapon profiles
+      - name: Plague Knife
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Severe, Poison]
+    rule: [Repulsive Fortitude]
+    action: []
+    keyword: [Warrior]

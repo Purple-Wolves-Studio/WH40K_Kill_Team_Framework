@@ -13,23 +13,41 @@
     + Unique IDs
       - All operatives, actions, rules, etc include a unique ID for accurate calls.
       - These IDs are designed to provide multi-edition compatability.
+      - An index file <id_index.md> contains a list of all IDs.
 
 </details>
 
-------------------------------------------------------------------------------------------------------------------------
-
 <details>
     <summary><b>UI Requirements</b></summary>
-
-    + Values that require an inches ["] symbol:
-        - Move
-
-    + Values that require a plus [+] symbol:
-        - Save
-        - Hit
     
-    + Certain Operative Actions have multiple rules:
-        - Breach
+    + Operatives
+        + <damage>
+            - '/' UI label required between the two <damage> integers.
+        + <hit>
+            - '+' UI label required after the <hit> integer.
+        + <move>
+            - '"' UI label required after the <move> integer.
+        + <save>
+            - '+' UI label required after the <save> integer.
+    
+    + Operative Actions
+        + <choices>
+            - List is displayed beneath <text> string.
+        + <cost>
+            - 'AP' UI label required after the <cost> integer.
+    
+    + Operative Rules
+        + <points>
+            - List is displayed beneath <text> string.
+    
+    + Weapon Rules
+        + <rule>
+            - The following rules require a '+' UI label after the <rule> integer:
+                - Lethal
+            - The following rules require a '"' UI label after the <rule> integer:
+                - Blast
+                - Range
+                - Torrent
 
 </details>
 
@@ -37,6 +55,106 @@
 
 ## Change Log
 
+<details>
+    <summary><b>v00.09</b></summary>
+
+    + Frame Updates
+        + Operative Actions
+            - Frame reworked to cover types, full text, choices, and multiple rules.
+        + Operative Rules
+            - Frame reworked to cover types, full text, and multiple conditionals.
+    
+    + ID Index
+        - Updated all ID tables for newly added data.
+    
+    + Battleclade
+        - Battleclade Technoarcheologist
+        - Battleclade Auto-proxy Servitor
+        - Battleclade Breacher Servitor
+        - Battleclade Combat Servitor
+        - Battleclade Gun Servitor
+        - Battleclade Servitor Underseer
+        - Battleclade Technomedic Servitor
+    
+    + Goremonger
+        - Goremonger Blood Herald
+        - Goremonger Aspirant
+        - Goremonger Bloodtaker
+        - Goremonger Impaler
+        - Goremonger Inciter
+        - Goremonger Skullclaimer
+        - Goremonger Stalker
+    
+    + Plague Marine
+        - Plague Marine Champion
+        - Plague Marine Bombardier
+        - Plague Marine Fighter
+        - Plague Marine Heavy Gunner
+        - Plague Marine Icon Bearer
+        - Malignant Plaguecaster
+        - Plague Marine Warrior
+    
+    + Tempestus Aquilom
+        - Aquilon Tempestor
+        - Aquilon Grenadier
+        - Aquilon Gunfighter
+        - Aquilon Gunner
+        - Aquilon Marksman
+        - Aquilon Precursor
+        - Aquilon Servo-sentry
+        - Aquilon Trooper
+    
+    + Operative Actions
+        - Command
+        - Dash and Spray
+        - Datacoronal Accumulator
+        - Expedient Repair
+        - Flail
+        - Gaze of the Omnissiah
+        - Network Override
+        - Omniscanner
+        - Poisonous Miasma
+        - Putrescent Vitality
+        - Transfusion Ritual
+    
+    + Operative Rules
+        - Achillian Eye
+        - Brutish
+        - Claim Skull
+        - Climbing Picks
+        - Dynamic
+        - Grandfather's Blessing
+        - Grenadier (Plague Marine)
+        - Gunfight
+        - Icon of Contagion
+        - Impending Apotheosis
+        - Incite the Hunt
+        - Khorne's Favour
+        - Machine
+        - Mechanosuture Array
+        - Obsessive Bloodlust
+        - Rapid Insertions
+        - Repulsive Fortitude
+        - Rooftop Stalker
+        - Seeker of Divine Arcana
+        - Sniper's Vantage
+        - Swift Landing
+        - Tempestus Veteran
+        - Turret
+        - Vicious Knife Fighter
+    
+    + Weapon Rules
+        - Devastating 1
+        - 1" Devastating 3
+        - Drag
+        - Prey
+        - Range 7
+        - Ritual
+        - Toxic
+
+</details>
+
+------------------------------------------------------------------------------------------------------------------------
 <details>
     <summary><b>v00.08</b></summary>
 

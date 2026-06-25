@@ -1,22 +1,24 @@
 actions: # List of operative actions
   # --- Auspex Scan ---
   - id: act_auspex_scan_3
-    name: "Auspex Scan"
+    name: Auspex Scan
     cost: 1
     type:
     text: >
       Until the start of this operative's next activation or until it's incapacitated 
-      (whichever comes first), whenever a friendly SCOUT SQUAD operative is shooting an 
+      (whichever comes first), whenever a friendly Scout Squad operative is shooting an 
       enemy operative within 8" of this operative, that enemy operative cannot be obscured; 
-      if that friendly operative is a SNIPER that's currently benefitting from the effects 
+      if that friendly operative is a Sniper that's currently benefitting from the effects 
       of its Optics action, its ranged weapons also have the Seek Light weapon rule.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
   
   # --- Breach ---
   - id: act_breach_3
-    name: "Breach"
+    name: Breach
     cost: 1
     type:
     text: >
@@ -25,17 +27,19 @@ actions: # List of operative actions
       an operative is within 1" of that marker, it treats parts of that terrain 
       feature that are no more than 1" thick as Accessible terrain.
     choices: []
-    rule: >
-      This operative can perform this action during the Charge or Reposition action, 
-      and it can do so for 1 less AP during those actions. Any remaining move 
-      distance can be used after it does so.
-
-      This operative cannot perform this action while within control range of an enemy 
-      operative, or if a terrain feature isn't within its control range.
+    points: []
+    rules:
+      - text: >
+          This operative can perform this action during the Charge or Reposition action, 
+          and it can do so for 1 less AP during those actions. Any remaining move distance 
+          can be used after it does so. (Not true for Battleclade Breacher Servitor)
+      - text: >
+          This operative cannot perform this action while within control range of an enemy 
+          operative, or if a terrain feature isn't within its control range.
   
   # --- Break Stuff ---
   - id: act_break_stuff_3
-    name: "Break Stuff"
+    name: Break Stuff
     cost: 1
     type:
     text: >
@@ -46,23 +50,79 @@ actions: # List of operative actions
       treats parts of that terrain feature that are no more than 1" thick as 
       Accessible terrain.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy 
-      operative, or if a terrain feature isn't within its control range.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy 
+          operative, or if a terrain feature isn't within its control range.
 
+  # --- Command ---
+  - id: act_command_3
+    name: Command
+    cost: 1
+    type: Support
+    text: >
+       Select one other friendly Tempestus Aquilon operative (excluding Servo-sentry) 
+       visible to and within 6" of this operative. Until the end of that operative's 
+       next activation, add 1 to its APL stat.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
   # --- Dakka Dash ---
   - id: act_dakka_dash_3
-    name: "Dakka Dash"
+    name: Dakka Dash
     cost: 1
     type:
     text: >
       Perform a free Dash action and a free Shoot action with this operative in any order. 
       You can only select a dakka shoota for that Shoot action.
     choices: []
-    rule: >
-      This operative cannot perform this action while it has a Conceal order, or while 
-      within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while it has a Conceal order, or while 
+          within control range of an enemy operative.
 
+  # --- Dash and Spray ---
+  - id: act_dash_and_spray_3
+    name: Dash and Spray
+    cost: 1
+    type: 
+    text: >
+      Perform a free Dash action and a free Shoot action 
+      with this operative in any order. You can only select 
+      dual autopistols (focused) for that Shoot action.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while 
+          it has a Conceal order, or while within control 
+          range of an enemy operative.
+  
+  # --- Datacoronal Accumulator ---
+  - id: act_datacoronal_accumulator_3
+    name: Datacoronal Accumulator
+    cost: 1
+    type: Support
+    text: >
+      Determine the friendly Battleclade operatives within 6" of this operative 
+      and/or a friendly Battleclade Auto-proxy operative, then roll one D3. If 
+      the result is equal to or less than the number of objective markers those 
+      friendly operatives contest, you gain 1CP. For the purposes of the Comms 
+      Device universal equipment, the operative the distance is being determined 
+      from must control your Comms Device marker to add 3" to its distance 
+      requirement for this rule.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
+  
   # --- Distend Dorsal Sac ---
   - id: act_distend_dorsal_sac_3
     name: Distend Dorsal Sac
@@ -74,39 +134,101 @@ actions: # List of operative actions
       all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1 added to 
       their Atk stat and the Range 8" weapon rule removed.
     choices: []
-    rule: >
+    points: []
+    rules: []
 
+  # --- Expedient Repair ---
+  - id: act_expedient_repair_3
+    name: Expedient Repair
+    cost: 1
+    type: 
+    text: >
+      Select one friendly Battleclade operative within this operative's 
+      control range to regain up to D3+3 lost wounds. It cannot be an 
+      operative that the Mechanosuture Array rule was used on during 
+      this turning point.
+    choices: []
+    points: []
+    rules:
+      - text: > # String: Description of the first rule
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
+  
+  # --- Flail ---
+  - id: act_flail_3
+    name: Flail
+    cost: 1
+    type: 
+    text: >
+      Inflict D3+2 damage on each other operative that's both visible 
+      to and within 2" of this operative. Roll separately for each: 
+      if it's an enemy operative, if the D3 result is a 3, that enemy 
+      operative also gains one of your Poison tokens (if it doesn't 
+      already have one).
+    choices: []
+    points: []
+    rules:
+      - text: >
+          For the purposes of action restrictions and the Astartes 
+          faction rule, this action is treated as a Fight action. 
+          This operative cannot perform this action while it has 
+          a Conceal order.
+  
   # --- Fog of Dreams ---
   - id: act_fog_of_dreams_3
-    name: "Fog of Dreams"
+    name: Fog of Dreams
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one ready enemy operative visible to this operative and roll one D6. 
       Until the end of the turning point, that enemy operative cannot be activated or perform actions 
       until it's the last enemy operative to be activated, or until your opponent has activated a number 
       of enemy operatives after this action equal to the result of the D6 (whichever comes first).
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
+  # --- Gaze of the Omnissiah ---
+  - id: act_gaze_of_the_omnissiah_3
+    name: Gaze of the Omnissiah
+    cost: 1
+    type: 
+    text: >
+      Select one enemy operative visible to this operative. Until the 
+      end of the turning point, whenever a friendly Battleclade operative 
+      is shooting that enemy operative, you can use this effect. If you do:
+    choices: []
+    points: 
+      - text: >
+          That friendly operative's ranged weapons have the Seek Light weapon rule.
+      - text: >
+          That enemy operative cannot be obscured.
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
   # --- Get it Dun! ---
   - id: act_get_it_dun_3
-    name: "Get it Dun!"
+    name: Get it Dun!
     cost: 1
-    type: "Support"
+    type: Support
     text: >
-      Select one other friendly Kommando operative [excluding Bomb Squig] 
+      Select one other friendly Kommando operative (excluding Bomb Squig) 
       visible to and within 6" of this operative. Until the end of that operative's next 
       activation, add 1 to its APL stat.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of 
-      an enemy operative, or while counteracting.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of 
+          an enemy operative, or while counteracting.
 
   # --- Grappling Hook ---
   - id: act_grappling_hook_3
-    name: "Grappling Hook"
+    name: Grappling Hook
     cost: 1
     type:
     text: >
@@ -115,70 +237,80 @@ actions: # List of operative actions
       placed, not within control range of enemy operatives, and with that point visible to it. This 
       operative cannot perform the Operate Hatch action during this action.
     choices: []
-    rule: >
-      This action is treated as a Reposition action. This operative cannot perform this 
-      action while within control range of an enemy operative, or during an activation in which it 
-      performed the Charge or Fall Back action [or vice versa].
+    points: []
+    rules:
+      - text: >
+          This action is treated as a Reposition action. This operative cannot perform this 
+          action while within control range of an enemy operative, or during an activation in which it 
+          performed the Charge or Fall Back action (or vice versa).
   
   # --- Heinous Deluge ---
   - id: act_heinous_deluge_3
-    name: "Heinous Deluge"
+    name: Heinous Deluge
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one enemy operative that's a valid target for 
       this operative. Until the end of that operative's next 
       activation, subtract 1 from its APL stat.
     choices: []
-    rule: > # String: Using '>' allows for multi-line descriptions
-      This operative cannot perform this action while within 
-      control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
   
   # --- Incite Slaughter ---
   - id: act_incite_slaughter_3
-    name: "Incite Slaughter"
+    name: Incite Slaughter
     cost: 1
-    type: "Support"
+    type: Support
     text: >
       One other friendly Chaos Cult operative visible to and within 9" 
       of this operative can immediately perform a free Fight action.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control 
-      range of an enemy operative
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative
 
   # --- Incite Urgency ---
   - id: act_incite_urgency_3
-    name: "Incite Urgency"
+    name: Incite Urgency
     cost: 1
-    type: "Support"
+    type: Support
     text: >
-      One other friendly CHAOS CULT operative visible to and within 9" 
+      One other friendly Chaos Cult operative visible to and within 9" 
       of this operative can immediately perform a free Charge or Dash 
       action (for the former, it cannot move more than 3").
     choices: []
-    rule: >
-      This operative cannot perform this action while within control 
-      range of an enemy operative
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative
   
   # --- Listen In ---
   - id: act_listen_in_3
-    name: "Listen In"
+    name: Listen In
     cost: 1
-    type: "Support"
+    type: Support
     text: >
-      Select one other friendly Kommando operative [excluding Bomb Squig] 
+      Select one other friendly Kommando operative (excluding Bomb Squig) 
       visible to and within 6" of this operative. Until the end of that operative's next 
       activation, add 1 to its APL stat.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Malefic Vortex ---
   - id: act_malefic_vortex_3
-    name: "Malefic Vortex"
+    name: Malefic Vortex
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Remove your Malefic Vortex marker from the killzone (if any). 
       Then place your Malefic Vortex marker visible to this operative, 
@@ -187,15 +319,17 @@ actions: # List of operative actions
       that marker. In addition, in the Ready step of each Strategy phase, 
       inflict 1 damage on each enemy operative within 2" of that marker.
     choices: []
-    rule: > # String: Using '>' allows for multi-line descriptions
-      This operative cannot perform this action while within 
-      control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
   
   # --- Mirror of Minds ---
   - id: act_mirror_of_minds_3
-    name: "Mirror of Minds"
+    name: Mirror of Minds
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one enemy operative that's a valid target for and within 8" of 
       this operative. Both players roll five D6. Pair your dice with your opponent's dice based on 
@@ -203,20 +337,61 @@ actions: # List of operative actions
       maximum of 8]. For example, if you rolled 6, 5, 5, 2, 1 and your opponent rolled 6, 5, 4, 3, 1, 
       you would inflict 3D3 damage on that enemy operative.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
   
+  # --- Network Override ---
+  - id: act_network_override_3
+    name: Network Override
+    cost: 1
+    type: Support
+    text: >
+      Select one friendly Battleclade Servitor operative within 6" of either 
+      this operative or a friendly Battleclade Auto-proxy operative to immediately 
+      Network Counteract (you don't have to Transfer Power to do so). Continue this 
+      operative's activation after doing so. For the purposes of the Comms Device 
+      universal equipment, the operative the distance is being determined from must 
+      control that marker.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
+  
+  # --- Omniscanner ---
+  - id: act_omniscanner_3
+    name: Omniscanner
+    cost: 1
+    type: 
+    text: >
+      Select one enemy operative visible to or within 8" of this 
+      operative to gain one of your Omniscanner tokens. Whenever 
+      a friendly Battleclade operative is shooting against, fighting 
+      against or retaliating against an enemy operative that has one 
+      of your Omniscanner tokens, that friendly operative's weapons 
+      have the Ceaseless weapon rule.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while 
+          within control range of an enemy operative.
+
   # --- Optics ---
   - id: act_optics_3
-    name: "Optics"
+    name: Optics
     cost: 1
     type: 
     text: >
       Until the start of this operative's next activation, whenever it's shooting, enemy 
       operatives cannot be obscured.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Photon Grenade Launcher ---
   - id: act_proton_grenade_launcher_3
@@ -227,12 +402,14 @@ actions: # List of operative actions
       Select one enemy operative visible to this operative and roll one D6: on a 3+, 
       until the end of that operative's next activation, subtract 2" from its Move stat
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Pistol Barrage ---
   - id: act_pistol_barrage_3
-    name: "Pistol Barrage"
+    name: Pistol Barrage
     cost: 1
     type:
     text: >
@@ -240,71 +417,126 @@ actions: # List of operative actions
       over action restrictions). You must select its fusion pistol for one action and its 
       shuriken pistol for the other (in any order).
     choices: []
-    rule: >
-      This operative cannot perform this action while it has a Conceal order, or 
-      during an activation in which it performed the Shoot action (or vice versa).
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while it has a Conceal order, or 
+          during an activation in which it performed the Shoot action (or vice versa).
 
+  # --- Poisonous Miasma ---
+  - id: act_poisonous_miasma_3
+    name: Poisonous Miasma
+    cost: 1
+    type: Psychic
+    text: >
+       Select one enemy operative visible to and within 7" of 
+       this operative, or one enemy operative that's a valid 
+       target for this operative.
+    choices: []
+    points:
+      - text: >
+          That enemy operative gains one of your Poison tokens 
+          (if it doesn't already have one).
+      - text: >
+          If it already has one, inflict 3 damage on that 
+          enemy operative instead.
+    rules:
+      - text: >
+          This operative cannot perform this action while 
+          within control range of an enemy operative.
+
+  # --- Putrescent Vitality ---
+  - id: act_putrescent_vitality_3
+    name: Putrescent Vitality
+    cost: 1
+    type: Psychic
+    text: >
+      Select one friendly operative visible to and within 3" of 
+      this operative, then roll 2D6.
+    choices: []
+    points:
+      - text: >
+          If the result is 7, the selected operative regains 
+          7 lost wounds.
+      - text: >
+          If the result is not a 7, the selected operative regains 
+          lost wounds equal to the highest D6.
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative, or more than once 
+          per turning point.
+  
   # --- Ruinous Icon ---
   - id: act_ruinous_icon_3
-    name: "Ruinous Icon"
+    name: Ruinous Icon
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one of the following effects to last until the start of this 
       operative's next activation, until it's incapacitated or until it 
       performs this action again (whichever comes first). 
-    choices: # List: [Optional] Use this ONLY when an ability has multiple options
-      - name: "Invigoration"
-        type: "Psychic"
+    choices: # List: Use this when an ability has multiple options
+      - name: Invigoration
+        type: Psychic
         text: >
           Whenever a friendly Chaos Cult operative is within 4" of this 
           operative, Normal and Critical Dmg of 4 or more inflicts 1 less 
           damage on that operative.
-      - name: "Deterioration"
-        type: "Psychic"
+      - name: Deterioration
+        type: Psychic
         text: >
           Whenever an enemy operative is within 4" of this operative, 
           Normal and Critical Dmg inflicts 1 more damage on that operative.
-    rule: >
-      This operative cannot perform this action while within control 
-      range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
   
   # --- Soul Channel ---
   - id: act_soul_channel_3
-    name: "Soul Channel"
+    name: Soul Channel
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one other friendly Corsair Voidscarred operative visible to and 
-      within 6" of this operative. Until the end of that operative's next activation, add 1 to its APL stat.
+      within 6" of this operative. Until the end of that operative's next 
+      activation, add 1 to its APL stat.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Soul Heal ---
   - id: act_soul_heal_3
-    name: "Soul Heal"
+    name: Soul Heal
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one friendly Corsair Voidscarred operative visible to and 
       within 6" of this operative. That operative regains up to 2D3 lost wounds.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
   # --- System Jam ---
   - id: act_system_jam_3
-    name: "System Jam"
+    name: System Jam
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one enemy operative visible to this operative. Until the end of that operative's 
       next activation, subtract 1 from its APL stat. Whenever this operative has a Conceal order, 
       you must spend 1 additional AP to perform this action.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative
   
   # --- Toxic Lunge ---
   - id: act_toxic_lunge_3
@@ -317,28 +549,48 @@ actions: # List of operative actions
       Inflict D3+2 damage on that enemy operative and it gains one of your Poison 
       tokens (if it doesn't already have one).
     choices: []
-    rule: >
-      This operative can perform this action while underground (this takes 
-      precedence over the normal Burrow rules).
+    points: []
+    rules:
+      - text: >
+          This operative can perform this action while underground (this takes 
+          precedence over the normal Burrow rules).
 
   # --- Track Enemy ---
   - id: act_track_enemy_3
-    name: "Track Enemy"
+    name: Track Enemy
     cost: 1
     type:
     text: >
       Select one enemy operative within 8" of this operative. Until the end of the 
-      turning point, whenever a friendly SCOUT SQUAD operative is shooting that enemy 
+      turning point, whenever a friendly Scout Squad operative is shooting that enemy 
       operative, that friendly operative's ranged weapons have the Seek Light weapon rule.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
+  # --- Transfusion Ritual ---
+  - id: act_transfusion_ritual_3
+    name: Transfusion Ritual
+    cost: 1
+    type:
+    text: >
+      Decrease this operative's Gore Tank. Instead of using a Sanguavitae rule, 
+      you can increase the Gore Tank of one other friendly Goremonger operative 
+      within 8" of this operative.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative, or if its Gore Tank is empty.
+  
   # --- Warp Fold ---
   - id: act_warp_fold_3
-    name: "Warp Fold"
+    name: Warp Fold
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select two friendly Corsair Voidscarred operatives visible to and within 5" of 
       this operative. Remove them both from the killzone and set them back up in each other's previous 
@@ -346,19 +598,23 @@ actions: # List of operative actions
       or Reposition action during this turning point and the other is ready, the other cannot perform 
       any of those actions in its activation during this turning point.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Warding Shield ---
   - id: act_warding_shield_3
-    name: "Warding Shield"
+    name: Warding Shield
     cost: 1
-    type: "Psychic"
+    type: Psychic
     text: >
       Select one friendly Corsair Voidscarred operative visible to and within 6" of 
       this operative. Until the start of this operative's next activation, until it's incapacitated or 
       until it performs this action again (whichever comes first), the first time an attack dice inflicts 
       Normal Dmg on that friendly operative, ignore that inflicted damage.
     choices: []
-    rule: >
-      This operative cannot perform this action while within control range of an enemy operative.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of an enemy operative.

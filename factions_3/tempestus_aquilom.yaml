@@ -1,0 +1,260 @@
+faction: Tempestus Aquilom
+faction_id: tempestus_aquilom_3
+faction_keyword: [Imperium]
+units: # List of units in the faction
+  # --- Aquilon Tempestor ---
+  - id: tempestus_aquilom_aquilon_tempestor_3
+    name: Aquilon Tempestor
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Hot-shot Lascarbine
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Hot-shot Laspistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Relic Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Chainsword
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Tempestus Veteran]
+    action: [Command]
+    keyword: [Leader, Tempestor]
+  
+  # --- Aquilon Grenadier ---
+  - id: tempestus_aquilom_aquilon_grenadier_3
+    name: Aquilon Grenadier
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Hot-shot Laspistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Melta Bomb
+        attack: 4
+        hit: 3
+        damage: [5, 3]
+        rule: [Range 3, Devastating 3, Heavy (Reposition Only), Limited 1, Piercing 2]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Grenadier]
+    action: []
+    keyword: [Grenadier]
+  
+  # --- Aquilon Gunfighter ---
+  - id: tempestus_aquilom_aquilon_gunfighter_3
+    name: Aquilon Gunfighter
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Hot-shot Laspistol (Focused)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Ceaseless, Rending]
+      - name: Hot-shot Laspistol (Salvo)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8, Salvo]
+    melee: # List: Melee weapon profiles
+      - name: Hot-shot Laspistol (Point-blank)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Ceaseless]
+    rule: [Gunfight]
+    action: []
+    keyword: [Gunfighter]
+  
+  # --- Aquilon Gunner ---
+  - id: tempestus_aquilom_aquilon_gunner_3
+    name: Aquilon Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Melta Carbine
+        attack: 4
+        hit: 3
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Plasma Carbine (Standard)
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Piercing 1]
+      - name: Plasma Carbine (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gunner]
+  
+  # --- Aquilon Marksman ---
+  - id: tempestus_aquilom_aquilon_marksman_3
+    name: Aquilon Marksman
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Hot-shot Long-las (Concealed)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Heavy, Silent, Concealed Position]
+      - name: Hot-shot Long-las (Mobile)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Hot-shot Long-las (Stationary)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Heavy]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Sniper's Vantage]
+    action: []
+    keyword: [Marksman]
+  
+  # --- Aquilon Precursor ---
+  - id: tempestus_aquilom_aquilon_precursor_3
+    name: Aquilon Precursor
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Hot-shot Laspistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Tempestus Dagger
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Ceaseless, Lethal 5]
+    rule: [Vicious Knife Fighter, Dynamic]
+    action: []
+    keyword: [Precursor]
+  
+  # --- Aquilon Servo-sentry ---
+  - id: tempestus_aquilom_aquilon_servo_sentry_3
+    name: Aquilon Servo-sentry
+    stats: # List: Operative stats
+      apl: 2
+      move: 4
+      save: 3
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Flamer
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 8, Saturate, Torrent 2]
+      - name: Grenade Launcher (Frag)
+        attack: 4
+        hit: 4
+        damage: [2, 4]
+        rule: [Blast 2]
+      - name: Grenade Launcher (Krak)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Piercing 1]
+      - name: Hot-shot Volley Gun (Focused)
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1]
+      - name: Hot-shot Volley Gun (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Piercing Crits 1, Torrent 1]
+    melee: []
+    rule: [Machine, Turret]
+    action: []
+    keyword: [Servo-sentry]
+  
+  # --- Aquilon Trooper ---
+  - id: tempestus_aquilom_aquilon_trooper_3
+    name: Aquilon Trooper
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Hot-shot Lascarbine
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Rapid Insertions, Swift Landing]
+    action: []
+    keyword: [Trooper]
