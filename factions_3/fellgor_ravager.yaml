@@ -1,0 +1,282 @@
+faction: Fellgor Ravager
+faction_id: fellgor_ravager_3
+faction_keyword: [Chaos]
+units: # List of units in the faction
+  # --- Fellgor Ironhorn ---
+  - id: fellgor_ravager_fellgor_ironhorn_3
+    name: Fellgor Ironhorn
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Corrupted Pistol
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Range 8, Rending]
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Bludgeon
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Brutal]
+      - name: Corrupted Chainsword
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Call the Attack]
+    action: []
+    keyword: [Leader, Ironhorn]
+  
+  # --- Fellgor Deathknell ---
+  - id: fellgor_ravager_fellgor_deathknell_3
+    name: Fellgor Deathknell
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Bludgeon
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Brutal]
+    rule: [Icon Bearer (Fellgor Ravager), War Gong]
+    action: [Gong Knell]
+    keyword: [Deathknell]
+  
+  # --- Fellgor Fluxbray ---
+  - id: fellgor_ravager_fellgor_fluxbray_3
+    name: Fellgor Fluxbray
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Triple Cleavers
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Ceaseless]
+    rule: [Blade Whirl]
+    action: [Cleaver Flurry]
+    keyword: [Fluxbray]
+  
+  # --- Fellgor Gnarlscar ---
+  - id: fellgor_ravager_fellgor_gnarlscar_3
+    name: Fellgor Gnarlscar
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Bionic Fist
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Brutal]
+    rule: [Sagacious]
+    action: [Uncompromising Attack]
+    keyword: [Gnarlscar]
+  
+  # --- Fellgor Gorehorn ---
+  - id: fellgor_ravager_fellgor_gorehorn_3
+    name: Fellgor Gorehorn
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Skullcleaver
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5, Headtaker]
+    rule: [Champion]
+    action: []
+    keyword: [Gorehorn]
+  
+  # --- Fellgor Herd-goad ---
+  - id: fellgor_ravager_fellgor_herd-goad_3
+    name: Fellgor Herd-goad
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+      - name: Crackthorn Whip (Ranged)
+        attack: 4
+        hit: 2
+        damage: [2, 3]
+        rule: [Range 3, Lethal 4, Stun]
+    melee: # List: Melee weapon profiles
+      - name: Crackthorn Whip (Melee)
+        attack: 4
+        hit: 3
+        damage: [2, 3]
+        rule: [Lethal 4, Shock]
+    rule: [Whip Control]
+    action: [Incite Fury]
+    keyword: [Herd-goad]
+  
+  # --- Fellgor Mangler ---
+  - id: fellgor_ravager_fellgor_mangler_3
+    name: Fellgor Mangler
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Vicious Claws
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Ceaseless, Tactual Hunter]
+    rule: [Berserker, Savage]
+    action: []
+    keyword: [Mangler]
+  
+  # --- Fellgor Shaman ---
+  - id: fellgor_ravager_fellgor_shaman_3
+    name: Fellgor Shaman
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+      - name: Tech-curse
+        attack: 4
+        hit: 3
+        damage: [1, 3]
+        rule: [Psychic, Rending, Saturate, Seek Light]
+    melee: # List: Melee weapon profiles
+      - name: Braystave
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Shock]
+    rule: []
+    action: [Apoplectic Rejuvenation, Mantle of Darkness]
+    keyword: [Psyker, Shaman]
+  
+  # --- Fellgor Toxhorn ---
+  - id: fellgor_ravager_fellgor_toxhorn_3
+    name: Fellgor Toxhorn
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Cleaver
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Toxic Blessings, Pox Bomb]
+    action: []
+    keyword: [Toxhorn]
+  
+  # --- Fellgor Vandal ---
+  - id: fellgor_ravager_fellgor_vandal_3
+    name: Fellgor Vandal
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Mancrusher
+        attack: 4
+        hit: 4
+        damage: [5, 5]
+        rule: [Brutal, Vicious Blows]
+    rule: []
+    action: [Sweeping Blow]
+    keyword: [Vandal]
+  
+  # --- Fellgor Warrior ---
+  - id: fellgor_ravager_fellgor_warrior_3
+    name: Fellgor Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 5
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Bludgeon
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Brutal]
+      - name: Cleaver
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Warrior Frenzy]
+    action: []
+    keyword: [Warrior]

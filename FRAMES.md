@@ -109,6 +109,11 @@ rules: # List of operative rules
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.
+    points:
+      - text: > # String: Description of what this option does
+          Description for option 1.
+      - text: > # String: Description of what this option does
+          Description for option 2.
 
 ```
 </details>

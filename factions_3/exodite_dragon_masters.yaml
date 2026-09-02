@@ -1,0 +1,119 @@
+faction: Exodite Dragon Masters
+faction_id: exodite_dragon_masters_3
+faction_keyword: [Aeldari]
+units: # List of units in the faction
+  # --- Dragon Master Clanblade ---
+  - id: exodite_dragon_masters_dragon_master_clanblade_3
+    name: Dragon Master Clanblade
+    stats: # List: Operative stats
+      apl: 4
+      move: 12
+      save: 3
+      wounds: 24
+    ranged: # List: Ranged weapon profiles
+      - name: Solar Carbine
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Devastating 1]
+    melee: # List: Melee weapon profiles
+      - name: Drakesteed Fangs & Talons
+        attack: 6
+        hit: 3
+        damage: [3, 5]
+        rule: [Brutal]
+      - name: Moonblades
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Scaleshield, Clanblade Upgrades]
+    action: []
+    keyword: [Mounted, Clanblade]
+  
+  # --- Dragon Master Leystalker ---
+  - id: exodite_dragon_masters_dragon_master_leystalker_3
+    name: Dragon Master Leystalker
+    stats: # List: Operative stats
+      apl: 4
+      move: 12
+      save: 3
+      wounds: 24
+    ranged: # List: Ranged weapon profiles
+      - name: Long Rifle [Mobile]
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Devastating 1]
+      - name: Long Rifle [Stationary]
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Devastating 3, Aimed]
+    melee: # List: Melee weapon profiles
+      - name: Drakesteed Fangs & Talons
+        attack: 6
+        hit: 3
+        damage: [3, 5]
+        rule: [Brutal]
+      - name: Hunting Blade
+        attack: 3
+        hit: 3
+        damage: [3, 5]
+        rule: [Lethal 5]
+    rule: [Implacable Darkscale, Leystalker Upgrades]
+    action: []
+    keyword: [Mounted, Leystalker]
+  
+  # --- Dragon Master Stonesinger ---
+  - id: exodite_dragon_masters_dragon_master_stonesinger_3
+    name: Dragon Master Stonesinger
+    stats: # List: Operative stats
+      apl: 4
+      move: 12
+      save: 3
+      wounds: 24
+    ranged: # List: Ranged weapon profiles
+      - name: Solar Carbine
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Devastating 1]
+      - name: Venomcrest Spit
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Severe, Torrent 2]
+    melee: # List: Melee weapon profiles
+      - name: Drakesteed Fangs & Talons
+        attack: 6
+        hit: 3
+        damage: [3, 5]
+        rule: [Brutal]
+      - name: Stone Stave
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Psychic, Lethal 5, Shock, Stun]
+    rule: [Stonesinger Upgrades]
+    action: [Song of Renewal]
+    keyword: [Mounted, Psyker, Stonesinger]
+  
+  # --- Drakolithe ---
+  - id: exodite_dragon_masters_drakolithe_3
+    name: Drakolithe
+    stats: # List: Operative stats
+      apl: 2
+      move: 8
+      save: 5
+      wounds: 7
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Fangs & Talons
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending]
+    rule: [Preternatural Evasion, Beast (Drakolithe)]
+    action: []
+    keyword: [Drakolithe]

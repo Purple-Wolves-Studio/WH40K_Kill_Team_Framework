@@ -1,3 +1,4 @@
+### Cogitator Archives Registry
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -41,6 +42,11 @@
 |  | Voidscarred Starstorm Duellist | corsair_voidscarred_starstorm_duellist_3 |
 |  | Voidscarred Warrior | corsair_voidscarred_warrior_3 |
 |  | Voidscarred Way Seeker | corsair_voidscarred_way_seeker_3 |
+| Exodite Dragon Masters |  | exodite_dragon_masters_3 |
+|  | Dragon Master Clanblade | exodite_dragon_masters_dragon_master_clanblade_3 |
+|  | Dragon Master Leystalker | exodite_dragon_masters_dragon_master_leystalker_3
+|  | Dragon Master Stonesinger | exodite_dragon_masters_dragon_master_stonesinger_3
+|  | Drakolithe | exodite_dragon_masters_drakolithe_3 |
 | Farstalker Kinband |  | farstalker_kinband_3 |
 |  | Kroot Bow-hunter | farstalker_kinband_kroot_bow-hunter_3 |
 |  | Kroot Cold-blood | farstalker_kinband_kroot_cold-blood_3 |
@@ -53,6 +59,18 @@
 |  | Kroot Stalker | farstalker_kinband_kroot_stalker_3 |
 |  | Kroot Tracker | farstalker_kinband_kroot_tracker_3 |
 |  | Kroot Warrior | farstalker_kinband_kroot_warrior_3 |
+| Fellgor Ravager |  | fellgor_ravager_3 |
+|  | Fellgor Ironhorn | fellgor_ravager_fellgor_ironhorn_3 |
+|  | Fellgor Deathknell | fellgor_ravager_fellgor_deathknell_3 |
+|  | Fellgor Fluxbray | fellgor_ravager_fellgor_fluxbray_3 |
+|  | Fellgor Gnarlscar | fellgor_ravager_fellgor_gnarlscar_3 |
+|  | Fellgor Gorehorn | fellgor_ravager_fellgor_gorehorn_3 |
+|  | Fellgor Herd-goad | fellgor_ravager_fellgor_herd-goad_3 |
+|  | Fellgor Mangler | fellgor_ravager_fellgor_mangler_3 |
+|  | Fellgor Shaman | fellgor_ravager_fellgor_shaman_3 |
+|  | Fellgor Toxhorn | fellgor_ravager_fellgor_toxhorn_3 |
+|  | Fellgor Vandal | fellgor_ravager_fellgor_vandal_3 |
+|  | Fellgor Warrior | fellgor_ravager_fellgor_warrior_3 |
 | Goremonger |  | goremonger_3 |
 |  | Goremonger Blood Herald | goremonger_goremonger_blood_herald_3 |
 |  | Goremonger Aspirant | goremonger_goremonger_aspirant_3 |
@@ -94,6 +112,13 @@
 |  | Kommando Rokkit Boy | kommandos_kommando_rokkit_boy_3 |
 |  | Kommando Slasha Boy | kommandos_kommando_slasha_boy_3 |
 |  | Kommando Snipa Boy | kommandos_kommando_snipa_boy_3 |
+| Mandrakes |  | mandrakes_3 |
+|  | Mandrake Nightfiend | mandrakes_mandrake_nightfiend_3 |
+|  | Mandrake Abyssal | mandrakes_mandrake_abyssal_3 |
+|  | Mandrake Chooser of the Flesh | mandrakes_mandrake_chooser_of_the_flesh_3 |
+|  | Mandrake Dirgemaw | mandrakes_mandrake_dirgemaw_3 |
+|  | Mandrake Shadeweaver | mandrakes_mandrake_shadeweaver_3 |
+|  | Mandrake Warrior | mandrakes_mandrake_warrior_3 |
 | Pathfinders |  | pathfinders_3 |
 |  | Assault Grenadier Pathfinder | pathfinders_assault_grenadier_pathfinder_3 |
 |  | Blooded Pathfinder | pathfinders_blooded_pathfinder_3 |
@@ -182,9 +207,11 @@
 
 | Name | ID |
 | :--- | :--- |
+| Apoplectic Rejuvenation | act_apoplectic_rejuvenation_3 |
 | Auspex Scan | act_auspex_scan_3 |
 | Breach | act_breach_3 |
 | Break Stuff | act_break_stuff_3 |
+| Cleaver Flurry | act_cleaver_flurry_3 |
 | Command | act_command_3 |
 | Dakka Dash | act_dakka_dash_3 |
 | Dash and Spray | act_dash_and_spray_3 |
@@ -195,29 +222,38 @@
 | Fog of Dreams | act_fog_of_dreams_3 |
 | Gaze of the Omnissiah | act_gaze_of_the_omnissiah_3 |
 | Get it Dun! | act_get_it_dun_3 |
+| Gong Knell | act_gong_knell_3 |
 | Grappling Hook | act_grappling_hook_3 |
 | Heinous Deluge | act_heinous_deluge_3 |
+| Incite Fury | act_incite_fury_3 |
 | Incite Slaughter | act_incite_slaughter_3 |
 | Incite Urgency | act_incite_urgency_3 |
 | Listen In | act_listen_in_3 |
 | Malefic Vortex | act_malefic_vortex_3 |
+| Mantle of Darkness | act_mantle_of_darkness_3 |
 | Mirror of Minds | act_mirror_of_minds_3 |
 | Network Override | act_network_override_3 |
 | Omniscanner | act_omniscanner_3 |
 | Optics | act_optics_3 |
+| Pareidolic Projection | act_pareidolic_projection_3 |
 | Photon Grenade Launcher | act_proton_grenade_launcher_3 |
 | Pistol Barrage | act_pistol_barrage_3 |
 | Poisonous Miasma | act_poisonous_miasma_3 |
 | Putrescent Vitality | act_putrescent_vitality_3 |
 | Ruinous Icon | act_ruinous_icon_3 |
+| Song of Renewal | act_song_of_renewal_3 |
 | Soul Channel | act_soul_channel_3 |
 | Soul Heal | act_soul_heal_3 |
+| Sweeping Blow | act_sweeping_blow_3 |
 | System Jam | act_system_jam_3 |
 | Toxic Lunge | act_toxic_lunge_3 |
 | Track Enemy | act_track_enemy_3 |
 | Transfusion Ritual | act_transfusion_ritual_3 |
+| Uncompromising Attack | act_uncompromising_attack_3 |
 | Warp Fold | act_warp_fold_3 |
 | Warding Shield | act_warding_shield_3 |
+| Weave Darkness | act_weave_darkness_3 |
+| Wreathe in Balefire | act_wreathe_in_balefire_3 |
 
 </details>
 
@@ -237,9 +273,13 @@
 | Astartes | op_rule_astartes_3 |
 | Attuned In Purpose | op_rule_attuned_in_purpose_3 |
 | Bad-tempered | op_rule_bad_tempered_3 |
+| Balefire | op_rule_balefire_3 |
 | Banshee Mask | op_rule_banshee_mask_3 |
 | Beast | op_rule_beast_3 |
+| Beast (Drakolithe) | op_rule_beast_drakolithe_3 |
+| Berserker | op_rule_berserker_3 |
 | Blademaster | op_rule_blademaster_3 |
+| Blade Whirl | op_rule_blade_whirl_3 |
 | Bladed Stance | op_rule_bladed_stance_3 |
 | Blink Pack | op_rule_blink_pack_3 |
 | Boom! | op_rule_boom_3 |
@@ -247,10 +287,13 @@
 | Brazen Killer | op_rule_brazen_killer_3 |
 | Brute | op_rule_brute_3 |
 | Brutish | op_rule_brutish_3 |
+| Call the Attack | op_rule_call_the_attack_3 |
 | Call The Kill | op_rule_call_the_kill_3 |
 | Camouflaged | op_rule_camouflaged_3 |
 | Camo Cloak | op_rule_camo_cloak_3 |
+| Champion | op_rule_champion_3 |
 | Claim Skull | op_rule_claim_skull_3 |
+| Clanblade Upgrades | op_rule_clanblade_upgrades_3 |
 | Climbing Picks | op_rule_climbing_picks_3 |
 | Cold-blooded | op_rule_cold_blooded_3 |
 | Commune | op_rule_commune_3 |
@@ -280,6 +323,8 @@
 | Guidance and Experience | op_rule_guidance_and_experience_3 |
 | Gunfight | op_rule_gunfight_3 |
 | Hardy | op_rule_hardy_3 |
+| Harrowing Whispers | op_rule_harrowing_whispers_3 |
+| Haunting Focus | op_rule_haunting_focus_3 |
 | High-intensity Markerlight | op_rule_high_intensity_markerlight_3 |
 | Homing Beacon | op_rule_homing_beacon_3 |
 | Hypersensory Hunter | op_rule_hypersensory_hunter_3 |
@@ -287,8 +332,10 @@
 | Impending Apotheosis | op_rule_impending_apotheosis_3 |
 | Incite the Hunt | op_rule_incite_the_hunt_3 |
 | Icon Bearer | op_rule_icon_bearer_3 |
+| Icon Bearer (Fellgor Ravager) | op_rule_icon_bearer_fellgor_ravager_3 |
 | Icon of Contagion | op_rule_icon_of_contagion_3 |
 | I Got a Plan, Ladz | op_rule_i_got_a_plan_ladz_3 |
+| Implacable Darkscale | op_rule_implacable_darkscale_3 |
 | Inertial Dampener | op_rule_inertial_dampener_3 |
 | Intrepid | op_rule_intrepid_3 |
 | Instinctive Behaviour | op_rule_instinctive_behaviour_3 |
@@ -298,6 +345,7 @@
 | Khorne's Favour | op_rule_khorne_s_favour_3 |
 | Kompetitive Streak | op_rule_kompetitive_streak_3 |
 | Lead the Performance | op_rule_lead_the_performance_3 |
+| Leystalker Upgrades | op_rule_leystalker_upgrades_3 |
 | Luck of the Laughing God | op_rule_luck_of_the_laughing_god_3 |
 | Machine | op_rule_machine_3 |
 | Mandiblasters | op_rule_mandiblasters_3 |
@@ -310,8 +358,12 @@
 | Neutron Fallout | op_rule_neutron_fallout_3 |
 | Obsessive Bloodlust | op_rule_obsessive_bloodlust_3 |
 | One Step Ahead | op_rule_one_step_ahead_3 |
+| Oubliex | op_rule_oubliex_3 |
 | Outright Conviction | op_rule_outright_conviction_3 |
 | Pan Spectral Visor | op_rule_pan_spectral_visor_3 |
+| Part Collector | op_rule_part_collector_3 |
+| Preternatural Evasion | op_rule_preternatural_evasion_3 |
+| Pox Bomb | op_rule_pox_bomb_3 |
 | Quick Draw | op_rule_quick_draw_3 |
 | Quick on the Trigger | op_rule_quick_on_the_trigger_3 |
 | Rapid Insertions | op_rule_rapid_insertions_3 |
@@ -320,16 +372,23 @@
 | Reinforced Carapace | op_rule_reinforced_carapace_3 |
 | Repulsive Fortitude | op_rule_repulsive_fortitude_3 |
 | Rooftop Stalker | op_rule_rooftop_stalker_3 |
+| Sagacious | op_rule_sagacious_3 |
+| Savage | op_rule_savage_3 |
 | Savage Assault | op_rule_savage_assault_3 |
+| Scaleshield | op_rule_scaleshield_3 |
 | Secure Salvage | op_rule_secure_salvage_3 |
 | Seeker of Divine Arcana | op_rule_seeker_of_divine_arcana_3 |
+| Shadow Portal | op_rule_shadow_portal_3 |
+| Shadow Warrior | op_rule_shadow_warrior_3 |
 | Shield Generator | op_rule_shield_generator_3 |
 | Shimmershield | op_rule_shimmershield_3 |
-| Slicing Attack | op_rule_slicing_attack_3 |
 | Shokkwave | Daop_rule_shokkwave_3ta |
+| Slicing Attack | op_rule_slicing_attack_3 |
 | Sneaky Zogger | op_rule_sneaky_zogger_3 |
 | Sniper's Vantage | op_rule_sniper_vantage_3 |
+| Soul Harvest | op_rule_soul_harvest_3 |
 | Stalker | op_rule_stalker_3 |
+| Stonesinger Upgrades | op_rule_stonesinger_upgrades_3 |
 | Stoopid | op_rule_stoopid_3 |
 | Subterranean Ambush | op_rule_subterranean_ambush_3 |
 | Swift Landing | op_rule_swift_landing_3 |
@@ -337,6 +396,7 @@
 | Tactician | op_rule_tactician_3 |
 | Taktical Wot-notz | op_rule_taktical_wot_notz_3 |
 | Tempestus Veteran | op_rule_tempestus_veteran_3 |
+| Toxic Blessings | op_rule_toxic_blessings_3 |
 | Tracker | op_rule_tracker_3 |
 | Turret | op_rule_turret_3 |
 | Unnatural Regeneration | op_rule_unnatural_regeneration_3 |
@@ -345,9 +405,12 @@
 | Vicious Duellist | op_rule_vicious_duellist_3 |
 | Vicious Knife Fighter | op_rule_vicious_knife_fighter_3 |
 | Victory Shriek | op_rule_victory_shriek_3 |
+| War Gong | op_rule_war_gong_3 |
+| Warrior Frenzy | op_rule_warrior_frenzy_3 |
 | Weavefield Crest | op_rule_weavefield_crest_3 |
 | Weavewerke Cloak | op_rule_weavewerke_cloak_3 |
 | Well Supplied | op_rule_well_supplied_3 |
+| Whip Control | op_rule_whip_control_3 |
 | Wrecka Boss | op_rule_wrecka_boss_3 |
 | Wroughtlock Negotiation | op_rule_wroughtlock_negotiation_3 |
 | XV26 Drone Controller | op_rule_xv26_drone_controller_3 |
@@ -362,6 +425,7 @@
 | Name | Value | Limit | ID |
 | :--- | :--- | :--- | :--- |
 | Accurate | 1 | - | wep_rule_accurate_1_3 |
+| Aimed | - | - | wep_rule_aimed_3 |
 | Balanced | - | - | wep_rule_balanced_3 |
 | Beam | - | - | wep_rule_beam_3 |
 | Bipod | - | - | wep_rule_bipod_3 |
@@ -382,6 +446,7 @@
 | Drag | - | - | wep_rule_drag_3 |
 | Explosive | - | - | wep_rule_explosive_3 |
 | Force Impact | - | - | wep_rule_force_impact_3 |
+| Headtaker| - | - | wep_rule_headtaker_3 |
 | Heavy | - | - | wep_rule_heavy_3 |
 |  | - | Dash Only | wep_rule_heavy_dash_only_3 |
 |  | - | Reposition Only | wep_rule_heavy_reposition_only_3 |
@@ -421,11 +486,14 @@
 | Silent | - | - | wep_rule_silent_3 |
 | Skytorch | - | - | wep_rule_skytorch_3 |
 | Smash | - | - | wep_rule_smash_3 |
+| Soulstrike | - | - | wep_rule_soulstrike_3 |
 | Stun | - | - | wep_rule_stun_3 |
+| Tactual Hunter | - | - | wep_rule_tactual_hunter_3 |
 | Torrent | 0 | - | wep_rule_torrent_0_3 |
 |  | 1 | - | wep_rule_torrent_1_3 |
 |  | 2 | - | wep_rule_torrent_2_3 |
-| Toxic | wep_rule_toxic_3 |
+| Toxic | - | - | wep_rule_toxic_3 |
+| Vicious Blows | - | - | wep_rule_vicious_blows_3 |
 | Warrior Instincts | - | - | wep_rule_warrior_instincts_3 |
 
 </details>

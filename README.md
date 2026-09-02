@@ -56,6 +56,94 @@
 ## Change Log
 
 <details>
+    <summary><b>v00.10</b></summary>
+
+    + Frame Updates
+        - Weapon rules now include bullet points.
+    
+    + ID Index
+        - Updated all ID tables for newly added data.
+    
+    + Exodite Dragon Masters
+        - Dragon Master Clanblade
+        - Dragon Master Leystalker
+        - Dragon Master Stonesinger
+        - Drakolithe
+    
+    + Fellgor Ravager
+        - Fellgor Ironhorn
+        - Fellgor Deathknell
+        - Fellgor Fluxbray
+        - Fellgor Gnarlscar
+        - Fellgor Gorehorn
+        - Fellgor Herd-goad
+        - Fellgor Mangler
+        - Fellgor Shaman
+        - Fellgor Toxhorn
+        - Fellgor Vandal
+        - Fellgor Warrior
+    
+    + Mandrakes
+        - Mandrake Nightfiend
+        - Mandrake Abyssal
+        - Mandrake Chooser of the Flesh
+        - Mandrake Dirgemaw
+        - Mandrake Shadeweaver
+        - Mandrake Warrior
+    
+    + Operative Actions
+        - Apoplectic Rejuvenation
+        - Cleaver Flurry
+        - Gong Knell
+        - Incite Fury
+        - Mantle of Darkness
+        - Pareidolic Projection
+        - Song of Renewal
+        - Sweeping Blow
+        - Uncompromising Attack
+        - Weave Darkness
+        - Wreathe in Balefire
+    
+    + Operative Rules
+        - Balefire
+        - Beast (Drakolithe)
+        - Berserker
+        - Blade Whirl
+        - Call the Attack
+        - Champion
+        - Clanblade Upgrades
+        - Harrowing Whispers
+        - Haunting Focus
+        - Icon Bearer (Fellgor Ravager)
+        - Implacable Darkscale
+        - Leystalker Upgrades
+        - Oubliex
+        - Part Collector
+        - Preternatural Evasion
+        - Pox Bomb
+        - Sagacious
+        - Savage
+        - Scaleshield
+        - Shadow Portal
+        - Shadow Warrior
+        - Soul Harvest
+        - Stonesinger Upgrades
+        - Toxic Blessings
+        - War Gong
+        - Warrior Frenzy
+        - Whip Control
+    
+    + Weapon Rules
+        - Aimed
+        - Headtaker
+        - Soulstrike
+        - Tactual Hunter
+        - Vicious Blows
+
+</details>
+
+------------------------------------------------------------------------------------------------------------------------
+<details>
     <summary><b>v00.09</b></summary>
 
     + Frame Updates

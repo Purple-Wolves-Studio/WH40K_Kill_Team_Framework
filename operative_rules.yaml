@@ -98,6 +98,19 @@ rules: # List of operative rules
       control range of that enemy operative.
     points: []
 
+  # --- Balefire ---
+  - id: op_rule_balefire_3
+    name: Balefire
+    type: 
+    text: >
+      Whenever a friendly MAndrake operative is shooting an enemy operative 
+      that has one of your Balefire tokens, add 1 to both Dmg stats of that 
+      friendly operative's ranged weapons, and those weapons have the Saturate 
+      weapon rule. Whenever an operative is shooting a friendly Mandrake operative 
+      that has one of your Balefire tokens, subtract 1 from both Dmg stats of 
+      that operative's ranged weapons (to a minimum of 1).
+    points: []
+  
   # --- Banshee Mask ---
   - id: op_rule_banshee_mask_3
     name: Banshee Mask
@@ -116,7 +129,35 @@ rules: # List of operative rules
       Fall Back, Fight, Gather, Guard, Reposition, Pick Up Marker and Place Marker. 
       It cannot use any weapons that aren't on its datacard.
     points: []
+  
+  # --- Beast (Drakolithe) ---
+  - id: op_rule_beast_drakolithe_3
+    name: Beast (Drakolithe)
+    type: 
+    text: >
+      This operative cannot perform any actions other than Charge, Dash, 
+      Fall Back, Fight, Guard, Pick Up Marker, Place Marker, Reposition, 
+      and mission actions.
+    points:
+      - text: >
+          This operative cannot perform the Pick Up Marker, Place Marker 
+          or mission actions unless there's a friendly Leystalker operative 
+          that isn't incapacitated.
+      - text: >
+          It cannot use any weapons that aren't on its datacard.
 
+  # --- Berserker ---
+  - id: op_rule_berserker_3
+    name: Berserker
+    type: 
+    text: >
+       This operative cannot perform the Shoot action (other than 
+       Guard, but cannot then perform a free Shoot action during 
+       the interruption). You must spend 1 additional AP for this 
+       operative to perform the Pick Up Marker and mission actions 
+       (excluding Operate Hatch).
+    points: []
+  
   # --- Blademaster ---
   - id: op_rule_blademaster_3
     name: Blademaster
@@ -127,6 +168,17 @@ rules: # List of operative rules
       (to a maximum of 3").
     points: []
 
+  # --- Blade Whirl ---
+  - id: op_rule_blade_whirl_3
+    name: Blade Whirl
+    type: 
+    text: >
+      Whenever this operative is fighting or retaliating, 
+      if it doesn't have one of your Frenzy tokens, you 
+      can resolve one of your successes before the normal order. 
+      If you do, that success must be used to block.
+    points: []
+  
   # --- Bladed Stance ---
   - id: op_rule_bladed_stance_3
     name: Bladed Stance
@@ -202,6 +254,19 @@ rules: # List of operative rules
       you can choose for that attack dice to inflict Normal Dmg instead.
     points: []
   
+  # --- Call the Attack ---
+  - id: op_rule_call_the_attack_3
+    name: Call the Attack
+    type: Strategic Gambit
+    text: >
+      If this operative doesn't have one of your Frenzy tokens. 
+      Select one friendly Fellgor Ravager operative visible to 
+      and within 6" of this operative. That selected operative, 
+      and each other friendly Fellgor Ravager operative visible 
+      to and within 2" of it, can immediately perform a free Dash 
+      action in an order of your choice.
+    points: []
+  
   # --- Call The Kill ---
   - id: op_rule_call_the_kill_3
     name: Call The Kill
@@ -235,6 +300,15 @@ rules: # List of operative rules
       saves from Vantage terrain.
     points: []
 
+  # --- Champion ---
+  - id: op_rule_champion_3
+    name: Champion
+    type: 
+    text: >
+      This operative can perform two Fight 
+      actions during its activation.
+    points: []
+  
   # --- Claim Skull ---
   - id: op_rule_claim_skull_3
     name: Claim Skull
@@ -242,6 +316,16 @@ rules: # List of operative rules
     text: >
       Once per turning point, if this operative incapacitates an 
       enemy operative with its great chainaxe, you gain 1CP.
+    points: []
+  
+  # --- Clanblade Upgrades ---
+  - id: op_rule_clanblade_upgrades_3
+    name: Clanblade Upgrades
+    type: 
+    text: >
+      When this operative is selected for the battle, select up to 
+      two different Clanblade Upgrade rules (see Faction Rules) to 
+      be added to its datacard for the battle.
     points: []
   
   # --- Climbing Picks ---
@@ -566,6 +650,49 @@ rules: # List of operative rules
       you can choose for that attack dice to inflict Normal Dmg instead.
     points: []
 
+  # --- Harrowing Whispers ---
+  - id: op_rule_harrowing_whispers_3
+    name: Harrowing Whispers
+    type: 
+    text: >
+      Whenever your opponent would activate an enemy operative within 6" 
+      of this operative, you can roll one D6.
+    points:
+      - text: >
+          You cannot do so if you already interrupted that operative's 
+          activation with this rule or the Dirgemaw operative's Haunting 
+          Focus additional rule during this turning point
+      - text: >
+          If the result is higher than that enemy operative's APL stat, 
+          your opponent cannot activate it during this activation.
+      - text: >
+          If there are no other enemy operatives eligible to be activated, 
+          this rule has no effect.
+  
+  # --- Haunting Focus ---
+  - id: op_rule_haunting_focus_3
+    name: Haunting Focus
+    type: Strategic Gambit
+    text: >
+      Select one enemy operative. Until the Ready step of the next Strategy phase, 
+      it gains your Haunting Focus token. The next time your opponent would activate 
+      an enemy operative that has your Haunting Focus token, if this operative is ready, 
+      you can activate this operative first. If you do, during that activation, this 
+      operative must shoot against or fight against that enemy operative, and cannot 
+      do so against any other enemy operatives until it does.
+    points:
+      - text: >
+          You cannot activate the enemy operative if you also rolled to 
+          prevent that operative's activation with the Nightfiend operative's 
+          Harrowing Whispers additional rule during this turning point.
+      - text: >
+           If the enemy operative cannot attack its forced target, this 
+           operative's activation is cancelled.
+      - text: >
+          After completing the operative's activation, your opponent activates 
+          that enemy operative, if possible, or activates a different enemy 
+          operative if they can't.
+  
   # --- High-intensity Markerlight ---
   - id: op_rule_high_intensity_markerlight_3
     name: High-intensity Markerlight
@@ -651,6 +778,18 @@ rules: # List of operative rules
       stat as 1 higher. Note this isn't a change to its APL stat, so any 
       changes are cumulative with this.
     points: []
+  
+  # --- Icon Bearer (Fellgor Ravager) ---
+  - id: op_rule_icon_bearer_fellgor_ravager_3
+    name: Icon Bearer (Fellgor Ravager)
+    type: 
+    text: >
+       This operative isn't affected by the marker control 
+       bullet point of the Frenzy faction rule. Whenever 
+       determining control of a marker, treat this operative's 
+       APL stat as 1 higher. Note this isn't a change to its 
+       APL stat, so any changes are cumulative with this.
+    points: []
 
   # --- Icon of Contagion ---
   - id: op_rule_icon_of_contagion_3
@@ -670,6 +809,15 @@ rules: # List of operative rules
       perform the Pick Up Marker, Place Marker or a mission action for 1 less AP.
     points: []
 
+  # --- Implacable Darkscale ---
+  - id: op_rule_implacable_darkscale_3
+    name: Implacable Darkscale
+    type: 
+    text: >
+      You can ignore any changes to this operative's Drakesteed 
+      Fangs & Talons weapon's Hit stat from being injured.
+    points: []
+  
   # --- Inertial Dampener ---
   - id: op_rule_inertial_dampener_3
     name: Inertial Dampener
@@ -765,6 +913,16 @@ rules: # List of operative rules
       have will also change.
     points: []
 
+  # --- Leystalker Upgrades ---
+  - id: op_rule_leystalker_upgrades_3
+    name: Leystalker Upgrades
+    type: 
+    text: >
+      When this operative is selected for the battle, select up to 
+      two different Leystalker Upgrade rules (see Faction Rules) 
+      to be added to its datacard for the battle.
+    points: []
+  
   # --- Luck of the Laughing God ---
   - id: op_rule_luck_of_the_laughing_god_3
     name: Luck of the Laughing God
@@ -934,6 +1092,21 @@ rules: # List of operative rules
       until the end of its next activation.
     points: []
 
+  # --- Oubliex ---
+  - id: op_rule_oubliex_3
+    name: Oubliex
+    type: 
+    text: >
+      Whenever this operative is readied, or if this operative 
+      incapacitates an enemy operative with its huskblade, its 
+      oubliex becomes active. Whenever its oubliex is active and 
+      an attack dice would inflict damage on this operative, you 
+      can roll one D6.
+    points:
+      - text: >
+          On a 5+, ignore the damage inflicted from that attack dice 
+          and its oubliex is no longer active.
+  
   # --- Outright Conviction ---
   - id: op_rule_outright_conviction_3
     name: Outright Conviction
@@ -955,6 +1128,46 @@ rules: # List of operative rules
       cannot be obscured.
     points: []
 
+  # --- Part Collector ---
+  - id: op_rule_part_collector_3
+    name: Part Collector
+    type: 
+    text: >
+      Whenever an enemy operative performs the Fall Back action while within 
+      control range of this operative, you can use this rule. If you do, inflict 
+      2D3 damage on that enemy operative before it moves.
+    points: []
+  
+  # --- Preternatural Evasion ---
+  - id: op_rule_preternatural_evasion_3
+    name: Preternatural Evasion
+    type: 
+    text: >
+      Whenever this operative performs the Charge, Fall Back or Reposition action, 
+      if it ends that action more than 2" from its previous location, it has Speed 4+; 
+      if it ends more than 5" from its previous location, it has Speed 7+ instead.
+    points:
+      - text: >
+          Whenever this operative ends its activation, if it didn't gain Speed 4+ 
+          or Speed 7+ during that activation, it has Speed 3-.
+      - text: >
+          Note that it's the distance from the previous location, not the 
+          distance moved (in other words it cannot just circle back to its 
+          previous location and gain high Speed).
+  
+  # --- Pox Bomb ---
+  - id: op_rule_pox_bomb_3
+    name: Pox Bomb
+    type: 
+    text: >
+      This operative can use stun grenades. Doing so doesn't count towards any 
+      limited uses you have (i.e. if you also select that grenade from equipment 
+      for other operatives). Whenever an enemy operative takes a stun test as a 
+      result of this operative performing the Stun Grenade action, if the result 
+      is a 3+, also inflict damage on that enemy operative equal to the dice 
+      result halved (rounding up).
+    points: []
+  
   # --- Quick Draw ---
   - id: op_rule_quick_draw_3
     name: Quick Draw
@@ -1039,6 +1252,33 @@ rules: # List of operative rules
       this operative's melee weapons have the Relentless weapon rule.
     points: []
   
+  # --- Sagacious ---
+  - id: op_rule_sagacious_3
+    name: Sagacious
+    type: 
+    text: >
+      At the end of this operative's activation, 
+      you can change its order.
+    points: []
+  
+  # --- Savage ---
+  - id: op_rule_savage_3
+    name: Savage
+    type: 
+    text: >
+      The first time this operative performs the Fight action during 
+      each of its activations, if it isn't incapacitated, it can 
+      immediately perform a free Fight action afterwards.
+    points:
+      - text: >
+          This takes precedence over action restrictions.
+      - text: >
+          You cannot use the Ruthless Rampage firefight ploy 
+          between the two Fight actions.
+      - text: >
+          You don't have to select the same enemy operative 
+          to fight against.
+  
   # --- Savage Assault ---
   - id: op_rule_savage_assault_3
     name: Savage Assault
@@ -1051,6 +1291,18 @@ rules: # List of operative rules
       during that action (and only if it's still valid to fight against). This 
       takes precedence over action restrictions.
     points: []
+
+  # --- Scaleshield ---
+  - id: op_rule_scaleshield_3
+    name: Scaleshield
+    type: 
+    text: >
+      Whenever an operative is shooting this operative, and no attack 
+      dice are retained as critical successes, worsen the X of the 
+      Piercing weapon rule by 1 (if any).
+    points:
+      - text: >
+          Note that Piercing 1 would therefore be ignored.
 
   # --- Secure Salvage ---
   - id: op_rule_secure_salvage_3
@@ -1077,6 +1329,37 @@ rules: # List of operative rules
       your mission markers within its control range
     points: []
   
+  # --- Shadow Portal ---
+  - id: op_rule_shadow_portal_3
+    name: Shadow Portal
+    type: 
+    text: >
+      Whenever this operative performs the Reposition action using a 
+      Shadow Passage, you can use this rule. If you do, remove your 
+      Shadow Portal markers from the killzone, then place one of your 
+      Shadow Portal markers within this operative's control range before 
+      it's removed and one within its control range after it's set up.
+    points:
+      - text: >
+          Each friendly Mandrake operative can use a Shadow Passage 
+          each turning point if one of your Shadow Portal markers is 
+          within that operative's control range when it's removed, and 
+          the other is when it's set up. This takes precedence over one 
+          operative once per turning point.
+      - text: >
+          Friendly operatives can use a Shadow Passage even if this 
+          operative has been incapacitated, and doing so doesn't 
+          prevent one operative from using a Shadow Passage in 
+          the normal manner.
+  
+  # --- Shadow Warrior ---
+  - id: op_rule_shadow_warrior_3
+    name: Shadow Warrior
+    type: 
+    text: >
+      Whenever this operative is Within Shadow, add 1 to the 
+      Critical Dmg stat of its Glimmersteel Blade.
+  
   # --- Shield Generator ---
   - id: op_rule_shield_generator_3
     name: Shield Generator
@@ -1098,6 +1381,18 @@ rules: # List of operative rules
       This operative only has this rule if you select the shimmershield weapon option.
     points: []
 
+  # --- Shokkwave ---
+  - id: op_rule_shokkwave_3
+    name: Shokkwave
+    type: 
+    text: >
+      Whenever an operative is within x" of your Pulsa marker (see left), worsen 
+      the Hit stat of its weapons by 1 and subtract 2" from its Move stat. This 
+      is cumulative with being injured. X is that marker's Pulsa points. In the 
+      Ready step of each Strategy phase, subtract 1 from your Pulsa marker's 
+      points. If a Pulsa marker ever has 0 points, remove it.
+    points: []
+  
   # --- Slicing Attack ---
   - id: op_rule_slicing_attack_3
     name: Slicing Attack
@@ -1111,18 +1406,6 @@ rules: # List of operative rules
       damage on an enemy operative that was not visible to this operative at the 
       start of that action. A 28mm round marker can be temporarily placed 
       underneath this operative before it moves to help determine this.
-    points: []
-
-  # --- Shokkwave ---
-  - id: op_rule_shokkwave_3
-    name: Shokkwave
-    type: 
-    text: >
-      Whenever an operative is within x" of your Pulsa marker (see left), worsen 
-      the Hit stat of its weapons by 1 and subtract 2" from its Move stat. This 
-      is cumulative with being injured. X is that marker's Pulsa points. In the 
-      Ready step of each Strategy phase, subtract 1 from your Pulsa marker's 
-      points. If a Pulsa marker ever has 0 points, remove it.
     points: []
 
   # --- Sneaky Zogger ---
@@ -1145,6 +1428,21 @@ rules: # List of operative rules
       all profiles of its hot-shot long-las have the Severe weapon rule.
     points: []
   
+  # --- Soul Harvest ---
+  - id: op_rule_soul_harvest_3
+    name: Soul Harvest
+    type: 
+    text: >
+      Whenever an enemy operative is incapacitated as a result of this operative's 
+      Part Collector rule or baleblade, you gain 1 Soul Harvest point, or two if 
+      that enemy operative had an APL stat of 3 or more. Whenever a friendly Mandrake 
+      operative is activated, you can spend 1 of your Soul Harvest points to either 
+      add 1 to its APL stat until the end of the battle, or have it regain up to 2D3 
+      lost wounds.
+    points:
+      - text: >
+          Uou can spend your Soul Harvest points even if this operative is incapacitated.
+  
   # --- Stalker ---
   - id: op_rule_stalker_3
     name: Stalker
@@ -1153,6 +1451,16 @@ rules: # List of operative rules
       This operative can perform the Charge action while it has a Conceal order.
     points: []
 
+  # --- Stonesinger Upgrades ---
+  - id: op_rule_stonesinger_upgrades_3
+    name: Stonesinger Upgrades
+    type: 
+    text: >
+      When this operative is selected for the battle, select up to two 
+      different Stonesinger Upgrade rules (see Faction Rules) to be 
+      added to its datacard for the battle.
+    points: []
+  
   # --- Stoopid ---
   - id: op_rule_stoopid_3
     name: Stoopid
@@ -1243,6 +1551,18 @@ rules: # List of operative rules
       ploy for 0CP if this is the operative the attack or defence dice was rolled for.
     points: []
   
+  # --- Toxic Blessings ---
+  - id: op_rule_toxic_blessings_3
+    name: Toxic Blessings
+    type: 
+    text: >
+      You can ignore any changes to this operative's APL stat and it's not 
+      affected by enemy operatives' Shock weapon rule. Whenever an attack dice 
+      inflicts Normal Dmg of 3 or more on this operative, roll one D6.
+    points:
+      - text: >
+          On a 5+, subtract 1 from that inflicted damage.
+  
   # --- Tracker ---
   - id: op_rule_tracker_3
     name: Tracker
@@ -1317,6 +1637,26 @@ rules: # List of operative rules
       friendly operative can only be selected for this rule once per battle.
     points: []
 
+  # --- War Gong ---
+  - id: op_rule_war_gong_3
+    name: War Gong
+    type: 
+    text: >
+      Whenever an attack dice would inflict Critical Dmg on a friendly 
+      Fellgor Ravager operative within 3" of this operative, if this 
+      operative doesn't have one of your Frenzy tokens, you can choose 
+      for that attack dice to inflict Normal Dmg instead.
+    points: []
+  
+  # --- Warrior Frenzy ---
+  - id: op_rule_warrior_frenzy_3
+    name: Warrior Frenzy
+    type: 
+    text: >
+      Whenever this operative has one of your Frenzy tokens, it cannot 
+      be injured. This takes precedence over the normal Frenzy rules.
+    points: []
+  
   # --- Weavefield Crest ---
   - id: op_rule_weavefield_crest_3
     name: Weavefield Crest
@@ -1345,6 +1685,22 @@ rules: # List of operative rules
       You can select one additional equipment option.
     points: []
 
+  # --- Whip Control ---
+  - id: op_rule_whip_control_3
+    name: Whip Control
+    type: 
+    text: >
+      Whenever an enemy operative is visible to and within 3" 
+      of this operative, if this operative isn't within control 
+      range of any other enemy operatives:
+    points:
+      - text: >
+          ubtract 1 from the Atk stat of that enemy operative's 
+          melee weapons (to a minimum of 1).
+      - text: >
+          Your opponent must spend 1 additional AP for that 
+          enemy operative to perform the Fall Back action.
+  
   # --- Wrecka Boss ---
   - id: op_rule_wrecka_boss_3
     name: Wrecka Boss

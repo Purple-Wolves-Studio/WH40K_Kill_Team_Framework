@@ -1,0 +1,157 @@
+faction: Mandrakes
+faction_id: mandrakes_3
+faction_keyword: [Mandrake, Aeldari, Drukhari]
+units: # List of units in the faction
+  # --- Mandrake Nightfiend ---
+  - id: mandrakes_mandrake_nightfiend_3
+    name: Mandrake Nightfiend
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Baleblast
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Soulstrike]
+    melee: # List: Melee weapon profiles
+      - name: Huskblade
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5, Shock]
+    rule: [Harrowing Whispers, Oubliex]
+    action: []
+    keyword: [Leader, Nightfiend]
+  
+  # --- Mandrake Abyssal ---
+  - id: mandrakes_mandrake_abyssal_3
+    name: Mandrake Abyssal
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Balesurge (Blast)
+        attack: 5
+        hit: 3
+        damage: [3, 4]
+        rule: [Blast 2, Soulstrike]
+      - name: Balesurge (Burn)
+        attack: 5
+        hit: 3
+        damage: [3, 4]
+        rule: [Lethal 5, Soulstrike]
+    melee: # List: Melee weapon profiles
+      - name: Glimmersteel Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5]
+    rule: [Balefire]
+    action: [Wreathe in Balefire]
+    keyword: [Abyssal]
+  
+  # --- Mandrake Chooser of the Flesh ---
+  - id: mandrakes_mandrake_chooser_of_the_flesh_3
+    name: Mandrake Chooser of the Flesh
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Baleblast
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Soulstrike]
+    melee: # List: Melee weapon profiles
+      - name: Baleblade
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Brutal, Lethal 5]
+    rule: [Soul Harvest, Part Collector]
+    action: []
+    keyword: [Chooser of the Flesh]
+  
+  # --- Mandrake Dirgemaw ---
+  - id: mandrakes_mandrake_dirgemaw_3
+    name: Mandrake Dirgemaw
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Baleblast
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Soulstrike]
+      - name: Horrifying Scream
+        attack: 5
+        hit: 2
+        damage: [2, 2]
+        rule: [Range 6, Devastating 2, Sekk Light, Stun, Soulstrike]
+    melee: # List: Melee weapon profiles
+      - name: Glimmersteel Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5]
+    rule: [Haunting Focus]
+    action: [Pareidolic Projection]
+    keyword: [Dirgemaw]
+  
+  # --- Mandrake Shadeweaver ---
+  - id: mandrakes_mandrake_shadeweaver_3
+    name: Mandrake Shadeweaver
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Baleblast
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Soulstrike]
+    melee: # List: Melee weapon profiles
+      - name: Glimmersteel Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5]
+    rule: [Shadow Portal]
+    action: [Weave Darkness]
+    keyword: [Shadeweaver]
+  
+  # --- Mandrake Warrior ---
+  - id: mandrakes_mandrake_warrior_3
+    name: Mandrake Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 8 
+    ranged: # List: Ranged weapon profiles
+      - name: Baleblast
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Soulstrike]
+    melee: # List: Melee weapon profiles
+      - name: Glimmersteel Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5]
+    rule: [Shadow Warrior]
+    action: []
+    keyword: [Warrior]

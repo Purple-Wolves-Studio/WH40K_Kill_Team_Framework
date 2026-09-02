@@ -1,4 +1,23 @@
 actions: # List of operative actions
+  # --- Apoplectic Rejuvenation ---
+  - id: act_apoplectic_rejuvenation_3
+    name: Apoplectic Rejuvenation
+    cost: 1
+    type: 
+    text: >
+      Select one friendly Fellgor Ravager operative that doesn't have one of 
+      your Frenzy tokens and is visible to and within 6" of this operative. 
+      That friendly operative regains up to 2D3 lost wounds.
+    choices: []
+    points:
+      - text: >
+          If that operative has incapacitated an enemy operative while fighting 
+          or retaliating during the battle, it regains up to 6 lost wounds instead.
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range of 
+          an enemy operative.
+  
   # --- Auspex Scan ---
   - id: act_auspex_scan_3
     name: Auspex Scan
@@ -56,6 +75,29 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy 
           operative, or if a terrain feature isn't within its control range.
 
+  # --- Cleaver Flurry ---
+  - id: act_cleaver_flurry_3
+    name: Cleaver Flurry
+    cost: 1
+    type: 
+    text: >
+      Perform a free Reposition action with this operative.
+    choices: []
+    points:
+      - text: >
+          During that action, it can move an additional 2", 
+          and can move within control range of enemy operatives 
+          (it cannot begin or end the move there)
+      - text: >
+           Inflict D3+1 damage on each enemy operative it 
+           moved within control range of (roll separately 
+           for each after it's moved, in the order it moved 
+           within control range of them).
+    rules:
+      - text: >
+          This operative cannot perform this action while 
+          it has a Conceal order.
+  
   # --- Command ---
   - id: act_command_3
     name: Command
@@ -226,6 +268,20 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of 
           an enemy operative, or while counteracting.
 
+  # --- Gong Knell ---
+  - id: act_gong_knell_3
+    name: Gong Knell
+    cost: 1
+    type: 
+    text: >
+      Until the start of this operative's next activation or 
+      until this operative is incapacitated (whichever comes first), 
+      whenever an operative is shooting this operative, improve this 
+      operative's Save stat by 1 and ignore the Piercing weapon rule.
+    choices: []
+    points: []
+    rules: []
+  
   # --- Grappling Hook ---
   - id: act_grappling_hook_3
     name: Grappling Hook
@@ -259,6 +315,23 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within 
           control range of an enemy operative.
+  
+  # --- Incite Fury ---
+  - id: act_incite_fury_3
+    name: Incite Fury
+    cost: 1
+    type: Support
+    text: >
+      Select one other friendly Fellgor Ravager operative 
+      (excluding Shaman or Ironhorn) visible to and within 3" 
+      of this operative. Until the end of that operative's next 
+      activation, add 1 to its APL stat.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while 
+          within control range of an enemy operative.
   
   # --- Incite Slaughter ---
   - id: act_incite_slaughter_3
@@ -324,6 +397,25 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within 
           control range of an enemy operative.
+  
+  # --- Mantle of Darkness ---
+  - id: act_mantle_of_darkness_3
+    name: Mantle of Darkness
+    cost: 1
+    type: Psychic
+    text: >
+      Until the start of this operative's next activation or until it's 
+      incapacitated (whichever comes first), whenever a friendly Fellgor 
+      Ravager operative is visible to and within 3" of this operative, 
+      has a Conceal order and is in cover, that friendly operative cannot 
+      be selected as a valid target, taking precedence over all other rules 
+      (e.g. Seek, Vantage terrain) except being within 2".
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
   
   # --- Mirror of Minds ---
   - id: act_mirror_of_minds_3
@@ -393,6 +485,24 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
 
+  # --- Pareidolic Projection ---
+  - id: act_pareidolic_projection_3
+    name: Pareidolic Projection
+    cost: 1
+    type: 
+    text: >
+      Select one enemy operative that's a valid target for this operative 
+      or is Within Shadow. Until the start of this operative's next activation, 
+      until it's incapacitated or performs this action again, whichever 
+      comes first.
+    points:
+      - text: >
+          Worsen the Hit stat of that enemy operative's weapons by 1.
+      - text: >
+          Subtract 2" from its Move stat.
+      - text: >
+          These aren't cumulative with being injured.
+  
   # --- Photon Grenade Launcher ---
   - id: act_proton_grenade_launcher_3
     name: Photon Grenade Launcher
@@ -494,6 +604,29 @@ actions: # List of operative actions
           This operative cannot perform this action while within control 
           range of an enemy operative.
   
+  # --- Song of Renewal ---
+  - id: act_song_of_renewal_3
+    name: Song of Renewal
+    cost: 1
+    type: 
+    text: 
+    choices: # List: Use this when an ability has multiple options
+      - name: Single Target Heal
+        type: Psychic
+        text: >
+          Select one friendly Exodite Dragon Master operative visible to 
+          this operative. That operative regains up to 2D3 lost wounds.
+      - name: Group Heal
+        type: Psychic
+        text: >
+          Alternatively, each friendly Exodite Dragon Master operative 
+          can regain up to D3 lost wounds.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative, or more than once per turning point.
+  
   # --- Soul Channel ---
   - id: act_soul_channel_3
     name: Soul Channel
@@ -523,6 +656,21 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
 
+  # --- Sweeping Blow ---
+  - id: act_sweeping_blow_3
+    name: Sweeping Blow
+    cost: 1
+    type: 
+    text: >
+      Inflict D3+1 damage on each other operative visible to 
+      and within 2" of this operative.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while it 
+          has a Conceal order.
+  
   # --- System Jam ---
   - id: act_system_jam_3
     name: System Jam
@@ -586,6 +734,24 @@ actions: # List of operative actions
           This operative cannot perform this action while within control 
           range of an enemy operative, or if its Gore Tank is empty.
   
+  # --- Uncompromising Attack ---
+  - id: act_uncompromising_attack_3
+    name: Uncompromising Attack
+    cost: 1
+    type: 
+    text: >
+      Perform a free Fight action with this operative, 
+      then perform a free Shoot action with this operative 
+      (or vice versa). This operative can perform that Shoot 
+      action while within control range of an enemy operative, 
+      but if it does, it can and must target an enemy operative 
+      within its control range (even if other friendly operatives 
+      are within that enemy operative's control range). You can 
+      only select an autopistol for that Shoot action.
+    choices: []
+    points: []
+    rules: []
+  
   # --- Warp Fold ---
   - id: act_warp_fold_3
     name: Warp Fold
@@ -618,3 +784,41 @@ actions: # List of operative actions
     rules:
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
+  
+  # --- Weave Darknesse ---
+  - id: act_weave_darkness_3
+    name: Weave Darkness
+    cost: 1
+    type: 
+    text: >
+      Remove your Weave Darkness marker from the killzone. 
+      Place your Weave Darkness marker visible to this operative, 
+      or on Vantage terrain of a terrain feature visible to this operative. 
+      That marker creates an area of smoke with the same size and effects 
+      as a smoke grenade, except you don't remove it during the following 
+      turning point.
+    rules:
+      - text: >
+          This operative cannot perform this action while 
+          within control range of an enemy operative.
+      - text: >
+          If this operative is incapacitated, remove your 
+          Weave Darkness marker from the killzone.
+  
+  # --- Wreathe in Balefire ---
+  - id: act_wreathe_in_balefire_3
+    name: Wreathe in Balefire
+    cost: 1
+    type: 
+    text: > # String: Using '>' allows for multi-line descriptions
+      Select one operative visible to this operative that doesn't have 
+      one of your Balefire tokens. Until the start of this operative's 
+      next activation, until it's incapacitated or until it performs this 
+      action again (whichever comes first), that selected operative gains 
+      one of your Balefire tokens.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
