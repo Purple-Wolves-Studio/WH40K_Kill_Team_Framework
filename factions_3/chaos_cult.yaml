@@ -123,7 +123,7 @@ units: # List of units in the faction
         hit: 4
         damage: [2, 3]
         rule: []
-    rule: [Group Activation]
+    rule: [Group Activation (Chaos Devotee)]
     action: []
     keyword: [Devotee]
   

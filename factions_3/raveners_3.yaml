@@ -1,9 +1,9 @@
-faction: Ravener
-faction_id: ravener_3
-faction_keyword: [Great Devourer, Tyranid]
+faction: Raveners
+faction_id: raveners_3
+faction_keyword: [Ravener, Great Devourer, Tyranid]
 units: # List of units in the faction
   # --- Ravener Prime ---
-  - id: ravener_ravener_prime_3
+  - id: raveners_ravener_prime_3
     name: Ravener Prime
     stats: # List: Operative stats
       apl: 3
@@ -27,7 +27,7 @@ units: # List of units in the faction
     keyword: [Leader, Prime]
   
   # --- Ravener Felltalon ---
-  - id: ravener_ravener_felltalon_3
+  - id: raveners_ravener_felltalon_3
     name: Ravener Felltalon
     stats: # List: Operative stats
       apl: 3
@@ -56,7 +56,7 @@ units: # List of units in the faction
     keyword: [Felltalon]
   
   # --- Ravener Tremorscythe ---
-  - id: ravener_ravener_tremorscythe_3
+  - id: raveners_ravener_tremorscythe_3
     name: Ravener Tremorscythe
     stats: # List: Operative stats
       apl: 3
@@ -80,7 +80,7 @@ units: # List of units in the faction
     keyword: [Tremorscythe]
   
   # --- Ravener Venomspitter ---
-  - id: ravener_ravener_venomspitter_3
+  - id: raveners_ravener_venomspitter_3
     name: Ravener Venomspitter
     stats: # List: Operative stats
       apl: 3
@@ -114,7 +114,7 @@ units: # List of units in the faction
     keyword: [Venomspitter]
   
   # --- Ravener Warrior ---
-  - id: ravener_ravener_warrior_3
+  - id: raveners_ravener_warrior_3
     name: Ravener Warrior
     stats: # List: Operative stats
       apl: 3
@@ -138,7 +138,7 @@ units: # List of units in the faction
     keyword: [Warrior]
   
   # --- Ravener Wrecker ---
-  - id: ravener_ravener_wrecker_3
+  - id: raveners_ravener_wrecker_3
     name: Ravener Wrecker
     stats: # List: Operative stats
       apl: 3

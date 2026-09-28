@@ -1,0 +1,224 @@
+faction: Gellerpox Infected
+faction_id: gellerpox_infected_3
+faction_keyword: [Gellerpox Infected, Chaos]
+units: # List of units in the faction
+  # --- Vulgrar Thrice-Cursed ---
+  - id: gellerpox_infected_vulgrar_thrice-cursed_3
+    name: Vulgrar Thrice-Cursed
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 5
+      wounds: 21
+    ranged: # List: Ranged weapon profiles
+      - name: Pyregut (Standard)
+        attack: 5
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 6, Saturate, Torrent 2]
+      - name: Pyregut (Deluge)
+        attack: 5
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 4, Saturate, Seek Light]
+    melee: # List: Melee weapon profiles
+      - name: Fleshmelded Weapons
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Engineered]
+    rule: [Spread the Glorious Gifts]
+    action: []
+    keyword: [Nightmare Hulk, Leader, Vulgrar Thrice-Cursed]
+  
+  # --- Bloatspawn ---
+  - id: gellerpox_infected_bloatspawn_3
+    name: Bloatspawn
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 5
+      wounds: 20
+    ranged: # List: Ranged weapon profiles
+      - name: Mutant Tentacles
+        attack: 5
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 3, Torrent 1]
+    melee: # List: Melee weapon profiles
+      - name: Mutant Claw & Tentacles (Slashing)
+        attack: 6
+        hit: 4
+        damage: [3, 4]
+        rule: []
+      - name: Mutant Claw & Tentacles (Swiping)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Swipe]
+    rule: [Tentacled Grasp]
+    action: []
+    keyword: [Nightmare Hulk, Bloatspawn]
+  
+  # --- Fleshscreamer ---
+  - id: gellerpox_infected_fleshscreamer_3
+    name: Fleshscreamer
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 5
+      wounds: 20
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Mutant Fist and Cleaver (Lopping Blow)
+        attack: 1
+        hit: 3
+        damage: [8, 9]
+        rule: [Lethal 5]
+      - name: Mutant Fist and Cleaver (Slashing)
+        attack: 5
+        hit: 4
+        damage: [5, 6]
+        rule: []
+    rule: [Horrifying Shrieking]
+    action: []
+    keyword: [Nightmare Hulk, Fleshscreamer]
+  
+  # --- Lumberghast ---
+  - id: gellerpox_infected_lumberghast_3
+    name: Lumberghast
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 5
+      wounds: 20
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Mutant Claw
+        attack: 4
+        hit: 4
+        damage: [6, 7]
+        rule: [Brutal]
+    rule: [Spiked Charger]
+    action: []
+    keyword: [Nightmare Hulk, Lumberghast]
+  
+  # --- Mutant ---
+  - id: gellerpox_infected_mutant_3
+    name: Mutant
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 5
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Frag Grenade
+        attack: 4
+        hit: 4
+        damage: [2, 4]
+        rule: [Range 6, Blast 2, Limited 1, Saturate]
+    melee: # List: Melee weapon profiles
+      - name: Heavy Axe
+        attack: 3
+        hit: 4
+        damage: [4, 5]
+        rule: [Brutal]
+      - name: Improvised Weapon
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Ceaseless]
+    rule: [Group Activation (Mutant), Gellercaust Masks]
+    action: []
+    keyword: [Mutant]
+  
+  # --- Glitchling ---
+  - id: gellerpox_infected_glitchling_3
+    name: Glitchling
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 6
+      wounds: 3
+    ranged: # List: Ranged weapon profiles
+      - name: Diseased Effluence
+        attack: 4
+        hit: 4
+        damage: [2, 2]
+        rule: [Range 6]
+    melee: # List: Melee weapon profiles
+      - name: Diseased Nippers
+        attack: 3
+        hit: 4
+        damage: [1, 2]
+        rule: []
+    rule: [Daemonic, Small, Group Activation (Glitchling)]
+    action: []
+    keyword: [Glitchling]
+  
+  # --- Cursemite ---
+  - id: gellerpox_infected_cursemite_3
+    name: Cursemite
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 6
+      wounds: 2
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Bloodsucking Proboscis
+        attack: 2
+        hit: 4
+        damage: [2, 3]
+        rule: [Rending, Feast]
+    rule: [Group Activation (Mutoid Vermin)]
+    action: []
+    keyword: [Mutoid Vermin, Cursemite]
+  
+  # --- Eyestinger Swarm ---
+  - id: gellerpox_infected_eyestinger_swarm_3
+    name: Eyestinger Swarm
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 6
+      wounds: 2
+    ranged: # List: Ranged weapon profiles
+      - name: Swarm
+        attack: 5
+        hit: 6
+        damage: [0, 0]
+        rule: [Range 6, Stun]
+    melee: # List: Melee weapon profiles
+      - name: Sting
+        attack: 5
+        hit: 5
+        damage: [1, 2]
+        rule: [Shock]
+    rule: [Group Activation (Mutoid Vermin)]
+    action: []
+    keyword: [Mutoid Vermin, Eyestinger Swarm]
+  
+  # --- Sludge-grub ---
+  - id: gellerpox_infected_sludge-grub_3
+    name: Sludge-grub
+    stats: # List: Operative stats
+      apl: 2
+      move: 4
+      save: 6
+      wounds: 2
+    ranged: # List: Ranged weapon profiles
+      - name: Acid Spit
+        attack: 4
+        hit: 4
+        damage: [2, 2]
+        rule: [Range 6, 1" Devastating 1, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fanged Maw
+        attack: 2
+        hit: 4
+        damage: [1, 3]
+        rule: []
+    rule: [Group Activation (Mutoid Vermin), Caustic Demise]
+    action: []
+    keyword: [Mutoid Vermin, Sludge-grub]

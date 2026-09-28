@@ -1,6 +1,24 @@
 actions: # List of operative actions
+  # --- Accelerate ---
+  - id: op_act_accelerate_3
+    name: Accelerate
+    cost: 1
+    type: 
+    text: >
+      Select one friendly Deathmark or Immortal operative visible to and 
+      within 6" of this operative.
+    choices: []
+    points:
+      - text: >
+          Until the end of that operative's next activation, add 1 to 
+          its APL stat.
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
   # --- Apoplectic Rejuvenation ---
-  - id: act_apoplectic_rejuvenation_3
+  - id: op_act_apoplectic_rejuvenation_3
     name: Apoplectic Rejuvenation
     cost: 1
     type: 
@@ -18,8 +36,38 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of 
           an enemy operative.
   
+  # --- Augment Weapon ---
+  - id: op_act_augment_weapon_3
+    name: Augment Weapon
+    cost: 1
+    type: Support
+    text: >
+      Select one friendly Hierotek Circle operative visible to and within 6" of 
+      this operative. Until the start of this operative's next activation, until 
+      it's incapacitated or until this action is performed again by a friendly 
+      operative (whichever comes first), select two of the following weapon rules 
+      for one weapon from that selected operative's datacard to have:
+    choices: []
+    points:
+      - text: >
+          Lethal 5+
+      - text: >
+          Rending
+      - text: >
+          Saturate
+      - text: >
+          Severe
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+      - text: >
+          Note that if you select a Staff of Light or Arcane Conduit, 
+          you only select the additional weapon rules for either the 
+          ranged or melee profile of that weapon.
+  
   # --- Auspex Scan ---
-  - id: act_auspex_scan_3
+  - id: op_act_auspex_scan_3
     name: Auspex Scan
     cost: 1
     type:
@@ -35,8 +83,47 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
   
+  # --- Auto-Broadcaster ---
+  - id: op_act_auto_broadcaster_3
+    name: Auto-Broadcaster
+    cost: 1
+    type: 
+    text: >
+      If your Auto-Broadcaster marker isn't in the killzone, place it within 8" 
+      horizontally of this operative. If it is in the killzone, move your 
+      Auto-Broadcaster marker up to 8" horizontally.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range 
+          of an enemy operative.
+      - text: >
+          Whenever an enemy operative within 3" of your Auto-Broadcaster marker 
+          is shooting, fighting, or retaliating, your opponent cannot re-roll 
+          their attack dice.
+      - text: >
+          If this operative is removed from the killzone, remove your 
+          Auto-Broadcaster marker from the killzone.
+  
+  # --- Boost ---
+  - id: op_act_boost_3
+    name: Boost
+    cost: 1
+    type: 
+    text: >
+      The next time this operative performs a Charge action during this 
+      activation, add 4" to the distance it can move (instead of 2").
+    choices: []
+    points: []
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action more than 
+          once per battle, and cannot perform it during the 
+          first turning point.
+  
   # --- Breach ---
-  - id: act_breach_3
+  - id: op_act_breach_3
     name: Breach
     cost: 1
     type:
@@ -56,8 +143,28 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy 
           operative, or if a terrain feature isn't within its control range.
   
+  # --- Breach Point ---
+  - id: op_act_breach_point_3
+    name: Breach Point
+    cost: 1
+    type: 
+    text: >
+      Place one of your Breach markers within this operative's control range 
+      as close as possible to a terrain feature within control range of it.
+    choices: []
+    points: # List: Strings for additional info
+      - text: >
+          Whenever an operative is within 1" of that marker, it 
+          treats parts of that terrain feature that are no more 
+          than 1" thick as Accessible terrain.
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative, or if a terrain 
+          feature isn't within its control range.
+  
   # --- Break Stuff ---
-  - id: act_break_stuff_3
+  - id: op_act_break_stuff_3
     name: Break Stuff
     cost: 1
     type:
@@ -75,8 +182,108 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy 
           operative, or if a terrain feature isn't within its control range.
 
+  # --- Call the Storm ---
+  - id: op_act_call_the_storm_3
+    name: Call the Storm
+    cost: 1
+    type: 
+    text: >
+      Full description of the action goes here. It will be 
+      stored as a single long string.
+    choices: # List: Use this when an ability has multiple options
+      - name: 
+        type: Psychic
+        text: >
+          Remove your Storm marker from the killzone (if any), 
+          then place it in the killzone.
+      - name: 
+        type: Psychic
+        text: >
+          Select one friendly Wolf Scout operative. Until the start 
+          of this operative's next activation, until it's incapacitated 
+          or until it performs this action again (whichever comes first), 
+          whenever that friendly operative is wholly within your Storm 
+          and more than 3" from the active operative, it's obscured.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
+  
+  # --- Canoptek Repair ---
+  - id: op_act_canoptek_repair_3
+    name: Canoptek Repair
+    cost: 1
+    type: Support
+    text: >
+      Select one friendly Hierotek Circle operative visible to and within 
+      6" of this operative to regain up to 2D3 lost wounds.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative, or if a friendly operative has 
+          already performed this action during this turning point.
+  
+  # --- Carving Blow ---
+  - id: op_act_carving_blow_3
+    name: Carving Blow
+    cost: 1
+    type: 
+    text: >
+      Inflict 2D3 damage on each other operative visible to and within 
+      2" of this operative in an order of your choice ().
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while it has a Conceal order, 
+          or during the same activation in which it performed the Slice from Above 
+          action (see Bladefins faction equipment), the Clawed Charge action (see 
+          Clawed Armour faction equipment) or two Fight actions (and vice versa).
+      - text: >
+          Roll separately for each.
+  
+  # --- Chirurgeon's Tools ---
+  - id: op_act_chirurgeons_tools_3
+    name: Chirurgeon's Tools
+    cost: 1
+    type: 
+    text: >
+      Select one friendly Novitiate operative within this operative's control 
+      range to regain up to 2D3 lost wounds.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+      - text: >
+          The target cannot be an operative that the Medic! rule was used 
+          on during this turning point.
+  
+  # --- Chronometron ---
+  - id: op_act_chronometron_3
+    name: Chronometron
+    cost: 1
+    type: Support
+    text: >
+      Select one friendly Hierotek Circle operative visible to and within 
+      6" of this operative. Until the start of this operative's next 
+      activation, until this operative is incapacitated or until this 
+      action is performed again by a friendly operative (whichever comes 
+      first), subtract 1 from the Atk stat of an operative's weapons whenever 
+      it's shooting that selected operative.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
   # --- Cleaver Flurry ---
-  - id: act_cleaver_flurry_3
+  - id: op_act_cleaver_flurry_3
     name: Cleaver Flurry
     cost: 1
     type: 
@@ -99,7 +306,7 @@ actions: # List of operative actions
           it has a Conceal order.
   
   # --- Command ---
-  - id: act_command_3
+  - id: op_act_command_3
     name: Command
     cost: 1
     type: Support
@@ -114,8 +321,28 @@ actions: # List of operative actions
           This operative cannot perform this action while within control 
           range of an enemy operative.
   
+  # --- Countertemporal Nanomine ---
+  - id: op_act_countertemporal_nanomine_3
+    name: Countertemporal Nanomine
+    cost: 1
+    type: 
+    text: >
+      Place your Countertemporal Nanomine marker visible to and within 8" 
+      of this operative, or within 8" of this operative and on Vantage 
+      terrain of a terrain feature that's visible to this operative. 
+      Whenever an enemy operative is within 4" of your Countertemporal 
+      Nanomine marker, subtract 2" from its Move stat. When this operative 
+      is next activated, is incapacitated or this action is performed again 
+      by a friendly operative (whichever comes first), remove that marker.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
   # --- Dakka Dash ---
-  - id: act_dakka_dash_3
+  - id: op_act_dakka_dash_3
     name: Dakka Dash
     cost: 1
     type:
@@ -130,7 +357,7 @@ actions: # List of operative actions
           within control range of an enemy operative.
 
   # --- Dash and Spray ---
-  - id: act_dash_and_spray_3
+  - id: op_act_dash_and_spray_3
     name: Dash and Spray
     cost: 1
     type: 
@@ -147,7 +374,7 @@ actions: # List of operative actions
           range of an enemy operative.
   
   # --- Datacoronal Accumulator ---
-  - id: act_datacoronal_accumulator_3
+  - id: op_act_datacoronal_accumulator_3
     name: Datacoronal Accumulator
     cost: 1
     type: Support
@@ -166,7 +393,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
   
   # --- Distend Dorsal Sac ---
-  - id: act_distend_dorsal_sac_3
+  - id: op_act_distend_dorsal_sac_3
     name: Distend Dorsal Sac
     cost: 1
     type: 
@@ -180,7 +407,7 @@ actions: # List of operative actions
     rules: []
 
   # --- Expedient Repair ---
-  - id: act_expedient_repair_3
+  - id: op_act_expedient_repair_3
     name: Expedient Repair
     cost: 1
     type: 
@@ -197,7 +424,7 @@ actions: # List of operative actions
           control range of an enemy operative.
   
   # --- Flail ---
-  - id: act_flail_3
+  - id: op_act_flail_3
     name: Flail
     cost: 1
     type: 
@@ -217,7 +444,7 @@ actions: # List of operative actions
           a Conceal order.
   
   # --- Fog of Dreams ---
-  - id: act_fog_of_dreams_3
+  - id: op_act_fog_of_dreams_3
     name: Fog of Dreams
     cost: 1
     type: Psychic
@@ -233,7 +460,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Gaze of the Omnissiah ---
-  - id: act_gaze_of_the_omnissiah_3
+  - id: op_act_gaze_of_the_omnissiah_3
     name: Gaze of the Omnissiah
     cost: 1
     type: 
@@ -253,7 +480,7 @@ actions: # List of operative actions
           range of an enemy operative.
   
   # --- Get it Dun! ---
-  - id: act_get_it_dun_3
+  - id: op_act_get_it_dun_3
     name: Get it Dun!
     cost: 1
     type: Support
@@ -269,7 +496,7 @@ actions: # List of operative actions
           an enemy operative, or while counteracting.
 
   # --- Gong Knell ---
-  - id: act_gong_knell_3
+  - id: op_act_gong_knell_3
     name: Gong Knell
     cost: 1
     type: 
@@ -283,7 +510,7 @@ actions: # List of operative actions
     rules: []
   
   # --- Grappling Hook ---
-  - id: act_grappling_hook_3
+  - id: op_act_grappling_hook_3
     name: Grappling Hook
     cost: 1
     type:
@@ -300,8 +527,56 @@ actions: # List of operative actions
           action while within control range of an enemy operative, or during an activation in which it 
           performed the Charge or Fall Back action (or vice versa).
   
+  # --- Harbinger of Despair ---
+  - id: op_act_harbinger_of_despair_3
+    name: Harbinger of Despair
+    cost: 1
+    type: 
+    text: 
+    choices: # List: Use this when an ability has multiple options
+      - name: 
+        type: 
+        text: >
+          Place your Despair marker visible to this operative, or on Vantage terrain 
+          of a terrain feature that's visible to this operative. When this operative 
+          is next activated, is incapacitated or this action is performed again by a 
+          friendly operative (whichever comes first), remove that marker.
+      - name: 
+        type: 
+        text: >
+          Whenever an enemy operative is within 2" of your Despair marker, your 
+          opponent must spend 1 additional AP for that enemy operative to perform 
+          the Pick Up Marker and mission actions. Whenever determining control of 
+          a marker, treat the total APL stat of enemy operatives that contest it 
+          as 1 lower if at least one of those enemy operatives is within 2" of your 
+          Despair marker. Note this isn't a change to the APL stat, so any changes 
+          are cumulative with this.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
+  # --- Healing Balms ---
+  - id: op_act_healing_balms_3
+    name: Healing Balms
+    cost: 1
+    type: 
+    text: >
+      Select one friendly Wolf Scout operative within this operative's 
+      control range to regain up to D3+3 lost wounds.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+      - text: >
+          This operative cannot perform this action more than once 
+          per turning point.
+  
   # --- Heinous Deluge ---
-  - id: act_heinous_deluge_3
+  - id: op_act_heinous_deluge_3
     name: Heinous Deluge
     cost: 1
     type: Psychic
@@ -316,8 +591,32 @@ actions: # List of operative actions
           This operative cannot perform this action while within 
           control range of an enemy operative.
   
+  # --- Hunter's Senses ---
+  - id: op_act_hunters_senses_3
+    name: Hunter's Senses
+    cost: 1
+    type: 
+    text: >
+      Select one of the following rules for this operative's instigator 
+      bolt carbine to have until the start of its next activation:
+    choices: # List: Use this when an ability has multiple options
+      - name: Severe
+        type: 
+        text: >
+          This weapon has the Severe weapon rule.
+      - name: Saturate
+        type: 
+        text: >
+          This weapon has the Saturate weapon rule. Whenever this 
+          operative is shooting, enemy operatives cannot be obscured.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
+  
   # --- Incite Fury ---
-  - id: act_incite_fury_3
+  - id: op_act_incite_fury_3
     name: Incite Fury
     cost: 1
     type: Support
@@ -334,7 +633,7 @@ actions: # List of operative actions
           within control range of an enemy operative.
   
   # --- Incite Slaughter ---
-  - id: act_incite_slaughter_3
+  - id: op_act_incite_slaughter_3
     name: Incite Slaughter
     cost: 1
     type: Support
@@ -349,7 +648,7 @@ actions: # List of operative actions
           range of an enemy operative
 
   # --- Incite Urgency ---
-  - id: act_incite_urgency_3
+  - id: op_act_incite_urgency_3
     name: Incite Urgency
     cost: 1
     type: Support
@@ -364,8 +663,55 @@ actions: # List of operative actions
           This operative cannot perform this action while within control 
           range of an enemy operative
   
+  # --- Interference Pulse ---
+  - id: op_act_interference_pulse_3
+    name: Interference Pulse
+    cost: 1
+    type: 
+    text: >
+      Select one enemy operative visible to and within 8" of a 
+      friendly Gheistskull operative. Roll one D6, adding 1 to 
+      the result if that enemy operative is a valid target for 
+      that friendly Gheistskull operative.
+    choices: []
+    points: # List: Strings for additional info
+      - text: >
+          On a 3+, subtract 1 from that enemy operative's APL 
+          stat until the end of its next activation.
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative, or if a friendly 
+          Gheistskull operative isn't in the killzone.
+  
+  # --- Interstitial Command ---
+  - id: op_act_interstitial_command_3
+    name: Interstitial Command
+    cost: 1
+    type: Support
+    text: >
+      Select one other friendly Hierotek Circle operative visible to and 
+      within 6" of this operative. That selected operative can immediately 
+      perform a 1AP action for free.
+    choices:  []
+    points: []
+    rules:
+      - text: >
+          Excludes Aprentek and Cryptek operatives.
+      - text: >
+          Excludes the Accelerate action.
+      - text: >
+          It cannot move more than or be removed and 
+          set up more than 2" during that action.
+      - text: >
+          It cannot perform an action it's already 
+          performed during this turning point.
+      - text: >
+          It cannot perform that action again during 
+          this turning point.
+  
   # --- Listen In ---
-  - id: act_listen_in_3
+  - id: op_act_listen_in_3
     name: Listen In
     cost: 1
     type: Support
@@ -380,7 +726,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Malefic Vortex ---
-  - id: act_malefic_vortex_3
+  - id: op_act_malefic_vortex_3
     name: Malefic Vortex
     cost: 1
     type: Psychic
@@ -399,7 +745,7 @@ actions: # List of operative actions
           control range of an enemy operative.
   
   # --- Mantle of Darkness ---
-  - id: act_mantle_of_darkness_3
+  - id: op_act_mantle_of_darkness_3
     name: Mantle of Darkness
     cost: 1
     type: Psychic
@@ -418,7 +764,7 @@ actions: # List of operative actions
           range of an enemy operative.
   
   # --- Mirror of Minds ---
-  - id: act_mirror_of_minds_3
+  - id: op_act_mirror_of_minds_3
     name: Mirror of Minds
     cost: 1
     type: Psychic
@@ -434,8 +780,23 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
   
+  # --- Multi-Dimensional Vision ---
+  - id: op_act_multi-dimensional_vision_3
+    name: Multi-Dimensional Vision
+    cost: 1
+    type: 
+    text: >
+      Until the start of this operative's next activation, whenever it's shooting, 
+      enemy operatives cannot be obscured.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
   # --- Network Override ---
-  - id: act_network_override_3
+  - id: op_act_network_override_3
     name: Network Override
     cost: 1
     type: Support
@@ -452,8 +813,41 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
   
+  # --- Nightmare Shroud ---
+  - id: op_act_nightmare_shroud_3
+    name: Nightmare Shroud
+    cost: 1
+    type: 
+    text: >
+      Until the start of this operative's next activation, until it's incapacitated 
+      or until this action is performed again by a friendly operative (whichever 
+      comes first), whenever an enemy operative within 4" of this operative is 
+      shooting, fighting or retaliating, your opponent cannot re-roll their attack 
+      dice and cannot retain attack dice results of less than 6 as critical successes 
+      (e.g. as a result of the Lethal, Rending or Severe weapon rules).
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
+  
+  # --- Nullifying Ritual ---
+  - id: op_act_nullifying_ritual_3
+    name: Nullifying Ritual
+    cost: 1
+    type: 
+    text: >
+      Add 1 to this operative's null range, to a maximum of 5". Nullification tokens 
+      in the marker/token guide are numbered, so use the numbered token equal to this 
+      operative's null range.
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range 
+          of an enemy operative, or more than once per turning point.
+  
   # --- Omniscanner ---
-  - id: act_omniscanner_3
+  - id: op_act_omniscanner_3
     name: Omniscanner
     cost: 1
     type: 
@@ -472,7 +866,7 @@ actions: # List of operative actions
           within control range of an enemy operative.
 
   # --- Optics ---
-  - id: act_optics_3
+  - id: op_act_optics_3
     name: Optics
     cost: 1
     type: 
@@ -486,7 +880,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Pareidolic Projection ---
-  - id: act_pareidolic_projection_3
+  - id: op_act_pareidolic_projection_3
     name: Pareidolic Projection
     cost: 1
     type: 
@@ -504,7 +898,7 @@ actions: # List of operative actions
           These aren't cumulative with being injured.
   
   # --- Photon Grenade Launcher ---
-  - id: act_proton_grenade_launcher_3
+  - id: op_act_proton_grenade_launcher_3
     name: Photon Grenade Launcher
     cost: 1
     type: 
@@ -518,7 +912,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Pistol Barrage ---
-  - id: act_pistol_barrage_3
+  - id: op_act_pistol_barrage_3
     name: Pistol Barrage
     cost: 1
     type:
@@ -534,7 +928,7 @@ actions: # List of operative actions
           during an activation in which it performed the Shoot action (or vice versa).
 
   # --- Poisonous Miasma ---
-  - id: act_poisonous_miasma_3
+  - id: op_act_poisonous_miasma_3
     name: Poisonous Miasma
     cost: 1
     type: Psychic
@@ -556,7 +950,7 @@ actions: # List of operative actions
           within control range of an enemy operative.
 
   # --- Putrescent Vitality ---
-  - id: act_putrescent_vitality_3
+  - id: op_act_putrescent_vitality_3
     name: Putrescent Vitality
     cost: 1
     type: Psychic
@@ -577,8 +971,81 @@ actions: # List of operative actions
           control range of an enemy operative, or more than once 
           per turning point.
   
+  # --- Raise Icon ---
+  - id: op_act_raise_icon_3
+    name: Raise Icon
+    cost: 1
+    type: 
+    text: >
+      You gain 1 Faith point. If this operative controls an objective marker, 
+      you also gain a number of Faith points equal to the turning point number.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action more than once per turning point, 
+          and cannot perform it while within control range of an enemy operative.
+  
+  # --- Reanimate ---
+  - id: op_act_reanimate_3
+    name: Reanimate
+    cost: 1
+    type: 
+    text: >
+      Select one of your Reanimation markers visible to and within 6" of 
+      this operative. Roll one D6: on a 3+, a friendly operative is Reanimated.
+    choices: []
+    points: 
+      - text: >
+          If you spent 1 additional AP, a friendly operative is automatically 
+          Reanimated. You don't need to roll a D6.
+      - text: >
+          An operative that's Reanimated from this unique action is set up 
+          expended if it was already expended during this turning point.
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
+  # --- Reinforce Metal ---
+  - id: op_act_reinforce_metal_3
+    name: Reinforce Metal
+    cost: 1
+    type: Support
+    text: >
+      Select one friendly Hierotek Circle operative visible to and within 
+      6" of this operative. Until the start of this operative's next 
+      activation, until it's incapacitated or until this action is performed 
+      again by a friendly operative (whichever comes first), whenever an 
+      attack dice inflicts damage of 3 or more on that operative, subtract 
+      1 from that inflicted damage.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
+  # --- Remote Control ---
+  - id: op_act_remote_control_3
+    name: Remote Control
+    cost: 1
+    type: 
+    text: >
+      Select one friendly Imperial Navy Breacher C.A.T. Unit operative. 
+      That operative can immediately perform one free action, but it 
+      cannot move more than 3" during that action.
+    choices: []
+    points: []
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative, or if a friendly 
+          Imperial Navy Breacher C.A.T. Unit operative isn't in 
+          the killzone.
+  
   # --- Ruinous Icon ---
-  - id: act_ruinous_icon_3
+  - id: op_act_ruinous_icon_3
     name: Ruinous Icon
     cost: 1
     type: Psychic
@@ -604,8 +1071,56 @@ actions: # List of operative actions
           This operative cannot perform this action while within control 
           range of an enemy operative.
   
+  # --- Shriek ---
+  - id: op_act_shriek_3
+    name: Shriek
+    cost: 1
+    type: 
+    text: > # String: Using '>' allows for multi-line descriptions
+      Select one enemy operative that's visible to and within 6" of this operative. 
+      Alternatively, select one enemy operative within this operative's Boost Zone 
+      (at which point this becomes a Boost action). If enemy operatives are within 
+      control range of this operative, you cannot select an enemy operative that isn't. 
+    choices: []
+    points: # List: Strings for additional info
+      - text: >
+          Inflict D3 damage on the selected operative and subtract 1 from its 
+          APL stat until the end of its next activation.
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while it has a Conceal order.
+      - text: >
+          If you're selecting an enemy operative within this operative's Boost Zone, 
+          this operative cannot perform this action normally. Instead, it performs 
+          this action during the Fall Back or Reposition action after setting up 
+          from a Boost.
+  
+  # --- Snatch ---
+  - id: op_act_snatch_3
+    name: Snatch
+    cost: 1
+    type: Boost
+    text: >
+      Select one enemy operative within this operative's Boost Zone. 
+      Both players roll one D6 and add their respective operative's 
+      Wounds stat to their result. If your result is higher, remove 
+      that enemy operative from the killzone and set it back up within 
+      this operative's Boost Zone or control range. It must be set up 
+      in a location it can be placed and cannot be set up further away 
+      from this operative than where it began. If that enemy operative 
+      is set up within this operative's control range, the Fall Back or 
+      Reposition action ends (allowing this operative to end that action 
+      within control range of enemy operatives).
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action normally. Instead, 
+          it performs this action during the Fall Back or Reposition 
+          action after setting up from a Boost.
+  
   # --- Song of Renewal ---
-  - id: act_song_of_renewal_3
+  - id: op_act_song_of_renewal_3
     name: Song of Renewal
     cost: 1
     type: 
@@ -628,7 +1143,7 @@ actions: # List of operative actions
           range of an enemy operative, or more than once per turning point.
   
   # --- Soul Channel ---
-  - id: act_soul_channel_3
+  - id: op_act_soul_channel_3
     name: Soul Channel
     cost: 1
     type: Psychic
@@ -643,7 +1158,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Soul Heal ---
-  - id: act_soul_heal_3
+  - id: op_act_soul_heal_3
     name: Soul Heal
     cost: 1
     type: Psychic
@@ -656,8 +1171,99 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
 
+  # --- Speak of Her Deeds ---
+  - id: op_act_speak_of_her_deeds_3
+    name: Speak of Her Deeds
+    cost: 1
+    type: Support
+    text: >
+      Select an Inspiring friendly Celestian Insidiant operative visible to 
+      and within 6" of this operative. That operative is no longer Inspiring. 
+      Then, select another friendly Celestian Insidiant operative visible to 
+      and within 6" of this operative. Resolve one Benediction from the Martyrdom 
+      faction rule on that operative (excluding Exigence).
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+  
+  # --- Spiritual Mentor ---
+  - id: op_act_spiritual_mentor_3
+    name: Spiritual Mentor
+    cost: 1
+    type: Support
+    text: >
+      Select one friendly Celestian Insidiant operative visible to 
+      and within 6" of this operative. That operative becomes Inspiring.
+    rules:
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative, or more than once 
+          per turning point.
+  
+  # --- Spot ---
+  - id: op_act_spot_3
+    name: Spot
+    cost: 1
+    type: 
+    text: >
+      Select one enemy operative visible to this operative. Until the 
+      end of the turning point, until that enemy operative is no longer 
+      visible to this operative or until this operative performs this 
+      action again (whichever comes first), whenever a friendly Imperial 
+      Navy Breacher operative is shooting that enemy operative, you can 
+      use this effect. If you do:
+    choices: []
+    points: # List: Strings for additional info
+      - text: >
+          That friendly operative's ranged weapons have the 
+          Seek Light weapon rule.
+      - text: >
+          That enemy operative cannot be obscured.
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while 
+          within control range of an enemy operative.
+  
+  # --- Stirring Rhetoric ---
+  - id: op_act_stirring_rhetoric_3
+    name: Stirring Rhetoric
+    cost: 1
+    type: Support
+    text: >
+      Select one other friendly Novitiate operative visible to and within 6" of this 
+      operative, or within 6" of your Auto-Broadcaster marker. Until the end of that 
+      operative's next activation, add 1 to its APL stat.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range 
+          of an enemy operative.
+      - text: >
+          The operative's APL stat is limited to a maximum of 3 after all APL 
+          stat changes have been totalled.
+  
+  # --- Strike From Above ---
+  - id: op_act_strike_from_above_3
+    name: Strike From Above
+    cost: 1
+    type: Boost
+    text: >
+      Inflict 2D3+1 damage on one enemy operative within this 
+      operative's Boost Zone.
+    choices: []
+    points: []
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action normally. 
+          Instead, it performs this action during the Fall Back 
+          or Reposition action after setting up from a Boost.
+  
   # --- Sweeping Blow ---
-  - id: act_sweeping_blow_3
+  - id: op_act_sweeping_blow_3
     name: Sweeping Blow
     cost: 1
     type: 
@@ -672,7 +1278,7 @@ actions: # List of operative actions
           has a Conceal order.
   
   # --- System Jam ---
-  - id: act_system_jam_3
+  - id: op_act_system_jam_3
     name: System Jam
     cost: 1
     type: Psychic
@@ -686,8 +1292,27 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative
   
+  # --- Timesplitter ---
+  - id: op_act_timesplitter_3
+    name: Timesplitter
+    cost: 1
+    type: 
+    text: >
+      Select one other expended friendly Hierotek Circle operative visible to 
+      and within 5" of this operative. Remove it from the killzone and set it 
+      back up visible to and within 5" horizontally of this operative, in a 
+      location it can be placed. Note that a Comms Device from universal 
+      equipment only affects the first distance of this rule.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range 
+          of an enemy operative, during the first turning point, or if a friendly 
+          operative has already performed this action during this turning point.
+  
   # --- Toxic Lunge ---
-  - id: act_toxic_lunge_3
+  - id: op_act_toxic_lunge_3
     name: Toxic Lunge
     cost: 1
     type: 
@@ -704,7 +1329,7 @@ actions: # List of operative actions
           precedence over the normal Burrow rules).
 
   # --- Track Enemy ---
-  - id: act_track_enemy_3
+  - id: op_act_track_enemy_3
     name: Track Enemy
     cost: 1
     type:
@@ -719,7 +1344,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Transfusion Ritual ---
-  - id: act_transfusion_ritual_3
+  - id: op_act_transfusion_ritual_3
     name: Transfusion Ritual
     cost: 1
     type:
@@ -735,7 +1360,7 @@ actions: # List of operative actions
           range of an enemy operative, or if its Gore Tank is empty.
   
   # --- Uncompromising Attack ---
-  - id: act_uncompromising_attack_3
+  - id: op_act_uncompromising_attack_3
     name: Uncompromising Attack
     cost: 1
     type: 
@@ -752,8 +1377,36 @@ actions: # List of operative actions
     points: []
     rules: []
   
+  # --- Vision of Madness ---
+  - id: op_act_vision_of_madness_3
+    name: Vision of Madness
+    cost: 1
+    type: 
+    text: 
+    choices: # List: Use this when an ability has multiple options
+      - name: 
+        type: 
+        text: >
+          Select one enemy operative visible to this operative. Until the start of 
+          this operative's next activation, until it's incapacitated or until this 
+          action is performed again by a friendly operative (whichever comes first), 
+          that selected operative gains one of your Madness tokens.
+      - name: 
+        type: 
+        text: >
+          Whenever your opponent would activate an enemy operative that has one of 
+          your Madness tokens, you can roll one D6: if the result is equal to or 
+          higher than that enemy operative's APL, they cannot activate it during this 
+          activation. If that operative is successfully activated, or there are no 
+          other enemy operatives eligible to be activated, remove its Madness token.
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control range 
+          of an enemy operative.
+  
   # --- Warp Fold ---
-  - id: act_warp_fold_3
+  - id: op_act_warp_fold_3
     name: Warp Fold
     cost: 1
     type: Psychic
@@ -770,7 +1423,7 @@ actions: # List of operative actions
           This operative cannot perform this action while within control range of an enemy operative.
 
   # --- Warding Shield ---
-  - id: act_warding_shield_3
+  - id: op_act_warding_shield_3
     name: Warding Shield
     cost: 1
     type: Psychic
@@ -785,8 +1438,32 @@ actions: # List of operative actions
       - text: >
           This operative cannot perform this action while within control range of an enemy operative.
   
+  # --- Wayfind ---
+  - id: op_act_wayfind_3
+    name: Wayfind
+    cost: 1
+    type: Support
+    text: >
+      Select one other friendly Imperial Navy Breacher operative, 
+      excluding C.A.T. Unit or Gheistskull, visible to and within 
+      6" of this operative, or visible to and within 6" of a 
+      friendly Imperial Navy Breacher C.A.T. unit operative.
+    choices: []
+    points: # List: Strings for additional info
+      - text: >
+          Until the end of that operative's next activation, 
+          add 1 to its APL stat.
+      - text: >
+          For the purposes of the Comms Device universal equipment, 
+          the operative the distance is being determined from must 
+          control that marker.
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative.
+  
   # --- Weave Darknesse ---
-  - id: act_weave_darkness_3
+  - id: op_act_weave_darkness_3
     name: Weave Darkness
     cost: 1
     type: 
@@ -805,8 +1482,50 @@ actions: # List of operative actions
           If this operative is incapacitated, remove your 
           Weave Darkness marker from the killzone.
   
+  # --- Weld Shut ---
+  - id: op_act_weld_shut_3
+    name: Weld Shut
+    cost: 1
+    type: 
+    text: >
+      Select a closed hatchway within this operative's control range.
+    choices: []
+    points: # List: Strings for additional info
+      - text: >
+          Other operatives must spend 1 additional AP to perform 
+          the Operate Hatch action to open that hatchway.
+      - text: >
+          This effect ends when that hatchway is opened.
+    rules: # List: Strings for rule info
+      - text: >
+          This operative cannot perform this action while within 
+          control range of an enemy operative, or if it isn't 
+          within 1" of a closed hatchway.
+      - text: >
+          This operative isn't affected by this effect.
+  
+  # --- Whip Into Frenzy ---
+  - id: op_act_whip_into_frenzy_3
+    name: Whip Into Frenzy
+    cost: 1
+    type: 
+    text: >
+      Select one other friendly Novitiate operative visible to and within 
+      3" of this operative that isn't currently benefitting from the effects 
+      of this action. Until the end of that operative's next activation, add 
+      1 to its APL stat, add 1" to its Move stat, and it can perform two Fight 
+      actions during its next activation.
+    choices: []
+    points: []
+    rules:
+      - text: >
+          This operative cannot perform this action while within control 
+          range of an enemy operative.
+      - text: >
+          Novitiate Superior cannot be selected.
+  
   # --- Wreathe in Balefire ---
-  - id: act_wreathe_in_balefire_3
+  - id: op_act_wreathe_in_balefire_3
     name: Wreathe in Balefire
     cost: 1
     type: 

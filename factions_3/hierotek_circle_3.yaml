@@ -1,0 +1,239 @@
+faction: Hierotek Circle
+faction_id: hierotek_circle_3
+faction_keyword: [Hierotek Circle, Necron]
+units: # List of units in the faction
+  # --- Chronomancer ---
+  - id: hierotek_circle_chronomancer_3
+    name: Chronomancer
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Aeonstave (Ranged)
+        attack: 5
+        hit: 3
+        damage: [3, 3]
+        rule: [Blast 2, Lethal 5, Stun, Magnify]
+      - name: Entropic Lance (Ranged)
+        attack: 4
+        hit: 3
+        damage: [5, 3]
+        rule: [Devastating 3, Piercing 1, Magnify]
+    melee: # List: Melee weapon profiles
+      - name: Aeonstave (Melee)
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Lethal 5, Shock]
+      - name: Entropic Lance (Melee)
+        attack: 4
+        hit: 4
+        damage: [3, 6]
+        rule: []
+    rule: []
+    action: [Interstitial Command, Timesplinter, Countertemporal Nanomine, Chronometron]
+    keyword: [Leader, Cryptek, Chronomancer]
+  
+  # --- Psychomancer ---
+  - id: hierotek_circle_psychomancer_3
+    name: Psychomancer
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Abyssal Lance (Ranged)
+        attack: 5
+        hit: 3
+        damage: [2, 2]
+        rule: [Blast 2, 2 Devastating 1. Piercing 2, Magnify]
+    melee: # List: Melee weapon profiles
+      - name: Abyssal Lance (Melee)
+        attack: 4
+        hit: 4
+        damage: [4, 4]
+        rule: [Devastating 1]
+    rule: []
+    action: [Interstitial Command, Harbinger of Despair, Nightmare Shroud, Vision of Madness]
+    keyword: [Leader, Cryptek, Psychomancer]
+  
+  # --- Technomancer ---
+  - id: hierotek_circle_technomancer_3
+    name: Technomancer
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Staff of Light (Ranged)
+        attack: 6
+        hit: 3
+        damage: [3, 4]
+        rule: [Rending, Magnify]
+    melee: # List: Melee weapon profiles
+      - name: Staff of Light (Melee)
+        attack: 4
+        hit: 4
+        damage: [3, 5]
+        rule: [Rending]
+    rule: []
+    action: [Interstitial Command, Canoptek Repair, Augment Weapon, Reinforce Metal]
+    keyword: [Leader, Cryptek, Technomancer]
+  
+  # --- Plasmacyte Accelerator ---
+  - id: hierotek_circle_plasmacyte_accelerator_3
+    name: Plasmacyte Accelerator
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 5
+    ranged: # List: Ranged weapon profiles
+      - name: Spark
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 4, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    rule: [Scuttler (Accelerate)]
+    action: [Accelerate]
+    keyword: [Plasmacyte, Accelerator]
+  
+  # --- Plasmacyte Reanimator ---
+  - id: hierotek_circle_plasmacyte_reanimator_3
+    name: Plasmacyte Reanimator
+    stats: # List: Operative stats
+      apl: 2
+      move: 7
+      save: 5
+      wounds: 5 
+    ranged: # List: Ranged weapon profiles
+      - name: Atomiser Beam
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 6, Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Claws
+        attack: 3
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    rule: [Scuttler (Reanimate)]
+    action: [Reanimate]
+    keyword: [Plasmacyte, Reanimator]
+  
+  # --- Apprentek---
+  - id: hierotek_circle_apprentek_3
+    name: Apprentek
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Arcane Conduit (Ranged)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing 1, Magnify]
+    melee: # List: Melee weapon profiles
+      - name: Arcane Conduit (Melee)
+        attack: 3
+        hit: 4
+        damage: [3, 5]
+        rule: []
+    rule: [Apprentek Assistance]
+    action: []
+    keyword: [Apprentek]
+  
+  # --- Deathmark ---
+  - id: hierotek_circle_deathmark_3
+    name: Deathmark
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Synaptic Disintegrator
+        attack: 4
+        hit: 2
+        damage: [4, 3]
+        rule: [Devastating 2, Heavy (Dash Only), Piercing 1, Severe]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 3
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Deathmarked]
+    action: [Multi-Dimensional Vision]
+    keyword: [Deathmark]
+  
+  # --- Immortal Despotek ---
+  - id: hierotek_circle_immortal_despotek_3
+    name: Immortal Despotek
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Gauss Blaster
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing 1]
+      - name: Tesla Carbine
+        attack: 5
+        hit: 3
+        damage: [3, 3]
+        rule: [2 Devastating 1]
+    melee: # List: Melee weapon profiles
+      - name: Bayonet
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Steadfast]
+    action: [Interstitial Command]
+    keyword: [Immortal, Despotek]
+  
+  # --- Immortal Guardian ---
+  - id: hierotek_circle_immortal_guardian_3
+    name: Immortal Guardian
+    stats: # List: Operative stats
+      apl: 2
+      move: 5
+      save: 3
+      wounds: 10 
+    ranged: # List: Ranged weapon profiles
+      - name: Gauss Blaster
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing 1]
+      - name: Tesla Carbine
+        attack: 5
+        hit: 3
+        damage: [3, 3]
+        rule: [2 Devastating 1]
+    melee: # List: Melee weapon profiles
+      - name: Bayonet
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Steadfast]
+    action: []
+    keyword: [Immortal, Guardian]

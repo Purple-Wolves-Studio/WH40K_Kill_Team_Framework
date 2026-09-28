@@ -17,6 +17,21 @@ rules: # List of weapon rules
       - text: >
           This weapon rule has no effect on preventing the Guard action.
   
+  # --- Anti-Psyker ---
+  - id: wep_rule_anti_psyker_3
+    name: Anti-Psyker
+    text: >
+      Whenever this weapon is being used against an operative that 
+      has the Psyker keyword, it has the Lethal 5+ weapon rule.
+  
+  # --- Anti-Psyker (Novitiate) ---
+  - id: wep_rule_anti_psyker_novitiate_3
+    name: Anti-Psyker (Novitiate)
+    text: >
+      Whenever this weapon is being used against an operative that 
+      has the Psyker keyword, add 1 to both Dmg stats of this weapon 
+      and it has the Lethal 5+ weapon rule.
+  
   # --- Balanced ---
   - id: wep_rule_balanced_3
     name: Balanced
@@ -122,6 +137,17 @@ rules: # List of weapon rules
       Damage from this weapon rule cannot be ignored or reduced.
     points: []
 
+  # --- Detonate (Gheistskull) ---
+  - id: wep_rule_detonate_gheistskull_3
+    name: Detonate (Gheistskull)
+    text: >
+      A friendly Imperial Navy Breacher Gheistskull operative is 
+      always the primary target and cannot be in cover or obscured. 
+    points: # List: Strings for additional info
+      - text: >
+          If that operative isn't in the killzone, you cannot 
+          select this weapon.
+  
   # --- Devastating 1 ---
   - id: wep_rule_devastating_1_3
     name: Devastating 1
@@ -132,6 +158,26 @@ rules: # List of weapon rules
       Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
     points: []
 
+  # --- 1 Devastating 1 ---
+  - id: wep_rule_1_devastating_1_3
+    name: 1 Devastating 1
+    text: >
+      Each retained critical success immediately inflicts 1 damage on the operative 
+      this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 1), 
+      inflict 1 damage on that operative and each other operative visible to and within that distance of it. 
+      Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
+    points: []
+  
+  # --- 2 Devastating 1 ---
+  - id: wep_rule_2_devastating_1_3
+    name: 2 Devastating 1
+    text: >
+      Each retained critical success immediately inflicts 1 damage on the operative 
+      this weapon is being used against. If the rule starts with a distance (e.g. 2" Devastating 1), 
+      inflict 1 damage on that operative and each other operative visible to and within that distance of it. 
+      Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
+    points: []
+  
   # --- Devastating 2 ---
   - id: wep_rule_devastating_2_3
     name: Devastating 2
@@ -142,9 +188,9 @@ rules: # List of weapon rules
       Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
     points: []
 
-  # --- 2" Devastating 2 ---
-  - id: wep_rule_2in_devastating_2_3
-    name: 2" Devastating 2
+  # --- 2 Devastating 2 ---
+  - id: wep_rule_2_devastating_2_3
+    name: 2 Devastating 2
     text: >
       Each retained critical success immediately inflicts 2 damage on the operative 
       this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 2), 
@@ -162,9 +208,9 @@ rules: # List of weapon rules
       Note that success isn't discarded after doing so - it can still be resolved later in the sequence.
     points: []
 
-  # --- 1" Devastating 3 ---
-  - id: wep_rule_1in_devastating_3_3
-    name: 1" Devastating 3
+  # --- 1 Devastating 3 ---
+  - id: wep_rule_1_devastating_3_3
+    name: 1 Devastating 3
     text: >
       Each retained critical success immediately inflicts 3 damage on the operative 
       this weapon is being used against. If the rule starts with a distance (e.g. 1" Devastating 3), 
@@ -197,6 +243,27 @@ rules: # List of weapon rules
       dropping during that move, ignore the vertical distance.
     points: []
   
+  # --- Engineered ---
+  - id: wep_rule_engineered_3
+    name: Engineered
+    text: >
+      At the end of the Select Operatives step, if this operative is selected 
+      for deployment, select up to two of the following improvements or weapon 
+      rules for this weapon to have for the battle:
+    points:
+      - text: >
+          Add 1 to the Normal Dmg stat
+      - text: >
+          Add 1 to the Critical Dmg stat
+      - text: >
+          Balanced
+      - text: >
+          Brutal
+      - text: >
+          Lethal 5+
+      - text: >
+          Rending
+  
   # --- Explosive ---
   - id: wep_rule_explosive_3
     name: Explosive
@@ -206,6 +273,14 @@ rules: # List of weapon rules
       Instead, this operative is always the primary target and cannot be in cover or obscured.
     points: []
 
+  # --- Feast ---
+  - id: wep_rule_feast_3
+    name: Feast
+    text: >
+      Whenever this operative is using this weapon against a wounded operative, 
+      add 1 to the Atk stat of this weapon and it has the Lethal 5+ weapon rule.
+    points: []
+  
   # --- Force Impact ---
   - id: wep_rule_force_impact_3
     name: Force Impact
@@ -302,6 +377,22 @@ rules: # List of weapon rules
       (e.g. Blast), treat this as one use.
     points: []
 
+  # --- Magnify ---
+  - id: wep_rule_magnify_3
+    name: Magnify
+    text: >
+      Whenever this operative is performing the Shoot action with this weapon, 
+      if the target is visible to this operative, and another friendly Hierotek 
+      Circle Aprentek or Hierotek Circle Cryptek operative that has an Engage 
+      order and isn't within control range of enemy operatives is visible to this 
+      operative, you can use this rule.
+    points:
+      - text: >
+          Treat that operative as the active operative for the purposes of 
+          determining a valid target, cover and obscured.
+      - text: >
+          This weapon has the Ceaseless weapon rule until the end of that action.
+  
   # --- Neutron Bombardment ---
   - id: wep_rule_neutron_bombardment_3
     name: Neutron Bombardment
@@ -319,6 +410,25 @@ rules: # List of weapon rules
       your Neutron Fragment tokens it has.
     points: []
 
+  # --- Phase Sweep ---
+  - id: wep_rule_phase_sweep_3
+    name: Phase Sweep
+    text: >
+      Whenever this operative performs the Fight action with this weapon profile, 
+      if it isn't incapacitated, it can immediately perform a free Fight action 
+      afterwards.
+    points:
+      - text: >
+          You must select this weapon profile and it can only fight 
+          against each enemy operative within its control range once 
+          per activation or counteraction using this weapon profile.
+      - text: >
+          This takes precedence over action restrictions.
+      - text: >
+          You can continue to perform free Fight actions until this 
+          operative is incapacitated or has fought against every enemy 
+          operative within its control range.
+  
   # --- Piercing 1 ---
   - id: wep_rule_piercing_1_3
     name: Piercing 1
@@ -468,6 +578,15 @@ rules: # List of weapon rules
       normal successes as a critical success instead.
     points: []
 
+  # --- Riposte ---
+  - id: wep_rule_riposte_3
+    name: Riposte
+    text: >
+      Whenever you block with a critical success, you can also inflict 
+      damage equal to the weapon's Critical Dmg stat on the enemy 
+      operative in that sequence.
+    points: []
+  
   # --- Ritual ---
   - id: wep_rule_ritual_3
     name: Ritual
@@ -522,6 +641,15 @@ rules: # List of weapon rules
       retaining a critical success (e.g. Devastating, Piercing Crits, etc.) still do.
     points: []
 
+  # --- Shield ---
+  - id: wep_rule_shield_3
+    name: Shield
+    text: >
+      Whenever this operative is fighting or retaliating with this 
+      weapon, each of your blocks can be allocated to block 
+      two unresolved successes instead of one.
+    points: []
+  
   # --- Shock ---
   - id: wep_rule_shock_3
     name: Shock
@@ -586,6 +714,23 @@ rules: # List of weapon rules
       operative this weapon is being used against until the end of its next activation.
     points: []
 
+  # --- Swipe ---
+  - id: wep_rule_swipe_3
+    name: Swipe
+    text: >
+      Whenever this operative performs the Fight action and you select this 
+      weapon profile, if it isn't incapacitated, it can immediately perform 
+      a free Fight action afterwards, but you must select this weapon profile 
+      and it can only fight against each enemy operative within its control 
+      range once per activation or counteraction using this weapon profile.
+    points:
+      - text: >
+          This takes precedence over action restrictions.
+      - text: >
+          You can continue to perform free Fight actions until this 
+          operative is incapacitated or has fought against every enemy 
+          operative within its control range.
+  
   # --- Tactual Hunter ---
   - id: wep_rule_tactual_hunter_3
     name: Tactual Hunter
@@ -646,4 +791,12 @@ rules: # List of weapon rules
       Whenever this operative is shooting, if you don't spend 
       Communion points during that sequence, its neutron blaster has the 
       Accurate 1 weapon rule until the end of that sequence.
+    points: []
+  
+  # --- Zealous Rage ---
+  - id: wep_rule_zealous_rage_3
+    name: Zealous Rage
+    text: >
+      Whenever this operative is fighting with this weapon, 
+      it has the Ceaseless weapon rule.
     points: []

@@ -61,12 +61,12 @@ actions: # List of operative actions
         type: # String: Context specific to this option (e.g., [Psychic, Support])
         text: > # String: Using '>' allows for multi-line descriptions
           Description for option 2.
-    points:
+    points: # List: Strings for additional info
       - text: > # String: Using '>' allows for multi-line descriptions
           Description for the first bullet point.
       - text: > # String: Using '>' allows for multi-line descriptions
           Description for the second bullet point.
-    rules:
+    rules: # List: Strings for rule info
       - text: > # String: Using '>' allows for multi-line descriptions
           Description for rule 1.
       - text: > # String: Using '>' allows for multi-line descriptions
@@ -84,11 +84,11 @@ rules: # List of operative rules
   # --- Rule Name ---
   - id: # Unique Alphanumeric ID for referencing in unit files
     name: # String: Name of the rule
-    type: # String: Type of rule
+    type: # String: Provides context for certain actions (e.g., [Psychic, Support])
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.
-    points:
+    points: # List: Strings for additional info
       - text: > # String: Description of what this option does
           Description for option 1.
       - text: > # String: Description of what this option does
@@ -102,14 +102,14 @@ rules: # List of operative rules
 
 ```yaml
 
-rules: # List of operative rules
+rules: # List of weapon rules
   # --- Rule Name ---
   - id: # Unique Alphanumeric ID for referencing in unit files
     name: # String: Name of the rule
     text: > # String: Using '>' allows for multi-line descriptions
       Full description of the action goes here. It will be 
       stored as a single long string.
-    points:
+    points: # List: Strings for additional info
       - text: > # String: Description of what this option does
           Description for option 1.
       - text: > # String: Description of what this option does

@@ -1,0 +1,298 @@
+faction: Deathwatch
+faction_id: deathwatch_3
+faction_keyword: [Deathwatch, Imperium, Adeptus Astartes]
+units: # List of units in the faction
+  # --- Deathwatch Watch Sergeant ---
+  - id: deathwatch_watch_sergeant_3
+    name: Deathwatch Watch Sergeant
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 15
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Adaptable Armoury, Strategic Command]
+    action: []
+    keyword: [Leader, Watch Sergeant]
+  
+  # --- Deathwatch Aegis Veteran ---
+  - id: deathwatch_aegis_veteran_3
+    name: Deathwatch Aegis Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 2
+      wounds: 15
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Power Maul & Storm Shield
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Shock, Shield]
+    rule: [Storm Shield]
+    action: []
+    keyword: [Aegis]
+  
+  # --- Deathwatch Blademaster Veteran ---
+  - id: deathwatch_blademaster_veteran_3
+    name: Deathwatch Blademaster Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 15
+    ranged: # List: Ranged weapon profiles
+      - name: Special Issue Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Xenophase Blade (Duel)
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Brutal, Lethal 5]
+      - name: Xenophase Blade (Phase Sweep)
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Brutal, Lethal 5, Phase Sweep]
+    rule: [Adaptive Swordsmanship]
+    action: []
+    keyword: [Blademaster]
+  
+  # --- Deathwatch Bombard Veteran ---
+  - id: deathwatch_bombard_veteran_3
+    name: Deathwatch Bombard Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 18
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Frag Cannon (Shell)
+        attack: 4
+        hit: 3
+        damage: [5, 7]
+        rule: [Piercing 1]
+      - name: Frag Cannon (Shrapnel)
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Torrent 2]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gravis, Bombard]
+  
+  # --- Deathwatch Breacher Veteran ---
+  - id: deathwatch_breacher_veteran_3
+    name: Deathwatch Breacher Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 18
+    ranged: # List: Ranged weapon profiles
+      - name: Auxiliary Grenade Launcher (Frag)
+        attack: 4
+        hit: 3
+        damage: [2, 4]
+        rule: [Blast 2]
+      - name: Auxiliary Grenade Launcher (Krak)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing 1]
+      - name: Hellstorm Bolt Rifle
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Torrent 1]
+      - name: Melta Bomb
+        attack: 4
+        hit: 3
+        damage: [5, 3]
+        rule: [Range 3, Devastating 3, Heavy (Reposition Only), Limited 1, Piercing 2]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gravis, Breacher]
+  
+  # --- Deathwatch Demolisher Veteran ---
+  - id: deathwatch_demolisher_veteran_3
+    name: Deathwatch Demolisher Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 15
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Heavy Thunder Hammer
+        attack: 5
+        hit: 4
+        damage: [6, 7]
+        rule: [Shock, Stun]
+    rule: [Brutal Assault, Aggressive Force]
+    action: []
+    keyword: [Demolisher]
+  
+  # --- Deathwatch Disruptor Veteran ---
+  - id: deathwatch_disruptor_veteran_3
+    name: Deathwatch Disruptor Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Marksman Bolt Carbine
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Advanced Omni-Scrambler, Auspex Triangulation]
+    action: []
+    keyword: [Disruptor]
+  
+  # --- Deathwatch Headtaker Veteran ---
+  - id: deathwatch_headtaker_veteran_3
+    name: Deathwatch Headtaker Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Special Issue Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Combat Knives
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Grav-chute and Grapnel Launcher, Clandestine Headtaker]
+    action: []
+    keyword: [Headtaker]
+  
+  # --- Deathwatch Horde-Slayer Veteran ---
+  - id: deathwatch_horde-slayer_veteran_3
+    name: Deathwatch Horde-Slayer Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 5
+      save: 3
+      wounds: 18
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Infernus Heavy Bolter (Flame)
+        attack: 5
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 8, Saturate, Torrent 2]
+      - name: Infernus Heavy Bolter (Focused Bolt)
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing Crits 1]
+      - name: Infernus Heavy Bolter (Sweeping Bolt)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Piercing Crits 1, Torrent 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gravis, Horde-slayer]
+  
+  # --- Deathwatch Marksman Veteran ---
+  - id: deathwatch_marksman_veteran_3
+    name: Deathwatch Marksman Veteran
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 15
+    ranged: # List: Ranged weapon profiles
+      - name: Stalker Bolt Rifle (Mobile)
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+      - name: Stalker Bolt Rifle (Heavy)
+        attack: 4
+        hit: 2
+        damage: [3, 5]
+        rule: [Heavy (Dash Only), Lethal 5, Piercing Crits 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: [Vigilant Marksman]
+    action: []
+    keyword: [Marksman]

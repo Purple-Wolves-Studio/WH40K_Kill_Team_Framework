@@ -1,0 +1,316 @@
+faction: Novitiates
+faction_id: novitiates_3
+faction_keyword: [Novitiate, Imperium, Adepta Sororitas] # List: Core tags shared by all units (e.g., [Ork] or [Aeldari])
+units: # List of units in the faction
+  # --- Novitiate Superior ---
+  - id: novitiates_novitiate_superior_3
+    name: Novitiate Superior
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+      - name: Relic Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Lethal 5]
+      - name: Relic Boltgun
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Lethal 5]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Inspirational Example]
+    action: []
+    keyword: [Leader, Superior]
+  
+  # --- Novitiate Condemnor ---
+  - id: novitiates_novitiate_condemnor_3
+    name: Novitiate Condemnor
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7 
+    ranged: # List: Ranged weapon profiles
+      - name: Condemnor Stakethrower
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Anti-Psyker (Novitiate), Devastating 2, Piercing Crits 1, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Null Rod
+        attack: 4
+        hit: 4
+        damage: [3, 3]
+        rule: [Anti-Psyker (Novitiate), Shock]
+    rule: [Null Rod]
+    action: []
+    keyword: [Condemnor]
+  
+  # --- Novitiate Dialogus ---
+  - id: novitiates_novitiate_dialogus_3
+    name: Novitiate Dialogus
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Dialogus Stave
+        attack: 4
+        hit: 4
+        damage: [3, 3]
+        rule: [Shock]
+    rule: []
+    action: [Stirring Rhetoric, Auto-Broadcaster]
+    keyword: [Dialogus]
+  
+  # --- Novitiate Duellist ---
+  - id: novitiates_novitiate_duellist_3
+    name: Novitiate Duellist
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Duelling Blades
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Ceaseless, Riposte]
+    rule: []
+    action: []
+    keyword: [Duellist]
+  
+  # --- Novitiate Exactor ---
+  - id: novitiates_novitiate_exactor_3
+    name: Novitiate Exactor
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Neural Whips (Ranged)
+        attack: 5
+        hit: 3
+        damage: [2, 3]
+        rule: [Range 3, Lethal 5, Stun]
+    melee: # List: Melee weapon profiles
+      - name: Neural Whips (Melee)
+        attack: 5
+        hit: 3
+        damage: [2, 3]
+        rule: [Lethal 5, Shock]
+    rule: []
+    action: [Whip Into Frenzy]
+    keyword: [Exactor]
+  
+  # --- Novitiate Hospitaller ---
+  - id: novitiates_novitiate_hospitaller_3
+    name: Novitiate Hospitaller
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Surgical Saw
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Lethal 5, Rending]
+    rule: [Medic! (Novitiate)]
+    action: [Chirurgeon's Tools]
+    keyword: [Medic, Hospitaller]
+  
+  # --- Novitiate Militant ---
+  - id: novitiates_novitiate_militant_3
+    name: Novitiate Militant
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autogun
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: []
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+      - name: Novitiate Blade
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: []
+    rule: [Militant Faith]
+    action: []
+    keyword: [Militant]
+  
+  # --- Novitiate Penitent ---
+  - id: novitiates_novitiate_penitent_3
+    name: Novitiate Penitent
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Penitent Eviscerator
+        attack: 4
+        hit: 4
+        damage: [5, 6]
+        rule: [Brutal, Zealous Rage]
+    rule: [Absolution Through Destruction]
+    action: []
+    keyword: [Penitent]
+  
+  # --- Novitiate Preceptor ---
+  - id: novitiates_novitiate_preceptor_3
+    name: Novitiate Preceptor
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Mace of the Righteous
+        attack: 4
+        hit: 4
+        damage: [5, 5]
+        rule: [Brutal, Severe]
+    rule: [Unflinching Example, Glorious Hymnal]
+    action: []
+    keyword: [Preceptor]
+  
+  # --- Novitiate Pronatus ---
+  - id: novitiates_novitiate_pronatus_3
+    name: Novitiate Pronatus
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Relic Seeker, Divine Acquisition]
+    action: []
+    keyword: [Pronatus]
+  
+  # --- Novitiate Purgatus ---
+  - id: novitiates_novitiate_purgatus_3
+    name: Novitiate Purgatus
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Ministorum Flamer
+        attack: 4
+        hit: 2
+        damage: [4, 4]
+        rule: [Range 8, Saturate, Torrent 2]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Purge With Flame]
+    action: []
+    keyword: [Purgatus]
+
+  # --- Novitiate Reliquarius ---
+  - id: novitiates_novitiate_reliquarius_3
+    name: Novitiate Reliquarius
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 7
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: [Icon Bearer]
+    action: [Raise Icon]
+    keyword: [Reliquarius]

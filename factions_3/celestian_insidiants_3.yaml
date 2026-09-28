@@ -1,0 +1,210 @@
+faction: Celestian Insidiants
+faction_id: celestian_insidiants_3
+faction_keyword: [Celestian Insidiant, Imperium, Adepta Sororitas]
+units: # List of units in the faction
+  # --- Insidiant Superior ---
+  - id: celestian_insidiants_insidiant_superior_3
+    name: Insidiant Superior
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 10
+    ranged: # List: Ranged weapon profiles
+      - name: Inferno Pistol
+        attack: 4
+        hit: 3
+        damage: [4, 2]
+        rule: [Range 3, Devastating 3, Piercing 2]
+      - name: Relic Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Lethal 5]
+      - name: Relic Condemnor Stakethrower
+        attack: 4
+        hit: 3
+        damage: [2, 2]
+        rule: [Devastating 2, Lethal 5, Piercing Crits 1, Silent, Anti-Psyker]
+    melee: # List: Melee weapon profiles
+      - name: Null Mace
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Shock, Anti-Psyker]
+    rule: [Holy Example]
+    action: [Spiritual Mentor]
+    keyword: [Leader, Superior]
+
+  # --- Insidiant Abjuror  ---
+  - id: celestian_insidiants_insidiant_abjuror_3
+    name: Insidiant Abjuror
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 2
+      wounds: 11
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Blessed Sword & Praesidium Protectiva (Defensive)
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Shield]
+      - name: Blessed Sword & Praesidium Protectiva (Offensive)
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Holy Defender]
+    action: []
+    keyword: [Abjuror]
+  
+  # --- Insidiant Censor  ---
+  - id: celestian_insidiants_insidiant_censor_3
+    name: Insidiant Censor
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Virge of Admonition
+        attack: 4
+        hit: 4
+        damage: [5, 5]
+        rule: [Brutal, Shock, Anti-Psyker]
+    rule: [Virge of Admonition Icon Bearer, Null Field]
+    action: [Nullifying Ritual]
+    keyword: [Censor]
+  
+  # --- Insidiant Cremator  ---
+  - id: celestian_insidiants_insidiant_cremator_3
+    name: Insidiant Cremator
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Hand Flamer (Standard)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 6, Saturate, Torrent 1]
+      - name: Hand Flamer (Deluge)
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 4, Saturate, Seek Light, Torrent 0]
+    melee: # List: Melee weapon profiles
+      - name: Null Mace
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Shock, Anti-Psyker]
+    rule: [Inspirational Pyre]
+    action: []
+    keyword: [Cremator]
+  
+  # --- Insidiant Denuncia  ---
+  - id: celestian_insidiants_insidiant_denuncia_3
+    name: Insidiant Denuncia
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Voice of Condemnation
+        attack: 5
+        hit: 3
+        damage: [1, 1]
+        rule: [Range 6, Seek, Stun]
+    melee: # List: Melee weapon profiles
+      - name: Staff of Declamation
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Shock]
+    rule: [Accusing Exorcist]
+    action: [Speak of Her Deeds]
+    keyword: [Denuncia]
+  
+  # --- Insidiant Mortisanctus  ---
+  - id: celestian_insidiants_insidiant_mortisanctus_3
+    name: Insidiant Mortisanctus
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Blessed Broadsword
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5, Brutal]
+    rule: [Zealous Ultimatum, Bladed Stance]
+    action: []
+    keyword: [Mortisanctus]
+  
+  # --- Insidiant Reliquarius  ---
+  - id: celestian_insidiants_insidiant_reliquarius_3
+    name: Insidiant Reliquarius
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Condemnor Stakethrower
+        attack: 4
+        hit: 3
+        damage: [2, 2]
+        rule: [Devastating 1, Piercing Crits 1, Silent, Anti-Psyker]
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 3
+        damage: [2, 3]
+        rule: []
+    rule: [Simulacrum Nullificatus Icon Bearer, Devotion]
+    action: [Reliquarius]
+    keyword: []
+  
+  # --- Insidiant Warrior  ---
+  - id: celestian_insidiants_insidiant_warrior_3
+    name: Insidiant Warrior
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 3
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Condemnor Stakethrower
+        attack:  4
+        hit: 3
+        damage: [2, 2]
+        rule: [Devastating 1, Piercing Crits 1, Silent, Anti-Psyker]
+    melee: # List: Melee weapon profiles
+      - name: Null Mace
+        attack: 4
+        hit: 3
+        damage: [4, 4]
+        rule: [Shock, Anti-Psyker]
+    rule: [Inspired Strikes]
+    action: []
+    keyword: []

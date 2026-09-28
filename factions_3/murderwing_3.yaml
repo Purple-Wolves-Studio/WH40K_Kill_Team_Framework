@@ -1,0 +1,284 @@
+faction: Murderwing
+faction_id: murderwing_3
+faction_keyword: [Murderwing, Chaos, Heretic Astartes]
+units: # List of units in the faction
+  # --- Murderwing Chaos Lord ---
+  - id: murderwing_chaos_lord_3
+    name: Murderwing Chaos Lord
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 15
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Lightning Claw
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Lethal 5, Rending]
+      - name: Power Fist
+        attack: 4
+        hit: 3
+        damage: [5, 7]
+        rule: [Brutal, Shock]
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+      - name: Relic Lightning Claws
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Ceaseless, Lethal 5, Rending]
+    rule: [Path to Damnation, Boons of Damnation]
+    action: []
+    keyword: [Leader, Lord]
+  
+  # --- Murderwing Champion ---
+  - id: murderwing_champion_3
+    name: Murderwing Champion
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Power Fist
+        attack: 4
+        hit: 3
+        damage: [5, 7]
+        rule: [Brutal, Shock]
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Path to Glory, Chaos Champion]
+    action: []
+    keyword: [Champion]
+  
+  # --- Murderwing Curseclaw ---
+  - id: murderwing_curseclaw_3
+    name: Murderwing Curseclaw
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Mutated Claws
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Frenzied Attack]
+    action: [Snatch]
+    keyword: [Curseclaw]
+  
+  # --- Murderwing Depredator ---
+  - id: murderwing_depredator_3
+    name: Murderwing Depredator
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Great Chainaxe
+        attack: 5
+        hit: 4
+        damage: [5, 7]
+        rule: [Brutal]
+    rule: [Horrifying Dismemberment]
+    action: [Carving Blow]
+    keyword: [Depredator]
+  
+  # --- Murderwing Huntmaster ---
+  - id: murderwing_huntmaster_3
+    name: Murderwing Huntmaster
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Pinned Prey]
+    action: [Strike From Above]
+    keyword: [Huntmaster]
+  
+  # --- Murderwing Raptor ---
+  - id: murderwing_raptor_3
+    name: Murderwing Raptor
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Chainsword
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Thrill of Flight]
+    action: []
+    keyword: [Raptor]
+  
+  # --- Murderwing Shrieker ---
+  - id: murderwing_shrieker_3
+    name: Murderwing Shrieker
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Chainsword
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Modified Vox-casters]
+    action: [Shriek]
+    keyword: [Shrieker]
+  
+  # --- Murderwing Skysear ---
+  - id: murderwing_skysear_3
+    name: Murderwing Skysear
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Flamer
+        attack: 4
+        hit: 2
+        damage: [3, 3]
+        rule: [Range 8, Saturate, Torrent 2]
+      - name: Meltagun
+        attack: 4
+        hit: 3
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Plasma Gun (Standard)
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Piercing 1]
+      - name: Plasma Gun (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Fists
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Skysear]
+  
+  # --- Murderwing Warp Talon ---
+  - id: murderwing_warp_talon_3
+    name: Murderwing Warp Talon
+    stats: # List: Operative stats
+      apl: 3
+      move: 6
+      save: 3
+      wounds: 14
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Lightning Claws
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: [Ceaseless, Lethal 5, Rending]
+    rule: [Slice the Veil]
+    action: []
+    keyword: [Warp Talon]

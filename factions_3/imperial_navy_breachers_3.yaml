@@ -1,0 +1,327 @@
+faction: Imperial Navy Breachers
+faction_id: imperial_navy_breachers_3
+faction_keyword: [Imperial Navy Breacher, Imperium]
+units: # List of units in the faction
+  # --- Navis Sergeant-at-Arms ---
+  - id: imperial_navy_breachers_navis_sergeant-at-arms_3
+    name: Navis Sergeant-at-Arms
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 4
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Heirloom Autopistol
+        attack: 4
+        hit: 3
+        damage: [2, 4]
+        rule: [Range 8, Lethal 5]
+      - name: Navis Shotgun (Close Range)
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+      - name: Navis Shotgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Chainsword
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+      - name: Navis Hatchet
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Command Breach]
+    action: []
+    keyword: [Leader, Sergeant-at-Arms]
+  
+  # --- Navis Armsman ---
+  - id: imperial_navy_breachers_navis_armsman_3
+    name: Navis Armsman
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Navis Shotgun (Close Range)
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+      - name: Navis Shotgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Navis Hatchet
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Group Activation (Armsman)]
+    action: []
+    keyword: [Armsman]
+  
+  # --- Navis Axejack ---
+  - id: imperial_navy_breachers_navis_axejack_3
+    name: Navis Axejack
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Emboldened]
+    action: []
+    keyword: [Axejack]
+  
+  # --- Navis C.A.T. Unit ---
+  - id: imperial_navy_breachers_navis_cat_unit_3
+    name: Navis C.A.T. Unit
+    stats: # List: Operative stats
+      apl: 2
+      move: 8
+      save: 5
+      wounds: 5
+    ranged: []
+    melee: []
+    rule: [Machine (C.A.T. Unit), Expendable]
+    action: [Spot]
+    keyword: [C.A.T. Unit]
+  
+  # --- Navis Endurant ---
+  - id: imperial_navy_breachers_navis_endurant_3
+    name: Navis Endurant
+    stats: # List: Operative stats
+      apl: 2
+      move: 4
+      save: 2
+      wounds: 11
+    ranged: # List: Ranged weapon profiles
+      - name: Navis Heavy Shortgun (Close Range)
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6, Relentless]
+      - name: Navis Heavy Shortgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [1, 2]
+        rule: [Relentless]
+    melee: # List: Melee weapon profiles
+      - name: Shield Bash
+        attack: 3
+        hit: 4
+        damage: [1, 2]
+        rule: [Brutal, Shield]
+    rule: [Breachwall, Disengage]
+    action: []
+    keyword: [Endurant]
+  
+  # --- Navis Gheistskull ---
+  - id: imperial_navy_breachers_navis_gheistskull_3
+    name: Navis Gheistskull
+    stats: # List: Operative stats
+      apl: 2
+      move: 8
+      save: 5
+      wounds: 5
+    ranged: []
+    melee: []
+    rule: [Machine (Gheistskull), Expendable]
+    action: [Boost]
+    keyword: [Gheistskull]
+  
+  # --- Navis Grenadier ---
+  - id: imperial_navy_breachers_navis_grenadier_3
+    name: Navis Grenadier
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Demolition Charge
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Range 3, Blast 2, Heavy (Reposition Only), Limited 1, Piercing 1, Saturate]
+      - name: Navis Heavy Shortgun (Close Range)
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+      - name: Navis Heavy Shortgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Navis Hatchet
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: [Grenadier (Imperial Navy Breacher)]
+    action: []
+    keyword: [Grenadier]
+  
+  # --- Navis Gunner ---
+  - id: imperial_navy_breachers_navis_gunner_3
+    name: Navis Gunner
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 9
+    ranged: # List: Ranged weapon profiles
+      - name: Meltagun
+        attack: 4
+        hit: 4
+        damage: [6, 3]
+        rule: [Range 6, Devastating 4, Piercing 2]
+      - name: Navis Las-volley (Focused)
+        attack: 5
+        hit: 4
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Rending]
+      - name: Navis Las-volley (Sweeping)
+        attack: 4
+        hit: 4
+        damage: [4, 5]
+        rule: [Heavy (Dash Only), Rending, Torrent 1]
+      - name: Plasma Gun (Standard)
+        attack: 4
+        hit: 4
+        damage: [4, 6]
+        rule: [Piercing 1]
+      - name: Plasma Gun (Supercharge)
+        attack: 4
+        hit: 4
+        damage: [5, 6]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Gun Butt
+        attack: 3
+        hit: 4
+        damage: [2, 3]
+        rule: []
+    rule: []
+    action: []
+    keyword: [Gunner]
+  
+  # --- Navis Hatchcutter ---
+  - id: imperial_navy_breachers_navis_hatchcutter_3
+    name: Navis Hatchcutter
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Autopistol
+        attack: 4
+        hit: 4
+        damage: [2, 3]
+        rule: [Range 8]
+    melee: # List: Melee weapon profiles
+      - name: Chainfist
+        attack: 4
+        hit: 4
+        damage: [5, 6]
+        rule: [Brutal, Rending]
+    rule: []
+    action: [Weld Shut, Breach Point]
+    keyword: [Hatchcutter]
+  
+  # --- Navis Surveyor ---
+  - id: imperial_navy_breachers_navis_surveyor_3
+    name: Navis Surveyor
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Navis Heavy Shortgun (Close Range)
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+      - name: Navis Heavy Shortgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Navis Hatchet
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: [Wayfind, Remote Control]
+    keyword: [Surveyor]
+  
+  # --- Navis Void-jammer ---
+  - id: imperial_navy_breachers_navis_void-jammer_3
+    name: Navis Void-jammer
+    stats: # List: Operative stats
+      apl: 2
+      move: 6
+      save: 4
+      wounds: 8
+    ranged: # List: Ranged weapon profiles
+      - name: Gheistskull Detonator
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Blast 1, Lethal 4, Limited 1, Silent, Stun, Detonate (Gheistskull)]
+      - name: Navis Heavy Shortgun (Close Range)
+        attack: 4
+        hit: 3
+        damage: [3, 3]
+        rule: [Range 6]
+      - name: Navis Heavy Shortgun (Long Range)
+        attack: 4
+        hit: 5
+        damage: [1, 2]
+        rule: []
+    melee: # List: Melee weapon profiles
+      - name: Navis Hatchet
+        attack: 3
+        hit: 4
+        damage: [3, 4]
+        rule: []
+    rule: []
+    action: [Interference Pulse]
+    keyword: [Void-jammer]

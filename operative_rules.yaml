@@ -1,4 +1,31 @@
 rules: # List of operative rules
+  # --- Absolution Through Destruction ---
+  - id: op_rule_absolution_through_destruction_3
+    name: Absolution Through Destruction
+    type: 
+    text: >
+      Whenever this operative performs the Fight action, if it isn't incapacitated, 
+      it can immediately perform a free Fight action afterwards.
+    points:
+      - text: >
+          This takes precedence over action restrictions, and you cannot 
+          perform more than two Fight actions in succession as a result 
+          of this rule.
+      - text: >
+          If this operative is benefitting from the effects of the 
+          Whip Into Frenzy action (see Exactor), this applies to each 
+          of the Fight actions from those effects.
+  
+  # --- Accusing Exorcist ---
+  - id: op_rule_accusing_exorcist_3
+    name: Accusing Exorcist
+    type: 
+    text: >
+      Whenever this operative is Inspiring, the Suspect & Eliminate 
+      strategy ploy costs you 0CP if the enemy operative or marker 
+      you select is visible to or within 6" of this operative.
+    points: []
+  
   # --- Accursed Mutant ---
   - id: op_rule_accursed_mutant_3
     name: Accursed Mutant
@@ -31,6 +58,14 @@ rules: # List of operative rules
       is within control range of an enemy operative.
     points: []
   
+  # --- Adaptable Armoury ---
+  - id: op_rule_adaptable_armoury_3
+    name: Adaptable Armoury
+    type: 
+    text: >
+      You can select one additional equipment option.
+    points: []
+  
   # --- Adaptive Equipment ---
   - id: op_rule_adaptive_equipment_3
     name: Adaptive Equipment
@@ -43,6 +78,45 @@ rules: # List of operative rules
       action limits (i.e. if you also select those grenades from equipment).
     points: []
   
+  # --- Adaptive Swordsmanship ---
+  - id: op_rule_adaptive_swordsmanship_3
+    name: Adaptive Swordsmanship
+    type: 
+    text: >
+      You can ignore any changes to the Hit stat of this operative's 
+      xenophase blade. Whenever this operative is fighting or retaliating, 
+      you can resolve one of your successes before the normal order. 
+      If you do, that success must be used to block.
+    points: []
+  
+  # --- Advanced Omni-Scrambler ---
+  - id: op_rule_advanced_omni-scrambler_3
+    name: Advanced Omni-Scrambler
+    type: Strategic Gambit
+    text: >
+      Select one enemy operative visible to or within 6" of this operative, 
+      then roll one D6. In the Firefight phase of this turning point, that 
+      enemy operative cannot be activated or perform actions until one of 
+      the following is true:
+    points:
+      - text: >
+          Your opponent has activated a number of enemy operatives 
+          equal to the result of the D6.
+      - text: >
+          It's the last enemy operative to be activated.
+  
+  # --- Aggressive Force ---
+  - id: op_rule_aggressive_force_3
+    name: Aggressive Force
+    type: 
+    text: >
+      Whenever this operative is fighting or retaliating, Normal 
+      and Critical Dmg of 3 or more inflicts 1 less damage on it. 
+    points:
+      - text: >
+          This isn't cumulative with the Shield that 
+          Slays strategy ploy.
+  
   # --- Analyse ---
   - id: op_rule_analyse_3
     name: Analyse
@@ -53,6 +127,16 @@ rules: # List of operative rules
       action also gains one of your Markerlight tokens.
     points: []
 
+  # --- Apprentek Assistance ---
+  - id: op_rule_apprentek_assistance_3
+    name: Apprentek Assistance
+    type: 
+    text: >
+      This operative has the same unique actions as your Cryptek operative 
+      selected for the battle, but can only perform one Cryptek unique action 
+      per turning point.
+    points: []
+  
   # --- Armoured Up ---
   - id: op_rule_armoured_up_3
     name: Armoured Up
@@ -83,6 +167,25 @@ rules: # List of operative rules
       friendly Blessed Blade operative within 6" of it at the same time. 
       Complete their activations action by action in any order.
     points: []
+  
+  # --- Auspex Triangulation ---
+  - id: op_rule_auspex_triangulation_3
+    name: Auspex Triangulation
+    type: 
+    text: >
+      The Advanced Auspex Scan firefight ploy costs you 0CP when both of 
+      the following are true:
+    points:
+      - text: >
+          This operative isn't within control range of enemy operatives.
+      - text: >
+          The target of that Shoot action (primary target, if relevant) 
+          is visible to this operative.
+      - text: >
+          Note that it doesn't have to be this operative performing the 
+          Shoot action, and that any subsequent Shoot actions during that 
+          activation/counteraction must meet these same requirements (or that 
+          ploy has no effect on those subsequent Shoot actions).
   
   # --- Bad-tempered ---
   - id: op_rule_bad_tempered_3
@@ -158,6 +261,16 @@ rules: # List of operative rules
        (excluding Operate Hatch).
     points: []
   
+  # --- Bladed Stance ---
+  - id: op_rule_bladed_stance_3
+    name: Bladed Stance
+    type: 
+    text: >
+      Whenever this operative is fighting or retaliating, you can 
+      resolve one of your successes before the normal order. If 
+      you do, that success must be used to block.
+    points: []
+
   # --- Blademaster ---
   - id: op_rule_blademaster_3
     name: Blademaster
@@ -212,6 +325,22 @@ rules: # List of operative rules
       before it's removed from the killzone.
     points: []
 
+  # --- Boons of Damnation ---
+  - id: op_rule_boons_of_damnation_3
+    name: Boons of Damnation
+    type: 
+    text: >
+      Boons of Damnation are as follows (resolved with a D6 roll, see opposite):
+    points:
+      - text: >
+          When an attack dice inflicts damage of 3 or more on this operative, 
+          you can ignore an amount of damage equal to this operative's 
+          Damnation points.
+      - text: >
+          When this operative is fighting or retaliating and you strike with 
+          an attack dice, you can inflict an amount of additional damage equal 
+          to this operative's Damnation points.
+  
   # --- Brawler ---
   - id: op_rule_brawler_3
     name: Brawler
@@ -233,7 +362,32 @@ rules: # List of operative rules
       than that other enemy operative's APL stat, subtract 1 from its APL stat 
       until the end of its next activation.
     points: []
-
+  
+  # --- Breachwall ---
+  - id: op_rule_breachwall_3
+    name: Breachwall
+    type: 
+    text: >
+      Whenever your opponent is selecting a valid target, and this operative 
+      has an Engage order and is intervening,they cannot select another 
+      friendly Imperial Navy Breacher operative whose base is touching 
+      this operative's. 
+    points: # List: Strings for additional info
+      - text: >
+          This rule has no effect if more than one other friendly 
+          operative's base is touching this operative's.
+  
+  # --- Brutal Assault ---
+  - id: op_rule_brutal_assault_3
+    name: Brutal Assault
+    type: 
+    text: >
+      Whenever this operative is fighting, its heavy thunder hammer has 
+      the Brutal weapon rule. Whenever this operative performs the Charge 
+      action, its heavy thunder hammer has the Ceaseless weapon rule until 
+      the end of the activation/counteraction.
+    points: []
+  
   # --- Brute ---
   - id: op_rule_brute_3
     name: Brute
@@ -300,6 +454,34 @@ rules: # List of operative rules
       saves from Vantage terrain.
     points: []
 
+  # --- Cast the Runes ---
+  - id: op_rule_cast_the_runes_3
+    name: Cast the Runes
+    type: 
+    text: >
+      After selecting this operative, before the battle, roll three D6 
+      and put them to one side.
+    points:
+      - text: >
+          For each result of 1-4, you can use the Command Re-roll firefight 
+          ploy for OCP once during the turning point that matches the result.
+      - text: >
+          If one or more results are 5-6, you gain 1CP.
+      - text: >
+          For example, if you roll 2, 2 and 5, you gain 1CP and twice during 
+          the second turning point you can use Command Re-roll for 0CP.
+  
+  # --- Caustic Demise ---
+  - id: op_rule_caustic_demise_3
+    name: Caustic Demise
+    type: 
+    text: >
+      When this operative is incapacitated, before it's removed from the killzone, 
+      roll one D6 separately for each enemy operative visible to and within 2" of it.
+    points:
+      - text: >
+          On a 4+, inflict 1 damage on that operative.
+  
   # --- Champion ---
   - id: op_rule_champion_3
     name: Champion
@@ -307,6 +489,19 @@ rules: # List of operative rules
     text: >
       This operative can perform two Fight 
       actions during its activation.
+    points: []
+  
+  # --- Chaos Champion ---
+  - id: op_rule_chaos_champion_3
+    name: Chaos Champion
+    type: Strategic Gambit
+    text: >
+      Remove your Challenge token from the enemy operative that has it (if any), 
+      then select one enemy operative to gain your Challenge token. Whenever this 
+      operative is fighting against or retaliating against an enemy operative that 
+      has your Challenge token, in the Select Weapons step, you can select one of 
+      the following weapon rules for this operative's melee weapons to have until 
+      the end of the sequence: Balanced, Brutal, Punishing, Severe, Shock.
     points: []
   
   # --- Claim Skull ---
@@ -326,6 +521,18 @@ rules: # List of operative rules
       When this operative is selected for the battle, select up to 
       two different Clanblade Upgrade rules (see Faction Rules) to 
       be added to its datacard for the battle.
+    points: []
+  
+  # --- Clandestine Headtaker ---
+  - id: op_rule_clandestine_headtaker_3
+    name: Clandestine Headtaker
+    type: 
+    text: >
+      This operative can perform the Charge action while it has a Conceal order. 
+      Whenever this operative is fighting against an operative it wasn't visible 
+      to at the start of the activation/counteraction, the first time you strike 
+      during that sequence, you can immediately resolve another of your successes 
+      as a strike (before your opponent).
     points: []
   
   # --- Climbing Picks ---
@@ -349,6 +556,26 @@ rules: # List of operative rules
       this operative's weapons also have the Rending weapon rule.
     points: []
 
+  # --- Command Breach ---
+  - id: op_rule_command_breach_3
+    name: Command Breach
+    type: 
+    text: >
+      Whenever you would use the Attack Order or Defence Order strategy ploy, 
+      if this operative is in the killzone, it costs you 0CP. Once during each 
+      of this operative's activations, before or after it performs an action, 
+      if your Attack Order or Defence Order marker is in the killzone (see relevant 
+      strategy ploy), you can either:
+    points: # List: Strings for additional info
+      - text: >
+          Remove that marker and place it again.
+      - text: >
+          Change the selected ploy to the other (e.g. your Attack Order 
+          becomes a Defence Order).
+      - text: >
+          You cannot do both, and you don't need to spend any CP to 
+          change the ploy.
+  
   # --- Commune ---
   - id: op_rule_commune_3
     name: Commune
@@ -388,6 +615,15 @@ rules: # List of operative rules
       is within control range of two of these operatives, inflict 2D3+2 damage instead.
     points: []
   
+  # --- Daemonic ---
+  - id: op_rule_daemonic_3
+    name: Daemonic
+    type: 
+    text: >
+      Whenever an operative is shooting this operative, 
+      ignore the Piercing weapon rule.
+    points: []
+  
   # --- Dat All You Got? ---
   - id: op_rule_dat_all_you_got_3
     name: Dat All You Got?
@@ -397,6 +633,18 @@ rules: # List of operative rules
       you can inflict D3 damage on the enemy operative in that sequence.
     points: []
 
+  # --- Deathmarked ---
+  - id: op_rule_deathmarked_3
+    name: Deathmarked
+    type: 
+    text: >
+      Whenever this operative ends the Shoot action, the target gains one of 
+      your Deathmarked tokens if it wasn't incapacitated (the primary target, 
+      if relevant). Whenever a friendly Hierotek Circle Deathmark operative 
+      is shooting an enemy operative that has one of your Deathmarked tokens, 
+      that friendly operative's ranged weapons have the Seek weapon rule.
+    points: []
+  
   # --- Defence Tactics ---
   - id: op_rule_defence_tactics_3
     name: Defence Tactics
@@ -407,6 +655,35 @@ rules: # List of operative rules
       operative's weapons have the Balanced weapon rule.
     points: []
 
+  # --- Devotion ---
+  - id: op_rule_devotion_3
+    name: Devotion
+    type: 
+    text: >
+      At the end of each of this operative's activations, if it's 
+      Inspiring and it controls an objective marker or one of your 
+      mission markers, one friendly Celestian Insidiant operative 
+      this operative is visible to and within 6" of becomes Inspiring.
+    points: []
+  
+  # --- Disengage ---
+  - id: op_rule_disengage_3
+    name: Disengage
+    type: 
+    text: >
+      This operative can perform the Fall Back action for 1 less AP.
+    points: []
+  
+  # --- Divine Acquisition ---
+  - id: op_rule_divine_acquisition_3
+    name: Divine Acquisition
+    type: 
+    text: >
+      Once per turning point, when this operative performs a mission action 
+      that requires it to control an objective or mission marker, you gain 
+      a number of Faith points equal to the turning point number.
+    points: []
+  
   # --- Drone ---
   - id: op_rule_drone_3
     name: Drone
@@ -448,6 +725,18 @@ rules: # List of operative rules
       - text: >
           That friendly operative is obscured
 
+  # --- Emboldened ---
+  - id: op_rule_emboldened_3
+    name: Emboldened
+    type: 
+    text: >
+      Whenever an attack dice inflicts damage of 3 or more on this operative 
+      during a turning point in which it performed the Charge action, roll 
+      one D6.
+    points: # List: Strings for additional info
+      - text: >
+          On a 5+, subtract 1 from that inflicted damage.
+  
   # --- Erudite Hunter ---
   - id: op_rule_erudite_hunter_3
     name: Erudite Hunter
@@ -489,11 +778,14 @@ rules: # List of operative rules
     type: 
     text: >
       This operative is ignored for your opponent's kill/elimination op 
-      (when it's incapacitated, and when determining your starting number of operatives). 
-      It's also ignored for victory conditions that require operatives to 'escape', 'survive' 
-      or be incapacitated (if it escapes/survives/is incapacitated, determining how many operatives 
-      must escape/survive/be incapacitated, etc.).
-    points: []
+      (when it's incapacitated, and when determining your starting number 
+      of operatives).
+    points: 
+      - text: >
+          It's ignored for victory conditions that require operatives 
+          to 'escape', 'survive', or be incapacitated (if it 
+          escapes/survives/is incapacitated, determining how many 
+          operatives must escape/survive/be incapacitated, etc.).
 
   # --- Eye of the Ancestors ---
   - id: op_rule_eye_of_the_ancestors_3
@@ -525,6 +817,15 @@ rules: # List of operative rules
       this operative can perform the Fall Back action for 1 less AP.
     points: []
   
+  # --- Fierce Temperament ---
+  - id: op_rule_fierce_temperament_3
+    name: Fierce Temperament
+    type: 
+    text: >
+      Whenever this operative is wholly within your Storm, 
+      its weapons have the Severe weapon rule.
+    points: []
+  
   # --- For the Greater Good ---
   - id: op_rule_for_the_greater_good_3
     name: For the Greater Good
@@ -536,6 +837,25 @@ rules: # List of operative rules
       must have a minimum of Accurate 1 to use this rule.
     points: []
 
+  # --- Frenzied Attack ---
+  - id: op_rule_frenzied_attack_3
+    name: Frenzied Attack
+    type: 
+    text: >
+      If this operative is incapacitated during the Fight action, you can 
+      strike the enemy operative in that sequence with one of your unresolved 
+      successes before this operative is removed from the killzone.
+    points: []
+  
+  # --- Gellercaust Masks ---
+  - id: op_rule_gellercaust_masks_3
+    name: Gellercaust Masks
+    type: 
+    text: >
+      Whenever an attack dice would inflict Critical Dmg on this operative, 
+      you can choose for that attack dice to inflict Normal Dmg instead.
+    points: []
+  
   # --- Ghost Rig ---
   - id: op_rule_ghost_rig_3
     name: Ghost Rig
@@ -545,6 +865,15 @@ rules: # List of operative rules
       valid target unless it's within 6" of the operative trying to target it. Note that this rule 
       has no effect if this operative isn't selected as the valid target, e.g. if it's a secondary 
       target from the Blast weapon rule.
+    points: []
+  
+  # --- Glorious Hymnal ---
+  - id: op_rule_glorious_hymnal_3
+    name: Glorious Hymnal
+    type: Support
+    text: >
+      Whenever a friendly Novitiate operative is within 3" of this operative, 
+      that friendly operative's weapons have the Severe weapon rule.
     points: []
   
   # --- Grandfather's Blessing ---
@@ -577,12 +906,34 @@ rules: # List of operative rules
       (regardless of how far the operative actually moves vertically).
     points: []
 
+  # --- Grav-chute and Grapnel Launcher ---
+  - id: op_rule_grav-chute_grapnel_launcher_3
+    name: Grav-chute and Grapnel Launcher
+    type: 
+    text: >
+      Whenever this operative is climbing, treat the vertical distance as 2" 
+      (regardless of how far the operative actually moves vertically). 
+      Whenever this operative is dropping, ignore the vertical distance.
+    points: []
+  
   # --- Grenadier ---
   - id: op_rule_grenadier_3
     name: Grenadier
     type: 
     text: >
       This operative can use frag, krak, smoke and stun grenades 
+      (see universal equipment). Doing so doesn't count towards any limited 
+      uses you have (i.e. if you also select those grenades from equipment 
+      for other operatives). Whenever this operative is using a frag or krak 
+      grenade, improve the Hit stat of that weapon by 1.
+    points: []
+  
+  # --- Grenadier (Imperial Navy Breacher) ---
+  - id: op_rule_grenadier_imperial_navy_breacher_3
+    name: Grenadier
+    type: 
+    text: >
+      This operative can use frag, krak, and stun grenades 
       (see universal equipment). Doing so doesn't count towards any limited 
       uses you have (i.e. if you also select those grenades from equipment 
       for other operatives). Whenever this operative is using a frag or krak 
@@ -607,16 +958,83 @@ rules: # List of operative rules
           an enemy operative that has one of your Poison tokens, add 1 
           to both Dmg stats of this weapon.
 
-  # --- Group Activation ---
-  - id: op_rule_group_activation_3
-    name: Group Activation
+  # --- Grizzled Veteran ---
+  - id: op_rule_grizzled_veteran_3
+    name: Grizzled Veteran
+    type: 
+    text: >
+      The first time this operative would be incapacitated during the battle, 
+      it's not incapacitated, has 1 wound remaining and cannot be incapacitated 
+      for the remainder of the action.
+    points:
+      - text: >
+          All remaining attack dice are discarded, including yours if this 
+          operative is fighting or retaliating.
+      - text: >
+          You cannot use the Counterattack firefight ploy or inflict damage as 
+          a result of the Savage Fighters strategy ploy at the end of that action.
+  
+  # --- Group Activation (Armsman) ---
+  - id: op_rule_group_activation_armsman_3
+    name: Group Activation (Armsman)
+    type: 
+    text: >
+      Whenever this operative is expended, you must then activate one other ready friendly 
+      Imperial Navy Breacher Armsman operative (if able) before your opponent activates. When that 
+      other operative is expended, your opponent then activates as normal.
+    points:
+      - text: >
+          You cannot activate more than two operatives in succession with this rule.
+      - text: >
+          Ignore this rule when you are using the Breach and Clear faction rule.
+  
+  # --- Group Activation (Chaos Devotee) ---
+  - id: op_rule_group_activation_chaos_devotee_3
+    name: Group Activation (Chaos Devotee)
     type: 
     text: >
       Whenever this operative is expended, you must then activate one other ready friendly 
       Chaos Cult Devotee operative (if able) before your opponent activates. When that 
-      other operative is expended, your opponent then activates as normal (in other words, 
-      you cannot activate more than two operatives in succession with this rule).
-    points: []
+      other operative is expended, your opponent then activates as normal.
+    points:
+      - text: >
+          You cannot activate more than two operatives in succession with this rule.
+  
+  # --- Group Activation (Glitchling) ---
+  - id: op_rule_group_activation_glitchling_3
+    name: Group Activation (Glitchling)
+    type: 
+    text: >
+      Whenever this operative is expended, you must then activate one other ready friendly 
+      Gellerpox Infected Mutant operative (if able) before your opponent activates. When that 
+      other operative is expended, your opponent then activates as normal.
+    points:
+      - text: >
+          You cannot activate more than two operatives in succession with this rule.
+  
+  # --- Group Activation (Mutant) ---
+  - id: op_rule_group_activation_mutant_3
+    name: Group Activation (Mutant)
+    type: 
+    text: >
+      Whenever this operative is expended, you must then activate one other ready friendly 
+      Gellerpox Infected Mutant operative (if able) before your opponent activates. When that 
+      other operative is expended, your opponent then activates as normal.
+    points:
+      - text: >
+          You cannot activate more than two operatives in succession with this rule.
+  
+  # --- Group Activation (Mutoid Vermin) ---
+  - id: op_rule_group_activation_mutoid_vermin_3
+    name: Group Activation (Mutoid Vermin)
+    type: 
+    text: >
+      Whenever this operative is expended, you must then activate one other ready friendly 
+      Gellerpox Infected Mutoid Vermin operative (if able) before your opponent activates. When that 
+      other operative is expended, your opponent then activates as normal.
+    points:
+      - text: >
+          You cannot activate more than two operatives in succession with this rule.
   
   # --- Guidance and Experience ---
   - id: op_rule_guidance_and_experience_3
@@ -693,6 +1111,19 @@ rules: # List of operative rules
           that enemy operative, if possible, or activates a different enemy 
           operative if they can't.
   
+  # --- Haywire Mine ---
+  - id: op_rule_haywire_mine_3
+    name: Haywire Mine
+    type: 
+    text: >
+      This operative is carrying your Haywire Mine marker. It can perform 
+      the Pick Up Marker action on that marker, but that marker cannot be 
+      placed within another operative's control range.
+    points:
+      - text: >
+          If this operative is incapacitated while carrying that marker 
+          and that marker cannot be placed, it's removed with this operative.
+  
   # --- High-intensity Markerlight ---
   - id: op_rule_high_intensity_markerlight_3
     name: High-intensity Markerlight
@@ -700,6 +1131,41 @@ rules: # List of operative rules
     text: >
       When this operative uses Markerlight, the selected enemy operative gains two Markerlight tokens.
     points: []
+  
+  # --- Holy Defender ---
+  - id: op_rule_holy_defender_3
+    name: Holy Defender
+    type: 
+    text: >
+      Once per turning point, when a friendly Celestian Insidiant operative 
+      visible to and within 2" of this operative is selected as the valid 
+      target of a Shoot action or to fight against during the Fight action, 
+      you can use this rule. If you do, this operative becomes the valid 
+      target or is fought against instead. 
+    points:
+      - text: >
+          If it's the Shoot action, this operative is only 
+          in cover or obscured if the original target was.
+      - text: >
+          If it's the Fight action, treat this operative as 
+          being within the fighting operative's control range 
+          for the duration of that action.
+      - text: >
+          This rule has no effect if it's the Shoot action and the ranged 
+          weapon has the Blast or Torrent weapon rule.
+  
+  # --- Holy Example ---
+  - id: op_rule_holy_example_3
+    name: Holy Example
+    type: 
+    text: >
+      Once per turning point, if this operative is Inspiring, 
+      you can use a firefight ploy for 0CP if this is the specified 
+      Celestian Insidiant operative.
+    points:
+      - text: >
+          This includes Command Re-roll if the attack or defence 
+          dice was rolled for this operative.
   
   # --- Homing Beacon ---
   - id: op_rule_homing_beacon_3
@@ -716,6 +1182,32 @@ rules: # List of operative rules
       If any result is a 4+, you gain one additional CP.
     points: []
 
+  # --- Horrifying Dismemberment ---
+  - id: op_rule_horrifying_dismemberment_3
+    name: Horrifying Dismemberment
+    type: 
+    text: >
+      Whenever this operative incapacitates an enemy operative while fighting 
+      or retaliating, select one other enemy operative visible to and within 
+      3" of either this operative or the incapacitated enemy operative.
+    points:
+      - text: >
+          Subtract 1 from that enemy operative's APL stat until the end of 
+          its next activation.
+  
+  # --- Horrifying Shrieking ---
+  - id: op_rule_horrifying_shrieking_3
+    name: Horrifying Shrieking
+    type: 
+    text: >
+      Whenever an enemy operative is within 3" of this operative, your opponent 
+      must spend 1 additional AP for that enemy operative to perform the Pick Up 
+      Marker and mission actions. Whenever determining control of a marker, treat 
+      the total APL stat of enemy operatives that contest it as 1 lower if at least 
+      one of those enemy operatives is within 3" of this operative. Note this isn't 
+      a change to the APL stat, so any changes are cumulative with this.
+    points: []
+  
   # --- Hypersensory Hunter ---
   - id: op_rule_hypersensory_hunter_3
     name: Hypersensory Hunter
@@ -739,6 +1231,50 @@ rules: # List of operative rules
       even if that action's effects aren't fulfilled. If it cannot be placed, move it the minimum 
       amount to do so. Regardless, that marker isn't removed.
     points: []
+  
+  # --- Icon Bearer ---
+  - id: op_rule_icon_bearer_3
+    name: Icon Bearer
+    type: 
+    text: >
+      Whenever determining control of a marker, treat this operative's APL 
+      stat as 1 higher.
+    points:
+      - text: >
+          This isn't a change to its APL stat, so any changes are 
+          cumulative with this.
+  
+  # --- Icon Bearer (Fellgor Ravager) ---
+  - id: op_rule_icon_bearer_fellgor_ravager_3
+    name: Icon Bearer (Fellgor Ravager)
+    type: 
+    text: >
+       This operative isn't affected by the marker control 
+       bullet point of the Frenzy faction rule. Whenever 
+       determining control of a marker, treat this operative's 
+       APL stat as 1 higher.
+    points:
+      - text: >
+          This isn't a change to its APL stat, so any changes are 
+          cumulative with this.
+
+  # --- Icon of Contagion ---
+  - id: op_rule_icon_of_contagion_3
+    name: Icon of Contagion
+    type: 
+    text: >
+      Whenever this operative is within your opponent's 
+      territory, the Contagion strategy ploy costs you 0CP.
+    points: []
+  
+  # --- I Got a Plan, Ladz ---
+  - id: op_rule_i_got_a_plan_ladz_3
+    name: I Got a Plan, Ladz
+    type: 
+    text: >
+      Once during each of this operative's activations, it can 
+      perform the Pick Up Marker, Place Marker or a mission action for 1 less AP.
+    points: []
 
   # --- Impending Apotheosis ---
   - id: op_rule_impending_apotheosis_3
@@ -747,6 +1283,15 @@ rules: # List of operative rules
     text: >
        Once per battle, when an attack dice inflicts Normal Dmg 
        on this operative, you can ignore that inflicted damage.
+    points: []
+  
+  # --- Implacable Darkscale ---
+  - id: op_rule_implacable_darkscale_3
+    name: Implacable Darkscale
+    type: 
+    text: >
+      You can ignore any changes to this operative's Drakesteed 
+      Fangs & Talons weapon's Hit stat from being injured.
     points: []
   
   # --- Incite the Hunt ---
@@ -769,55 +1314,6 @@ rules: # List of operative rules
       Gore Tank.
     points: []
   
-  # --- Icon Bearer ---
-  - id: op_rule_icon_bearer_3
-    name: Icon Bearer
-    type: 
-    text: >
-      Whenever determining control of a marker, treat this operative's APL 
-      stat as 1 higher. Note this isn't a change to its APL stat, so any 
-      changes are cumulative with this.
-    points: []
-  
-  # --- Icon Bearer (Fellgor Ravager) ---
-  - id: op_rule_icon_bearer_fellgor_ravager_3
-    name: Icon Bearer (Fellgor Ravager)
-    type: 
-    text: >
-       This operative isn't affected by the marker control 
-       bullet point of the Frenzy faction rule. Whenever 
-       determining control of a marker, treat this operative's 
-       APL stat as 1 higher. Note this isn't a change to its 
-       APL stat, so any changes are cumulative with this.
-    points: []
-
-  # --- Icon of Contagion ---
-  - id: op_rule_icon_of_contagion_3
-    name: Icon of Contagion
-    type: 
-    text: >
-      Whenever this operative is within your opponent's 
-      territory, the Contagion strategy ploy costs you 0CP.
-    points: []
-  
-  # --- I Got a Plan, Ladz ---
-  - id: op_rule_i_got_a_plan_ladz_3
-    name: I Got a Plan, Ladz
-    type: 
-    text: >
-      Once during each of this operative's activations, it can 
-      perform the Pick Up Marker, Place Marker or a mission action for 1 less AP.
-    points: []
-
-  # --- Implacable Darkscale ---
-  - id: op_rule_implacable_darkscale_3
-    name: Implacable Darkscale
-    type: 
-    text: >
-      You can ignore any changes to this operative's Drakesteed 
-      Fangs & Talons weapon's Hit stat from being injured.
-    points: []
-  
   # --- Inertial Dampener ---
   - id: op_rule_inertial_dampener_3
     name: Inertial Dampener
@@ -826,6 +1322,42 @@ rules: # List of operative rules
       You can ignore any changes to the Hit stat of this operative's Marksman Rail Rifle.
     points: []
 
+  # --- Inspirational Example ---
+  - id: op_rule_inspirational_example_3
+    name: Inspirational Example
+    type: 
+    text: >
+      Whenever this operative incapacitates an enemy operative, you 
+      gain 1 Faith point. 
+    points:
+      - text: >
+          Gain 2 Faith points if that enemy operative had a Wounds 
+          stat of 12 or more.
+      - text: >
+          This rule has no effect when using the Glorious Martyrdom 
+          firefight ploy.
+  
+  # --- Inspirational Pyre ---
+  - id: op_rule_inspirational_pyre_3
+    name: Inspirational Pyre
+    type: 
+    text: >
+      Once per turning point, when this operative inflicts damage on an 
+      enemy operative with either profile of its hand flamer but doesn't 
+      incapacitate it, you can use this rule. If you do, you can select 
+      one friendly Celestian Insidiant operative within 6" of this 
+      operative to become Inspiring.
+    points: []
+  
+  # --- Inspired Strikes ---
+  - id: op_rule_inspired_strikes_3
+    name: Inspired Strikes
+    type: 
+    text: >
+      Whenever this operative is Inspiring, add 1 to the Critical 
+      Dmg stat of weapons on its datacard.
+    points: []
+  
   # --- Instinctive Behaviour ---
   - id: op_rule_instinctive_behaviour_3
     name: Instinctive Behaviour
@@ -836,6 +1368,20 @@ rules: # List of operative rules
       Fall Back action during this turning point, this operative's weapons have 
       the Lethal 5+ weapon rule.
     points: []
+  
+  # --- Instinctive Predator ---
+  - id: op_rule_instinctive_predator_3
+    name: Instinctive Predator
+    type: 
+    text: >
+      This operative cannot perform any actions other than Charge, 
+      Dash, Fall Back, Fight, Guard and Reposition.
+    points:
+      - text: >
+          It cannot use any weapons that aren't on its datacard.
+      - text: >
+          This operative can perform the Charge action while it 
+          has a Conceal order.
   
   # --- Intrepid ---
   - id: op_rule_intrepid_3
@@ -934,6 +1480,15 @@ rules: # List of operative rules
       You cannot select the same firefight ploy for this rule more than once per battle.
     points: []
 
+  # --- Lupine Guile ---
+  - id: op_rule_lupine_guile_3
+    name: Lupine Guile
+    type: 
+    text: >
+      Once per battle, after rolling off to decide initiative, 
+      if this operative is in the killzone, you can re-roll your dice.
+    points: []
+  
   # --- Machine ---
   - id: op_rule_machine_3
     name: Machine
@@ -943,6 +1498,62 @@ rules: # List of operative rules
        Fall Back, Reposition and Shoot. It cannot retaliate, assist 
        in a fight or use any weapons that aren't on its datacard.
     points: []
+  
+  # --- Machine (C.A.T. Unit) ---
+  - id: op_rule_machine_cat_unit_3
+    name: Machine
+    type: 
+    text: >
+       This operative cannot perform any actions other than 
+       Charge, Dash, Fall Back, Reposition, and Spot.
+    points: 
+      - text: >
+          This operative cannot be activated or perform 
+          actions if it's within control range of an 
+          enemy operative, or if a friendly Imperial Navy 
+          Breacher Surveyor operative has been incapacitated. 
+      - text: >
+          The turning point can end even if this 
+          operative is still ready.
+      - text: >
+          It cannot retaliate, assist in a fight, 
+          climb or jump.
+      - text: >
+          Whenever determining control of a marker, 
+          treat this operative's APL stat as 1 lower. 
+          Note this isn't a change to its APL stat, 
+          so any changes are cumulative with this.
+      - text: >
+          Whenever this operative has a Conceal 
+          order and is in cover, it cannot be 
+          selected as a valid target, taking 
+          precedence over all other rules except 
+          being within 2".
+      - text: >
+          Whenever determining what's visible to 
+          this operative, draw the line from any 
+          part of the miniature.
+  
+  # --- Machine (Gheistskull) ---
+  - id: op_rule_machine_gheistskull_3
+    name: Machine (Gheistskull)
+    type: 
+    text: >
+       This operative cannot perform any actions other than Boost, 
+       Charge, Dash, Fall Back, and Reposition.
+    points: 
+      - text: >
+          It cannot retaliate or assist in a fight.
+      - text: >
+          Whenever determining control of a marker, treat 
+          this operative's APL stat as 1 lower. Note this 
+          isn't a change to its APL stat, so changes are 
+          cumulative with this.
+      - text: >
+          Whenever this operative has a Conceal order and 
+          is in cover, it cannot be selected as a valid 
+          target, taking precedence over all other rules 
+          except being within 2".
   
   # --- Mandiblasters ---
   - id: op_rule_mandiblasters_3
@@ -985,12 +1596,13 @@ rules: # List of operative rules
       operative would be a primary or secondary target.
     points: []
   
-  # --- Medic! ---
-  - id: op_rule_medic_3
-    name: Medic!
+  # --- Medic! (Hearthkyn Salvager) ---
+  - id: op_rule_medic_hearthkyn_salvager_3
+    name: Medic! (Hearthkyn Salvager)
     type: 
     text: >
-      The first time during each turning point that another friendly Hearthkyn Salvager operative would be removed from the killzone as incapacitated while 
+      The first time during each turning point that another friendly Hearthkyn Salvager 
+      operative would be removed from the killzone as incapacitated while 
       visible to and within 3" of this operative, you can use this rule, providing 
       neither this nor that operative is within control range of an enemy operative. 
       If you do, that friendly operative isn't incapacitated and has 1 wound 
@@ -1001,7 +1613,49 @@ rules: # List of operative rules
       operative's activation, that activation ends. You cannot use this rule if 
       this operative is incapacitated.
     points: []
+  
+  # --- Medic! (Novitiate) ---
+  - id: op_rule_medic_novitiate_3
+    name: Medic! (Novitiate)
+    type: 
+    text: >
+      The first time during each turning point that another friendly 
+      Novitiate operative would be incapacitated while visible to and 
+      within 3" of this operative, you can use this rule, providing 
+      neither this nor that operative is within control range of an 
+      enemy operative.
+    points: 
+      - text: >
+          Target friendly operative isn't incapacitated, has 1 wound 
+          remaining and cannot be incapacitated for the remainder of 
+          the action.
+      - text: >
+          After that action, target friendly operative can immediately 
+          perform a free Dash action, but must end that move within this 
+          operative's control range.
+      - text: >
+          Subtract 1 from this and that operative's APL stats until the 
+          end of their next activations respectively, and if this rule 
+          was used during that friendly operative's activation, that 
+          activation ends.
+      - text: >
+          You cannot use this rule if this operative is incapacitated, 
+          or if it's a Shoot action and this operative would be a primary 
+          or secondary target.
 
+  # --- Militant Faith ---
+  - id: op_rule_militant_faith_3
+    name: Militant Faith
+    type: 
+    text: >
+      Whenever this operative is shooting, fighting or retaliating, if you use 
+      an Act of Faith during that sequence and an enemy operative is incapacitated, 
+      the Faith points spent on that Act of Faith are refunded.
+    points:
+      - text: >
+          If you are using the Icon of Faith equipment, Faith points are 
+          only refunded for one Act of Faith of your choosing.
+  
   # --- Minefield ---
   - id: op_rule_minefield_3
     name: Minefield
@@ -1017,6 +1671,22 @@ rules: # List of operative rules
       your flipped Minefield markers that's within its control range (flip the 
       marker back over again).
     points: []
+  
+  # --- Modified Vox-casters ---
+  - id: op_rule_modified_vox-casters_3
+    name: Modified Vox-casters
+    type: 
+    text: >
+      Whenever an enemy operative is within 3" of this operative, 
+      your opponent must spend 1 additional AP for that enemy 
+      operative to perform the Pick Up Marker and mission actions.
+    points: # List: Strings for additional info
+      - text: >
+          Whenever determining control of a marker, treat the total 
+          APL stat of enemy operatives that contest it as 1 lower 
+          if at least one of those enemy operatives is within 3" of 
+          this operative. Note this isn't a change to the APL stat, 
+          so any changes are cumulative with this.
   
   # --- Multispectrum Sensor Package ---
   - id: op_rule_multispectrum_sensor_package_3
@@ -1061,6 +1731,42 @@ rules: # List of operative rules
       (multiple markers aren't cumulative).
     points: []
 
+  # --- Null Field ---
+  - id: op_rule_null_field_3
+    name: Null Field
+    type: 
+    text: >
+       This operative starts the battle with a null range of 1". Whenever an 
+       enemy operative is within null range of this operative, subtract 2" 
+       from their Move stat, and worsen their weapons Hit stat by 1.
+    points:
+      - text: > # String: Description of what this option does
+          This is not cumulative with being injured.
+  
+  # --- Null Rod ---
+  - id: op_rule_null_rod_3
+    name: Null Rod
+    type: 
+    text: 
+    points:
+      - text: >
+          Psychic ranged weapons cannot inflict damage on this operative.
+      - text: >
+          For the effects of Psychic actions, this operative cannot be 
+          selected and is never treated as being within those actions' 
+          required distances.
+      - text: >
+          Whenever an operative is within 6" of this operative, that 
+          operative cannot perform Psychic actions or use Psychic 
+          additional rules.
+      - text: >
+          Whenever an operative is within 6" of this operative, that 
+          operative cannot use Psychic ranged weapons.
+      - text: >
+          Whenever an operative is within 6" of this operative, Psychic 
+          melee weapons have no weapon rules and cannot have Dmg stats 
+          higher than 3/4.
+  
   # --- Obsessive Bloodlust ---
   - id: op_rule_obsessive_bloodlust_3
     name: Obsessive Bloodlust
@@ -1138,6 +1844,80 @@ rules: # List of operative rules
       2D3 damage on that enemy operative before it moves.
     points: []
   
+  # --- Path to Damnation ---
+  - id: op_rule_path_to_damnation_3
+    name: Path to Damnation
+    type: 
+    text: >
+      This operative starts the battle with 1 Damnation point. Once per action, 
+      you can attempt to use one Boon of Damnation when it specifies (see right). 
+      If you do, roll one D6 and compare the result to the number of Damnation 
+      points this operative has; if the result is:
+    points:
+      - text: >
+          Higher: Resolve the rule, then this operative gains 1 
+          Damnation point.
+      - text: >
+          Equal: Do not resolve the rule.
+      - text: >
+          Less: Inflict damage on this operative equal to its 
+          number of Damnation points and do not resolve the rule.
+      - text: >
+          If this operative has 6 Damnation points, resolve the 
+          rule without rolling. Note that you cannot make an attempt 
+          more than once per action, regardless of the D6 result.
+  
+  # --- Path to Glory ---
+  - id: op_rule_path_to_glory_3
+    name: Path to Glory
+    type: 
+    text: >
+      Whenever this operative incapacitates an enemy operative that 
+      has your Challenge token, you gain 1CP.
+    points: []
+  
+  # --- Pinned Prey ---
+  - id: op_rule_pinned_prey_3
+    name: Pinned Prey
+    type: 
+    text: >
+      Whenever an enemy operative would perform the Fall Back action 
+      while within control range of this operative, if no other enemy 
+      operatives are within this operative's control range, you can use 
+      this rule. If you do, roll two D6, or one D6 if that enemy operative 
+      has a higher Wounds stat than this operative. If any result is a 4+, 
+      that enemy operative cannot perform that action during that 
+      activation/counteraction (no AP are spent on it).
+    points: []
+  
+  # --- Pounce ---
+  - id: op_rule_pounce_3
+    name: Pounce
+    type: Strategic Gambit
+    text: >
+      If this operative's APL stat is 2 or more, this operative can 
+      perform a free Charge, Fall Back or Reposition action.
+    points:
+      - text: >
+          Once per battle.
+      - text: >
+          If it does, until the end of its next activation, 
+          subtract 1 from its APL stat and it cannot perform 
+          any of the aforementioned actions.
+  
+  # --- Pox Bomb ---
+  - id: op_rule_pox_bomb_3
+    name: Pox Bomb
+    type: 
+    text: >
+      This operative can use stun grenades. Doing so doesn't count towards any 
+      limited uses you have (i.e. if you also select that grenade from equipment 
+      for other operatives). Whenever an enemy operative takes a stun test as a 
+      result of this operative performing the Stun Grenade action, if the result 
+      is a 3+, also inflict damage on that enemy operative equal to the dice 
+      result halved (rounding up).
+    points: []
+  
   # --- Preternatural Evasion ---
   - id: op_rule_preternatural_evasion_3
     name: Preternatural Evasion
@@ -1155,17 +1935,35 @@ rules: # List of operative rules
           distance moved (in other words it cannot just circle back to its 
           previous location and gain high Speed).
   
-  # --- Pox Bomb ---
-  - id: op_rule_pox_bomb_3
-    name: Pox Bomb
+  # --- Proximity Mine ---
+  - id: op_rule_proximity_mine_3
+    name: Proximity Mine
     type: 
     text: >
-      This operative can use stun grenades. Doing so doesn't count towards any 
-      limited uses you have (i.e. if you also select that grenade from equipment 
-      for other operatives). Whenever an enemy operative takes a stun test as a 
-      result of this operative performing the Stun Grenade action, if the result 
-      is a 3+, also inflict damage on that enemy operative equal to the dice 
-      result halved (rounding up).
+       The first time your Haywire Mine marker is within another operative's 
+       control range, remove that marker, subtract 1 from that operative's 
+       APL stat until the end of its next activation, and inflict 2D3+3 damage 
+       on it.
+    points:
+      - text: >
+          Inflict D3+6 if that marker is within 6" horizontally of 
+          your Storm marker.
+      - text: >
+          If the operative isn't incapacitated, end its action (if any), 
+          even if that action's effects aren't fulfilled.
+      - text: >
+          If it cannot be placed, move it the minimum amount to do so.
+      - text: >
+          Note that this operative is ignored for these effects, meaning 
+          it cannot set it off or take damage from that marker.
+  
+  # --- Purge With Flame ---
+  - id: op_rule_purge_with_flame_3
+    name: Purge With Flame
+    type: 
+    text: >
+      Once per turning point, you can use the Inferno firefight ploy for 0CP 
+      if this is the specified friendly Novitiate operative.
     points: []
   
   # --- Quick Draw ---
@@ -1230,6 +2028,16 @@ rules: # List of operative rules
     type: 
     text: >
       Normal and Critical Dmg of 4 or more inflicts 1 less damage on this operative.
+    points: []
+  
+  # --- Relic Seeker ---
+  - id: op_rule_relic_seeker_3
+    name: Relic Seeker
+    type: 
+    text: >
+      Once during each of this operative's activations, it can 
+      perform the Pick Up Marker, Place Marker, or a mission 
+      action for 1 less AP.
     points: []
   
   # --- Repulsive Fortitude ---
@@ -1304,6 +2112,36 @@ rules: # List of operative rules
       - text: >
           Note that Piercing 1 would therefore be ignored.
 
+  # --- Scuttler (Accelerate) ---
+  - id: op_rule_scuttler_accelerate_3
+    name: Scuttler (Accelerate)
+    type: 
+    text: >
+      Whenever this operative has a Conceal order and is in cover, it cannot 
+      be selected as a valid target, taking precedence over all other rules 
+      (e.g. Seek, Vantage terrain) except being within 2".
+    points:
+      - text: >
+          This operative can perform the Fall Back action for 1 less AP.
+      - text: >
+          This operative cannot use any weapons that aren't on its 
+          datacard, or perform unique actions other than Accelerate.
+  
+  # --- Scuttler (Reanimate) ---
+  - id: op_rule_scuttler_reanimate_3
+    name: Scuttler (Reanimate)
+    type: 
+    text: >
+      Whenever this operative has a Conceal order and is in cover, it cannot 
+      be selected as a valid target, taking precedence over all other rules 
+      (e.g. Seek, Vantage terrain) except being within 2".
+    points:
+      - text: >
+          This operative can perform the Fall Back action for 1 less AP.
+      - text: >
+          This operative cannot use any weapons that aren't on its 
+          datacard, or perform unique actions other than Reanimate.
+  
   # --- Secure Salvage ---
   - id: op_rule_secure_salvage_3
     name: Secure Salvage
@@ -1393,6 +2231,43 @@ rules: # List of operative rules
       points. If a Pulsa marker ever has 0 points, remove it.
     points: []
   
+  # --- Simulacrum Nullificatus Icon Bearer ---
+  - id: op_rule_simulacrum_nullificatus_icon_bearer_3
+    name: Simulacrum Nullificatus Icon Bearer
+    type: 
+    text: >
+      Whenever determining control of a marker, treat the total APL 
+      stat of enemy operatives that contest it as 1 lower if at least 
+      one of those enemy operatives is within 3" of this operative.
+    points:
+      - text: >
+          This isn't a change to the APL stat, so any changes are 
+          cumulative with this.
+  
+  # --- Slice the Veil ---
+  - id: op_rule_slice_the_veil_3
+    name: Slice the Veil
+    type: 
+    text: >
+      When setting up this operative before the battle, you can set it up 
+      in the warp instead: place it to one side instead of in the killzone. 
+      In the first Firefight phase, when this operative is activated, place 
+      one of your Warp markers wholly within your territory, then expend 
+      this operative
+    points: # List: Strings for additional info
+      - text: >
+          In the second Firefight phase, when this operative is activated, 
+          set it up with an order of your choice in a location it can be 
+          placed either wholly within your drop zone, or wholly within your 
+          territory contesting your Warp marker. Continue its activation as 
+          normal, but during that activation it cannot perform more than two 
+          actions and cannot use more than 4" of move distance. Until the 
+          Ready step of the next Strategy phase, this operative is obscured 
+          to operatives more than 3" from it.
+      - text: >
+          Whenever this operative is in the warp, it cannot be the ready friendly 
+          Murderwing operative for the Malicious Narcissism firefight ploy.
+  
   # --- Slicing Attack ---
   - id: op_rule_slicing_attack_3
     name: Slicing Attack
@@ -1408,6 +2283,17 @@ rules: # List of operative rules
       underneath this operative before it moves to help determine this.
     points: []
 
+  # --- Small ---
+  - id: op_rule_small_3
+    name: Small
+    type: 
+    text: >
+      This operative cannot use any weapons that aren't on its datacard, 
+      or perform unique actions. Whenever this operative has a Conceal order 
+      and is in cover, it cannot be selected as a valid target, taking precedence 
+      over all other rules (e.g. Seek, Vantage terrain) except being within 2”.
+    points: []
+  
   # --- Sneaky Zogger ---
   - id: op_rule_sneaky_zogger_3
     name: Sneaky Zogger
@@ -1443,6 +2329,55 @@ rules: # List of operative rules
       - text: >
           Uou can spend your Soul Harvest points even if this operative is incapacitated.
   
+  # --- Spiked Charger ---
+  - id: op_rule_spiked_charger_3
+    name: Spiked Charger
+    type: 
+    text: >
+      Whenever this operative finishes moving during the Charge action, you can 
+      inflict D3 damage on each enemy operative within its control range.
+    points:
+      - text: >
+          Roll separately for each.
+  
+  # --- Spiritual Chirurgy ---
+  - id: op_rule_spiritual_chirurgy_3
+    name: Spiritual Chirurgy
+    type: 
+    text: >
+      You can ignore any changes to the stats of friendly Wolf Scout 
+      operatives from being injured, including their weapons' stats.
+    points:
+      - text: >
+          This rule excludes Fenrisian Wolf operatives.
+      - text: >
+          Friendly operatives have this rule if you select this 
+          operative for the battle, even if it's incapacitated later.
+  
+  # --- Spread the Glorious Gifts ---
+  - id: op_rule_spread_the_glorious_gifts_3
+    name: Spread the Glorious Gifts
+    type: Strategic Gambit
+    text: >
+      Once per battle, select one objective marker this operative controls 
+      to gain one of your Techno-curse tokens. It cannot be an objective marker 
+      within control range of an enemy operative. Whenever that objective marker 
+      is within control range of an enemy operative, that operative is affected 
+      by your selected Techno-Curse rule and an additional rule determined by 
+      your Techno-Curse, as shown opposite.
+    points:
+      - text: >
+          You cannot use this Strategic Gambit while this operative 
+          is within control range of an enemy operative.
+      - text: >
+          Barrelwarp: No additional effect.
+      - text: >
+          Screaming Rustspikes: This Techno-Curse inflicts 2 damage 
+          on that enemy operative (instead of 1).
+      - text: >
+          Viral Vox-static: Whenever that enemy operative is activated, 
+          subtract 1 from its APL stat until the end of its activation.
+  
   # --- Stalker ---
   - id: op_rule_stalker_3
     name: Stalker
@@ -1450,7 +2385,17 @@ rules: # List of operative rules
     text: >
       This operative can perform the Charge action while it has a Conceal order.
     points: []
-
+  
+  # --- Steadfast ---
+  - id: op_rule_steadfast_3
+    name: Steadfast
+    type: 
+    text: >
+      Whenever determining control of a marker, you can treat this operative's 
+      APL stat as 3. If you do, this takes precedence over all other rules, 
+      meaning any changes to its APL stat are ignored for this.
+    points: []
+  
   # --- Stonesinger Upgrades ---
   - id: op_rule_stonesinger_upgrades_3
     name: Stonesinger Upgrades
@@ -1472,6 +2417,42 @@ rules: # List of operative rules
       aren't on its datacard.
     points: []
 
+  # --- Storm Shield ---
+  - id: op_rule_storm_shield_3
+    name: Storm Shield
+    type: 
+    text: >
+      Whenever an operative is shooting this operative, worsen the 
+      X of the Piercing weapon rule by 1 (if any).
+    points:
+      - text: >
+          Note that Piercing 1 would therefore be ignored.
+  
+  # --- Storm-veiled Execution ---
+  - id: op_rule_storm-veiled_execution_3
+    name: Storm-veiled Execution
+    type: 
+    text: > # String: Using '>' allows for multi-line descriptions
+      Whenever this operative is wholly within your Storm:
+    points:
+      - text: >
+          It can perform the Guard action regardless of the killzone.
+      - text: >
+          It can perform the Guard action while it has a Conceal order.
+  
+  # --- Strategic Command ---
+  - id: op_rule_strategic_command_3
+    name: Strategic Command
+    type: 
+    text: >
+      You can do each of the following once per battle if this operative 
+      is in the killzone:
+    points:
+      - text: >
+          Use a Deathwatch strategy ploy for 0CP.
+      - text: >
+          Use a Deathwatch firefight ploy for 0CP.
+  
   # --- Subterranean Ambush ---
   - id: op_rule_subterranean_ambush_3
     name: Subterranean Ambush
@@ -1541,6 +2522,18 @@ rules: # List of operative rules
       select those grenades from equipment).
     points: []
 
+  # --- Tempest's Fury ---
+  - id: op_rule_tempests_fury_3
+    name: Tempest's Fury
+    type: 
+    text: >
+      Whenever this operative is wholly within your Storm:
+    points:
+      - text: >
+          All profiles of its plasma gun have the Punishing weapon rule.
+      - text: >
+          Its plasma gun (supercharge) doesn't have the Hot weapon rule.
+  
   # --- Tempestus Veteran ---
   - id: op_rule_tempestus_veteran_3
     name: Tempestus Veteran
@@ -1550,6 +2543,32 @@ rules: # List of operative rules
       the specified Tempestus Aquilon operative, or the Command Re-roll firefight 
       ploy for 0CP if this is the operative the attack or defence dice was rolled for.
     points: []
+  
+  # --- Tentacled Grasp ---
+  - id: op_rule_tentacled_grasp_3
+    name: Tentacled Grasp
+    type: 
+    text: >
+      Whenever an enemy operative would perform the Fall Back action while 
+      within control range of this operative, you can use this rule. If you do, 
+      roll one D6, adding 1 to the result if that enemy operative has a Wounds 
+      stat of 8 or less: on a 4+, that enemy operative cannot perform that action 
+      during that activation/counteraction (the AP spent on it isn't refunded).
+    points: []
+  
+  # --- Thrill of Flight ---
+  - id: op_rule_thrill_of_flight_3
+    name: Thrill of Flight
+    type: 
+    text: >
+      Whenever this operative does a Boost during its activation:
+    points: # List: Strings for additional info
+      - text: >
+          You can remove any changes to its APL stat.
+      - text: >
+          You can ignore any changes to its stats from 
+          being injured (including its weapons' stats) 
+          until the end of the activation..
   
   # --- Toxic Blessings ---
   - id: op_rule_toxic_blessings_3
@@ -1579,6 +2598,17 @@ rules: # List of operative rules
     text: >
       This operative can perform two Shoot actions during its activation.
     points: []
+  
+  # --- Unflinching Example ---
+  - id: op_rule_unflinching_example_3
+    name: Unflinching Example
+    type: 
+    text: >
+      Whenever this operative incapacitates a ready enemy operative 
+      within its control range, you gain 1 Faith point.
+    points:
+      - text: >
+          Gain 2 Faith points if that enemy operative had a Wounds stat of 12 or more.
   
   # --- Unnatural Regeneration ---
   - id: op_rule_unnatural_regeneration_3
@@ -1637,6 +2667,31 @@ rules: # List of operative rules
       friendly operative can only be selected for this rule once per battle.
     points: []
 
+  # --- Vigilant Marksman ---
+  - id: op_rule_vigilant_marksman_3
+    name: Vigilant Marksman
+    type: 
+    text: >
+      This operative can perform the Guard action during its activation 
+      regardless of the killzone. When using the close quarters rules, 
+      once per turning point, after this operative performs a free Shoot 
+      action on guard, it can immediately perform a free Guard action. 
+      However, if it does, it cannot counteract during that turning point 
+      (nor Guard twice if it's counteracted).
+    points: []
+  
+  # --- Virge of Admonition Icon Bearer ---
+  - id: op_rule_virge_of_admonition_icon_bearer_3
+    name: Virge of Admonition Icon Bearer
+    type: 
+    text: >
+      Whenever determining control of a marker, treat this operative's APL 
+      stat as 1 higher.
+    points: 
+      - text: >
+          this is not a change to its APL stat, so any 
+          changes are cumulative with this.
+  
   # --- War Gong ---
   - id: op_rule_war_gong_3
     name: War Gong
@@ -1729,3 +2784,33 @@ rules: # List of operative rules
       next activation, ignore the first two bullet points of its Drone rule 
       (this takes precedence over that rule).
     points: []
+  
+  # --- Zealous Ultimatum ---
+  - id: op_rule_zealous_ultimatum_3
+    name: Zealous Ultimatum
+    type: Strategic Gambit
+    text: >
+      Select one enemy operative within 8" of this operative and issue an 
+      ultimatum to it. Your opponent must accept or decline that ultimatum. 
+    points:
+      - text: >
+          Once per battle Strategic Gambit.
+      - text: >
+          If the ultimatum is accepted, whenever this operative is fighting 
+          against or retaliating against that enemy operative, add 1 to the 
+          Atk stat of this operative's blessed broadsword.
+      - text: >
+          The first time this operative incapacitates that enemy operative 
+          while fighting or retaliating during the battle, add 1 to the Atk 
+          stat of this operative's blessed broadsword until the end of the 
+          battle.
+      - text: >
+          If the ultimatum is declined, whenever that enemy operative is 
+          fighting against or retaliating against a friendly Celestian 
+          Insidiant operative, subtract 1 from the Atk stat of that enemy 
+          operative's weapons.
+      - text: >
+          If it's a non-player operative, roll one D6. On a 4+, the 
+          ultimatum is accepted, otherwise it's declined.
+      - text: >
+          Atk stat can only be increased to a maximum of 5.

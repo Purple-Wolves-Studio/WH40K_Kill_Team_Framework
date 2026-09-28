@@ -1,0 +1,220 @@
+faction: Wolf Scouts
+faction_id: wolf_scouts_3
+faction_keyword: [Wolf Scout, Imperium, Adeptus Astartes, Space Wolves]
+units: # List of units in the faction
+  # --- Wolf Scout Pack Leader ---
+  - id: wolf_scouts_pack_leader_3
+    name: Wolf Scout Pack Leader
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Power Weapon
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Lethal 5]
+    rule: [Lupine Guile, Grizzled Veteran]
+    action: []
+    keyword: [Pack, Leader]
+  
+  # --- Wolf Scout Fangbearer ---
+  - id: wolf_scouts_fangbearer_3
+    name: Wolf Scout Fangbearer
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Absolvor Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Piercing Crits 1]
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Spiritual Chirurgy]
+    action: [Healing Balms]
+    keyword: [Fangbearer]
+  
+  # --- Wolf Scout Frosteye ---
+  - id: wolf_scouts_frosteye_3
+    name: Wolf Scout Frosteye
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Instigator Bolt Carbine
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Piercing Crits 1, Silent]
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Storm-veiled Execution]
+    action: [Hunter's Senses]
+    keyword: [Frosteye]
+  
+  # --- Wolf Scout Gunner ---
+  - id: wolf_scouts_gunner_3
+    name: Wolf Scout Gunner
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Gun (Standard)
+        attack: 4
+        hit: 3
+        damage: [4, 6]
+        rule: [Piercing 1]
+      - name: Plasma Gun (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [5, 6]
+        rule: [Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Tempest's Fury]
+    action: []
+    keyword: [Gunner]
+  
+  # --- Wolf Scout Hunter ---
+  - id: wolf_scouts_hunter_3
+    name: Wolf Scout Hunter
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Fierce Temperament]
+    action: []
+    keyword: [Hunter]
+  
+  # --- Wolf Scout Rune Priest Skjald ---
+  - id: wolf_scouts_rune_priest_skjald_3
+    name: Wolf Scout Rune Priest Skjald
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Bolt Pistol
+        attack: 4
+        hit: 3
+        damage: [3, 4]
+        rule: [Range 8]
+      - name: Jaws of the World Wolf
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Psychic, Blast 2, Severe]
+      - name: Thunderclap
+        attack: 5
+        hit: 2
+        damage: [2, 2]
+        rule: [Psychic, Range 6, Saturate, Seek Light, Stun, Torrent 2]
+    melee: # List: Melee weapon profiles
+      - name: Runic Stave
+        attack: 5
+        hit: 3
+        damage: [4, 6]
+        rule: [Psychic, Shock]
+    rule: [Cast the Runes]
+    action: [Call the Storm]
+    keyword: [Psyker, Rune Priest Skjald]
+  
+  # --- Wolf Scout Trapmaster ---
+  - id: wolf_scouts_trapmaster_3
+    name: Wolf Scout Trapmaster
+    stats: # List: Operative stats
+      apl: 3
+      move: 7
+      save: 3
+      wounds: 13
+    ranged: # List: Ranged weapon profiles
+      - name: Plasma Pistol (Standard)
+        attack: 4
+        hit: 3
+        damage: [3, 5]
+        rule: [Range 8, Piercing 1]
+      - name: Plasma Pistol (Supercharge)
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Range 8, Hot, Lethal 5, Piercing 1]
+    melee: # List: Melee weapon profiles
+      - name: Combat Blade
+        attack: 5
+        hit: 3
+        damage: [4, 5]
+        rule: []
+    rule: [Haywire Mine, Proximity Mine]
+    action: []
+    keyword: [Trapmaster]
+  
+  # --- Wolf Scout Fenrisian Wolf ---
+  - id: wolf_scouts_fenrisian_wolf_3
+    name: Wolf Scout Fenrisian Wolf
+    stats: # List: Operative stats
+      apl: 2
+      move: 8
+      save: 5
+      wounds: 9
+    ranged: []
+    melee: # List: Melee weapon profiles
+      - name: Fangs
+        attack: 4
+        hit: 3
+        damage: [4, 5]
+        rule: [Rending]
+    rule: [Instinctive Predator, Pounce]
+    action: []
+    keyword: [Fenrisian Wolf]
